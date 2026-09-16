@@ -5,7 +5,10 @@ import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig(({ mode }) => {
 	const env = loadEnv(mode, '.', '');
-	const base = (env.BUILD_BASE ? `/${env.BUILD_BASE.replace(/^\/|\/$/g, '')}` : '') as '' | `/${string}`;
+	// Production deploys live under /DnD-beyond-replacement/. Default to that so a
+	// plain `npm run build` is always deployable-correct; BUILD_BASE overrides it.
+	const subpath = (env.BUILD_BASE ? env.BUILD_BASE : mode === 'production' ? 'DnD-beyond-replacement' : '').replace(/^\/|\/$/g, '');
+	const base = (subpath ? `/${subpath}` : '') as '' | `/${string}`;
 	return {
 		plugins: [
 			tailwindcss(),
