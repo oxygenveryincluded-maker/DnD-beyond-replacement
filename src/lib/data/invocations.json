@@ -1,0 +1,1650 @@
+[
+	{
+		"name": "Agonizing Blast",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"spell": [
+					{
+						"choose": "level=0|class=Warlock",
+						"entry": "a Warlock Cantrip That Deals Damage",
+						"entrySummary": "Warlock Cantrip That Deals Damage"
+					}
+				],
+				"level": {
+					"level": 2,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "Choose one of your known <i>Warlock cantrips</i> that deals damage. You can add your Charisma modifier to that spell's damage rolls."
+			},
+			{
+				"type": "section",
+				"name": "",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Repeatable",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip."
+							}
+						]
+					}
+				]
+			}
+		],
+		"page": 155
+	},
+	{
+		"name": "Armor of Shadows",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=Mage Armor\" class=\"text-dnd-gold hover:underline\">Mage Armor</a> on yourself without expending a spell slot."
+			}
+		],
+		"page": 155
+	},
+	{
+		"name": "Ascendant Step",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=Levitate\" class=\"text-dnd-gold hover:underline\">Levitate</a> on yourself without expending a spell slot."
+			}
+		],
+		"page": 155
+	},
+	{
+		"name": "Aspect of the Moon",
+		"source": "XGE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"pact": "Tome"
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You no longer need to sleep and can't be forced to sleep by any means. To gain the benefits of a long rest, you can spend all 8 hours doing light activity, such as reading your Book of Shadows and keeping watch."
+			}
+		],
+		"page": 56
+	},
+	{
+		"name": "Beast Speech",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=speak with animals\" class=\"text-dnd-gold hover:underline\">speak with animals</a> at will, without expending a spell slot."
+			}
+		],
+		"page": 110
+	},
+	{
+		"name": "Beguiling Influence",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"entries": [
+			{
+				"type": "text",
+				"content": "You gain proficiency in the <i>Deception</i> and <i>Persuasion</i> skills."
+			}
+		],
+		"page": 110
+	},
+	{
+		"name": "Bewitching Whispers",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 7,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=compulsion\" class=\"text-dnd-gold hover:underline\">compulsion</a> once using a warlock spell slot. You can't do so again until you finish a long rest."
+			}
+		],
+		"page": 110
+	},
+	{
+		"name": "Bond of the Talisman",
+		"source": "TCE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 12,
+					"class": {
+						"name": "Warlock"
+					}
+				},
+				"pact": "Talisman"
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "While someone else is wearing your talisman, you can use your action to teleport to the unoccupied space closest to them, provided the two of you are on the same plane of existence. The wearer of your talisman can do the same thing, using their action to teleport to you. The teleportation can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest."
+			}
+		],
+		"page": 70
+	},
+	{
+		"name": "Book of Ancient Secrets",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"pact": "Tome"
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can now inscribe magical rituals in your Book of Shadows. Choose two <i>1st-level spells that have the ritual tag from any class's spell list</i>. The spells needn't be from the same spell list. The spells appear in the book and don't count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can't cast the spells except as rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag."
+			},
+			{
+				"type": "text",
+				"content": "On your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell's level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
+			}
+		],
+		"page": 110
+	},
+	{
+		"name": "Chains of Carceri",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"pact": "Chain",
+				"level": {
+					"level": 15,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=hold monster\" class=\"text-dnd-gold hover:underline\">hold monster</a> at will—targeting a celestial, fiend, or elemental—without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again."
+			}
+		],
+		"page": 110
+	},
+	{
+		"name": "Cloak of Flies",
+		"source": "XGE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "As a bonus action, you can surround yourself with a magical aura that looks like buzzing flies. The aura extends 5 feet from you in every direction, but not through Cover. It lasts until you're <i class=\"text-dnd-gold\">incapacitated</i> or you dismiss it as a bonus action."
+			},
+			{
+				"type": "text",
+				"content": "The aura grants you advantage on Charisma (<i>Intimidation</i>) checks but disadvantage on all other Charisma checks. Any other creature that starts its turn in the aura takes poison damage equal to your Charisma modifier (minimum of 0 damage)."
+			},
+			{
+				"type": "text",
+				"content": "Once you use this invocation, you can't use it again until you finish a short or long rest."
+			}
+		],
+		"page": 56
+	},
+	{
+		"name": "Devil's Sight",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 2,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can see normally in <i>Dim Light</i> and <i>Darkness</i>—both magical and nonmagical—within 120 feet of yourself."
+			}
+		],
+		"page": 155
+	},
+	{
+		"name": "Devouring Blade",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 12,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				},
+				"optionalfeature": [
+					"thirsting blade|xphb"
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "The Extra Attack of your Thirsting Blade invocation confers two extra attacks rather than one."
+			}
+		],
+		"page": 155
+	},
+	{
+		"name": "Dreadful Word",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 7,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=confusion\" class=\"text-dnd-gold hover:underline\">confusion</a> once using a warlock spell slot. You can't do so again until you finish a long rest."
+			}
+		],
+		"page": 110
+	},
+	{
+		"name": "Eldritch Mind",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"entries": [
+			{
+				"type": "text",
+				"content": "You have <i>Advantage</i> on Constitution saving throws that you make to maintain <i>Concentration</i>."
+			}
+		],
+		"page": 155
+	},
+	{
+		"name": "Eldritch Sight",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=detect magic\" class=\"text-dnd-gold hover:underline\">detect magic</a> at will, without expending a spell slot."
+			}
+		],
+		"page": 110
+	},
+	{
+		"name": "Eldritch Smite",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				},
+				"optionalfeature": [
+					"pact of the blade|xphb"
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "Once per turn when you hit a creature with your pact weapon, you can expend a Pact Magic spell slot to deal an extra <span class=\"text-red-400 font-semibold\">1d8</span> Force damage to the target, plus another <span class=\"text-green-400 font-mono\">1d8</span> per level of the spell slot, and you can give the target the <i class=\"text-dnd-gold\">Prone</i> condition if it is Huge or smaller."
+			}
+		],
+		"page": 155
+	},
+	{
+		"name": "Eldritch Spear",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"spell": [
+					{
+						"choose": "level=0|class=Warlock",
+						"entry": "a Warlock Cantrip That Deals Damage",
+						"entrySummary": "Warlock Cantrip That Deals Damage"
+					}
+				],
+				"level": {
+					"level": 2,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "Choose one of your known <i>Warlock cantrips</i> that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level."
+			},
+			{
+				"type": "section",
+				"name": "",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Repeatable",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip."
+							}
+						]
+					}
+				]
+			}
+		],
+		"page": 155
+	},
+	{
+		"name": "Eyes of the Rune Keeper",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can read all writing."
+			}
+		],
+		"page": 111
+	},
+	{
+		"name": "Far Scribe",
+		"source": "TCE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock"
+					}
+				},
+				"pact": "Tome"
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can contain a number of names equal to your proficiency bonus."
+			},
+			{
+				"type": "text",
+				"content": "You can cast the <a href=\"/spells?search=sending\" class=\"text-dnd-gold hover:underline\">sending</a> spell, targeting a creature whose name is on the page, without using a spell slot and without using material components. To do so, you must write the message on the page. The target hears the message in their mind, and if the target replies, their message appears on the page, rather than in your mind. The writing disappears after 1 minute."
+			},
+			{
+				"type": "text",
+				"content": "As an action, you can magically erase a name on the page by touching it."
+			}
+		],
+		"page": 71
+	},
+	{
+		"name": "Fiendish Vigor",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 2,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=False Life\" class=\"text-dnd-gold hover:underline\">False Life</a> on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the <i>Temporary Hit Points</i>; you automatically get the highest number on the die."
+			}
+		],
+		"page": 155
+	},
+	{
+		"name": "Gaze of Two Minds",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can use a <i>Bonus Action</i> to touch a willing creature and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can take a <i>Bonus Action</i> on subsequent turns to maintain this connection, extending the duration until the end of your next turn. The connection ends if you don't maintain it in this way."
+			},
+			{
+				"type": "text",
+				"content": "While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you can cast spells as if you were in your space or the other creature's space if the two of you are within 60 feet of each other."
+			}
+		],
+		"page": 156
+	},
+	{
+		"name": "Ghostly Gaze",
+		"source": "XGE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 7,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "As an action, you gain the ability to see through solid objects to a range of 30 feet. Within that range, you have <i>darkvision</i> if you don't already have it. This special sight lasts for 1 minute or until your <i>concentration</i> ends (as if you were <i>concentration</i> on a spell). During that time, you perceive objects as ghostly, transparent images."
+			},
+			{
+				"type": "text",
+				"content": "Once you use this invocation, you can't use it again until you finish a short or long rest."
+			}
+		],
+		"page": 56
+	},
+	{
+		"name": "Gift of the Depths",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can breathe underwater, and you gain a <i>Swim Speed</i> equal to your <i>Speed</i>."
+			},
+			{
+				"type": "text",
+				"content": "You can also cast <a href=\"/spells?search=Water Breathing\" class=\"text-dnd-gold hover:underline\">Water Breathing</a> once without expending a spell slot. You regain the ability to cast it in this way again when you finish a <i>Long Rest</i>."
+			}
+		],
+		"page": 156
+	},
+	{
+		"name": "Gift of the Ever-Living Ones",
+		"source": "XGE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"pact": "Chain"
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "Whenever you regain hit points while your familiar is within 100 feet of you, treat any dice rolled to determine the hit points you regain as having rolled their maximum value for you."
+			}
+		],
+		"page": 57
+	},
+	{
+		"name": "Gift of the Protectors",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 9,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				},
+				"optionalfeature": [
+					"pact of the tome|xphb"
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "A new page appears in your Book of Shadows when you conjure it. With your permission, a creature can take an action to write its name on that page, which can contain a number of names equal to your Charisma modifier (minimum of one name)."
+			},
+			{
+				"type": "text",
+				"content": "When any creature whose name is on the page is reduced to 0 <i>Hit Points</i> but not killed outright, the creature magically drops to 1 <i>Hit Points</i> instead. Once this magic is triggered, no creature can benefit from it until you finish a <i>Long Rest</i>."
+			},
+			{
+				"type": "text",
+				"content": "As a <b>Magic</b> action, you can erase a name on the page by touching it."
+			}
+		],
+		"page": 156
+	},
+	{
+		"name": "Grasp of Hadar",
+		"source": "XGE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"spell": [
+					"eldritch blast#c"
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "Once on each of your turns when you hit a creature with your <a href=\"/spells?search=eldritch blast\" class=\"text-dnd-gold hover:underline\">eldritch blast</a>, you can move that creature in a straight line 10 feet closer to you."
+			}
+		],
+		"page": 57
+	},
+	{
+		"name": "Improved Pact Weapon",
+		"source": "XGE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"pact": "Blade"
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can use any weapon you summon with your Pact of the Blade feature as a spellcasting focus for your warlock spells."
+			},
+			{
+				"type": "text",
+				"content": "In addition, the weapon gains a +1 bonus to its attack and damage rolls, unless it is a magic weapon that already has a bonus to those rolls."
+			},
+			{
+				"type": "text",
+				"content": "Finally, the weapon you conjure can be a <b>shortbow</b>, <b>longbow</b>, <b>light crossbow</b>, or <b>heavy crossbow</b>."
+			}
+		],
+		"page": 57
+	},
+	{
+		"name": "Investment of the Chain Master",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				},
+				"optionalfeature": [
+					"pact of the chain|xphb"
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "When you cast <a href=\"/spells?search=Find Familiar\" class=\"text-dnd-gold hover:underline\">Find Familiar</a>, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits."
+			},
+			{
+				"type": "section",
+				"name": "",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Aerial or Aquatic",
+						"entries": [
+							{
+								"type": "text",
+								"content": "The familiar gains either a <i>Fly Speed</i> or a <i>Swim Speed</i> (your choice) of 40 feet."
+							}
+						]
+					},
+					{
+						"type": "section",
+						"name": "Quick Attack",
+						"entries": [
+							{
+								"type": "text",
+								"content": "As a <i>Bonus Action</i>, you can command the familiar to take the <b>Attack</b> action."
+							}
+						]
+					},
+					{
+						"type": "section",
+						"name": "Necrotic or Radiant Damage",
+						"entries": [
+							{
+								"type": "text",
+								"content": "Whenever the familiar deals Bludgeoning, Piercing, or Slashing damage, you can make it deal Necrotic or Radiant damage instead."
+							}
+						]
+					},
+					{
+						"type": "section",
+						"name": "Your Save DC",
+						"entries": [
+							{
+								"type": "text",
+								"content": "If the familiar forces a creature to make a saving throw, it uses your spell save DC."
+							}
+						]
+					},
+					{
+						"type": "section",
+						"name": "Resistance",
+						"entries": [
+							{
+								"type": "text",
+								"content": "When the familiar takes damage, you can take a <i>Reaction</i> to grant it <i>Resistance</i> against that damage."
+							}
+						]
+					}
+				]
+			}
+		],
+		"page": 156
+	},
+	{
+		"name": "Lance of Lethargy",
+		"source": "XGE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"spell": [
+					"eldritch blast#c"
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "Once on each of your turns when you hit a creature with your <a href=\"/spells?search=eldritch blast\" class=\"text-dnd-gold hover:underline\">eldritch blast</a>, you can reduce that creature's speed by 10 feet until the end of your next turn."
+			}
+		],
+		"page": 57
+	},
+	{
+		"name": "Lessons of the First Ones",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 2,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You have received knowledge from an elder entity of the multiverse, allowing you to gain one <i>Origin feat</i> of your choice."
+			},
+			{
+				"type": "section",
+				"name": "",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Repeatable",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You can gain this invocation more than once. Each time you do so, choose a different Origin feat."
+							}
+						]
+					}
+				]
+			}
+		],
+		"page": 156
+	},
+	{
+		"name": "Lifedrinker",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 9,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				},
+				"optionalfeature": [
+					"pact of the blade|xphb"
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "Once per turn when you hit a creature with your pact weapon, you can deal an extra <span class=\"text-red-400 font-semibold\">1d6</span> Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you can expend one of your <i>Hit Point Dice</i> to roll it and regain a number of <i>Hit Points</i> equal to the roll plus your Constitution modifier (minimum of 1 <i>Hit Points</i>)."
+			}
+		],
+		"page": 156
+	},
+	{
+		"name": "Maddening Hex",
+		"source": "XGE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock"
+					}
+				},
+				"spell": [
+					"hex/curse#x"
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "As a bonus action, you cause a psychic disturbance around the target cursed by your <a href=\"/spells?search=hex\" class=\"text-dnd-gold hover:underline\">hex</a> spell or by a warlock feature of yours, such as Hexblade's Curse or Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice that you can see within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 30 feet of you."
+			}
+		],
+		"page": 57
+	},
+	{
+		"name": "Mask of Many Faces",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 2,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=Disguise Self\" class=\"text-dnd-gold hover:underline\">Disguise Self</a> without expending a spell slot."
+			}
+		],
+		"page": 156
+	},
+	{
+		"name": "Master of Myriad Forms",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=Alter Self\" class=\"text-dnd-gold hover:underline\">Alter Self</a> without expending a spell slot."
+			}
+		],
+		"page": 156
+	},
+	{
+		"name": "Minions of Chaos",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 9,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=conjure elemental\" class=\"text-dnd-gold hover:underline\">conjure elemental</a> once using a warlock spell slot. You can't do so again until you finish a long rest."
+			}
+		],
+		"page": 111
+	},
+	{
+		"name": "Mire the Mind",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=slow\" class=\"text-dnd-gold hover:underline\">slow</a> once using a warlock spell slot. You can't do so again until you finish a long rest."
+			}
+		],
+		"page": 111
+	},
+	{
+		"name": "Misty Visions",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 2,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=Silent Image\" class=\"text-dnd-gold hover:underline\">Silent Image</a> without expending a spell slot."
+			}
+		],
+		"page": 156
+	},
+	{
+		"name": "One with Shadows",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "While you're in an area of <i>Dim Light</i> or <i>Darkness</i>, you can cast <a href=\"/spells?search=Invisibility\" class=\"text-dnd-gold hover:underline\">Invisibility</a> on yourself without expending a spell slot."
+			}
+		],
+		"page": 156
+	},
+	{
+		"name": "Otherworldly Leap",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 2,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=Jump\" class=\"text-dnd-gold hover:underline\">Jump</a> on yourself without expending a spell slot."
+			}
+		],
+		"page": 156
+	},
+	{
+		"name": "Pact of the Blade",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"entries": [
+			{
+				"type": "text",
+				"content": "As a <i>Bonus Action</i>, you can conjure a pact weapon in your hand—a Simple or Martial Melee weapon of your choice with which you bond—or create a bond with a magic weapon you touch; you can't bond with a magic weapon if someone else is attuned to it or another Warlock is bonded with it. Until the bond ends, you have proficiency with the weapon, and you can use it as a <i>Spellcasting Focus</i>."
+			},
+			{
+				"type": "text",
+				"content": "Whenever you attack with the bonded weapon, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type."
+			},
+			{
+				"type": "text",
+				"content": "Your bond with the weapon ends if you use this feature's <i>Bonus Action</i> again, if the weapon is more than 5 feet away from you for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends."
+			}
+		],
+		"page": 156
+	},
+	{
+		"name": "Pact of the Chain",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"entries": [
+			{
+				"type": "text",
+				"content": "You learn the <a href=\"/spells?search=Find Familiar\" class=\"text-dnd-gold hover:underline\">Find Familiar</a> spell and can cast it as a <b>Magic</b> action without expending a spell slot."
+			},
+			{
+				"type": "text",
+				"content": "When you cast the spell, you choose one of the normal forms for your familiar or one of the following special forms: <b>Imp</b>, <b>Pseudodragon</b>, <b>Quasit</b>, <b>Skeleton</b>, <b>Slaad Tadpole</b>, <b>Sphinx of Wonder</b>, <b>Sprite</b>, or <b>Venomous Snake</b> (see appendix B for the familiar's stat block)."
+			},
+			{
+				"type": "text",
+				"content": "Additionally, when you take the <b>Attack</b> action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its <i>Reaction</i>."
+			}
+		],
+		"page": 157
+	},
+	{
+		"name": "Pact of the Tome",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"entries": [
+			{
+				"type": "text",
+				"content": "Stitching together strands of shadow, you conjure forth a book in your hand at the end of a <i>Short Rest</i> or <i>Long Rest</i>. This Book of Shadows (you determine its appearance) contains eldritch magic that only you can access, granting you the benefits below. The book disappears if you conjure another book with this feature or if you die."
+			},
+			{
+				"type": "section",
+				"name": "",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Cantrips and Rituals",
+						"entries": [
+							{
+								"type": "text",
+								"content": "When the book appears, choose three <i>cantrips</i>, and choose two <i>level 1 spells</i> that have the <i>Ritual</i> tag. The spells can be from any class's spell list, and they must be spells you don't already have prepared. While the book is on your person, you have the chosen spells prepared, and they function as Warlock spells for you."
+							}
+						]
+					},
+					{
+						"type": "section",
+						"name": "Spellcasting Focus",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You can use the book as a <i>Spellcasting Focus</i>."
+							}
+						]
+					}
+				]
+			}
+		],
+		"page": 157
+	},
+	{
+		"name": "Protection of the Talisman",
+		"source": "TCE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 7,
+					"class": {
+						"name": "Warlock"
+					}
+				},
+				"pact": "Talisman"
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "When the wearer of your talisman fails a saving throw, they can add a <span class=\"text-green-400 font-mono\">d4</span> to the roll, potentially turning the save into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest."
+			}
+		],
+		"page": 71
+	},
+	{
+		"name": "Rebuke of the Talisman",
+		"source": "TCE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"pact": "Talisman"
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "When the wearer of your talisman is hit by an attacker you can see within 30 feet of you, you can use your reaction to deal psychic damage to the attacker equal to your proficiency bonus and push it up to 10 feet away from the talisman's wearer."
+			}
+		],
+		"page": 71
+	},
+	{
+		"name": "Relentless Hex",
+		"source": "XGE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 7,
+					"class": {
+						"name": "Warlock"
+					}
+				},
+				"spell": [
+					"hex/curse#x"
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "Your curse creates a temporary bond between you and your target. As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the target cursed by your <a href=\"/spells?search=hex\" class=\"text-dnd-gold hover:underline\">hex</a> spell or by a warlock feature of yours, such as Hexblade's Curse or Sign of Ill Omen. To teleport in this way, you must be able to see the cursed target."
+			}
+		],
+		"page": 57
+	},
+	{
+		"name": "Repelling Blast",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"spell": [
+					{
+						"choose": "level=0|class=Warlock|spell attack=m;r;o",
+						"entry": "a Warlock Cantrip That Deals Damage via an Attack Roll",
+						"entrySummary": "Warlock Cantrip That Deals Damage via an Attack Roll"
+					}
+				],
+				"level": {
+					"level": 2,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "Choose one of your known <i>Warlock cantrips</i> that requires an attack roll. When you hit a Large or smaller creature with that cantrip, you can push the creature up to 10 feet straight away from you."
+			},
+			{
+				"type": "section",
+				"name": "",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Repeatable",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip."
+							}
+						]
+					}
+				]
+			}
+		],
+		"page": 157
+	},
+	{
+		"name": "Sculptor of Flesh",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 7,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=polymorph\" class=\"text-dnd-gold hover:underline\">polymorph</a> once using a warlock spell slot. You can't do so again until you finish a long rest."
+			}
+		],
+		"page": 111
+	},
+	{
+		"name": "Shroud of Shadow",
+		"source": "XGE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 15,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=invisibility\" class=\"text-dnd-gold hover:underline\">invisibility</a> at will, without expending a spell slot."
+			}
+		],
+		"page": 57
+	},
+	{
+		"name": "Sign of Ill Omen",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=bestow curse\" class=\"text-dnd-gold hover:underline\">bestow curse</a> once using a warlock spell slot. You can't do so again until you finish a long rest."
+			}
+		],
+		"page": 111
+	},
+	{
+		"name": "Thief of Five Fates",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=bane\" class=\"text-dnd-gold hover:underline\">bane</a> once using a warlock spell slot. You can't do so again until you finish a long rest."
+			}
+		],
+		"page": 111
+	},
+	{
+		"name": "Thirsting Blade",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				},
+				"optionalfeature": [
+					"pact of the blade|xphb"
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the <b>Attack</b> action on your turn."
+			}
+		],
+		"page": 157
+	},
+	{
+		"name": "Tomb of Levistus",
+		"source": "XGE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "As a reaction when you take damage, you can entomb yourself in ice, which melts away at the end of your next turn. You gain 10 temporary hit points per warlock level, which take as much of the triggering damage as possible. Immediately after you take the damage, you gain vulnerability to fire damage, your speed is reduced to 0, and you are <i class=\"text-dnd-gold\">incapacitated</i>. These effects, including any remaining temporary hit points, all end when the ice melts."
+			},
+			{
+				"type": "text",
+				"content": "Once you use this invocation, you can't use it again until you finish a short or long rest."
+			}
+		],
+		"page": 57
+	},
+	{
+		"name": "Trickster's Escape",
+		"source": "XGE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 7,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=freedom of movement\" class=\"text-dnd-gold hover:underline\">freedom of movement</a> once on yourself without expending a spell slot. You regain the ability to do so when you finish a long rest."
+			}
+		],
+		"page": 57
+	},
+	{
+		"name": "Undying Servitude",
+		"source": "TCE",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 5,
+					"class": {
+						"name": "Warlock"
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=animate dead\" class=\"text-dnd-gold hover:underline\">animate dead</a> without using a spell slot. Once you do so, you can't cast it in this way again until you finish a long rest."
+			}
+		],
+		"page": 71
+	},
+	{
+		"name": "Visions of Distant Realms",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 9,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=Arcane Eye\" class=\"text-dnd-gold hover:underline\">Arcane Eye</a> without expending a spell slot."
+			}
+		],
+		"page": 157
+	},
+	{
+		"name": "Voice of the Chain Master",
+		"source": "PHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"pact": "Chain"
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech."
+			}
+		],
+		"page": 111
+	},
+	{
+		"name": "Whispers of the Grave",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 7,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You can cast <a href=\"/spells?search=Speak with Dead\" class=\"text-dnd-gold hover:underline\">Speak with Dead</a> without expending a spell slot."
+			}
+		],
+		"page": 157
+	},
+	{
+		"name": "Witch Sight",
+		"source": "XPHB",
+		"featureType": [
+			"EI"
+		],
+		"category": "Eldritch Invocation",
+		"prerequisite": [
+			{
+				"level": {
+					"level": 15,
+					"class": {
+						"name": "Warlock",
+						"source": "XPHB",
+						"visibleStats": true
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "text",
+				"content": "You have <i>Truesight</i> with a range of 30 feet."
+			}
+		],
+		"page": 157
+	}
+]

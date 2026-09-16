@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@theme {
+	--color-dnd-red: #9b2335;
+	--color-dnd-red-dark: #7a1c2a;
+	--color-dnd-gold: #d4a84b;
+	--color-dnd-gold-dark: #b8922e;
+	--color-dnd-dark: #1a1a2e;
+	--color-dnd-darker: #0f0f1a;
+	--color-dnd-card: #232340;
+	--color-dnd-card-hover: #2a2a4a;
+	--color-dnd-border: #3a3a5c;
+	--color-dnd-text: #e8e6e3;
+	--color-dnd-text-muted: #9a9ab0;
+	--color-dnd-accent: #6c63ff;
+	--font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+	--font-display: 'Cinzel', Georgia, serif;
+}
+
+html {
+	background-color: var(--color-dnd-darker);
+	color: var(--color-dnd-text);
+}
+
+body {
+	min-height: 100dvh;
+	font-family: var(--font-sans);
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	overscroll-behavior: none;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-dnd-border);
+	border-radius: 3px;
+}
+
+input, select, textarea {
+	background-color: var(--color-dnd-card);
+	color: var(--color-dnd-text);
+	border: 1px solid var(--color-dnd-border);
+	border-radius: 0.5rem;
+	padding: 0.5rem 0.75rem;
+	font-size: 0.875rem;
+	outline: none;
+	transition: border-color 0.15s;
+}
+
+input:focus, select:focus, textarea:focus {
+	border-color: var(--color-dnd-gold);
+}
+
+.tag {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.125rem 0.5rem;
+	border-radius: 9999px;
+	font-size: 0.75rem;
+	font-weight: 500;
+	line-height: 1.25rem;
+}
+
+.tag-school-abj { background: #1e3a5f; color: #93c5fd; }
+.tag-school-con { background: #3b1f4e; color: #c084fc; }
+.tag-school-div { background: #1a3c34; color: #6ee7b7; }
+.tag-school-ench { background: #4a1942; color: #f0abfc; }
+.tag-school-evo { background: #5c1a1a; color: #fca5a5; }
+.tag-school-ill { background: #3730a3; color: #a5b4fc; }
+.tag-school-nec { background: #1c1917; color: #a8a29e; }
+.tag-school-trans { background: #14532d; color: #86efac; }
+
+.card {
+	background: var(--color-dnd-card);
+	border: 1px solid var(--color-dnd-border);
+	border-radius: 0.75rem;
+	padding: 1rem;
+	transition: background-color 0.15s, border-color 0.15s;
+}
+
+.card:hover {
+	background: var(--color-dnd-card-hover);
+	border-color: var(--color-dnd-gold-dark);
+}
+
+.filter-btn {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.375rem 0.75rem;
+	border-radius: 0.5rem;
+	font-size: 0.8125rem;
+	font-weight: 500;
+	border: 1px solid var(--color-dnd-border);
+	background: var(--color-dnd-card);
+	color: var(--color-dnd-text-muted);
+	transition: all 0.15s;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.filter-btn:hover {
+	border-color: var(--color-dnd-gold-dark);
+	color: var(--color-dnd-text);
+}
+
+.filter-btn.active {
+	background: var(--color-dnd-gold-dark);
+	border-color: var(--color-dnd-gold);
+	color: #000;
+}
+
+.stat-block {
+	background: linear-gradient(135deg, var(--color-dnd-card), #1a1a35);
+	border: 2px solid var(--color-dnd-gold-dark);
+	border-radius: 0.75rem;
+	padding: 1.25rem;
+	position: relative;
+}
+
+.stat-block::before {
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: 2rem;
+	right: 2rem;
+	height: 2px;
+	background: var(--color-dnd-gold);
+}
+
+.stat-block::after {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 2rem;
+	right: 2rem;
+	height: 2px;
+	background: var(--color-dnd-gold);
+}
+
+.accordion-content {
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(8px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+	animation: fadeIn 0.2s ease-out;
+}
