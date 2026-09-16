@@ -3,7 +3,7 @@
   import { onMount } from 'svelte';
   import { page } from '$app/state';
   import { base } from '$app/paths';
-  import { SITE_PASSWORD } from '$lib/config';
+  import { getSupabase } from '$lib/cloud';
   let { children } = $props();
   
   const navItems = [
@@ -16,6 +16,7 @@
   
   let unlocked = $state(false);
   let lockError = $state(false);
+  let checking = $state(false);
 
   onMount(() => {
     if (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('dnd-unlocked') === '1') {
@@ -23,14 +24,29 @@
     }
   });
 
-  function unlock(e: SubmitEvent) {
+  async function unlock(e: SubmitEvent) {
     e.preventDefault();
+    if (checking) return;
     const input = (e.currentTarget as HTMLFormElement).querySelector('input')?.value ?? '';
-    if (input === SITE_PASSWORD) {
-      sessionStorage.setItem('dnd-unlocked', '1');
-      unlocked = true;
-    } else {
+    const sb = getSupabase();
+    if (!sb) {
       lockError = true;
+      return;
+    }
+    checking = true;
+    lockError = false;
+    try {
+      const { data } = await sb.rpc('check_site_password', { pwd: input });
+      if (data === true) {
+        sessionStorage.setItem('dnd-unlocked', '1');
+        unlocked = true;
+      } else {
+        lockError = true;
+      }
+    } catch {
+      lockError = true;
+    } finally {
+      checking = false;
     }
   }
 
@@ -52,7 +68,7 @@
         {#if lockError}
           <p class="text-xs text-red-400">Wrong password, try again.</p>
         {/if}
-        <button type="submit" class="filter-btn w-full py-3 font-semibold">Unlock</button>
+        <button type="submit" class="filter-btn w-full py-3 font-semibold" disabled={checking}>{checking ? 'Checking…' : 'Unlock'}</button>
       </form>
     </div>
   </div>
