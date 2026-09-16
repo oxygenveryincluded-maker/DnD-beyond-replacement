@@ -4081,6 +4081,391 @@
 		"extra": "Level 5"
 	},
 	{
+		"type": "spell",
+		"name": "Acid Stream (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 1"
+	},
+	{
+		"type": "spell",
+		"name": "Antagonize (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 3"
+	},
+	{
+		"type": "spell",
+		"name": "Arcane Hacking (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Arcane Weapon (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 1"
+	},
+	{
+		"type": "spell",
+		"name": "Commune with City (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Conjure Barlgura (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 4"
+	},
+	{
+		"type": "spell",
+		"name": "Conjure Hezrou (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 7"
+	},
+	{
+		"type": "spell",
+		"name": "Conjure Knowbot (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Conjure Lesser Demon (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 3"
+	},
+	{
+		"type": "spell",
+		"name": "Conjure Shadow Demon (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 4"
+	},
+	{
+		"type": "spell",
+		"name": "Conjure Vrock (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 5"
+	},
+	{
+		"type": "spell",
+		"name": "Digital Phantom (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Draconic Transformation (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 7"
+	},
+	{
+		"type": "spell",
+		"name": "Ego Whip (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 4"
+	},
+	{
+		"type": "spell",
+		"name": "Find Vehicle (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Fizban's Platinum Shield (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 6"
+	},
+	{
+		"type": "spell",
+		"name": "Flame Stride (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 3"
+	},
+	{
+		"type": "spell",
+		"name": "Guiding Hand (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 1"
+	},
+	{
+		"type": "spell",
+		"name": "Hand of Radiance (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Haywire (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Healing Elixir (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 1"
+	},
+	{
+		"type": "spell",
+		"name": "House of Cards (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 3"
+	},
+	{
+		"type": "spell",
+		"name": "Icingdeath's Frost (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 2"
+	},
+	{
+		"type": "spell",
+		"name": "Id Insinuation (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 1"
+	},
+	{
+		"type": "spell",
+		"name": "Infallible Relay (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Invisibility To Cameras (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Maximillian's Earthen Grasp",
+		"source": "XGE",
+		"path": "/spells",
+		"extra": "Level 2"
+	},
+	{
+		"type": "spell",
+		"name": "Mental Barrier (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 2"
+	},
+	{
+		"type": "spell",
+		"name": "Mind Thrust (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 2"
+	},
+	{
+		"type": "spell",
+		"name": "Nathair's Mischief (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 2"
+	},
+	{
+		"type": "spell",
+		"name": "On/Off (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Otherworldly Form (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 6"
+	},
+	{
+		"type": "spell",
+		"name": "Power Word: Heal",
+		"source": "PHB",
+		"path": "/spells",
+		"extra": "Level 9"
+	},
+	{
+		"type": "spell",
+		"name": "Power Word: Kill",
+		"source": "PHB",
+		"path": "/spells",
+		"extra": "Level 9"
+	},
+	{
+		"type": "spell",
+		"name": "Power Word: Pain",
+		"source": "XGE",
+		"path": "/spells",
+		"extra": "Level 7"
+	},
+	{
+		"type": "spell",
+		"name": "Power Word: Stun",
+		"source": "PHB",
+		"path": "/spells",
+		"extra": "Level 8"
+	},
+	{
+		"type": "spell",
+		"name": "Protection from Ballistics (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Psionic Blast (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 3"
+	},
+	{
+		"type": "spell",
+		"name": "Psychic Crush (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 6"
+	},
+	{
+		"type": "spell",
+		"name": "Puppet (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 1"
+	},
+	{
+		"type": "spell",
+		"name": "Raulothim's Psychic Lance (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 4"
+	},
+	{
+		"type": "spell",
+		"name": "Remote Access (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Sense Emotion (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 1"
+	},
+	{
+		"type": "spell",
+		"name": "Shutdown (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Spirit of Death (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 4"
+	},
+	{
+		"type": "spell",
+		"name": "Spray of Cards (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 2"
+	},
+	{
+		"type": "spell",
+		"name": "Sudden Awakening (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 1"
+	},
+	{
+		"type": "spell",
+		"name": "Summon Draconic Spirit (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 5"
+	},
+	{
+		"type": "spell",
+		"name": "Summon Warrior Spirit (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 3"
+	},
+	{
+		"type": "spell",
+		"name": "Synchronicity (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "System Backdoor (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Thought Shield (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 2"
+	},
+	{
+		"type": "spell",
+		"name": "Unearthly Chorus (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 1"
+	},
+	{
+		"type": "spell",
+		"name": "Virtue (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 0"
+	},
+	{
+		"type": "spell",
+		"name": "Wild Cunning (UA)",
+		"source": "HB",
+		"path": "/spells",
+		"extra": "Level 1"
+	},
+	{
 		"type": "class",
 		"name": "Barbarian",
 		"source": "PHB",
@@ -4261,6 +4646,97 @@
 		"source": "EFA",
 		"path": "/classes/artificer",
 		"extra": "one"
+	},
+	{
+		"type": "class",
+		"name": "Blood Hunter",
+		"source": "HB",
+		"path": "/classes/blood hunter",
+		"extra": "classic"
+	},
+	{
+		"type": "class",
+		"name": "Mystic",
+		"source": "HB",
+		"path": "/classes/mystic",
+		"extra": "classic"
+	},
+	{
+		"type": "class",
+		"name": "Ranger (Revised)",
+		"source": "HB",
+		"path": "/classes/ranger (revised)",
+		"extra": "classic"
+	},
+	{
+		"type": "class",
+		"name": "Ranger (UA Ambuscade)",
+		"source": "HB",
+		"path": "/classes/ranger (ua ambuscade)",
+		"extra": "classic"
+	},
+	{
+		"type": "class",
+		"name": "Rune Scribe",
+		"source": "HB",
+		"path": "/classes/rune scribe",
+		"extra": "classic"
+	},
+	{
+		"type": "class",
+		"name": "Sidekick",
+		"source": "HB",
+		"path": "/classes/sidekick",
+		"extra": "classic"
+	},
+	{
+		"type": "class",
+		"name": "7 Pack Barbarian",
+		"source": "HB",
+		"path": "/classes/7 pack barbarian",
+		"extra": "classic"
+	},
+	{
+		"type": "class",
+		"name": "7 Pack Bard",
+		"source": "HB",
+		"path": "/classes/7 pack bard",
+		"extra": "classic"
+	},
+	{
+		"type": "class",
+		"name": "7 Pack Ranger",
+		"source": "HB",
+		"path": "/classes/7 pack ranger",
+		"extra": "classic"
+	},
+	{
+		"type": "class",
+		"name": "7 Pack Rogue",
+		"source": "HB",
+		"path": "/classes/7 pack rogue",
+		"extra": "classic"
+	},
+	{
+		"type": "class",
+		"name": "7 Pack Sorcerer",
+		"source": "HB",
+		"path": "/classes/7 pack sorcerer",
+		"extra": "classic"
+	},
+	{
+		"type": "class",
+		"name": "7 Pack Warlock",
+		"source": "HB",
+		"path": "/classes/7 pack warlock",
+		"extra": "classic"
+	},
+	{
+		"type": "class",
+		"name": "7 Pack Wizard",
+		"source": "HB",
+		"path": "/classes/7 pack wizard",
+		"extra": "classic"
 	},
 	{
 		"type": "subclass",
@@ -6527,6 +7003,972 @@
 		"type": "subclass",
 		"name": "Reanimator",
 		"source": "RHW",
+		"path": "/classes/artificer",
+		"extra": "Artificer"
+	},
+	{
+		"type": "subclass",
+		"name": "Order of the Ghostslayer",
+		"source": "HB",
+		"path": "/classes/blood hunter",
+		"extra": "Blood Hunter"
+	},
+	{
+		"type": "subclass",
+		"name": "Order of the Lycan",
+		"source": "HB",
+		"path": "/classes/blood hunter",
+		"extra": "Blood Hunter"
+	},
+	{
+		"type": "subclass",
+		"name": "Order of the Mutant",
+		"source": "HB",
+		"path": "/classes/blood hunter",
+		"extra": "Blood Hunter"
+	},
+	{
+		"type": "subclass",
+		"name": "Order of the Profane Soul",
+		"source": "HB",
+		"path": "/classes/blood hunter",
+		"extra": "Blood Hunter"
+	},
+	{
+		"type": "subclass",
+		"name": "Order of the Avatar",
+		"source": "HB",
+		"path": "/classes/mystic",
+		"extra": "Mystic"
+	},
+	{
+		"type": "subclass",
+		"name": "Order of the Awakened",
+		"source": "HB",
+		"path": "/classes/mystic",
+		"extra": "Mystic"
+	},
+	{
+		"type": "subclass",
+		"name": "Order of the Nomad",
+		"source": "HB",
+		"path": "/classes/mystic",
+		"extra": "Mystic"
+	},
+	{
+		"type": "subclass",
+		"name": "Order of the Soul Knife",
+		"source": "HB",
+		"path": "/classes/mystic",
+		"extra": "Mystic"
+	},
+	{
+		"type": "subclass",
+		"name": "Order of the Immortal",
+		"source": "HB",
+		"path": "/classes/mystic",
+		"extra": "Mystic"
+	},
+	{
+		"type": "subclass",
+		"name": "Order of the Wu Jen",
+		"source": "HB",
+		"path": "/classes/mystic",
+		"extra": "Mystic"
+	},
+	{
+		"type": "subclass",
+		"name": "Beast Conclave",
+		"source": "HB",
+		"path": "/classes/ranger (revised)",
+		"extra": "Ranger (Revised)"
+	},
+	{
+		"type": "subclass",
+		"name": "Deep Stalker Conclave",
+		"source": "HB",
+		"path": "/classes/ranger (revised)",
+		"extra": "Ranger (Revised)"
+	},
+	{
+		"type": "subclass",
+		"name": "Hunter Conclave",
+		"source": "HB",
+		"path": "/classes/ranger (revised)",
+		"extra": "Ranger (Revised)"
+	},
+	{
+		"type": "subclass",
+		"name": "Guardian  (UA)",
+		"source": "HB",
+		"path": "/classes/ranger (ua ambuscade)",
+		"extra": "Ranger (UA Ambuscade)"
+	},
+	{
+		"type": "subclass",
+		"name": "Seeker (UA)",
+		"source": "HB",
+		"path": "/classes/ranger (ua ambuscade)",
+		"extra": "Ranger (UA Ambuscade)"
+	},
+	{
+		"type": "subclass",
+		"name": "Stalker (UA)",
+		"source": "HB",
+		"path": "/classes/ranger (ua ambuscade)",
+		"extra": "Ranger (UA Ambuscade)"
+	},
+	{
+		"type": "subclass",
+		"name": "Expert",
+		"source": "HB",
+		"path": "/classes/sidekick",
+		"extra": "Sidekick"
+	},
+	{
+		"type": "subclass",
+		"name": "Spellcaster",
+		"source": "HB",
+		"path": "/classes/sidekick",
+		"extra": "Sidekick"
+	},
+	{
+		"type": "subclass",
+		"name": "Warrior",
+		"source": "HB",
+		"path": "/classes/sidekick",
+		"extra": "Sidekick"
+	},
+	{
+		"type": "subclass",
+		"name": "Totem Warrior",
+		"source": "PHB",
+		"path": "/classes/7 pack barbarian",
+		"extra": "7 Pack Barbarian"
+	},
+	{
+		"type": "subclass",
+		"name": "Wild Magic",
+		"source": "TCE",
+		"path": "/classes/7 pack barbarian",
+		"extra": "7 Pack Barbarian"
+	},
+	{
+		"type": "subclass",
+		"name": "the-genie",
+		"source": "TCE",
+		"path": "/classes/7 pack warlock",
+		"extra": "7 Pack Warlock"
+	},
+	{
+		"type": "subclass",
+		"name": "Path of the Beast (UA)",
+		"source": "HB",
+		"path": "/classes/barbarian",
+		"extra": "Barbarian"
+	},
+	{
+		"type": "subclass",
+		"name": "Path of the Giant (UA)",
+		"source": "HB",
+		"path": "/classes/barbarian",
+		"extra": "Barbarian"
+	},
+	{
+		"type": "subclass",
+		"name": "Path of the Juggernaut (HB)",
+		"source": "HB",
+		"path": "/classes/barbarian",
+		"extra": "Barbarian"
+	},
+	{
+		"type": "subclass",
+		"name": "Path of the Depths",
+		"source": "HB",
+		"path": "/classes/barbarian",
+		"extra": "Barbarian"
+	},
+	{
+		"type": "subclass",
+		"name": "Path of the Wild Soul (UA)",
+		"source": "HB",
+		"path": "/classes/barbarian",
+		"extra": "Barbarian"
+	},
+	{
+		"type": "subclass",
+		"name": "College of Creation (UA)",
+		"source": "HB",
+		"path": "/classes/bard",
+		"extra": "Bard"
+	},
+	{
+		"type": "subclass",
+		"name": "College of the Dirge Singer (HB)",
+		"source": "HB",
+		"path": "/classes/bard",
+		"extra": "Bard"
+	},
+	{
+		"type": "subclass",
+		"name": "College of the Fury",
+		"source": "HB",
+		"path": "/classes/bard",
+		"extra": "Bard"
+	},
+	{
+		"type": "subclass",
+		"name": "College of the Maestro (HB)",
+		"source": "HB",
+		"path": "/classes/bard",
+		"extra": "Bard"
+	},
+	{
+		"type": "subclass",
+		"name": "College of Satire (UA)",
+		"source": "HB",
+		"path": "/classes/bard",
+		"extra": "Bard"
+	},
+	{
+		"type": "subclass",
+		"name": "College of Spirits (UA)",
+		"source": "HB",
+		"path": "/classes/bard",
+		"extra": "Bard"
+	},
+	{
+		"type": "subclass",
+		"name": "College of Tragedy (HB)",
+		"source": "HB",
+		"path": "/classes/bard",
+		"extra": "Bard"
+	},
+	{
+		"type": "subclass",
+		"name": "Ambition Domain (Amonkhet)",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Aspiration Domain",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Beauty Domain",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Blood Domain (HB)",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "City Domain (UA)",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Fate Domain (UA)",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Mind Domain (HB)",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Moon (HB)",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Protection Domain (UA)",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Solidarity Domain (Amonkhet)",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Strength Domain (Amonkhet)",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Twilight Domain (UA)",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Unity Domain (UA)",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Zeal Domain (Amonkhet)",
+		"source": "HB",
+		"path": "/classes/cleric",
+		"extra": "Cleric"
+	},
+	{
+		"type": "subclass",
+		"name": "Circle of the Blighted",
+		"source": "HB",
+		"path": "/classes/druid",
+		"extra": "Druid"
+	},
+	{
+		"type": "subclass",
+		"name": "Circle Of The Forged (HB)",
+		"source": "HB",
+		"path": "/classes/druid",
+		"extra": "Druid"
+	},
+	{
+		"type": "subclass",
+		"name": "Circle of the Primeval (UA)",
+		"source": "HB",
+		"path": "/classes/druid",
+		"extra": "Druid"
+	},
+	{
+		"type": "subclass",
+		"name": "Circle of Stars (UA)",
+		"source": "HB",
+		"path": "/classes/druid",
+		"extra": "Druid"
+	},
+	{
+		"type": "subclass",
+		"name": "Circle of Twilight (UA)",
+		"source": "HB",
+		"path": "/classes/druid",
+		"extra": "Druid"
+	},
+	{
+		"type": "subclass",
+		"name": "Wild Shape Forms",
+		"source": "HB",
+		"path": "/classes/druid",
+		"extra": "Druid"
+	},
+	{
+		"type": "subclass",
+		"name": "Circle of Wildfire (UA)",
+		"source": "HB",
+		"path": "/classes/druid",
+		"extra": "Druid"
+	},
+	{
+		"type": "subclass",
+		"name": "Arcane Archer Revised (UA)",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Arcane Archer (UA)",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Brute",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Cavalier (UA)",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Gunslinger (HB)",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Knight",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Monster Hunter",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Psi Knight",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Psychic Warrior",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Renegade",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Rune Knight (UA)",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Samurai (UA)",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Scout",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Sharpshooter",
+		"source": "HB",
+		"path": "/classes/fighter",
+		"extra": "Fighter"
+	},
+	{
+		"type": "subclass",
+		"name": "Way of the Ascendant Dragon (UA)",
+		"source": "HB",
+		"path": "/classes/monk",
+		"extra": "Monk"
+	},
+	{
+		"type": "subclass",
+		"name": "Way of the Astral Self (UA)",
+		"source": "HB",
+		"path": "/classes/monk",
+		"extra": "Monk"
+	},
+	{
+		"type": "subclass",
+		"name": "Way of the Cobalt Soul",
+		"source": "HB",
+		"path": "/classes/monk",
+		"extra": "Monk"
+	},
+	{
+		"type": "subclass",
+		"name": "Kensei (UA)",
+		"source": "HB",
+		"path": "/classes/monk",
+		"extra": "Monk"
+	},
+	{
+		"type": "subclass",
+		"name": "Way of the Living Weapon (HB)",
+		"source": "HB",
+		"path": "/classes/monk",
+		"extra": "Monk"
+	},
+	{
+		"type": "subclass",
+		"name": "Way of Mercy (UA)",
+		"source": "HB",
+		"path": "/classes/monk",
+		"extra": "Monk"
+	},
+	{
+		"type": "subclass",
+		"name": "Way of the Soul Knife (HB)",
+		"source": "HB",
+		"path": "/classes/monk",
+		"extra": "Monk"
+	},
+	{
+		"type": "subclass",
+		"name": "Way of Tranquility",
+		"source": "HB",
+		"path": "/classes/monk",
+		"extra": "Monk"
+	},
+	{
+		"type": "subclass",
+		"name": "Oath of the Guardian",
+		"source": "HB",
+		"path": "/classes/paladin",
+		"extra": "Paladin"
+	},
+	{
+		"type": "subclass",
+		"name": "Oath of Heroism (UA)",
+		"source": "HB",
+		"path": "/classes/paladin",
+		"extra": "Paladin"
+	},
+	{
+		"type": "subclass",
+		"name": "Oath of the Open Sea",
+		"source": "HB",
+		"path": "/classes/paladin",
+		"extra": "Paladin"
+	},
+	{
+		"type": "subclass",
+		"name": "Oath of Redemption (UA)",
+		"source": "HB",
+		"path": "/classes/paladin",
+		"extra": "Paladin"
+	},
+	{
+		"type": "subclass",
+		"name": "Oath of Treachery (UA)",
+		"source": "HB",
+		"path": "/classes/paladin",
+		"extra": "Paladin"
+	},
+	{
+		"type": "subclass",
+		"name": "Oath of the Watchers (UA)",
+		"source": "HB",
+		"path": "/classes/paladin",
+		"extra": "Paladin"
+	},
+	{
+		"type": "subclass",
+		"name": "Beast Master Conclave",
+		"source": "PHB",
+		"path": "/classes/ranger",
+		"extra": "Ranger"
+	},
+	{
+		"type": "subclass",
+		"name": "Deep Stalker",
+		"source": "HB",
+		"path": "/classes/ranger",
+		"extra": "Ranger"
+	},
+	{
+		"type": "subclass",
+		"name": "Drakewarden (UA)",
+		"source": "HB",
+		"path": "/classes/ranger",
+		"extra": "Ranger"
+	},
+	{
+		"type": "subclass",
+		"name": "Fey Wanderer (UA)",
+		"source": "HB",
+		"path": "/classes/ranger",
+		"extra": "Ranger"
+	},
+	{
+		"type": "subclass",
+		"name": "Gloom Stalker Conclave",
+		"source": "XGE",
+		"path": "/classes/ranger",
+		"extra": "Ranger"
+	},
+	{
+		"type": "subclass",
+		"name": "Horizon Walker Conclave",
+		"source": "XGE",
+		"path": "/classes/ranger",
+		"extra": "Ranger"
+	},
+	{
+		"type": "subclass",
+		"name": "Hunter Conclave",
+		"source": "PHB",
+		"path": "/classes/ranger",
+		"extra": "Ranger"
+	},
+	{
+		"type": "subclass",
+		"name": "Monster Slayer (UA)",
+		"source": "HB",
+		"path": "/classes/ranger",
+		"extra": "Ranger"
+	},
+	{
+		"type": "subclass",
+		"name": "Monster Slayer Conclave",
+		"source": "XGE",
+		"path": "/classes/ranger",
+		"extra": "Ranger"
+	},
+	{
+		"type": "subclass",
+		"name": "Primeval Guardian",
+		"source": "HB",
+		"path": "/classes/ranger",
+		"extra": "Ranger"
+	},
+	{
+		"type": "subclass",
+		"name": "Swarmkeeper (UA)",
+		"source": "HB",
+		"path": "/classes/ranger",
+		"extra": "Ranger"
+	},
+	{
+		"type": "subclass",
+		"name": "Phantom (UA)",
+		"source": "HB",
+		"path": "/classes/rogue",
+		"extra": "Rogue"
+	},
+	{
+		"type": "subclass",
+		"name": "Revived",
+		"source": "HB",
+		"path": "/classes/rogue",
+		"extra": "Rogue"
+	},
+	{
+		"type": "subclass",
+		"name": "Soulknife Revisited",
+		"source": "HB",
+		"path": "/classes/rogue",
+		"extra": "Rogue"
+	},
+	{
+		"type": "subclass",
+		"name": "Wild Card",
+		"source": "HB",
+		"path": "/classes/rogue",
+		"extra": "Rogue"
+	},
+	{
+		"type": "subclass",
+		"name": "Aberrant Mind (UA)",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "Clockwork Soul (UA)",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "Favored Soul Revisited (UA)",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "Favored Soul (UA)",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "Giant Soul",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "Lunar Magic (UA)",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "Phoenix Sorcery",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "Psionic Soul",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "Pyromancy",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "Runechild (HB)",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "Sea Sorcery",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "Shadow",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "Stone Sorcery",
+		"source": "HB",
+		"path": "/classes/sorcerer",
+		"extra": "Sorcerer"
+	},
+	{
+		"type": "subclass",
+		"name": "The Celestial (UA)",
+		"source": "HB",
+		"path": "/classes/warlock",
+		"extra": "Warlock"
+	},
+	{
+		"type": "subclass",
+		"name": "Eldritch Invocations",
+		"source": "PHB",
+		"path": "/classes/warlock",
+		"extra": "Warlock"
+	},
+	{
+		"type": "subclass",
+		"name": "Ghost In The Machine (UA)",
+		"source": "HB",
+		"path": "/classes/warlock",
+		"extra": "Warlock"
+	},
+	{
+		"type": "subclass",
+		"name": "The Hexblade (UA)",
+		"source": "HB",
+		"path": "/classes/warlock",
+		"extra": "Warlock"
+	},
+	{
+		"type": "subclass",
+		"name": "The Kraken (HB)",
+		"source": "HB",
+		"path": "/classes/warlock",
+		"extra": "Warlock"
+	},
+	{
+		"type": "subclass",
+		"name": "Lurker in the Deep (UA)",
+		"source": "HB",
+		"path": "/classes/warlock",
+		"extra": "Warlock"
+	},
+	{
+		"type": "subclass",
+		"name": "The Noble Genie (UA)",
+		"source": "HB",
+		"path": "/classes/warlock",
+		"extra": "Warlock"
+	},
+	{
+		"type": "subclass",
+		"name": "The Raven Queen",
+		"source": "HB",
+		"path": "/classes/warlock",
+		"extra": "Warlock"
+	},
+	{
+		"type": "subclass",
+		"name": "The Seeker",
+		"source": "HB",
+		"path": "/classes/warlock",
+		"extra": "Warlock"
+	},
+	{
+		"type": "subclass",
+		"name": "The Undead (UA)",
+		"source": "HB",
+		"path": "/classes/warlock",
+		"extra": "Warlock"
+	},
+	{
+		"type": "subclass",
+		"name": "The Undying Light",
+		"source": "HB",
+		"path": "/classes/warlock",
+		"extra": "Warlock"
+	},
+	{
+		"type": "subclass",
+		"name": "Artificer (UA)",
+		"source": "HB",
+		"path": "/classes/wizard",
+		"extra": "Wizard"
+	},
+	{
+		"type": "subclass",
+		"name": "Blood Magic",
+		"source": "HB",
+		"path": "/classes/wizard",
+		"extra": "Wizard"
+	},
+	{
+		"type": "subclass",
+		"name": "School of Invention (UA)",
+		"source": "HB",
+		"path": "/classes/wizard",
+		"extra": "Wizard"
+	},
+	{
+		"type": "subclass",
+		"name": "Lore Mastery",
+		"source": "HB",
+		"path": "/classes/wizard",
+		"extra": "Wizard"
+	},
+	{
+		"type": "subclass",
+		"name": "Onomancy (UA)",
+		"source": "HB",
+		"path": "/classes/wizard",
+		"extra": "Wizard"
+	},
+	{
+		"type": "subclass",
+		"name": "Order Of Scribes (UA)",
+		"source": "HB",
+		"path": "/classes/wizard",
+		"extra": "Wizard"
+	},
+	{
+		"type": "subclass",
+		"name": "Psionics (UA)",
+		"source": "HB",
+		"path": "/classes/wizard",
+		"extra": "Wizard"
+	},
+	{
+		"type": "subclass",
+		"name": "Runecrafter (UA)",
+		"source": "HB",
+		"path": "/classes/wizard",
+		"extra": "Wizard"
+	},
+	{
+		"type": "subclass",
+		"name": "Technomancy (UA)",
+		"source": "HB",
+		"path": "/classes/wizard",
+		"extra": "Wizard"
+	},
+	{
+		"type": "subclass",
+		"name": "Theurgy (UA)",
+		"source": "HB",
+		"path": "/classes/wizard",
+		"extra": "Wizard"
+	},
+	{
+		"type": "subclass",
+		"name": "Archivist UA",
+		"source": "HB",
+		"path": "/classes/artificer",
+		"extra": "Artificer"
+	},
+	{
+		"type": "subclass",
+		"name": "Armorer (UA)",
+		"source": "HB",
+		"path": "/classes/artificer",
+		"extra": "Artificer"
+	},
+	{
+		"type": "subclass",
+		"name": "Forge Adept (HB)",
+		"source": "HB",
+		"path": "/classes/artificer",
+		"extra": "Artificer"
+	},
+	{
+		"type": "subclass",
+		"name": "Artificer Infusions",
+		"source": "HB",
+		"path": "/classes/artificer",
+		"extra": "Artificer"
+	},
+	{
+		"type": "subclass",
+		"name": "Mastermaker (HB)",
+		"source": "HB",
+		"path": "/classes/artificer",
+		"extra": "Artificer"
+	},
+	{
+		"type": "subclass",
+		"name": "Maverick (HB)",
+		"source": "HB",
 		"path": "/classes/artificer",
 		"extra": "Artificer"
 	},
@@ -18466,6 +19908,1973 @@
 		"extra": "legendary"
 	},
 	{
+		"type": "magic-item",
+		"name": "Absorbing Tattoo",
+		"source": "TCE",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Acheron Blade",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Adamantine Armor",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "but not hide)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Adaptive Helm",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Agony",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement by a non-good character)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Acquisitions Incorporated",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "All-Purpose Tool",
+		"source": "TCE",
+		"path": "/magic-items",
+		"extra": "uncommon (+1)"
+	},
+	{
+		"type": "magic-item",
+		"name": "All Items",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Ammunition, +1, +2, or +3",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "uncommon (+1)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Amulet of the Devout",
+		"source": "TCE",
+		"path": "/magic-items",
+		"extra": "uncommon (+1)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Amulet of the Shield",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "???"
+	},
+	{
+		"type": "magic-item",
+		"name": "Antimagic Armor",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "medium"
+	},
+	{
+		"type": "magic-item",
+		"name": "Arcane Grimoire",
+		"source": "TCE",
+		"path": "/magic-items",
+		"extra": "uncommon (+1)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Armblade",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "common (requires attunement by a warforged)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Armor, +1, +2, or +3",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "medium"
+	},
+	{
+		"type": "magic-item",
+		"name": "Armor Of Fungal Spores",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Armor of Gleaming",
+		"source": "XGE",
+		"path": "/magic-items",
+		"extra": "common"
+	},
+	{
+		"type": "magic-item",
+		"name": "Armor of Resistance",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "medium"
+	},
+	{
+		"type": "magic-item",
+		"name": "Armor of Safeguarding",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "Very Rare (Requires Attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Armor Of The Fallen",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "uncommon (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Armor of the Valiant Soul",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Armor of Vulnerability",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Armor Of Weightlessness",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "medium"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Armor",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Arrow of Slaying",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "very rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Bag Of Bounty",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Bag of Tricks",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Band of Loyalty",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "common (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Band of Shrouds",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Banshee's Veil",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon (requires attunement by a spellcaster)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Barrier Tattoo",
+		"source": "TCE",
+		"path": "/magic-items",
+		"extra": "rarity varies (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Belabor",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Belt of Giant Strength",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rarity varies (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Berserker Axe",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Bilgewater Cutlass",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Blade of Broken Mirrors",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "artifact (requires attunement by a humanoid)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Blade of Ledros",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Blade of the Medusa",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Blazing Bowstring",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "???"
+	},
+	{
+		"type": "magic-item",
+		"name": "Blightstaff",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "???"
+	},
+	{
+		"type": "magic-item",
+		"name": "Blinkback Belt",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "???"
+	},
+	{
+		"type": "magic-item",
+		"name": "Bloodseeker Ammunition",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "very rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Bloodshed Blade",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Bloodwell Vial",
+		"source": "TCE",
+		"path": "/magic-items",
+		"extra": "uncommon (+1)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: The Book of Many Things",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Boots of Haste",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Boots of Swiftness",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Boots of the Vigilant",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Bow Of Conflagration",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Bow Of Melodies",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Cabal's Ruin",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Carpet of Flying",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "very rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Cast-Off Armor",
+		"source": "XGE",
+		"path": "/magic-items",
+		"extra": "medium"
+	},
+	{
+		"type": "magic-item",
+		"name": "Cataclysm Bolts",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "very rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Chain of Returning",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "???"
+	},
+	{
+		"type": "magic-item",
+		"name": "Chromatic Rose",
+		"source": "WBtW",
+		"path": "/magic-items",
+		"extra": "Rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Cincture of the Stone King",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Circlet of Barbed Vision",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement by a non-good character)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Circlet of Wisdom",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Clarota's Helmet",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "???"
+	},
+	{
+		"type": "magic-item",
+		"name": "Clockwork Armor",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Candlekeep Mysteries",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Coat of the Crest",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Condemner",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Corecut Dagger",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Corpse Slayer",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Curse of Strahd",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Craven Edge",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Crystal Blade",
+		"source": "FToD",
+		"path": "/magic-items",
+		"extra": "Rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dagger of Denial",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dancing Sword",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Danoth's Visor",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Daoud's Wondrous Lantern",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "artifact (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Divine Contention",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dead Man's Plate",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Deathwalker's Ward",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Defender",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Demon Skin",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "Rare (Requires Attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Devastation Orb",
+		"source": "PotA",
+		"path": "/magic-items",
+		"extra": "very rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Dungeon Master's Guide",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Doublet of Dramatic Demise",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "common"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Dragon+ Magazine",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dragon Mask",
+		"source": "TftD",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dragon Scale Mail",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dragon Slayer",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dragon-Touched Focus",
+		"source": "FToD",
+		"path": "/magic-items",
+		"extra": "Rarity Varies (Requires Attunement by a Spellcaster)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dragon Vessel",
+		"source": "FToD",
+		"path": "/magic-items",
+		"extra": "Rarity Varies (Requires Attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dragon Wing Bow",
+		"source": "FToD",
+		"path": "/magic-items",
+		"extra": "Rare (Requires Attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dragonhide Belt",
+		"source": "FToD",
+		"path": "/magic-items",
+		"extra": "uncommon (+1)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dragonlance",
+		"source": "FToD",
+		"path": "/magic-items",
+		"extra": "Legendary (Requires Attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dragon's Wrath Weapon",
+		"source": "FToD",
+		"path": "/magic-items",
+		"extra": "Rarity Varies (Requires Attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Dried Leech",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Dragonlance: Shadow of the Dragon Queen",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Earthboard",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Echo Stone",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Explorer's Guide to Wildemount",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Elemental Gem",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Ephixis, Bow of Nyela",
+		"source": "MOoT",
+		"path": "/magic-items",
+		"extra": "artifact (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Eye and Hand of Vecna",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "artifact (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Fate Dealer's Deck",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "varies (requires attunement by a Cleric or Paladin)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Fedifensor",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement by a creature of lawful good alignment)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Fenthras",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Feywrought Armor",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "medium"
+	},
+	{
+		"type": "magic-item",
+		"name": "Figurine of Wondrous Power",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rarity by figurine"
+	},
+	{
+		"type": "magic-item",
+		"name": "Firebrand Warhammer",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Flame Tongue",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Flamefriend Lantern",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Flask of Perpetual Booze",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Fool's Blade",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Forcebreaker Weapon",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "very rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Frost Brand",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Fizban's Treasury of Dragons",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Gambler's Blade",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Gate Stone",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "???"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Guildmaster's Guide to Ravnica",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Giant Slayer",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Glamerweave",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "common or uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Glimmering Moonbow",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Gloomwrought Armor",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "medium"
+	},
+	{
+		"type": "magic-item",
+		"name": "Glove of Blasting",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Ghosts of Saltmarsh",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Graz'tchar, the Decadent End",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Grimoire Infinitus",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement by a wizard)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Grovelthrash",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "artifact (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Guild Keyrune",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rarity by keyrune (requires attunement by a member of the relevant guild)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Guild Signet",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Hand Cone of Clarity",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "???"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Dungeons and Dragons - Honor Among Thieves",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Hellfire Weapon",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Hide of the Feral Guardian",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Holy Avenger",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement by a paladin)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Homebrew Items",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Honor's Last Stand",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement by a non-evil character)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Horn of Valhalla",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rare (silver or brass)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Iggwylv's Horn",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "Rare (Requires Attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Imbued Wood Focus",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "common (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Infernal Machine Rebuild",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Inescapable Lash",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Infiltrator's Key",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Inquisitive's Goggles",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Instrument of the Bards",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rarity varies (requires attunement by a bard)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Ioun Stone",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rarity varies (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Jewel of Three Prayers",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Journeys through the Radiant Citadel",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Keen Dagger",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Keys from the Golden Vault",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Kiss of the Changebringer",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Lantern of Tracking",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "common"
+	},
+	{
+		"type": "magic-item",
+		"name": "Lash of Shadows",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "artifact (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Last Stand Armor",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "very rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Living Armor",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Lost Laboratory of Kwalish",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Lost Mine of Phandelver",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Longbow of the Sky Sentinel",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Luck Blade",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Stone of Good Luck (Luckstone)",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "uncommon (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Mace of the Black Crown",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "artifact (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Maelstrom Gloves",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magician's Judge",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Mantle of the Tempest",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement by a creature that has earned the title “Voice of the Tempest”)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Manual of Golems",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "very rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Mariner's Armor",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "medium"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Monstrous Compendium Volume 2 - Dragonlance Creatures",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Mind Blade",
+		"source": "VGM",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement by a specific individual)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Mind Carapace Armor",
+		"source": "VGM",
+		"path": "/magic-items",
+		"extra": "uncommon (requires attunement by a specific individual)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Mind Crystal",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "Rarity Varies"
+	},
+	{
+		"type": "magic-item",
+		"name": "Mirror of Infinite Transpondence",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "very rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Mithral Armor",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Mizzium Armor",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "but not hide)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Molten Bronze Skin",
+		"source": "MOoT",
+		"path": "/magic-items",
+		"extra": "half plate"
+	},
+	{
+		"type": "magic-item",
+		"name": "Moon Sickle",
+		"source": "TCE",
+		"path": "/magic-items",
+		"extra": "uncommon (+1)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Moon-Touched Sword",
+		"source": "XGE",
+		"path": "/magic-items",
+		"extra": "common"
+	},
+	{
+		"type": "magic-item",
+		"name": "Moonhammer",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (???)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Mythic Odysseys of Theros",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Mythcarver",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement by a bard)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Nine Lives Stealer",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Oceanic Weapon",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Out of the Abyss",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Orb of Shielding",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "common (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Phandelver and Below - The Shattered Obelisk",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Piwafwi",
+		"source": "OotA",
+		"path": "/magic-items",
+		"extra": "uncommon (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Plate of the Dawnmartyr",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Princes of the Apocalypse",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Polymorph Blade",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Potion of Giant Strength",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rarity varies"
+	},
+	{
+		"type": "magic-item",
+		"name": "Potion of Mind Control",
+		"source": "TftYP",
+		"path": "/magic-items",
+		"extra": "rarity varies"
+	},
+	{
+		"type": "magic-item",
+		"name": "Potion of Resistance",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Potion",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Powder Keg",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "common"
+	},
+	{
+		"type": "magic-item",
+		"name": "Prehistoric Figurines of Wondrous Power",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "Varies"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Planescape - Adventures in the Multiverse",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Pyremaul",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Tales from the Infinite Staircase",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Quaal's Feather Token",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Raven's Slumber",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "very rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Rhythm Maker's Drum",
+		"source": "TCE",
+		"path": "/magic-items",
+		"extra": "uncommon (+1)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Ring of Elemental Command",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Ring of Resistance",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Ring of Spell Splitting",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Ring",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Rings of Shared Suffering",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Robe of Flaying",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "???"
+	},
+	{
+		"type": "magic-item",
+		"name": "Rod of Hand Warming",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "???"
+	},
+	{
+		"type": "magic-item",
+		"name": "Rod of Mercurial Form",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Rod of the Pact Keeper, +1, +2, +3",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "uncommon (+1)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Rod of the Solitary Scout",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Rod",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: The Rise of Tiamat",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Ruidium Armor",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Ruidium Weapon",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Ruin's Wake",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "artifact (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Rune Magic",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Sage's Signet",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "varies (requires attunement by a Spellcaster)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Spelljammer: Adventures in Space",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Scaled Ornament",
+		"source": "FToD",
+		"path": "/magic-items",
+		"extra": "Rarity Varies (Requires Attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Strixhaven: A Curriculum of Chaos",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Scroll of Protection",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Scroll",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Sleeping Dragon's Wake",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Sekolahian Worshipping Statuette",
+		"source": "GoS",
+		"path": "/magic-items",
+		"extra": "common"
+	},
+	{
+		"type": "magic-item",
+		"name": "Serpent Belt",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "???"
+	},
+	{
+		"type": "magic-item",
+		"name": "Shard Solitaire",
+		"source": "KftGV",
+		"path": "/magic-items",
+		"extra": "Legendary (Requires Attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Shield, +1, +2, +3",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "uncommon (+1)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Shield of Retribution",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Silken Spite",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "artifact (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Skingorger",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Storm King's Thunder",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Skysail",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Smoldering Armor",
+		"source": "XGE",
+		"path": "/magic-items",
+		"extra": "common"
+	},
+	{
+		"type": "magic-item",
+		"name": "Spell Gem",
+		"source": "OotA",
+		"path": "/magic-items",
+		"extra": "rarity varies (attunement optional)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Spell Scroll",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rarity varies"
+	},
+	{
+		"type": "magic-item",
+		"name": "Spellwrought Tattoo",
+		"source": "TCE",
+		"path": "/magic-items",
+		"extra": "rarity varies"
+	},
+	{
+		"type": "magic-item",
+		"name": "Spire of Conflux",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement by a spellcaster)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Staff",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Star Razor",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Starshot Crossbow",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Stormgirdle",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Stormrider Boots",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Summer's Dance",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Sun Pellet",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "very rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Sword of Life Stealing",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Sword of Sharpness",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Sword of the Planes",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Sword of Vengeance",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "uncommon (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Sword of Wounding",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Tasha's Creeping Keepboat",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "Very Rare (Requires Attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Tasha's Cauldron of Everything",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "The Bloody End",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "artifact (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Tinkertop Bolt Blaster 1000",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Titanstone Knuckles",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Tomb of Annihilation",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Tyranny of Dragons",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Tales from the Yawning Portal",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Vecna - Eve of Ruin",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Verminshroud",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Volo's Guide to Monsters",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Vicious Weapon",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Vorpal Sword",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Van Richten's Guide to Ravenloft",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Walloping Ammunition",
+		"source": "XGE",
+		"path": "/magic-items",
+		"extra": "common"
+	},
+	{
+		"type": "magic-item",
+		"name": "Wand of the War Mage",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "uncommon (+1)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Wand",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Waste Hunter Blade",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "??? (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: The Wild Beyond the Witchlight",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Waterdeep: Dragon Heist",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Waterdeep: Dungeon of the Mad Mage",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Weapon, +1, +2, or +3",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "uncommon (+1)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Weapon of Certain Death",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "rare"
+	},
+	{
+		"type": "magic-item",
+		"name": "Weapon of Throne's Command",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "very rare (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Weapon of Warning",
+		"source": "DMG",
+		"path": "/magic-items",
+		"extra": "uncommon (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Weapon",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Wayfarer's Guide to Eberron",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Whisper",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Will of the Talon",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "artifact (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Winged Ammunition",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "uncommon"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Wondrous Items",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Wraps of Dyamak",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement by a monk)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Wraps Of Unarmed Prowess",
+		"source": "TBoMT",
+		"path": "/magic-items",
+		"extra": "varies"
+	},
+	{
+		"type": "magic-item",
+		"name": "Wreath of the Prism",
+		"source": "EGW",
+		"path": "/magic-items",
+		"extra": "legendary (requires attunement)"
+	},
+	{
+		"type": "magic-item",
+		"name": "Magic Items: Xanathar's Guide to Everything",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "unknown"
+	},
+	{
+		"type": "magic-item",
+		"name": "Zephyr Armor",
+		"source": "HB",
+		"path": "/magic-items",
+		"extra": "Rare (Requires Attunement)"
+	},
+	{
 		"type": "equipment",
 		"name": "Alchemist's Supplies",
 		"source": "PHB",
@@ -22211,6 +25620,650 @@
 		"extra": "G"
 	},
 	{
+		"type": "feat",
+		"name": "Acrobat (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Adept of the Black Robes (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Adept Of The Red Robes (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Adept Of The White Robes (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Aerenia Halflife",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Agent Of Order (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Alchemist (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Animal Handler (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Arcanist (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Baleful Scion (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Barbed Hide (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Blade Mastery (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Brawny (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Burglar (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Cartomancer (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Cohort of Chaos (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Critter Friend (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Cruel (HB)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Diplomat (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Divine Communications (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Divinely Favored (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Dragon Wings (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Dragonmark (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Elemental Touched (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Ember Of The Fire Giant (Revised UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Ember of the Fire Giant (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Empathic (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Everybody's Friend (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Fell Handed",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Flail Mastery (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Flash Recall (HB)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Fury Of The Frost Giant (Revised UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Fury of the Frost Giant (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Gourmand (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Greater Dragonmark (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Grudge Bearer (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Guile of The Cloud Giant (Revised UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Guile of the Cloud Giant (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Historian (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Human Determination (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Initiate of High Sorcery (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Investigator (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Keenness of The Stone Giant (Revised UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Keenness of the Stone Giant (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Knight Of The Crown (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Knight Of The Rose (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Knight Of The Sword (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Master Of Disguise (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Medic (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Menacing (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Metabolic Control (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Mystic Conflux (HB)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Naturalist (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Orcish Aggression (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Outlands Envoy (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Outsized Might (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Perceptive (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Performer (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Planar Wanderer (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Practiced Expert (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Quick Fingered (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Remarkable Recovery (HB)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Righteous Heritor (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Rune Carver Adept (Revised UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Rune Carver Adept (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Rune Carver Apprentice (Revised UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Rune Carver Apprentice (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Scion Of Elemental Air (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Scion Of Elemental Earth (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Scion Of Elemental Fire (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Scion Of Elemental Water (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Scion of the Outer Planes (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Shield Training (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Silver Tongued (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Soul of The Storm Giant (Revised UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Soul of the Storm Giant (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Spear Mastery (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Spelldriver (HB)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Squire of Solamnia (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Stealthy (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Strike of the Giants (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Survivalist (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Tandem Tactician (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Theologian (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Thrown Arms Master (HB)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Tower Of Iron Will (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Tracker (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Vigor of The Hill Giant (Revised UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Vigor of the Hill Giant (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Vital Sacrifice (HB)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Wild Talent (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
+		"type": "feat",
+		"name": "Wonder Maker (UA)",
+		"source": "HB",
+		"path": "/feats",
+		"extra": ""
+	},
+	{
 		"type": "race",
 		"name": "Aarakocra",
 		"source": "DMG",
@@ -23331,6 +27384,1378 @@
 		"extra": "classic"
 	},
 	{
+		"type": "race",
+		"name": "Aarakocra (EEPC)",
+		"source": "EEPC",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Aarakocra (MPMotM)",
+		"source": "MPMM",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Court Aasimar (Homebrew)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Aasimar Ee",
+		"source": "VGM",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Fallen Aasimar (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Variant Aasimar, Fernian (Homebrew)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Variant Aasimar, Mabaran (Homebrew)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Aasimar (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Protector Aasimar (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Scourge Aasimar (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Seeker Aasimar (Homebrew)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Aasimar (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Autognome (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Aven Features Core",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Aven Hawk Headed",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Aven Ibis Headed",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Bugbear (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Bugbear (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Centaur (GGR)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Centaur (MOT)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Centaur (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Changeling (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Changeling (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Deep Gnome (EEPC)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Deep Gnome (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Dhakanni Ghaaldar, Guide (Homebrew)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Dhakanni Ghaaldar, Soldier (Homebrew)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Dhakanni Ghaal'dar Hobgoblins (Homebrew)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Dhampir (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Dhampir (VRGR)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Chromatic Dragonborn (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Chromatic Dragonborn (FTD)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Draconblood Dragonborn (EGW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Gem Dragonborn (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Gem Dragonborn (FTD)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Metallic Dragonborn (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Metallic Dragonborn (FTD)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Dragonborn (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Dragonborn Ravenite",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Duergar (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Duergar (SCAG)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Hill Dwarf (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Dwarf Mark Of Warding (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Mountain Dwarf (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Dwarf (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Ruinbound Dwarf (Homebrew)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Eladrin (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Eladrin (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Aereni Elf (Homebrew)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Avariel Elf (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Bishtahar/Tirahar Elf (Kaladesh)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Dark Elf/Drow (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Grugach Elf (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "High Elf (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Juraga Elf (Zendikar)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Elf Mark Of Shadow (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Mul Daya Elf (Zendikar)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Pallid Elf (EGW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Elf (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Tajuru Elf (Zendkiar)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Vadahar Elf (Kaladesh)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Wood Elf (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Elf (Zendkiar)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Fairy (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Fairy (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Fairy (WBW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Firbolg (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Firbolg (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Air Genasi (EEPC)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Air Genasi (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Earth Genasi (EEPC)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Earth Genasi (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Fire Genasi (EEPC)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Fire Genasi (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Water Genasi (EEPC)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Water Genasi (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Giff (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Githyanki (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Githyanki (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Githzerai (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Githzerai (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Forest Gnome (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Gnome Mark Of Scribing (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Gnome (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Rock Gnome (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Dankwood Goblin (AWM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Goblin (Ixalan)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Goblin (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Goblin (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Goblin (Zendikar)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Goliath (EEPC)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Goliath (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Grung (OGA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Hadozee (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Half-Elf Mark Of Detection (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Half-Elf Mark Of Storm (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Half Elf (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Half-Orc Mark Of Finding (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Half Orc (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Ghostwise Halfling (SCAG)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Lightfoot Halfling (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Lotusden Halfling (EGW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Halfling Mark Of Healing (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Halfling Mark Of Hospitality (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Halfling (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Stout Halfling (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Harengon (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Harengon (WBW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Hexblood (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Hexblood (VRGR)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Hobgoblin (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Hobgoblin of the Feywild (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Hobgoblin (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Gavony Human (Innistrad)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Keldon Human (Dominaria)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Kessig Human (Innistrad)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Human Mark Of Finding (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Human Mark Of Handling (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Human Mark Of Making (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Human Mark Of Passage (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Human Mark Of Sentinel (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Nephalia Human (Innistrad)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Human (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Stensia Human (Innistrad)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Variant Human",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Kalashtar (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Kender (Revised UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Kender (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Kenku (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Kenku (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Kobold (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Kobold (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Kobold (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Lizardfolk (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Lizardfolk (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Locathah (LR)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Merfolk Ixalan",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Merfolk Zendikar",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Minotaur (GGR)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Minotaur Krynn (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Minotaur (MOT)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Minotaur (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Orc (EGW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Orc (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Orc (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Orc (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Owlfolk (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Owlin (SCC)",
+		"source": "SaCoC",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Plasmoid (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Rabbitfolk (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Reborn (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Reborn (VRGR)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Satyr (MOT)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Satyr (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Sea Elf (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Sea Elf (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Shadar-Kai (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Shadar-Kai (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Shifter: Beasthide (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Shifter: Cliffwalk (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Shifter: Longtooth (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Shifter (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Shifter: Razorclaw (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Shifter: Swiftstride (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Shifter: Wildhunt (E:RLW)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Tabaxi (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Tabaxi (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Thri-Kreen (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Abyssal Tiefling (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Asmodeus Tiefling (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Baalzebul Tiefling (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Dispater Tiefling (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Fierna Tiefling (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Glasya Tiefling (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Levistus Tiefling (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Mammon Tiefling (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Mephistopheles Tiefling (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Tiefling (PHB)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Variant Tiefling (SCAG)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Zariel Tiefling (MTF)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Tortle (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Tortle (TTP)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Triton (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Triton (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Vampire Ixalan",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Vampire Zendikar",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Vedalken (GGR)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Vedalken Kaladesh",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Verdan (AI)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Viashino (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Warforged Envoy (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Warforged Features (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Warforged Juggernaut (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Warforged Skirmisher (UA)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Yuan-Ti (MPMM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
+		"type": "race",
+		"name": "Yuan-Ti (VGM)",
+		"source": "HB",
+		"path": "/races",
+		"extra": "classic"
+	},
+	{
 		"type": "background",
 		"name": "Aberrant Heir",
 		"source": "EFA",
@@ -24354,6 +29779,186 @@
 		"type": "background",
 		"name": "Zhentarim Mercenary",
 		"source": "FRHoF",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Ashari (HB)",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Black Fist Double Agent",
+		"source": "CoS",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Caravan Specialist",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Cormanthor Refugee",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Dissenter",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Dragon Casualty",
+		"source": "CoS",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Earthspur Miner",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Gate Urchin",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Gate Warden (UA)",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Giant Foundling (UA)",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Harborfolk",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Hillsfar Merchant",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Hillsfar Smuggler",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Iron Route Bandit",
+		"source": "CoS",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Knight of Solamnia (UA)",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Mage of High Sorcery (UA)",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Mulmaster Aristocrat",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Optional Background Features",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Phlan Insurgent",
+		"source": "CoS",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Phlan Refugee",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Planar Philosopher (UA)",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Planar Philospher",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Rune Carver (UA)",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Secret Identity",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Shade Fanatic",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Stojanow Prisoner",
+		"source": "CoS",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Sword Coast Heroic Chronicle",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Ticklebelly Nomad",
+		"source": "CoS",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Trade Sheriff",
+		"source": "HB",
+		"path": "/backgrounds"
+	},
+	{
+		"type": "background",
+		"name": "Wildemount Heroic Chronicle",
+		"source": "HB",
 		"path": "/backgrounds"
 	},
 	{

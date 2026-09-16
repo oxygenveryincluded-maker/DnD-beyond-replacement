@@ -13300,5 +13300,2433 @@
 			}
 		],
 		"page": 41
+	},
+	{
+		"name": "Acrobat (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Dexterity score by 1, to a maximum of 20.",
+					"You gain proficiency in the Acrobatics skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"As a bonus action, you can make a DC 15 Dexterity (Acrobatics) check. If you succeed, difficult terrain doesn’t cost you extra movement until the end of the current turn."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You become more nimble, gaining the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Adept of the Black Robes (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Ambitious Magic.</b> You learn one 2nd-level spell of your choice. The 2nd-level spell must be from the Evocation or Necromancy school of magic. You can cast this feat’s 2nd-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using spell slots you have of the appropriate level. The spell’s spellcasting ability is the one chosen when you gained the Initiate of High Sorcery feat.",
+					"<b>Life Channel.</b> You can channel your lifeforce into the power of your magic. When a creature you can see within 60 feet of you fails on a saving throw against a spell you cast, you can expend a number of Hit Dice equal to the level of the spell. Roll a number of Hit Die equal to half the number of Hit Dice expended (rounded up) and the damage the triggering creature takes increases by an amount equal to the total rolled of those dice."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, High Sorcery Initiate Feat, Any Non-Good Alignment</i> Your ambition and loyalty to the Order of the Black Robes has been recognized, granting you these benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Adept Of The Red Robes (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Insightful Magic.</b> You learn one 2nd-level spell of your choice. The 2nd-level spell must be from the Divination or Transmutation school of magic. You can cast this feat’s 2nd-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using spell slots you have of the appropriate level. The spell’s spellcasting ability is the one chosen when you gained the Initiate of High Sorcery feat.",
+					"<b>Magical Balance.</b> When you make an attack roll, an ability check, or a saving throw, and roll a 9 or lower on the d20, you can use your reaction to balance fate and treat the roll as a 10. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, High Sorcery Initiate Feat</i> Your pursuit of truth and dedication to maintaining the balance between all things has been recognized by the Order of the Red Robes, granting you these benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Adept Of The White Robes (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Protective Magic.</b> You learn one 2nd-level spell of your choice. The 2nd-level spell must be from the Abjuration or Conjuration school of magic. You can cast this feat’s 2nd-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using spell slots you have of the appropriate level. The spell’s spellcasting ability is the one chosen when you gained the Initiate of High Sorcery feat.",
+					"<b>Protective Ward.</b> When you or a creature you can see within 30 feet of you takes damage, you can use your reaction to expend a spell slot and weave protective magic around the target. Roll a number of d4s equal to the level of the spell slot expended and reduce the damage the target takes by the total rolled on those dice + your spellcasting ability modifier."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, High Sorcery Initiate Feat, Any Non-Evil Alignment</i> Your oath to use magic to make the world a better place has been recognized by the Order of the White Robes, granting you these benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Aerenia Halflife",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your intelligence or Wisdom score by 1, to a maximum of 20.",
+					"You gain resistance to necrotic and radiant damage, and you have advantage on death saving throws.",
+					"If you cast a spell that inflicts necrotic damage, you can choose to have it deal radiant damage instead."
+				]
+			},
+			{
+				"type": "text",
+				"content": "Prerequisite: Elf (Aereni) You've undergone rituals to bind you to Irian and the Undying Court. Many who undergo this process have a desiccated appearance, similar to a mummy; it's up to you whether you are affected this way. Regardless of your appearance, you gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Agent Of Order (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Ability Score Increase.</b> Increase an ability score of your choice by 1, to a maximum of 20.",
+					"<b>Stasis Strike.</b> Once per turn when you damage a creature you can see within 60 feet of yourself, you can deal an extra 1d8 force damage to the target, and it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + the modifier of the ability score increased by this feat) or be restrained by spectral bindings until the start of your next turn. These bindings manifest as chains, gears, encasing stone, or some other symbol of stasis. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Scion of the Outer Planes (Lawful Outer Plane) Feat</i> You can channel cosmic forces of order that lock the multiverse into patterns. Your actions are your own to choose, but these forces grant you the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Alchemist (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Intelligence score by 1, to a maximum of 20.",
+					"You gain proficiency with alchemist’s supplies. If you are already proficient with them, you double your proficiency bonus to checks you make with them.",
+					"As an action, you can identify one potion within 5 feet of you, as if you had tasted it. You must see the liquid for this benefit to work.",
+					"Over the course of any short rest, you can temporarily improve the potency of one potion of healing of any rarity. To use this benefit, you must have alchemist’s supplies with you, and the potion must be within reach. If the potion is drunk no more than 1 hour after the short rest ends, the creature drinking the potion can forgo the potion’s die roll and regains the maximum number of hit points that the potion can restore."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You have studied the secrets of alchemy and are an expert in its practice, gaining the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Animal Handler (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Wisdom score by 1, to a maximum of 20.",
+					"You gain proficiency in the Animal Handling skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"You can use a bonus action on your turn to command one friendly beast within 60 feet of you that can hear you and that isn’t currently following the command of someone else. You decide now what action the beast will take and where it will move during its next turn, or you issue a general command that lasts for 1 minute, such as to guard a particular area."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You master the techniques needed to train and handle animals. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Arcanist (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Intelligence score by 1, to a maximum of 20.",
+					"You gain proficiency in the Arcana skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"You learn the Prestidigitation and Detect Magic spells. You can cast Detect Magic once without expending a spell slot, and you regain the ability to do so when you finish a long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You study the arcane arts, gaining the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Baleful Scion (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Ability Score Increase.</b> Increase an ability score of your choice by 1, to a maximum of 20.",
+					"<b>Life-Draining Grasp.</b> Once per turn, when you hit a creature with a melee weapon attack, you can also deal necrotic damage to it. The damage equals 1d6 + your proficiency bonus, and you regain a number of hit points equal to this necrotic damage dealt. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Scion of the Outer Planes (Evil Outer Plane) Feat</i> You can channel cosmic forces of evil that cause pain but invigorate your being. You can choose your own actions despite this malign connection. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Barbed Hide (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Constitution or Charisma score by 1, up to a maximum of 20.",
+					"You gain proficiency in the Intimidation skill. If you’re already proficient in it, your proficiency bonus is doubled for any check you make with it.",
+					"As a bonus action, you can cause small barbs to protrude all over your body or cause them to retract. At the start of each of your turns while the barbs are out, you deal 1d6 piercing damage to any creature grappling you or any creature grappled by you."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Tiefling</i> One of your ancestors was a barbed devil or other spiky fiend. Barbs protrude from your head. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Blade Mastery (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"You gain a +1 bonus to attack rolls you make with the weapon.",
+					"On your turn, you can use your reaction to assume a parrying stance, provided you have the weapon in hand. Doing so grants a +1 bonus to your AC until the start of your next turn or until you're not holding the weapon.",
+					"When you make an opportunity attack with the weapon, you have advantage on the attack roll."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You master the shortsword, longsword, scimitar, rapier, and greatsword. You gain the following benefits when using any of them:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Brawny (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Strength score by 1, to a maximum of 20.",
+					"You gain proficiency in the Athletics skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"You count as if you were one size larger for the purpose of determining your carrying capacity."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You become stronger, gaining the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Burglar (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Dexterity score by 1, to a maximum of 20.",
+					"You gain proficiency with thieves’ tools. If you are already proficient with them, you add double your proficiency bonus to checks you make with them."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You pride yourself on your quickness and your close study of certain clandestine activities. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Cartomancer (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Card Focus.</b> You can use a deck of cards as your spellcasting focus. When you use the deck as a focus to cast a spell that deals damage, roll a d4. You gain a bonus to one damage roll of the spell equal to the number rolled. This bonus applies to one creature of your choice that you can see damaged by the spell; you can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.",
+					"<b>Card Tricks.</b> You learn the prestidigitation cantrip and can use it to create illusions that duplicate the effects of stage magic. When you use prestidigitation in this way, you can conceal the verbal and somatic components of the spell as mundane conversation and card-handling.",
+					"<b>Hidden Ace.</b> When you finish a long rest, you can choose one spell you know and imbue it into a card; the chosen spell must have a casting time of 1 action, and its level must be less than or equal to your proficiency bonus. While the card is imbued with the spell, you can use your bonus action to flourish the card and cast the spell within. The card then immediately loses its magic."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level; Sorcerer, Warlock, or Wizard Class</i> You have learned to channel your magic through a deck of playing cards, granting you these benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Cohort of Chaos (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Scion of the Outer Planes (Chaotic Outer Plane) Feat</i> You can channel the cosmic forces of chaos that drive the multiverse toward both freedom and disarray. Your actions are still yours to choose, but you gain these benefits: <b>Ability Score Increase.</b> Increase an ability score of your choice by 1, to a maximum of 20. <b>Chaotic Flare.</b> When you roll a 1 or a 20 on an attack roll or a saving throw, the magic of chaos flows through you. Roll on the Chaotic Flares table to determine what happens. A flare lasts until the end of your next turn, and a new flare can’t occur until after the first flare ends."
+			},
+			{
+				"type": "section",
+				"name": "Chaotic Flares",
+				"entries": [
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"1",
+								"<b>Disruption Field.</b> Waves of energy ripple in a 10-foot sphere centered on you. Every creature other than you that starts its turn in that area, or that moves into that area for the first time on a turn, takes 1d8 force damage."
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"2",
+								"<b>Battle Fury.</b> A creature of your choice that you can see is filled with reckless fury. The creature has advantage on attack rolls and disadvantage on ability checks."
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"3",
+								"<b>Unbound.</b> When you move, you can use some or all of your walking speed to teleport once, along with any equipment you’re wearing or carrying, up to the distance used to an unoccupied space that you can see."
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"4",
+								"<b>Wailing Winds.</b> Howling winds swirl around you in a 60-foot radius. You and any creature in that radius has disadvantage on Wisdom saving throws."
+							]
+						]
+					},
+					{
+						"type": "text",
+						"content": "You can also forcibly release a chaotic flare as a bonus action, rolling on the table as normal to determine the effects. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					}
+				]
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Critter Friend (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"You gain proficiency in the Animal Handling skill. If you’re already proficient in it, your proficiency bonus is doubled for any check you make with it.",
+					"You learn the Speak with Animals spell and can cast it at will, without expending a spell slot. You also learn the Animal Friendship spell, and you can cast it once with this feat, without expending a spell slot. You regain the ability to cast it in this way when you finish a long rest. Wisdom is your spellcasting ability for these spells."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Gnome (forest)</i> Your friendship with animals mystically deepens. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Cruel (HB)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"When you deal damage to a creature, spend one cruelty die to deal extra damage to the creature equal to the roll.",
+					"When you score a critical hit, spend one cruelty die to gain temporary hit points equal to the roll.",
+					"When you make a Charisma (Intimidation) check, spend one cruelty die and add the roll to your check."
+				]
+			},
+			{
+				"type": "text",
+				"content": "The challenges and struggles you've faced throughout your life have led you to delight in inflicting pain and anguish upon others. You gain a number of cruelty dice equal to your proficiency bonus. Your cruelty dice are d6s. You can roll only one cruelty die per turn, and a cruelty die is spent when you roll it. You can roll a cruelty die under any of the following circumstances, with the indicated result: You regain all spent cruelty dice when you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Diplomat (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Charisma score by 1, to a maximum of 20.",
+					"You gain proficiency in the Persuasion skill. If you are already proficient in this skill, you add double your proficiency bonus to checks you make with it.",
+					"If you spend 1 minute talking to someone who can understand what you say, you can make a Charisma (Persuasion) check contested by the creature's Wisdom (Insight) check. If you or your companions are fighting the creature, your check automatically fails. If your check succeeds, the target is charmed by you as long as it remains within 60 feet of you and for 1 minute thereafter."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You master the arts of diplomacy, gaining the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Divine Communications (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Ability Score Increase.</b> Increase the ability score of the spellcasting ability chosen when you gained the Divinely Favored feat by 1, to a maximum of 20.",
+					"<b>Celestial Tongues.</b> You learn to speak, read, and write Celestial, and two other languages of your choice.",
+					"<b>Divine Omens.</b> You can cast the Augury and Commune spell without a spell slot, and you must finish 1d4 long rests before you can cast it in this way again. You can also cast the spell using spell slots you have of the appropriate level. The spell’s spellcasting ability is the one chosen when you gained the Divinely Favored feat."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Divinely Favored Feat</i> Your connection to your god deepens, granting you these benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Divinely Favored (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "A god has chosen you to carry a spark of their divine power. You learn the Thaumaturgy cantrip and one 1st-level spell based on the alignment of your character, as specified in the Alignment Spells table. You can cast the chosen 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have. Your spellcasting ability for this feat’s spells is Intelligence, Wisdom, or Charisma (choose when you select this feat)."
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Evil",
+						"Choose one 1st-level Warlock or Wizard spell."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Good",
+						"Choose one 1st-level Cleric or Wizard spell."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Neutral",
+						"Choose one 1st-level Druid or Wizard spell."
+					]
+				]
+			},
+			{
+				"type": "text",
+				"content": "In addition, you can use a holy symbol as a spellcasting focus for any spell you cast that uses the spellcasting ability you choose when you select this feat."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Dragon Wings (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Dragonborn</i> You sprout draconic wings. With your wings, you have a flying speed of 20 feet if you aren’t wearing heavy armor and aren't exceeding your carrying capacity."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Dragonmark (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"When you first take this feat, you gain the <b>least dragonmark</b>. You learn the spells listed under the Least column.",
+					"At 5th level and higher, your mark becomes more potent, improving to <b>lesser dragonmark</b>. You also learn the spell listed under the Lesser column.",
+					"At 9th level and higher, your mark's power increases again, becoming a <b>greater dragonmark</b>. You also learn the spell listed under the Greater column."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You have a magical mark that indicates you are a member of one of the dragonmarked houses. Select one of the options from the Dragonmarks table. You gain the ability to innately cast spells and cantrips, as summarized in the Dragonmark Benefits table, using the spellcasting ability listed under the Ability column. You cast each spell at its lowest level. Once you cast a given spell this way, you must finish a long rest before you can cast it innately again. You must still expend any material components. Your dragonmark confers the following benefits:"
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Detection",
+						"Wisdom",
+						"<i>Detect magic</i>, <i>mage hand </i>",
+						"<i>Detect thoughts </i>",
+						"<i>Clairvoyance</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Finding",
+						"Wisdom",
+						"<i>Detect magic</i>, <i>mage hand</i>",
+						"<i>Locate object</i>",
+						"<i>Clairvoyance</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Handling",
+						"Wisdom",
+						"<i>Druidcraft</i>, <i>speak with animals</i>",
+						"<i>Beast sense</i>",
+						"<i>Conjure animals</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Healing",
+						"Wisdom",
+						"<i>Cure wounds</i>, <i>spare the dying</i>",
+						"<i>Lesser restoration</i>",
+						"<i>Revivify</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Hospitality",
+						"Charisma",
+						"<i>Friends</i>, <i>unseen servant</i>",
+						"<i>Rope Trick</i>",
+						"<i>Leomund's tiny hut</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Making",
+						"Intelligence",
+						"<i>Identify</i>, <i>mending</i>",
+						"<i>Magic weapon</i>",
+						"<i>Fabricate</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Passage",
+						"Intelligence",
+						"<i>Expeditious retreat</i>, <i>light</i>",
+						"<i>Misty step</i>",
+						"<i>Teleportation circle</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Scribing",
+						"Intelligence",
+						"<i>Comprehend languages</i>, <i>message</i>",
+						"<i>Sending</i>",
+						"<i>Tongues </i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Sentinel",
+						"Wisdom",
+						"<i>Blade ward</i>, <i>compelled duel</i>",
+						"<i>Blur</i>",
+						"<i>Protection from energy</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Shadow",
+						"Charisma",
+						"<i>Dancing lights</i>, <i>disguise self</i>",
+						"<i>Darkness</i>",
+						"<i>Nondetection</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Storm",
+						"Intelligence",
+						"<i>Fog cloud</i>, <i>shocking grasp</i>",
+						"<i>Gust of wind</i>",
+						"<i>Sleet storm</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Warding",
+						"Intelligence",
+						"<i>Alarm</i>, <i>resistance</i>",
+						"<i>Arcane lock</i>",
+						"<i>Magic circle </i>"
+					]
+				]
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Elemental Touched (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Air.</b> You\tgain\ta\tfly\tspeed\tequal\tto\tyour\twalking\tspeed\tuntil\tthe\tend\tof\tyour\tturn.\tIf\tyou\tare\tairborne\tat\tthe\tend\tof\tyour\tturn\tafter\tusing\tthis\tmovement\tand\taren’t\theld\taloft\tby other\tmeans,\tyou\tfall.",
+					"<b>Earth.</b> You\tcause\tthe\tground\twithin\t30\tfeet\tof\tyou\tto become\tdifficult\tterrain\tfor\t1\tminute or\tuntil\tyou\tcreate\tthis\teffect\tagain.\tDuring\tthat\ttime,\tyou\tcan\tmove\tacross\tground\tthat\tis\tdifficult\tterrain\twithout\tspending\textra movement.",
+					"<b>Fire.</b> You\tsurround\tyourself\tin\ta\tcloud\tof\tash\tand\tsmoke. Until\tthe\tend of\tyour\tturn,\tyour\tmovement\tdoesn’t provoke\topportunity\tattacks.",
+					"<b>Water.</b> You\tcan\tcreate\ta\tforceful\tsurge\tof\twater\tdirected at a\tcreature\twithin\t15 feet\tof\tyou\tthat\tyou\tcan\tsee.\tThe creature\tmust\tsucceed\ton\ta\tStrength\tsaving\tthrow\t(which\tit\tcan\tchoose\tto\tfail)\tagainst\ta\tDC\tequal\tto\t8\t+\tyour\tspellcasting\tability modifier\t+\tyour\tproficiency\tbonus\tor\tbe\tpushed\tup\tto\t10\tfeet\taway\tfrom\tyou.\tThe\twater\tvanishes\timmediately\tafter\tthe\tcreature\tsucceeds or\tfails."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You’ve\tbeen\texposed\tto\tthe\tprimordial\tmagic\tof\tthe Elemental\tPlanes,\tgranting\tyou\ta\tmeasure\tof\tcontrol\tover\tthe\tnatural\tworld\taround\tyou. You\tlearn\tthe\teither\tthe Druidcraft or Thaumaturgy cantrip,\tusing Intelligence, Wisdom,\tor\tCharisma as\tthe\tspellcasting\tability (choose\twhen\tyou\tgain this\tfeat). Whenever you\tfinish\ta\tlong\trest,\tyou\tcan\tchoose which element\tyou\tare\tattuned\tto: Air,\tEarth,\tFire,\tor\tWater.\tDepending\ton\tyour\tchoice,\tyou can\tuse\ta\tbonus\taction\tto\tcause\tone\tof the\tfollowing\teffects: You\tcan\tcreate\tthis effect a\tnumber\tof\ttimes\tequal\tto\tyour\tproficiency\tbonus, and\tyou\tregain\tall expended uses\twhen\tyou\tfinish\ta\tlong\trest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Ember Of The Fire Giant (Revised UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Strike of the Giants (Fire Giant) Feat</i> You’ve manifested the fiery combat emblematic of fire giants, granting you the following benefits: <b>Ability Score Increase.</b> Increase your Strength, Constitution, or Wisdom score by 1, to a maximum of 20. <b>Born of Flame.</b> You have resistance to fire damage. <b>Searing Ignition.</b> When you take the Attack action on your turn, you can replace a single attack with a magical burst of flame. Each creature of your choice within 15 feet of you that can see you must make a Dexterity saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat). On a failed save, a creature takes fire damage equal to 1d8 + your proficiency bonus, and it is blinded until the start of your next turn. On a successful save, the creature takes half as much damage and isn’t blinded. You can use your Searing Ignition a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Ember of the Fire Giant (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite:\t8th\tLevel</i> You’ve\tmanifested\tthe\tfiery\tcombat\temblematic\tof\tfire\tgiants,\tgranting\tyou\tthe\tfollowing\tbenefits: <b>Born\tof\tFlame.</b> You\thave\tresistance\tto\tfire\tdamage. <b>Searing\tIgnition.</b> When\tyou\ttake\tthe\tAttack\taction\ton your\tturn,\tyou\tcan\treplace\tone\tof\tyour\tattacks\twith\ta\tmagical\tburst\tof\tflame.\tEach\tcreature\tof\tyour\tchoice\twithin\t15\tfeet\tof\tyou\tthat\tcan\tsee\tyou\tmust\tmake a\tDexterity\tsaving\tthrow\t(DC\tequals\t8\t+\tyour\tproficiency\tbonus\t+\tyour\tConstitution\tmodifier).\tOn\ta\tfailed\tsave,\ta\tcreature\ttakes fire\tdamage\tequal\tto\t2d6 + your\tproficiency\tbonus and\tis\tblinded\tuntil\tthe\tstart\tof\tyour\tnext\tturn;\ton\ta\tsuccessful\tsave,\tthe\tcreature\ttakes\thalf\tas\tmuch\tdamage\twith\tno\tadditional\teffects. You\tcan\tuse\tyour\tSearing\tIgnition\ta\tnumber\tof\ttimes\tequal\tto\tyour\tproficiency\tbonus, and\tyou regain\tall\texpended\tuses\twhen you\tfinish\ta\tlong\trest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Empathic (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Wisdom score by 1, to a maximum of 20.",
+					"You gain proficiency in the Insight skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"You can use your action to try to get uncanny insight about one humanoid you can see within 30 feet of you. Make a Wisdom (Insight) check contested by the target’s Charisma (Deception) check. If your check succeeds, you have advantage on attack rolls and ability checks against the target until the end of your next turn."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You possess keen insight into how other people think and feel. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Everybody's Friend (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Charisma score by 1, up to a maximum of 20.",
+					"You gain proficiency in Deception and Persuasion skills. If you're already proficient in either skill, your proficiency bonus is doubled for any check you make with that skill."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Half-elf</i> You develop your magnetic personality to ease your way through the world. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Fell Handed",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"You gain a +1 bonus to attack rolls you make with the weapon.",
+					"Whenever you have advantage on a melee attack roll you make with the weapon and hit, you can also knock the target prone if the lower of the two d20 rolls would also hit the target.",
+					"Whenever you have disadvantage on a melee attack roll you make with the weapon, the target takes bludgeoning damage equal to your Strength modifier (minimum of 0) if the attack misses but\tthe higher of the two d20 rolls would have hit.",
+					"If you use the Help action to aid an ally's melee attack while you're wielding the weapon, you knock the target's shield aside momentarily. In addition to the ally gaining advantage on the attack roll, the ally gains a +2 bonus to the roll if the target is using a shield"
+				]
+			},
+			{
+				"type": "text",
+				"content": "You master the handaxe, battleaxe, greataxe, warhammer, and maul. You gain the following benefits when using any of them:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Flail Mastery (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"You gain a +1 bonus to attack rolls you make with a flail.",
+					"As a bonus action on your turn, you can prepare yourself to extend your flail to sweep over targets’ shields. Until the end of this turn, your attack rolls with a flail gain a +2 bonus against any target using a shield.",
+					"When you hit with an opportunity attack using a flail, the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked prone."
+				]
+			},
+			{
+				"type": "text",
+				"content": "The flail is a tricky weapon to use, but you have spent countless hours mastering it. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Flash Recall (HB)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Spellcasting feature from a class that prepares spells</i> You've developed the ability to instantly recall an unprepared spell in moments of sudden necessity. As a bonus action, you prepare a spell of 1st level or higher from your spellbook (if you're a wizard) or from your class spell list (if you're not a wizard). This spell must be of a level for which you have spell slots, and it replaces another spell of an equal or higher level that you had previously prepared. Once you use this feat to recall a spell, you can't do so again until you complete a short or long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Fury Of The Frost Giant (Revised UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Strike of the Giants (Frost Giant) Feat</i> You’ve manifested the icy might emblematic of frost giants, granting you the following benefits: <b>Ability Score Increase.</b> Increase your Strength, Constitution, or Wisdom score by 1, to a maximum of 20. <b>Born of Ice.</b> You have resistance to cold damage. <b>Frigid Retaliation.</b> Immediately after a creature you can see within 30 feet of you hits you with an attack roll and deals damage, you can use your reaction to retaliate with a conjured blast of ice. The creature must make a Constitution saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat). On a failed save, it takes 1d8 + your proficiency bonus cold damage, and its speed is halved until the end of its next turn. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Fury of the Frost Giant (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite:\t4th\tLevel</i> You’ve\tmanifested\tthe\ticy\tmight\temblematic\tof\tfrost\tgiants,\tgranting\tyou\tthe\tfollowing\tbenefits: <b>Born\tof\tIce.</b> You\thave\tresistance\tto\tcold\tdamage. <b>Frigid Vengeance.</b> When\ta\tcreature\thits\tyou\twith\tan attack\troll,\tyou\tcan\tuse\tyour\treaction\tto\tretaliate\twith\ta burst\tof\tmagical\tire.\tThe\tcreature\tmust\tsucceed\ton\ta\tWisdom\tsaving\tthrow\t(DC\tequals\t8\t+\tyour\tproficiency\tbonus\t+\tyour\tConstitution\tmodifier)\tor\tbe\tfrightened\tof\tyou\tuntil\tthe\tstart\tof\tits\tnext\tturn.\tYou\tcan use\tyour\treaction\tin this\tway\ta\tnumber\tof\ttimes\tequal\tto\tyour proficiency\tbonus, and you regain\tall\texpended uses\twhen you\tfinish\ta\tlong\trest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Gourmand (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Constitution score by 1, to a maximum of 20.",
+					"You gain proficiency with cook’s utensils. If you are already proficient with them, you add double your proficiency bonus to checks you make with them.",
+					"As an action, you can inspect a drink or plate of food within 5 feet of you and determine whether it is poisoned, provided that you can see and smell it.",
+					"During a long rest, you can prepare and serve a meal that helps you and your allies recover from the rigors of adventuring, provided you have suitable food, cook’s utensils, and other supplies on hand. The meal serves up to six people, and each person who eats it regains two additional Hit Dice at the end of the long rest. In addition, those who partake of the meal have advantage on Constitution saving throws against disease for the next 24 hours."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You have mastered a variety of special recipes, allowing you to prepare exotic dishes with useful effects. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Greater Dragonmark (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"The die type of your dragonmarked Intuition Die increases by one (for example, from a d4 to a d6).",
+					"Increase one ability score by 1, to a maximum of 20. The abilities available to you are based on your mark, as shown on the Greater Dragonmark Benefits table.",
+					"You learn a set of spells, each of which you can cast once without expending a spell slot or using a material component. The list of spells, the spellcasting ability for them, and the type of rest you must complete to regain the use of these spells are shown on the Greater Dragonmark Benefits table."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 8th level, character must possess a dragonmark</i> Your dragonmark has grown in size and power. This enhances your existing dragonmark, and the benefits are based on the mark that you already possess. A greater dragonmark provides the following benefits: <b>Greater Dragonmarks Benefits</b>"
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Detection",
+						"Charisma or Intelligence",
+						"See Invisibility, True Seeing",
+						"Intelligence",
+						"Long"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Finding",
+						"Dexterity, Strength, or Wisdom",
+						"Locate Creature, Find the Path",
+						"Wisdom",
+						"Long"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Handling",
+						"Dexterity or Wisdom",
+						"Beast Sense, Dominate Beast",
+						"Wisdom",
+						"Long"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Healing",
+						"Dexterity or Wisdom",
+						"Mass Healing Word, Greater Restoration",
+						"Wisdom",
+						"Long"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Hospitality",
+						"Charisma or Dexterity",
+						"Sanctuary, Mordenkainen's Magnificent Mansion",
+						"Charisma",
+						"Long"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Making",
+						"Dexterity or Intelligence",
+						"Fabricate, Creation",
+						"Intelligence",
+						"Long"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Passage",
+						"Dexterity or Constitution",
+						"Blink, Teleportation Circle",
+						"Constitution",
+						"Long"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Scribing",
+						"Intelligence or Charisma",
+						"Sending, Tongues",
+						"Intelligence",
+						"Long or Short"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Sentinel",
+						"Strength or Wisdom",
+						"Compelled Duel, Warding Bond",
+						"Wisdom",
+						"Long or Short"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Shadow",
+						"Charisma or Dexterity",
+						"Nondetection, Mislead",
+						"Charisma",
+						"Long"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Storm",
+						"Charisma or Dexterity",
+						"Control Water, Control Winds",
+						"Charisma",
+						"Long"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Warding",
+						"Dexterity or Intelligence",
+						"Knock, Glyph of Warding, Leomund's Secret Chest**",
+						"Intelligence",
+						"Long"
+					]
+				]
+			},
+			{
+				"type": "text",
+				"content": "** To cast Leomund’s Secret Chest using this feat and the Mark of Warding, you must have a Siberys dragonshard with a value of at least 100 gp. While you have this dragonshard in hand, it serves as the spell’s focus, and you can use it to summon and dismiss the chest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Grudge Bearer (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Strength, Constitution, or Wisdom score by 1, to a maximum of 20.",
+					"During the first round of any combat against your chosen foes, your attack rolls against any of them have advantage.",
+					"When any of your chosen foes makes an opportunity attack against you, it makes the attack roll with disadvantage.",
+					"Whenever you make an Intelligence (Arcana, History, Nature, or Religion) check to recall information about your chosen foes, you add double your proficiency bonus to the check, even if you’re not normally proficient."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Dwarf</i> You have a deep hatred for a particular kind of creature. Choose your foes, a type of creature to bear the burden of your wrath: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can choose two races of humanoid (such as gnolls and orcs). You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Guile of The Cloud Giant (Revised UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Strike of the Giants (Cloud Giant) Feat</i> You’ve manifested the airy speech and magic emblematic of cloud giants, granting you the following benefits: <b>Ability Score Increase.</b> Increase your Dexterity, Constitution, or Charisma score by 1, to a maximum of 20. <b>Cloudy Escape.</b> When a creature you can see hits you with an attack roll, you can use your reaction to give yourself resistance to that attack’s damage. You then teleport to an unoccupied space that you can see within 30 feet of yourself. You can use this reaction a number of times equal to half your proficiency bonus (rounded up), and you regain all expended uses when you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Guile of the Cloud Giant (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite:\t8th\tLevel</i> You’ve\tmanifested\tthe\tairy\tspeech\tand\tmagic\temblematic of\tcloud\tgiants,\tgranting you\tthe\tfollowing\tbenefits: <b>Misty Form.</b> You\tcan\tcast\tthe\tBlur spell\twithout\tusing\ta spell slot\tor\tmaterial\tcomponents.\tWhen\tyou\tcast\tthe\tspell\tin\tthis way,\tthe\tspell\tdoesn’t require\tyou\tto\tmaintain\tconcentration\ton\tit. Once\tyou\tcast\tthe\tspell\tin\tthis\tway,\tyou\tcan’t\tdo\tso\tagain\tuntil you\tfinish\ta\tlong\trest.\tYou\tcan\talso\tcast\tthis\tspell\tin\tthe normal\tway\tusing\tspell\tslots\tyou\thave\tof\tthe\tappropriate\tlevel. Intelligence,\tWisdom,\tor\tCharisma\tis\tyour\tspellcasting\tability\tfor\tthis feature\t(choose\twhen\tyou\tgain\tthis\tfeat). <b>Silver\tTongue.</b> You\tgain\tproficiency\tin\teither\tthe Deception\tor\tPersuasion\tskill.\tYour\tproficiency\tbonus\tis doubled\tfor\tany\tability\tcheck\tyou\tmake\tusing\tthis\tskill."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Historian (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "Your study of history rewards you with the following benefits: • Increase your Intelligence score by 1, to a maximum of 20. • You gain proficiency in the History skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it. • When you take the Help action to aid another creature’s ability check, you can make a DC 15 Intelligence (History) check. On a success, that creature’s check gains a bonus equal to your proficiency bonus, as you share pertinent advice and historical examples. To receive this bonus, the creature must be able to understand what you’re saying."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Human Determination (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase one ability score of your choice by 1, to a maximum of 20.",
+					"When you make an attack roll, an ability check, or a saving throw, you can do so with advantage. Once you use this ability, you can’t use it again until you finish a short or long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Human</i> You are filled with a determination that can draw the unreachable within your reach. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Initiate of High Sorcery (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Apprentice of High Sorcery</i> You've received training from magic-users affiliated with the Mages of High Sorcery. Choose one of the three moons of Krynn, each of which is associated with a distinct type of magic: the black moon, Nuitari; the red moon, Lunitari; or the white moon Solinari. You learn one cantrip and one 1st-level spell based on the moon you choose, as specified in the Lunar Spells table. You can cast the chosen 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have. Your spellcasting ability for this feat’s spells is Intelligence, Wisdom, or Charisma (choose when you select this feat)."
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Nuitari",
+						"Choose one from Chill Touch, Mage Hand, and Vicious Mockery",
+						"Choose one 1st-level wizard spell from the Evocation or Necromancy school of magic."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Lunitari",
+						"Choose one from Guidance, Message, and Prestidigitation",
+						"Choose one 1st-level wizard spell from the Divination or Transmutation school of magic."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Solinari",
+						"Choose one from Produce Flame, Resistance, and Spare the Dying",
+						"Choose one 1st-level wizard spell from the Abjuration or Conjuration school of magic."
+					]
+				]
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Investigator (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Intelligence score by 1, to a maximum of 20.",
+					"You gain proficiency in the Investigation skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"You can take the Search action as a bonus action."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You have an eye for detail and can pick out the smallest clues. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Keenness of The Stone Giant (Revised UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Strike of the Giants (Stone Giant) Feat</i> You’ve manifested the physical talents emblematic of stone giants, granting you the following benefits: <b>Ability Score Increase.</b> Increase your Strength, Constitution, or Wisdom score by 1, to a maximum of 20. <b>Stone Throw.</b> As a bonus action, you can touch a rock that can fit in the palm of your hand and imbue it with magic. While the rock is imbued with magic and you are wielding it, the rock is a magic ranged weapon with which you’re proficient, and it has the thrown property with a normal range of 60 feet and a long range of 180 feet. On a hit, the rock deals 1d10 bludgeoning damage, and if the target is a creature, it must succeed on a Strength saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat) or be knocked prone. The magic remains in the rock until you hit with it or finish a long rest. You can imbue a number of rocks equal to your proficiency bonus with this bonus action, and you regain all expended uses when you finish a long rest. <b>Cavernous Sight.</b> You gain darkvision out to a range of 60 feet. If you already have darkvision from another source, its range increases by 60 feet."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Keenness of the Stone Giant (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "Prerequisite:\t4th\tLevel You’ve\tmanifested\tthe\tprotection\tand\tspellcasting emblematic\tof\tstone\tgiants,\tgranting\tyou\tthe\tfollowing\tbenefits: <b>Dreamer’s\tMagic.</b> You\tlearn\tthe\tDetect\tThoughts spell\tand one\t1st-level\tspell\tof\tyour\tchoice.\tThe\t1st-level\tspell must\tbe\tfrom\tthe abjuration\tor\tthe\tdivination\tschool\tof magic.\tYou\tcan\tcast\teach\tof these\tspells\twithout\texpending\ta\tspell\tslot.\tOnce\tyou\tcast\teither\tof\tthese spells\tin\tthis\tway,\tyou\tcan’t\tcast\tthat\tspell\tin\tthis\tway again until\tyou\tfinish\ta\tlong\trest.\tYou\tcan\talso\tcast\tthese spells\tusing\tspell lots\tyou\thave\tof\tthe\tappropriate\tlevel. Intelligence,\tWisdom,\tor\tCharisma is\tyour\tspellcasting\tability\tfor\tthis\tfeature\t(choose\twhen\tyou\tgain\tthis feat). <b>Mountain\tSight.</b> You\tgain\tdarkvision\tout\tto\ta\trange\tof\t60 feet.\tIf\tyou\talready\thave\tdarkvision\tfrom\tanother\tsource,\tits\trange\tincreases\tby\t30\tfeet."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Knight Of The Crown (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Ability Score Increase.</b> Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+					"<b>Tactical Teamwork.</b> When a creature you can see within 30 feet of you makes an attack roll against another creature that is within 5 feet of you, you can use your reaction to grant advantage on the attack roll. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Squire of Solamnia Feat</i> You are a Knight of Solamnia aligned with the Order of the Crown, a group that extols the virtues of cooperation, loyalty, and obedience. You excel in group combat and gain these benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Knight Of The Rose (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Ability Score Increase.</b> Increase your Constitution or Charisma score by 1, to a maximum of 20.",
+					"<b>Bolstering Rally.</b> When you roll initiative, you can choose up to three other creatures you can see within 30 of you. Each creature can gain temporary hit points equal to a roll of your Hit Die + your proficiency bonus + the ability modifier of the ability score increased by this feat. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Squire of Solamnia Feat</i> You are a Knight of Solamnia aligned with the Order of the Rose, a group known for leadership, justice, and wisdom. Your resolve grants you these benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Knight Of The Sword (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Disciplined Spirit.</b> You gain proficiency in Intelligence, Wisdom, or Charisma saving throws (your choice when you take this feat).",
+					"<b>Willpower.</b> Immediately after you or a creature you can see within 30 feet of you fail an Intelligence, Wisdom, or Charisma saving throw, you can expend a Hit Die. The saving throw increases by an amount equal to a roll of that Hit Die, potentially turning a failure into a success. Once you turn a failed saving throw into a successful one using this feat, you can’t do so again until you finish a long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Squire of Solamnia Feat</i> You are a Knight of Solamnia aligned with the Order of the Sword, a group devoted to heroism and courage. Bravery steels your spirit, granting you these benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Master Of Disguise (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Charisma score by 1, to a maximum of 20.",
+					"You gain proficiency with the disguise kit. If you are already proficient with it, you add double your proficiency bonus to checks you make with it.",
+					"If you spend 1 hour observing a creature, you can then spend 8 hours crafting a disguise you can quickly don to mimic that creature. Making the disguise requires a disguise kit. You must make checks as normal to disguise yourself, but you can assume the disguise as an action."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You have honed your ability to shape your personality and to read the personalities of others. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Medic (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Wisdom score by 1, to a maximum of 20.",
+					"You gain proficiency in the Medicine skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"During a short rest, you can clean and bind the wounds of up to six willing beasts and humanoids. Make a DC 15 Wisdom (Medicine) check for each creature. On a success, if a creature spends a Hit Die during this rest, that creature can forgo the roll and instead regain the maximum number of hit points the die can restore. A creature can do so only once per rest, regardless of how many Hit Dice it spends."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You master the physician's arts, gaining the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Menacing (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Charisma score by 1, to a maximum of 20.",
+					"You gain proficiency in the Intimidation skill. If you are already proficiency in the skill, you add double your proficiency bonus to checks you make with it.",
+					"When you take the Attack action on your turn, you can replace one attack with an attempt to demoralize one humanoid you can see within 30 feet of you that can see and hear you. Make a Charisma (Intimidation) check contested by the target's Wisdom (Insight) check. If your check succeeds, the target is frightened until the end of your next turn. If your check fails, the target can't be frightened by you in this way for 1 hour."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You become fearsome to others, gaining the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Metabolic Control (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.",
+					"If your Psionic Talent die is available, you can take an action to channel your psionic power to nourish yourself for the next 24 hours, as if you consumed sufficient food and water for a day. When you take this action, your Psionic Talent die decreases by one die size.",
+					"If your Psionic Talent die is available, you can meditate for 1 minute, at the end of which you gain the benefits of finishing a short rest, and your Psionic Talent die decreases by one die size. You can’t meditate in this way again until you finish a long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Psionic Talent feature or Wild Talent feat</i> You have refined psionic control over your body’s functions. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Mystic Conflux (HB)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"You can attune to up to four magic items at once.",
+					"You can cast the Identify spell without expending a spell slot or material components. You must finish a long rest before you can do so again."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You possess an intuitive understanding of the way magic ebbs and flows within enchanted items. Such items attune easily to you, and you are able to sound out their secrets. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Naturalist (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Intelligence score by 1, to a maximum of 20.",
+					"You gain proficiency in the Nature skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"You learn the Druidcraft and Detect Poison and Disease spells. You can cast detect poison and disease once without expending a spell slot, and you regain the ability to do so when you finish a long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "Your extensive study of nature rewards you with the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Orcish Aggression (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Half-orc</i> As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Outlands Envoy (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Scion of the Outer Planes Feat</i> You have spent significant time in Sigil or elsewhere in the Outlands, the crossroads of the multiverse. Being steeped in converging planar energies grants you these benefits: <b>Ability Score Increase.</b> Increase an ability score of your choice by 1, to a maximum of 20. <b>Crossroads Emissary.</b> You learn the Misty Step and Tongues spells. You can cast each spell once using this feat without a spell slot, and you must finish a long rest before you can cast that spell in this way again. When you cast tongues using this feat, you require no material components. You can also cast these spells using spell slots you have of the appropriate level. The spell’s spellcasting ability is the one chosen when you gained the Scion of the Outer Planes feat."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Outsized Might (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "You\thave\tabsorbed\tprimeval\tmagic\tthat\tallows\tyou, despite\tyour\trelatively\tsmall stature,\tto\tembody\tthe\tmight\tof\ttitanic\tcreatures.\tThis\tgrants\tyou\tthe\tfollowing\tbenefits: <b>Little\tbut\tMighty.</b> You\tgain\tproficiency\tin\teither\tthe Athletics\tor\tAcrobatics\tskill. <b>Powerful\tBuild.</b> You\tcount\tas\tone\tsize\tlarger\twhen\tdetermining\tyour\tcarrying\tcapacity\tand\tthe\tamount\tyou\tcan\tpush,\tdrag,\tor\tlift. <b>Stalwart.</b> You\thave\tadvantage\ton\tsaving\tthrows\tagainst\tbeing\tmoved\tor\tknocked\tprone."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Perceptive (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Wisdom score by 1, to a maximum of 20.",
+					"You gain proficiency in the Perception skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"Being in a lightly obscured area doesn't impose disadvantage on your Wisdom (Perception) checks if you can both see and hear."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You hone your senses until they become razor sharp. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Performer (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Charisma score by 1, to a maximum of 20.",
+					"You gain proficiency in the Performance skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"While performing, you can try to distract one humanoid you can see who can see and hear you. Make a Charisma (Performance) check contested by the humanoid's Wisdom (Insight) check. If your check succeeds, you grab the humanoid's attention enough that it makes Wisdom (Perception) and Intelligence (Investigation) checks with disadvantage until you stop performing."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You master performance so that you can command any stage. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Planar Wanderer (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Scion of the Outer Planes Feat</i> You can draw on the forces of the multiverse to survive cosmic extremes and to traverse its infinite realms. You gain these benefits: <b>Planar Adaptation.</b> When you finish a long rest, you gain resistance to either acid, cold, or fire damage (your choice) until you finish your next long rest. <b>Portal Cracker.</b> Your experience with portals allows you to operate them without the proper portal key. As an action, you can concentrate on a portal you’re aware of that is within 5 feet of you and make a DC 20 Wisdom (Survival) check. On a failure, you take 3d8 force damage and you can’t use this feature on that portal again until you finish a long rest. On a success, you can force the portal open or closed for 1 hour. For that duration, a portal closed in this way doesn’t respond to its portal key unless a creature employing the key succeeds on a DC 20 Intelligence (Arcana) check as an action. <b>Portal Sense.</b> You know the direction to the last planar portal you used while you and the portal are on the same plane. Moreover, as an action, you can detect the location of any portals within 30 feet of you that aren’t behind total cover. Once you detect a portal with this action, you can’t use the action again until you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Practiced Expert (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase one ability score of your choice by 1, to a maximum of 20.",
+					"You gain proficiency with one skill or tool of your choice.",
+					"Choose one of your skill or tool proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You have honed your proficiency with particular skills or tools, gaining the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Quick Fingered (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Dexterity score by 1, to a maximum of 20.",
+					"You gain proficiency in the Sleight of Hand skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"As a bonus action, you can make a Dexterity (Sleight of Hand) check to plant something on someone else, conceal an object on a creature, lift a purse, or take something from a pocket."
+				]
+			},
+			{
+				"type": "text",
+				"content": "Your nimble fingers and agility let you perform sleight of hand. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Remarkable Recovery (HB)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Constitution score by 1, to a maximum of 20.",
+					"When you are successfully stabilized while dying, you regain hit points equal to your Constitution modifier (minimum of 1).",
+					"Whenever you regain hit points as a result of a spell, potion, or class feature (but not this feat), you regain additional hit points equal to your Constitution modifier (minimum of 1)."
+				]
+			},
+			{
+				"type": "text",
+				"content": "Your body has the ability to recover quickly from terrible injuries, and is unusually receptive to healing magic. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Righteous Heritor (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Scion of the Outer Planes (Good Outer Plane) Feat</i> You can channel the cosmic forces of good that foster serenity and fellowship. You are still free to choose your own actions, but gain these benefits: <b>Ability Score Increase.</b> Increase an ability score of your choice by 1, to a maximum of 20. <b>Soothe Pain.</b> When you or a creature you can see within 30 feet of you takes damage, you can use your reaction to dull its suffering and reduce the damage it takes by 1d10 + your proficiency bonus. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Rune Carver Adept (Revised UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Rune Carver Apprentice Feat</i> Your ability to draw out power from runes has grown. Increase the ability score of the spellcasting ability chosen when you gained the Rune Carver Apprentice feat by 1, to a maximum of 20. Whenever you cast a spell from the Rune Spells table, or a spell of a school of magic associated with the spell you marked on an object from your Rune Carver Apprentice feat, you can invoke runic power, granting you one of these benefits of your choice: <b>Battle Runes.</b> Choose one creature you can see within 30 feet of yourself. Until the end of that creature’s next turn, it has advantage on the next attack roll it makes. <b>Healing Runes.</b> Choose one creature you can see within 30 feet of yourself. That creature gains temporary hit points equal to your level. <b>Runic Winds.</b> Choose one creature you can see within 30 feet of yourself. Until the end of that creature’s turn, its movement doesn’t provoke opportunity attacks, and its walking speed increases by 10 feet. You can invoke runic power a number of times equal to your proficiency bonus, but no more than once per spell you cast. You regain all expended uses when you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Rune Carver Adept (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite:\t4th\tLevel,\tRune\tCarver\tApprentice Feat</i> Your\tskill\twith\tthe\tart\tof\trunecraft\thas\tincreased. Whenever\tyou\tfinish\ta\tlong\trest,\tyou\tcan\tnow\tmark\ta number\tof objects\tequal\tto\tyour\tproficiency\tbonus\twith\ta\trune from\tthe\tRune\tCarver\tApprentice\tfeat.\tAn\tobject\tcan\thave\tonly\tone\trune\tat\ta\ttime,\tand\tyou\tmust\tinscribe\ta\tdifferent\trune\ton\teach\tobject."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Rune Carver Apprentice (Revised UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "You’ve begun studying the art of runecraft. You learn the Comprehend Languages spell. You can cast this spell without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using any spell slots you have. You know two runes of your choice from the Rune Spells table. Whenever you finish a long rest, you can mark one nonmagical weapon, armor, piece of clothing, or other object you touch with a rune you know. You temporarily learn one 1st-level spell based on the rune you inscribed, as specified in the Rune Spells table, and you know the spell until you finish a long rest, when the rune fades."
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Death",
+						"Ray of Sickness"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Dragon",
+						"Chromatic Orb"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Enemy",
+						"Disguise Self"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Friend",
+						"Speak with Animals"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Journey",
+						"Longstrider"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"King",
+						"Command"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Mountain",
+						"Entangle"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Sacred",
+						"Sanctuary"
+					]
+				]
+			},
+			{
+				"type": "text",
+				"content": "While you are wearing or carrying the rune-marked object, you can cast the spell associated with the chosen rune once without using a spell slot or material components, and you can also cast the spell using any spell slots you have. Your spellcasting ability for this feat is Intelligence, Wisdom, or Charisma (choose when you select this feat). Each time you gain a level, you can replace one of the runes you know with a different one from the Rune Spells table."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Rune Carver Apprentice (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "You’ve\tbegun\tstudying\tthe\tart\tof\trunecraft,\twhich\tallows you\tto\ttemporarily\tmark\tyour\titems\tand\timbue\tthem\twith magic. Whenever\tyou\tfinish\ta\tlong\trest,\tyou\tcan\tmark\tone\tnonmagical\tweapon,\tarmor,\tpiece\tof\tclothing,\tor\tother\tobject\tyou\tcan\ttouch\twith\ta\trune\tof\tyour\tchoice.\tYou\ttemporarily\tlearn\tone\t1st-level\tspell\tbased\ton\tthe\trune\tyou\tchoose,\tas\tspecified\tin\tthe\tRune\tSpells\ttable,\tand\tyou\tknow\tthe\tspell\tuntil\tyou\tfinish\ta\tlong\trest,\twhen\tthe\trune fades."
+			},
+			{
+				"type": "section",
+				"name": "Rune Spells",
+				"entries": [
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Blood",
+								"False Life"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Cloud",
+								"Fog Cloud"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Death",
+								"Ray of Sickness"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Dragon",
+								"Chromatic Orb"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Enemy",
+								"Bane"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Fire",
+								"Burning Hands"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Friend",
+								"Bless"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Frost",
+								"Armor of Agathys"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Hill",
+								"Goodberry"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Journey",
+								"Longstrider"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"King",
+								"Command"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Light",
+								"Guiding Bolt"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Life",
+								"Cure Wounds"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Mountain",
+								"Jump"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Shield",
+								"Spell:Shield"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Stone",
+								"Sanctuary"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Storm",
+								"Thunderwave"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"War",
+								"Heroism"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"colLabels": [],
+						"rows": [
+							[
+								"Wind",
+								"Feather Fall"
+							]
+						]
+					},
+					{
+						"type": "text",
+						"content": "While\tyou\tare\twearing\tor\tcarrying\tthe\trune-marked object,\tyou\tcan\tcast\tthe\tchosen\tspell\tassociated\twith\tthe\trune\tonce\twithout\tusing\ta\tspell\tslot or\tmaterial\tcomponents,\tand\tyou\tcan\talso\tcast\tthe\tspell\tusing\tany\tspell\tslots\tyou\thave. Your\tspellcasting\tability\tfor\tthis\tfeat\tis\tIntelligence,\tWisdom,\tor\tCharisma\t(choose\twhen\tyou\tgain this\tfeat)."
+					}
+				]
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Scion Of Elemental Air (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "You’ve been exposed to the primordial magic of the Elemental Plane of Air, granting you the following benefits: <b>Elemental Magic.</b> You learn the Minor Illusion cantrip, using Intelligence, Wisdom, or Charisma as the spellcasting ability (choose when you select this feat). <b>Wind’s Glide.</b> You can use a bonus action to gain a flying speed equal to your walking speed until the end of your turn. If you are airborne at the end of your turn after using this movement and aren’t held aloft by other means, you fall. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Scion Of Elemental Earth (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "You’ve been exposed to the primordial magic of the Elemental Plane of Earth, granting you the following benefits: <b>Elemental Magic.</b> You learn the Druidcraft cantrip, using Intelligence, Wisdom, or Charisma as the spellcasting ability (choose when you select this feat). <b>Earthen Shield.</b> You can use a bonus action to conjure a bulwark of earth that provides half cover to you or a creature of your choice within 30 feet of yourself. The bulwark remains until the start of your next turn. You can create this bulwark a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Scion Of Elemental Fire (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "You’ve been exposed to the primordial magic of the Elemental Plane of Fire, granting you the following benefits: <b>Elemental Magic.</b> You learn the Dancing Lights cantrip, using Intelligence, Wisdom, or Charisma as the spellcasting ability (choose when you select this feat). <b>Fervent Blaze.</b> You learn the Produce Flame cantrip, using the same spellcasting ability chosen for this feat’s Elemental Magic benefit. You can cast produce flame as normal, and you can also cast it as a bonus action a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Scion Of Elemental Water (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "You’ve been exposed to the primordial magic of the Elemental Plane of Water, granting you the following benefits: <b>Elemental Magic.</b> You learn the Thaumaturgy cantrip, using Intelligence, Wisdom, or Charisma as the spellcasting ability (choose when you select this feat). <b>Wave Surge.</b> You can use a bonus action to create a forceful surge of water directed at a creature within 15 feet of you that you can see. The target must make a Strength saving throw; the DC for this save is equal to 8 + your proficiency bonus + the spellcasting ability modifier chosen for this feat, and a creature can choose to fail this saving throw. On a failure, the target is pushed up to 10 feet away from you or pulled up to 10 feet toward you (your choice). The water vanishes immediately after the creature succeeds or fails. You can create this effect a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Scion of the Outer Planes (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "You are influenced by and adept at navigating planar pathways and the strange realities of the Outer Planes. Whether planar essence infuses you or you have extraplanar ancestry, your connection to a plane infuses you with the energies found there. Choose a type of plane listed in the Planar Infusion table below. Your choice gives you resistance to a damage type and the ability to cast a cantrip, as specified in the table. You can cast this cantrip without material components, and your spellcasting ability for it is Intelligence, Wisdom, or Charisma (choose when you select this feat)."
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Astral Plane",
+						"Psychic",
+						"Message"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Chaotic Outer Plane",
+						"Necrotic",
+						"Minor Illusion"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Evil Outer Plane",
+						"Necrotic",
+						"Chill Touch"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Good Outer Plane",
+						"Radiant",
+						"Sacred Flame"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"Lawful Outer Plane",
+						"Radiant",
+						"Guidance"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"The Outlands",
+						"Psychic",
+						"Mage Hand"
+					]
+				]
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Shield Training (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.",
+					"You gain proficiency with shields.",
+					"In combat, you can don or doff a shield as the free object interaction on your turn.",
+					"If you have the Spellcasting or Pact Magic feature, you can use a shield as a spellcasting focus."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You’ve trained in the effective use of shields. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Silver Tongued (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Charisma score by 1, to a maximum of 20.",
+					"You gain proficiency in the Deception skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"When you take the Attack action on your turn, you can replace one attack with an attempt to deceive one humanoid you can see within 30 feet of you that can see and hear you. Make a Charisma (Deception) check contested by the target's Wisdom (Insight) check. If your check succeeds, your movement doesn't provoke opportunity attacks from the target and your attack rolls against it have advantage; both benefits last until the end of your next turn or until you use this ability on a different target. If your check fails, the target can't be deceived by you in this way for 1 hour."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You develop your conversational skill to better deceive others. You gain the following benefits."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Soul of The Storm Giant (Revised UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Strike of the Giants (Storm Giant) Feat</i> You’ve manifested divination abilities and tempest magic emblematic of storm giants, granting you the following benefits: <b>Ability Score Increase.</b> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20. <b>Maelstrom Aura.</b> As a bonus action, you surround yourself in an aura of magical wind and lightning that extends 10 feet from you in every direction but not through total cover. The aura lasts until the start of your next turn or until you are incapacitated. While the aura is active, attack rolls against you have disadvantage, and whenever a creature starts its turn within the aura, you can force the creature to make a Strength saving throw (DC equals 8 + your proficiency bonus + the ability modifier of the score increased by this feat). On a failed save, the creature’s speed is halved until the start of its next turn. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Soul of the Storm Giant (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite:\t8th\tLevel</i> You’ve\tmanifested\tdivination\tabilities\tand\ttempest\tmagic\temblematic\tof\tstorm\tgiants,\tgranting\tyou\tthe\tfollowing\tbenefits: <b>Maelstrom\tAura.</b> As\ta\tbonus\taction,\tyou\tsurround yourself\tin\tan\taura of\tmagical\twind\tand\tlightning that\textends\t10\tfeet\tfrom\tyou\tin\tevery\tdirection but\tnot\tthrough\ttotal\tcover.\tThe\taura\tlasts\tfor\t1\tminute\tor\tuntil\tyou\tare\tincapacitated.\tWhile\tthe aura is\tactive,\tattack\trolls\tagainst\tyou\thave\tdisadvantage,\tand\twhenever\ta\tcreature\tstarts\tits\tturn\twithin\tthe\tsphere,\tyou\tcan\tforce\tthe\tcreature’s\tspeed\tto\tbe\thalved\tuntil\tthe\tstart\tof\tits\tnext\tturn.\tOnce\tyou\tuse\tthis\tbonus\taction,\tyou\tcan’t\tdo\tso\tagain\tuntil\tyou\tfinish\ta\tlong\trest. <b>Storm’s\tOracle.</b> You\tcan\tcast\tthe\tDivination spell\tas\ta ritual,\twithout\tneeding\tmaterial\tcomponents.\tIntelligence,\tWisdom,\tor\tCharisma\tis\tyour\tspellcasting\tability\tfor\tthis\tfeature\t(choose\twhen\tyou\tgain\tthis\tfeat). Once\tyou\tcast\tthe\tspell\tin\tthis\tway,\tyou\tcan’t\tdo\tso\tagain\tuntil\tyou\tfinish\ta\tlong\trest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Spear Mastery (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "Though the spear is a simple weapon to learn, it rewards you for the time you have taken to master it. You gain the following benefits: • You gain a +1 bonus to attack rolls you make with a spear. • When you use a spear, its damage die changes from a d6 to a d8, and from a d8 to a d10 when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon’s die.) • You can set your spear to receive a charge. As a bonus action, choose a creature you can see that is at least 20 feet away from you. If that creatures moves within your spear’s reach on its next turn, you can make a melee attack against it with your spear as a reaction. If the attack hits, the target takes an extra 1d8 piercing damage, or an extra 1d10 piercing damage if you wield the spear with two hands. You can’t use this ability if the creature used the Disengage action before moving. • As a bonus action on your turn, you can increase your reach with a spear by 5 feet for the rest of your turn."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Spelldriver (HB)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisites: Character level 11 or higher; Spellcasting or Pact Magic feature</i> Through intense focus, training, and dedication, you’ve harnessed the techniques of rapid spellcasting. When you use your bonus action to cast a spell of 1st level or higher, you can also use your action to cast another spell of 1st level or higher. However, if you cast two or more spells in a single turn, only one of them can be 3rd level or higher."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Squire of Solamnia (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Martial Training.</b> You gain proficiency with medium armor and martial weapons.",
+					"<b>Defensive Rider.</b> You have advantage on saving throws made to avoid falling off a mount.",
+					"<b>Encouraging Rally.</b> When another creature you can see within 30 feet of you makes a saving throw, you can use your reaction to inspire them. If the target can hear you and understand you, it gains advantage on the saving throw. Once you use this reaction, you can’t do so again until you finish a long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Squireship in the Knights of Solamnia</i> Your training in the ways of the Knights of Solamnia grants you these benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Stealthy (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Dexterity score by 1, to a maximum of 20.",
+					"You gain proficiency in the Stealth skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"If you are hidden, you can move up to 10 feet in the open without revealing yourself if you end the move in a position where you're not clearly visible."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You know how best to hide. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Strike of the Giants (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Hill Giant.</b> The target takes an extra 1d6 damage of the weapon’s type. If the target is a creature, it must succeed on a Strength saving throw or be knocked prone.",
+					"<b>Stone Giant.</b> The target takes an extra 1d6 force damage. If the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you in a straight line.",
+					"<b>Frost Giant.</b> The target takes an extra 1d6 cold damage. If the target is a creature, it must succeed on a Constitution saving throw, or its speed is reduced to 0 until the start of your next turn.",
+					"<b>Fire Giant.</b> The target takes an extra 1d8 fire damage.",
+					"<b>Cloud Giant.</b> The target takes an extra 1d4 thunder damage. If the target is a creature, it must succeed on a Wisdom saving throw, or you become invisible to it until the start of your next turn.",
+					"<b>Storm Giant.</b> The target takes an extra 1d6 lightning damage. If the target is a creature, it must succeed on a Constitution saving throw, or it has disadvantage on attack rolls until the start of your next turn."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You have absorbed primeval magic that gives you an echo of the might of giants. Choose one of the kinds of giants listed below. As a bonus action, you can call on the power of your giant magic to imbue your attacks with additional power. The next time you hit a target with a melee or thrown weapon attack within the next minute, the attack has an additional effect depending on the origin of your giant magic: The saving throw DC for these effects equals 8 + your proficiency bonus + your Strength or Constitution modifier. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Survivalist (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Wisdom score by 1, to a maximum of 20.",
+					"You gain proficiency in the Survival skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"You learn the Alarm spell. You can cast it once without expending a spell slot, and you regain the ability to do so when you finish a long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You master wilderness lore, gaining the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Tandem Tactician (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"You can use the Help action as a bonus action.",
+					"When you use the Help action to aid an ally in attacking a creature, increase the range of the Help action by 10 feet. Additionally, you can help two allies targeting the same creature within range when you use the Help action this way."
+				]
+			},
+			{
+				"type": "text",
+				"content": "Your presence in a scrap tends to elevate your comrades. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Theologian (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Intelligence score by 1, to a maximum of 20.",
+					"You gain proficiency in the Religion skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+					"You learn the Thaumaturgy and Detect Evil and Good spells. You can cast Detect Evil and Good once without expending a spell slot, and you regain the ability to do so when you finish a long rest."
+				]
+			},
+			{
+				"type": "text",
+				"content": "Your extensive study of religion rewards you with the following benefits."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Thrown Arms Master (HB)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+					"Simple and martial melee weapons without the thrown property have the thrown property for you. One-handed weapons have a normal range of 20 feet and a long range of 60 feet, while two-handed weapons have a normal range of 15 feet and a long range of 30 feet.",
+					"Weapons that already have the thrown property increase their short range by 20 feet and their long range by 40 feet for you.",
+					"When you miss with a thrown weapon attack using a light weapon, the weapon returns to your grasp like a boomerang at the end of your turn, unless something prevents it from returning. You can catch and stow as many weapons as you threw in this way."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You’ve honed your ability to lob weaponry into the fray, including weapons not meant for ranged combat. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Tower Of Iron Will (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Psionic Talent feature or Wild Talent feat</i> Your mind’s defenses are formidable. After you or another creature you can see within 30 feet of you fails a saving throw, you can use your reaction to roll your Psionic Talent die and add the number rolled to the saving throw, potentially causing it to succeed."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Tracker (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Wisdom score by 1, to a maximum of 20.",
+					"You learn the Hunter’s Mark spell. You can cast it once without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have. Wisdom is your spellcasting ability for this spell.",
+					"You have advantage on Wisdom (Survival) checks to track creatures."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You have spent time hunting creatures and honed your skills, gaining the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Vigor of The Hill Giant (Revised UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: 4th Level, Strike of the Giants (Hill Giant) Feat</i> You’ve manifested the resilience emblematic of hill giants, granting you the following benefits: <b>Ability Score Increase.</b> Increase your Constitution score by 1, to a maximum of 20. <b>Bulwark.</b> When you are subjected to an effect that would move you at least 5 feet or knock you prone, you can use your reaction to steady yourself. You are then neither moved nor knocked prone."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Vigor of the Hill Giant (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "<i>Prerequisite:\t4th\tLevel</i> You’ve\tmanifested\tthe\tresilience\temblematic\tof\thill\tgiants,\tgranting\tyou\tthe\tfollowing\tbenefits: <b>Bulwark.</b> When\tyou\tare\tsubjected\tto\tan\teffect\tthat\twould move\tyou\tat\tleast\t5\tfeet or\tknock\tyou\tprone,\tyou\tcan\tuse\tyour\treaction\tto\tsteady\tyourself.\tYou\tare\tthen\tneither moved\tnor\tknocked\tprone. <b>Hearty Health.</b> When\tyou\tare\tsubjected\tto\ta\tspell\tthat\trestores\tyour\thit\tpoints,\tyou\tcan\tregain\tadditional\thit\tpoints\tequal\tto\tyour\tConstitution\tmodifier.\tYou\tcan\tregain\tthese\tadditional\thit\tpoints\ta\tnumber\tof\ttimes\tequal\tto\tyour\tproficiency\tbonus, and\tyou regain\tall expended uses\twhen you\tfinish\ta\tlong\trest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Vital Sacrifice (HB)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"When you make an attack roll, you roll 1d6 and add it to the total.",
+					"When you hit with an attack or spell, you deal an additional 2d6 necrotic damage.",
+					"When you cause a creature to make a Strength, Dexterity, or Constitution saving throw, roll a d4 and reduce their save by the amount rolled."
+				]
+			},
+			{
+				"type": "text",
+				"content": "You've learned secrets of hemocraft that grant you esoteric power at the price of your own life force. As a bonus action, you can choose to take 1d6 necrotic damage to gain a blood boon. Your blood boon lasts for 1 hour or until expended. You can expend this blood boon to gain one of the following benefits: The damage you take to gain a blood boon can’t be reduced in any way."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Wild Talent (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "text",
+				"content": "You awaken to your psionic potential, which enhances your mind or body. Increase one ability score of your choice by 1, to a maximum of 20, to represent this enhancement. You also harbor a wellspring of psionic power within yourself, an energy that ebbs and flows as you channel it in various ways. This power is represented by your Psionic Talent die, the starting size of which is a d6. You can use your Psionic Talent die in the following ways: <b><i>Psi-Boosted Ability.</i></b> When you make an ability check with the ability increased by this feat, you can roll your Psionic Talent die and add the number rolled to the check. You can choose to do so before or after rolling the d20, but before you know whether the check succeeded or failed. <b><i>Psi-Guided Strike.</i></b> Once on each of your turns when you hit with an attack roll that uses the ability increased by this feat, you can roll your Psionic Talent die after you make the damage roll and then replace one of the damage dice with the number rolled on the Psionic Talent die. <b><i>Changing the Die’s Size.</i></b> If you roll the highest number on your Psionic Talent die, it decreases by one die size after the roll. This represents you burning through your psionic energy. For example, if the die is a d6 and you roll a 6, it becomes a d4. If it’s a d4 and you roll a 4, it becomes unusable until you finish a long rest. Conversely, if you roll a 1 on your Psionic Talent die, it increases by one die size after the roll, up to its starting size. This represents you conserving psionic energy for later use. For example, if you roll a 1 on a d4, the die then becomes a d6. Whenever you finish a long rest, your Psionic Talent die resets to its starting size. When you reach certain levels, the starting size of your Psionic Talent die increases: at 5th level (d8), 11th level (d10), and 17th level (d12). If you have a Psionic Talent die from another source, such as a class feature, you don’t get more than one die; use only the one with the largest starting size. <b><i>Psi Replenishment.</i></b> As a bonus action, you can calm your mind for a moment and restore your Psionic Talent die to its starting size. You then can’t use Psi Replenishment again until you finish a long rest."
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Wonder Maker (UA)",
+		"source": "HB",
+		"prerequisite": null,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Increase your Dexterity or Intelligence score by 1, to a maximum of 20.",
+					"When you make a check using your proficiency with tinker’s tools, you add double your proficiency bonus to the check.",
+					"When you make a device with your Tinker trait, you have the following additional options for what you make:",
+					"<b><i>Alarm</i></b>: This device senses when a creature moves to within 15 feet of it without speaking aloud a password chosen when you create it. One round after a creature moves into range, the alarm makes a shrill ringing that lasts for 1 minute and can be heard from up to 300 feet away.",
+					"<b><i>Calculator</i></b>: This device makes doing sums easy.",
+					"<b><i>Lifter</i></b>: This device can be used as a block and tackle, allowing its user to hoist five times the weight the user can normally lift.",
+					"<b><i>Timekeeper</b></i>: This pocket watch keeps accurate time.",
+					"<b><i>Weather Sensor</i></b>: When used as an action, this device predicts weather conditions in a 1-mile radius over the next 4 hours, showing one symbol (clouds, sun/moon, rain, or snow) for each hour"
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Prerequisite: Gnome (rock)</i> You master the tinker techniques of your people. You gain the following benefits:"
+			}
+		],
+		"page": 0,
+		"homebrew": true
 	}
 ]

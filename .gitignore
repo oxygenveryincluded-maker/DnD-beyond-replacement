@@ -5,3 +5,4 @@ build
 .env.*
 .DS_Store
 *.log
+scripts/wikidot-src/

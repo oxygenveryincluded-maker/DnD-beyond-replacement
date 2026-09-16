@@ -38560,5 +38560,3077 @@
 		"basicRules2024": false,
 		"reprintedAs": [],
 		"page": 343
+	},
+	{
+		"name": "Acid Stream (UA)",
+		"source": "HB",
+		"level": 1,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "self",
+			"selfType": "line",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a bit of rotten food"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } A stream of acid emanates from you in a line 30 feet long and 5 feet wide in a direction you choose. Each creature in the line must succeed on a Dexterity saving throw or be covered in acid for the spell’s duration or until a creature uses its action to scrape or wash the acid off itself or another creature. A creature covered in the acid takes 3d4 acid damage at the start of each of its turns. <i>Evocation</i> 1st 1 Action Self (30-foot line) Concentration, up to 1 minute V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Antagonize (UA)",
+		"source": "HB",
+		"level": 3,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a playing card depicting a rogue"
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You whisper magical words that antagonize one creature of your choice within range. The target must make a Wisdom saving throw. On a failed save, it takes 4d4 psychic damage and must immediately use its reaction, if available, to make a melee attack against another creature of your choice that you can see. If no other creature is within range, the target has disadvantage on the next attack roll it makes before the start of your next turn. <i>Enchantment</i> 3rd 1 Action 30 feet Instantaneous V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Arcane Hacking (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "self"
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "hacking tools"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>2nd-level transmutation (technomagic)</i> You gain advantage on all Intelligence checks using hacking tools to break software encryption or online security when using a foreign system. This spell also allows you to break 2nd level and lower protective spells such as Arcane Lock or Glyph of Warding by making an Intelligence check using hacking tools against the spell save DC of the spell’s caster. <i>Transmutation ^^T^^</i> 2nd 1 Action Self Concentration, up to 1 hour V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Arcane Weapon (UA)",
+		"source": "HB",
+		"level": 1,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "self"
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You channel arcane energy into one simple or martial weapon you’re holding, and choose one damage type: acid, cold, fire, lightning, poison, or thunder. Until the spell ends, you deal an extra 1d6 damage of the chosen type to any target you hit with the weapon. If the weapon isn’t magical, it becomes a magic weapon for the spell’s duration. As a bonus action, you can change the damage type, choosing from the options above. <i>Transmutation</i> 1st 1 Bonus Action Self Concentration, up to 1 hour V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Commune with City (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "self"
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"Terrain and bodies of water",
+					"Prevalent buildings, plants, animals, or intelligent creatures",
+					"Powerful (CR 1 or higher) celestials, fey, fiends, elementals, or undead",
+					"Influences from other planes of existence",
+					"Electrical currents, wireless signals, and active transit lines and tracks"
+				]
+			},
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>5th-level divination (ritual) (technomagic)</i> You briefly become one with the city and gain knowledge of the surrounding area. Aboveground, this spell gives you knowledge of the area within 1 mile of you. In sewers and other underground settings, you gain knowledge of the area within 600 feet of you. You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area: For example, you could determine the location of powerful undead in the area, the location of major sources of electrical power or interference, and the location of any nearby parks. <i>Divination ^^T^^</i> 5th 1 Minute <i>^^R^^</i> Self Instantaneous V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Conjure Barlgura (UA)",
+		"source": "HB",
+		"level": 4,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": false,
+				"duration": {
+					"amount": 10,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You summon a barlgura that appears in an unoccupied space you can see within range. The barlgura disappears when it drops to 0 hit points or when the spell ends. The barlgura is hostile to all non-demons. Roll initiative for the barlgura, which has its own turns. At the start of its turn, it moves toward and attacks the nearest non-demon it can perceive. If two or more creatures are equally near, it picks one at random. If it cannot see any potential enemies, the barlgura moves in a random direction in search of foes. As part of casting the spell, you can scribe a circle on the ground using the blood of an intelligent humanoid slain within the past 24 hours. The circle is large enough to encompass your space. The summoned barlgura cannot cross the circle or target anyone in it while the spell lasts. <i>Conjuration</i> 4th 1 Action 60 feet Up to 10 minutes V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Conjure Hezrou (UA)",
+		"source": "HB",
+		"level": 7,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "food worth at least 100 gp, which the spell consumes"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You summon a hezrou that appears in an unoccupied space you can see within range. The hezrou disappears when it drops to 0 hit points or when the spell ends. The hezrou’s attitude depends on the value of the food used as a material component for this spell. Roll initiative for the hezrou, which has its own turns. At the start of the hezrou’s turn, the DM makes a secret Charisma check on your behalf, with a bonus equal to the food’s value divided by 20. The check DC starts at 10 and increases by 2 each round. You can issue orders to the hezrou and have it obey you as long as you succeed on the Charisma check. If the check fails, the spell no longer requires concentration and the demon is no longer under your control. The hezrou then focuses on devouring any corpses it can see. If there are no such meals at hand, it attacks the nearest creatures and eats anything it kills. If its hit points are reduced to below half its hit point maximum, it returns to the Abyss. As part of casting the spell, you can scribe a circle on the ground using the blood of an intelligent humanoid slain within the past 24 hours. The circle is large enough to encompass your space. The summoned hezrou cannot cross the circle or target anyone in it while the spell lasts. <i>Conjuration</i> 7th 1 Action 60 feet Concentration, up to 1 hour V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Conjure Knowbot (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "touch"
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": false,
+				"duration": {
+					"amount": 10,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>4th-level conjuration (technomagic)</i> You touch a single computerized device or computer system to conjure a knowbot—a partially sentient piece of software imprinted with vestiges of your own skills and computer abilities. For the duration of the spell, you can use a bonus action to have the knowbot execute a computer related task that would normally require an action. The knowbot makes Intelligence ability checks using your ability score and proficiency bonuses including your proficiency with hacking tools, if applicable. You have a limited telepathic bond with the knowbot, out to a range of 500 feet from the device or system where the knowbot was conjured. If you move beyond this range, the knowbot disappears in 2d4 rounds, as if the duration of the spell had expired. Moving within range again immediately reestablishes the bond. The knowbot is bound to the system in which it was created, and it stays there until it is dismissed or the spell’s duration expires. <i><b>At Higher Levels.</b></i> When you cast this spell using a spell slot of 5th level or higher, the spell’s duration increases to 1 hour. Additionally, your telepathic bond with the knowbot is effective out to a range of 1,000 feet, and if you leave the range of the bond, the knowbot continues performing its last directed task until the spell expires. <i>Conjuration ^^T^^</i> 4th 1 Action Touch 10 minutes V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Conjure Lesser Demon (UA)",
+		"source": "HB",
+		"level": 3,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a vial of blood from an intelligent humanoid killed within the past 24 hours"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You summon up to a total of eight manes or dretches that appear in unoccupied spaces you can see within range. A manes or dretch disappears when it drops to 0 hit points or when the spell ends. The demons are hostile to all creatures. Roll initiative for the summoned demons as a group, which has its own turns. The demons attack the nearest non-demons to the best of their ability. As part of casting the spell, you can scribe a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. The summoned demons cannot cross the circle or target anyone in it while the spell lasts. Using the material component in this manner consumes it. <i>Conjuration</i> 3rd 1 Action 60 feet Concentration, up to 1 hour V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Conjure Shadow Demon (UA)",
+		"source": "HB",
+		"level": 4,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a vial of blood from an intelligent humanoid killed within the past 24 hours"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You summon a shadow demon that appears in an unoccupied space you can see within range. The shadow demon disappears when it drops to 0 hit points or when the spell ends. Roll initiative for the shadow demon, which has its own turns. You can issue orders to the shadow demon, and it obeys you as long as it can attack a creature on each of its turns and does not start its turn in an area of bright light. If either of these conditions is not met, the shadow demon immediately makes a Charisma check contested by your Charisma check. If you fail the check, the spell no longer requires concentration and the demon is no longer under your control. The demon automatically succeeds on the check if it is more than 100 feet away from you. As part of casting the spell, you can scribe a circle on the ground using the blood of an intelligent humanoid slain within the past 24 hours. The circle is large enough to encompass your space. The summoned shadow demon cannot cross the circle or target anyone in it while the spell lasts. <i>Conjuration</i> 4th 1 Action 60 feet Concentration, up to 1 hour V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Conjure Vrock (UA)",
+		"source": "HB",
+		"level": 5,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a gem worth at least 100 gp, which the spell consumes"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You summon a vrock that appears in an unoccupied space you can see within range. The vrock disappears when it drops to 0 hit points or when the spell ends. The vrock’s attitude depends on the value of the gem used as a material component for this spell. Roll initiative for the vrock, which has its own turns. At the start of the vrock’s turn, the DM makes a secret Charisma check on your behalf, with a bonus equal to the gem’s value divided by 20. The check DC starts at 10 and increases by 2 each round. You can issue orders to the vrock and have it obey you as long as you succeed on the Charisma check. If the check fails, the spell no longer requires concentration and the vrock is no longer under your control. The vrock takes no actions on its next turn and uses its telepathy to tell any creature it can see that it will fight in exchange for treasure. The creature that gives the vrock the most expensive gem can command it for the next 1d6 rounds. At the end of that time, it offers the bargain again. If no one offers the vrock treasure before its next turn begins, it attacks the nearest creatures for 1d6 rounds before returning to the Abyss. As part of casting the spell, you can scribe a circle on the ground using the blood of an intelligent humanoid slain within the past 24 hours. The circle is large enough to encompass your space. The summoned vrock cannot cross the circle or target anyone in it while the spell lasts. <i>Conjuration</i> 5th 1 Action 60 feet Concentration, up to 1 hour V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Digital Phantom (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "self"
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a small piece of copper wire"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>2nd-level abjuration (technomagic)</i> This spell works to actively hide your presence within a computer system. For the spell’s duration, you and any other users you choose on your local network gain a +10 bonus to Intelligence checks to avoid detection by administrators, knowbots, tracking software, and the like. Whenever you and your chosen users leave any computer system you are working in while this spell is in effect, all trace of your previous presence in that system is erased. <i>Abjuration ^^T^^</i> 2nd 1 Action Self Concentration, up to 1 hour V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Draconic Transformation (UA)",
+		"source": "HB",
+		"level": 7,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "self"
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"You have blindsight with a range of 30 feet. Within that range, you can effectively see anything that isn’t behind total cover, even if you’re blinded or in darkness. Moreover, you can see an invisible creature, unless the creature successfully hides from you.",
+					"Incorporeal wings sprout from your back, giving you a flying speed of 40 feet.",
+					"When you cast this spell, and as a bonus action on subsequent turns for the duration, you can exhale a breath of shimmering energy in a 30-foot cone. Each creature in the area must make a Dexterity saving throw, taking 3d8 force damage on a failed save or half as much damage on a successful one."
+				]
+			},
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } worth at least 500 gp) With a roar, you draw on the magic of dragons to transform yourself, taking on various draconic features. You gain the following benefits until the spell ends: <i>Transmutation</i> 7th 1 Bonus Action Self Concentration, up to 1 minute V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Ego Whip (UA)",
+		"source": "HB",
+		"level": 4,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You lash the mind of one creature you can see within range, filling it with despair. The target must succeed on an Intelligence saving throw or suffer disadvantage on attack rolls, ability checks, and saving throws, and it can’t cast spells. At the end of each of its turns, the target can make another Intelligence saving throw. On a success, the spell ends on the target. <i>Enchantment</i> 4th 1 Action 30 feet Concentration, up to 1 minute V"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Find Vehicle (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 10,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": false,
+				"duration": {
+					"amount": 8,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>2nd-level conjuration (technomagic)</i> You summon a spirit that assumes the form of a nonmilitary land vehicle of your choice, appearing in an unoccupied space within range. The vehicle has the statistics of a normal vehicle of its sort, though it is celestial, fey, or fiendish (your choice in origin). The physical characteristics of the vehicle reflect its origin to some degree. For example, a fiendish SUV might be jet black in color, with tinted windows and a sinister-looking front grille. You have a supernatural bond with the conjured vehicle that allows you to drive beyond your normal ability. While driving the conjured vehicle, you are considered proficient with vehicles of its type, and you add double your proficiency bonus to ability checks related to driving the vehicle. While driving the vehicle, you can make any spell you cast that targets only you also target the vehicle. If the vehicle drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss the vehicle at any time as an action, causing it to disappear. You can't have more than one vehicle bonded by this spell at a time. As an action, you can release the vehicle from its bond at any time, causing it to disappear. <i>Conjuration ^^T^^</i> 2nd 10 Minutes 30 feet 8 hours V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Fizban's Platinum Shield (UA)",
+		"source": "HB",
+		"level": 6,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a platinum-plated dragon scale, worth at least 500 gp"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"The creature has half cover.",
+					"The creature has resistance to acid, cold, fire, lightning, and poison damage.",
+					"If the creature is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the creature instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+				]
+			},
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You create a field of silvery light that surrounds a creature of your choice within range (you can choose yourself). The field sheds dim light out to 5 feet. As a bonus action on subsequent turns, you can move the field to another creature within 60 feet of the field. The creature protected by the field gains the following benefits: <i>Abjuration</i> 6th 1 Action 60 feet Concentration, up to 1 minute V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Flame Stride (UA)",
+		"source": "HB",
+		"level": 3,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "self"
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } The billowing flames of a dragon cover your feet, granting you explosive speed. For the duration, your speed increases by 20 feet and moving doesn’t provoke opportunity attacks. When you move within 5 feet of a creature or object that isn’t being worn or carried, it takes 1d6 fire damage from your trail of heat. A creature or object can take this damage only once during a turn. <i>Transmutation</i> 3rd 1 Bonus Action Self Concentration, up to 1 minute V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Guiding Hand (UA)",
+		"source": "HB",
+		"level": 1,
+		"school": "D",
+		"time": [
+			{
+				"number": 1,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 5
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 8,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": true,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You create a Tiny incorporeal hand of shimmering light in an unoccupied space you can see within range. The hand exists for the duration, but it disappears if you teleport or you travel to a different plane of existence. When the hand appears, you name one major landmark, such as a city, mountain, castle, or battlefield on the same plane of existence as you. Someone in history must have visited the site and mapped it. If the landmark appears on no map in existence, the spell fails. Otherwise, whenever you move toward the hand, it moves away from you at the same speed you moved, and it moves in the direction of the landmark, always remaining 5 feet away from you. If you don’t move toward the hand, it remains in place until you do and beckons for you to follow once every 1d4 minutes. <i>Divination</i> 1st 1 Minute <i>^^R^^</i> 5 feet Concentration, up to 8 hours V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Hand of Radiance (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 5
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>Evocation cantrip</i> You raise your hand, and burning radiance erupts from it. Each creature of your choice that you can see within 5 feet of you must succeed on a Constitution saving throw or take 1d6 radiant damage. <b><i>At Higher Levels:</i></b> The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6). <b><i>Spell Lists:</i></b> Cleric <i>Evocation</i> Cantrip 1 Action 5 feet Instantaneous V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Haywire (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>3rd-level enchantment (technomagic)</i> This spell plays havoc with electronic devices, making the use of such devices all but impossible. Each electronic device in a 10-foot-radius sphere centered on a point you choose within range is subject to random behavior while it remains within the area. A device not held by a creature is automatically affected. If an electronic device is held by a creature, that creature must succeed on a Wisdom saving throw or have the device affected by the spell. At the start of each of your turns, roll a d6 for each affected device to determine its behavior. Except where otherwise indicated, that behavior lasts until the start of your next turn while this spell is in effect."
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"1",
+						"The device shuts down and must be restarted. Do not roll again for this device until it is restarted."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"2-4",
+						"The device does not function."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"5",
+						"The device experiences a power surge, causing an electric shock to the wielder (if any and one random creature within 5 feet of the device. Each affected creature must make a Dexterity saving throw against your spell save DC, taking 6d6 lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"6",
+						"The device is usable as normal."
+					]
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Enchantment ^^T^^</i> 5th 1 Action 90 feet Concentration, up to 1 minute V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Healing Elixir (UA)",
+		"source": "HB",
+		"level": 1,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "self"
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "alchemist’s supplies"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": false,
+				"duration": {
+					"amount": 24,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You create a healing elixir in a simple vial that appears in your hand. The elixir retains its potency for the duration or until it’s consumed, at which point the vial vanishes. As an action, a creature can drink the elixir or administer it to another creature. The drinker regains 2d4 + 2 hit points. <i>^^HB^^This spell is massively overpowered. For example, a 1st-level wizard could use this spell to produce enough healing for an entire party without losing any spell slots. Additionally, it could be used to run a potion-selling scam in which the product vanishes a day after purchase. I would not recommend allowing it. Editor's Note: I don't have a clue as to what the first point is referring to, arcane recovery only gives 1 spell slot until 4th level, spell mastery is at 18th level, and any abusable subclass features are at 2nd level. But yes, either way, this spell is overpowered, it gives non-divine caster classes access to healing, and it can be abused in numerous ways. I'd suggest limiting the duration to an hour or less. Editor notes+: At higher levels, this allows wizards to heal creatures infinitely, and overall, wizards just shouldn't have healing spells, it goes against their design philosophy. On the warlock, its also still a confusing option, as though warlocks can gain healing spells through a celestial patron, this spell lacks any upcasting rules, which goes against the design of warlock.</i> <i>Conjuration</i> 1st 1 Minute Self 24 hours V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "House of Cards (UA)",
+		"source": "HB",
+		"level": 3,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "touch"
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a deck of cards"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": false,
+				"duration": {
+					"amount": 24,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You touch the ground and conjure forth a defensive structure made of enormous playing cards. The structure rises with you at its center, harmlessly lifting you and any creatures in the area. The house of cards has a square base that is 30 feet on each side, and it has three floors with 10-foot-high ceilings. The second floor is 20 feet on each side, and the top floor is 10 feet on each side—both centered above the bottom floor. Ramps connect the interior of each floor, and empty doorframes connect the interior and exterior of each level. Creatures inside or on top of the structure have half cover. Each card that comprises the house is 5 feet wide and 10 feet tall and is very fragile. A card has AC 10 and 1 hit point. The cards are immune to poison and psychic damage. Reducing a card to 0 hit points destroys it. Every time a card is destroyed, roll 1d6. If you roll a 5 or a 6, the house collapses, ending the spell. The house and all its cards vanish when the spell ends. <i>Conjuration</i> 3rd 1 Minute Touch 24 hours V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Icingdeath's Frost (UA)",
+		"source": "HB",
+		"level": 2,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "self",
+			"selfType": "cone",
+			"distance": {
+				"type": "feet",
+				"amount": 15
+			}
+		},
+		"components": {
+			"s": true,
+			"m": "a vial of meltwater"
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } A burst of icy cold energy emanates from you in a 30-foot cone. Each creature in that area must make a Constitution saving throw. On a failed save, a creature takes 3d8 cold damage and is covered in ice for 1 minute or until a creature uses its action to break the ice off itself or another creature. A creature covered in ice has its speed reduced to 0. On a successful save, a creature takes half as much damage with no additional effects. <i>Evocation</i> 2nd 1 Action Self (15-foot cone) Instantaneous S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Id Insinuation (UA)",
+		"source": "HB",
+		"level": 1,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You unleash a torrent of conflicting desires in the mind of one creature you can see within range, impairing its ability to make decisions. The target must succeed on a Wisdom saving throw or be incapacitated. At the end of each of its turns, it takes 1d12 psychic damage, and it can then make another Wisdom saving throw. On a success, the spell ends on the target. <i>Enchantment</i> 1st 1 Action 60 feet Concentration, up to 1 minute V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Infallible Relay (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "self"
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a mobile phone"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 10,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>1st-level divination (technomagic)</i> With this spell, you can target any creature with whom you have spoken previously, as long as the two of you are on the same plane of existence. When you cast the spell, the nearest functioning telephone or similar communications device within 100 feet of the target begins to ring. If there is no suitable device close enough to the target, the spell fails. The target must make a successful Charisma saving throw or be compelled to answer your call. Once the connection is established, the call is crystal clear and cannot be dropped until the conversation has ended or the spell’s duration ends. You can end the conversation at any time, but a target must succeed on a Charisma saving throw to end the conversation. <i>Divination ^^T^^</i> 1st 1 Minute Self Concentration, up to 10 minutes V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Invisibility To Cameras (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 10
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a scrap of black paper"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>3rd-level illusion (technomagic)</i> Four creatures of your choice within range become undetectable to electronic sensors and cameras for the duration of the spell. Anything a target is wearing or carrying is likewise undetectable as long as it is on the target’s person. The targets remain visible to vision. <i>Illusion ^^T^^</i> 3rd 1 Action 10 feet Concentration, up to 1 minute V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Maximillian's Earthen Grasp",
+		"source": "XGE",
+		"level": 2,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a miniature hand sculpted from clay"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You choose a 5-foot-square unoccupied space on the ground that you can see within range. A Medium hand made from compacted soil rises there and reaches for one creature you can see within 5 feet of it. The target must make a Strength saving throw. On a failed save, the target takes 2d6 bludgeoning damage and is restrained for the spell’s duration. As an action, you can cause the hand to crush the restrained target, who must make a Strength saving throw. It takes 2d6 bludgeoning damage on a failed save, or half as much damage on a successful one. To break out, the restrained target can use its action to make a Strength check against your spell save DC. On a success, the target escapes and is no longer restrained by the hand. As an action, you can cause the hand to reach for a different creature or to move to a different unoccupied space within range. The hand releases a restrained target if you do either. <i>Transmutation</i> 2nd 1 Action 30 feet Concentration, up to 1 minute V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Mental Barrier (UA)",
+		"source": "HB",
+		"level": 2,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "reaction"
+			}
+		],
+		"range": {
+			"type": "self"
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": false,
+				"duration": {
+					"amount": 1,
+					"type": "round"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You protect your mind with a wall of looping, repetitive thought. Until the start of your next turn, you have advantage on Intelligence, Wisdom, and Charisma saving throws, and you have resistance to psychic damage. <i>Abjuration</i> 2nd 1 Reaction Self 1 round V"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Mind Thrust (UA)",
+		"source": "HB",
+		"level": 2,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": false,
+				"duration": {
+					"amount": 1,
+					"type": "round"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You thrust a lance of psychic disruption into the mind of one creature you can see within range. The target must make an Intelligence saving throw. On a failed save, the target takes 3d6 psychic damage, and it can’t take a reaction until the end of its next turn. Moreover, on its next turn, it must choose whether it gets a move, an action, or a bonus action; it gets only one of the three. On a successful save, the target takes half as much damage and suffers none of the spell’s other effects. <i>Enchantment</i> 2nd 1 Bonus Action 60 feet 1 round V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Nathair's Mischief (UA)",
+		"source": "HB",
+		"level": 2,
+		"school": "I",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"s": true,
+			"m": "a piece of crust from an apple pie"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You fill a 20-foot cube centered on a point you choose within range with fey and draconic magic. Roll on the Mischievous Surge table to determine the magical effect produced. At the start of each of your turns, you can move the cube up to 10 feet and reroll on the table."
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"1",
+						"The smell of apple pie fills the air, and each creature in the cube must succeed on a Wisdom saving throw or become charmed by you until the start of your next turn."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"2",
+						"Bouquets of flowers appear all around, and each creature in the cube must succeed on a Dexterity saving throw or be blinded until the start of your next turn as the flowers spray water in their faces."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"3",
+						"Each creature in the cube must succeed on a Wisdom saving throw or begin giggling until the start of your next turn. A giggling creature is incapacitated and uses all its movement to move in a random direction."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"4",
+						"Drops of molasses appear and hover in the cube, turning it into difficult terrain until the start of your next turn."
+					]
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Illusion</i> 2nd 1 Action 60 feet Concentration, up to 1 minute S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "On/Off (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>Transmutation cantrip (technomagic)</i> This cantrip allows you to activate or deactivate any electronic device within range, as long as the device has a clearly defined on or off function that can be easily accessed from the outside of the device. Any device that requires a software-based shutdown sequence to activate or deactivate cannot be affected by On/Off. <i>Transmutation ^^T^^</i> Cantrip 1 Action 60 feet Instantaneous V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Otherworldly Form (UA)",
+		"source": "HB",
+		"level": 6,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "self"
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "an object engraved with a symbol of the Outer Planes, worth at least 500 gp"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"You are immune to fire and poison damage (Lower Planes) or radiant and necrotic damage (Upper Planes).",
+					"You are immune to the poisoned condition (Lower Planes) or the charmed condition (Upper Planes).",
+					"Spectral wings appear on your back, giving you a flying speed of 40 feet.",
+					"You have a +2 bonus to AC.",
+					"All your weapon attacks are magical, and when you make a weapon attack, you can use your spellcasting ability modifier, instead of Strength or Dexterity, for the attack and damage rolls.",
+					"You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks"
+				]
+			},
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } Uttering an incantation, you draw on the magic of the Lower Planes or Upper Planes (your choice) to transform yourself. You gain the following benefits until the spell ends: <i>Transmutation</i> 6th 1 Action Self Concentration, up to 1 minute V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Power Word: Heal",
+		"source": "PHB",
+		"level": 9,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "touch"
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } A wave of healing energy washes over a creature you touch. The target regains all its hit points. If the creature is charmed, frightened, paralyzed, or stunned, the condition ends. If the creature is prone, it can use its reaction to stand up. This spell has no effect on undead or constructs. <i>Evocation</i> 9th 1 Action Touch Instantaneous V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Power Word: Kill",
+		"source": "PHB",
+		"level": 9,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you chose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect. <i>Enchantment</i> 9th 1 Action 60 feet Instantaneous V"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Power Word: Pain",
+		"source": "XGE",
+		"level": 7,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You speak a word of power that causes waves of intense pain to assail one creature you can see within range. If the target has 100 hit points or fewer, it is subject to crippling pain. Otherwise, the spell has no effect on it. A target is also unaffected if it is immune to being charmed. While the target is affected by crippling pain, any speed it has can be no higher than 10 feet. The target also has disadvantage on attack rolls, ability checks, and saving throws, other than Constitution saving throws. Finally, if the target tries to cast a spell, it must first succeed on a Constitution saving throw, or the casting fails and the spell is wasted. A target suffering this pain can make a Constitution saving throw at the end of each of its turns. On a successful save, the pain ends. <i>Enchantment</i> 7th 1 Action 60 feet Instantaneous V"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Power Word: Stun",
+		"source": "PHB",
+		"level": 8,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is stunned. Otherwise, the spell has no effect. The stunned target must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends. <i>Enchantment</i> 8th 1 Action 60 feet Instantaneous V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Protection from Ballistics (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "touch"
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a shell casing"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 10,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>3rd-level abjuration (technomagic)</i> This spell enchants the flesh of the target against the impact of bullets. Until the spell ends, the target has resistance to nonmagical ballistic damage. <i>Abjuration ^^T^^</i> 3rd 1 Action Touch Concentration, up to 10 minutes V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Psionic Blast (UA)",
+		"source": "HB",
+		"level": 3,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "self",
+			"selfType": "cone",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You unleash a destructive wave of mental power in a 30-foot cone. Each creature in the area must make a Dexterity saving throw. On a failed save, a target takes 5d8 force damage, is pushed 20 feet directly away from you, and is knocked prone. On a successful save, a target takes half as much damage and isn’t pushed or knocked prone. <i>Evocation</i> 3rd 1 Action Self (30-foot cone) Instantaneous V"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Psychic Crush (UA)",
+		"source": "HB",
+		"level": 6,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": false,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You overload the mind of one creature you can see within range, filling its psyche with discordant emotions. The target must make an Intelligence saving throw. On a failed save, the target takes 12d6 psychic damage and is stunned for 1 minute. On a successful save, the target takes half as much damage and isn’t stunned. The stunned target can make an Intelligence saving throw at the end of each of its turns. On a successful save, the spell ends on the target. <i>Enchantment</i> 6th 1 Action 60 feet 1 minute V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Puppet (UA)",
+		"source": "HB",
+		"level": 1,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 120
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } Your gesture forces one humanoid you can see within range to make a Constitution saving throw. On a failed save, the target must move up to its speed in a direction you choose. In addition, you can cause the target to drop whatever it is holding. This spell has no effect on a humanoid that is immune to being charmed. <i>^^HB^^This spell is somewhat overpowered. Forced movement is one thing, but forced disarmament is very strong. I would recommend allowing only forced movement or forced disarmament, not both.</i> <i>Enchantment</i> 1st 1 Action 120 feet Instantaneous V"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Raulothim's Psychic Lance (UA)",
+		"source": "HB",
+		"level": 4,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 120
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You unleash a shimmering lance of psychic power from your forehead at a creature that you can see within range. Alternatively, you can utter the creature’s name. If the named target is within range, it gains no benefit from cover or invisibility as the lance homes in on it. If the named target isn’t within range, the lance dissipates, and the spell slot is not expended. The target must succeed on an Intelligence saving throw or take 10d6 psychic damage and be incapacitated until the start of your next turn. <i>Enchantment</i> 4th 1 Action 120 feet Instantaneous V"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Remote Access (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 120
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": false,
+				"duration": {
+					"amount": 10,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>1st-level transmutation (technomagic)</i> You can use any electronic device within range as if it were in your hands. This is not a telekinesis effect. Rather, this spell allows you to simulate a device's mechanical functions electronically. You are able to access only functions that a person using the device manually would be able to access. You can use remote access with only one device at a time. <i>Transmutation ^^T^^</i> 1st 1 Action 120 feet 10 minutes V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Sense Emotion (UA)",
+		"source": "HB",
+		"level": 1,
+		"school": "D",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "self"
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You attune your senses to pick up the emotions of others for the duration. When you cast the spell, and as your action on each turn until the spell ends, you can focus your senses on one humanoid you can see within 30 feet of you. You instantly learn the target’s prevailing emotion, whether it’s love, anger, pain, fear, calm, or something else. If the target isn’t actually humanoid or it is immune to being charmed, you sense that it is calm. <i>Divination</i> 1st Level 1 Action Self Concentration, up to 1 minute V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Shutdown (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 120
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>5th-level transmutation (technomagic)</i> This spell shuts down all electronic devices within range that are not wielded by or under the direct control of a creature. If an electronic device within range is used by a creature, that creature must succeed on a Constitution saving throw to prevent the device from being shut down. While the spell remains active, no electronic device within range can be started or restarted. <i>Transmutation ^^T^^</i> 5th 1 Action 120 feet Concentration, up to 1 minute V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Spirit of Death (UA)",
+		"source": "HB",
+		"level": 4,
+		"school": "N",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a gilded playing card depicting an avatar of death worth at least 400 gp"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You call forth a spirit that embodies death itself. Choose a creature you can see within range. The spirit manifests in an unoccupied space that you can see within 10 feet of the target, and the target becomes haunted by the spirit. The spirit uses the Reaper Spirit stat block. The spirit disappears when it or the haunted creature is reduced to 0 hit points, or when the spell ends. The reaper spirit is an ally to you and your companions. In combat, the spirit shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you), but it will only attack the haunted creature. If you don’t issue the spirit any commands, it takes the Dodge action and uses its move to avoid danger"
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<i>Medium Undead</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Armor Class:</b> 11 + the level of the spell (natural armor)"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Hit Points:</b> 40 + 10 for each level of the spell above 4th"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Speed:</b> 30 ft., fly 30 ft. (hover)"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"16 (+3)",
+						"16 (+3)",
+						"16 (+3)",
+						"16 (+3)",
+						"16 (+3)",
+						"16 (+3)"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Damage Immunities:</b> necrotic, poison"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Condition Immunities:</b> charmed, frightened, paralyzed, poisoned"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Senses:</b> darkvision 60 ft., passive Perception 13"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Languages:</b> understands the languages you speak"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Challenge:</b> --"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Proficiency Bonus:</b> equals your bonus"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Incorporeal Movement.</i></b> The reaper can move through other creatures and objects as if they were difficult terrain. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes 1d10 force damage for every 5 feet traveled."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Haunting Tracker.</i></b> You and the reaper can sense the direction and distance to the haunted creature if it’s on the same plane of existence as you."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Multiattack.</i></b> The reaper makes a number of attacks equal to half this spell’s level (rounded down)."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Reaping Scythe.</i></b> <i>Melee Weapon Attack:</i> your spell attack modifier to hit (with advantage), reach 5 ft., one target. <i>Hit:</i> 1d10 + 3 + the spell’s level necrotic damage."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Paralyzing Fear (1/Day).</i></b> The reaper attempts to instill fear into the haunted creature it can see within 60 feet of itself. The creature must succeed on a Wisdom saving throw against your spell save DC or be frightened of the reaper for 1 minute. While frightened this way, the creature’s speed is 0, and it can’t benefit from any bonus to its speed. The frightened creature can repeat the saving throw at the end of each of its turns, or immediately after it takes damage, ending the effect on itself on a success."
+					]
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Necromancy</i> 4th 1 Action 60 feet Concentration, up to 1 minute V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Spray of Cards (UA)",
+		"source": "HB",
+		"level": 2,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 0
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a deck of cards"
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"<b>Blinding Cards.</b> Each creature in a 15-foot cone must succeed on a Wisdom saving throw or be blinded until the end of their next turn.",
+					"<b>Cutting Cards.</b> Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 2d10 force damage on a failed save or half as much damage on a successful one."
+				]
+			},
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You spray spectral cards from your hands or sleeve; the cards blind or slash at your enemies, and then vanish. Choose one of the following effects for the cards: <i>Conjuration</i> 2nd 1 Action 15-foot cone Instantaneous V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Sudden Awakening (UA)",
+		"source": "HB",
+		"level": 1,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 10
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } Each sleeping creature you choose within range awakens, and then each prone creature within range can stand up without expending any movement. <i>Enchantment</i> 1st 1 Bonus Action 10 feet Instantaneous V"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Summon Draconic Spirit (UA)",
+		"source": "HB",
+		"level": 5,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "an art object from a dragon's hoard, worth at least 500 gp"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You call forth a draconic spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Draconic Spirit stat block. When you cast this spell, choose a family of dragon: Chromatic, Gem, or Metallic. The creature resembles a dragon of the chosen family, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends. The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger."
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<i>Large Dragon</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Armor Class:</b> 14 + the level of the spell (natural armor)"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Hit Points:</b> 50 + 10 for each level of the spell above 5th"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Speed:</b> 30 ft., fly 80 ft., swim 30 ft."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"19 (+4)",
+						"14 (+2)",
+						"17 (+3)",
+						"10 (+0)",
+						"14 (+2)",
+						"14 (+2)"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Damage Resistances (Chromatic and Metallic only):</b> acid, cold, fire, lightning, poison"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Damage Resistances (Gem only):</b> force, necrotic, psychic, radiant, thunder"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Condition Immunities:</b> charmed, frightened, poisoned"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Senses:</b> blindsight 30 ft., darkvision 60 ft., passive Perception 12"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Languages:</b> Draconic, understands the languages you speak"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Challenge:</b> --"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Proficiency Bonus:</b> equals your bonus"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Shared Resistances.</i></b> When you summon the dragon, choose one of its damage resistances. You have resistance to the chosen damage type until the spell ends."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Multiattack.</i></b> The dragon uses its Breath Weapon, and it makes a number of Bite and Claw attacks equal to half the spell's level (rounded down)."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Bite and Claw.</i></b> <i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 10 ft., one target. <i>Hit:</i> 1d6 + 4 + the spell’s level piercing damage."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Breath Weapon.</i></b> The dragon exhales a stream of multicolored energy in a 30-foot cone. Each creature in that area must make a Dexterity saving throw, taking 2d6 damage of your choice of a damage type this dragon has resistance to on a failed save, or half as much damage on a successful one."
+					]
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Conjuration</i> 5th 1 Action 60 feet Concentration, up to 1 hour V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Summon Warrior Spirit (UA)",
+		"source": "HB",
+		"level": 3,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a gilded playing card depicting a knight worth at least 300 gp"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You call forth a warrior spirit from the legendary Deck of Many Things. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Warrior Spirit stat block. When you cast the spell, choose a type of warrior: barbarian, fighter, or monk. The warrior resembles a humanoid armed appropriately to the chosen class, which determines certain traits in its stat block. The warrior disappears when it drops to 0 hit points or when the spell ends. The warrior is an ally to you and your companions. In combat, the warrior shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger."
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<i>Medium Undead</i>"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Armor Class:</b> 13 + the level of the spell + 2 (Fighter only)"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Hit Points:</b> 30 (Barbarian and Fighter only) or 20 (Monk only) + 10 for each spell level above 3rd"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Speed:</b> 30 ft., 40 ft. (Monk only)"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"16 (+3)",
+						"16 (+3)",
+						"14 (+2)",
+						"10 (+0)",
+						"16 (+3)",
+						"9 (-1)"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Saving Throws:</b> Str +3, Dex +3"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Damage Resistances:</b> poison"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Condition Immunities:</b> charmed, poisoned"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Senses:</b> passive Perception 13"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Languages:</b> Common, understands the languages you speak"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Challenge:</b> --"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b>Proficiency Bonus:</b> equals your bonus"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Multiattack.</i></b> The warrior makes a number of attacks equal to half this spell’s level (rounded down)."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Reckless Strike (Barbarian Only).</i></b> <i>Melee Weapon Attack:</i> your spell attack modifier to hit (with advantage), reach 5 ft., one target. <i>Hit:</i> 1d12 + 3 + the spell’s level slashing damage, and attacks made against the warrior until the start of its next turn are made with advantage."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Rallying Strike (Fighter Only).</i></b> <i>Melee or Ranged Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., or range 20/60 ft., one target. <i>Hit:</i> 1d6 + 3 + the spell’s level piercing damage, and the warrior can choose another creature it can see within 20 feet of itself. The chosen creature gains 1d6 temporary hit points."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Unarmed Strike (Monk Only).</i></b> <i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d4 + 3 + the spell’s level bludgeoning damage, and the target must succeed on a Strength saving throw against your spell save DC or be knocked prone."
+					]
+				]
+			},
+			{
+				"type": "table",
+				"colLabels": [],
+				"rows": [
+					[
+						"",
+						"",
+						"",
+						"",
+						"",
+						"<b><i>Flurry of Blows (Monk Only).</i></b> The monk makes one Unarmed Strike attack."
+					]
+				]
+			},
+			{
+				"type": "text",
+				"content": "<i>Conjuration</i> 3rd 1 Action 90 feet Concentration, up to 1 hour V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Synchronicity (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "touch"
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>4th-level enchantment (technomagic)</i> The creature you touch feels reality subtly shifted to its favor while this spell is in effect. The target isn't inconvenienced by mundane delays of any sort. Traffic lights are always green, there's always a waiting elevator, and a taxi is always around the corner. The target can run at full speed through dense crowds, and attacks of opportunity provoked by the target's movement are made with disadvantage. Synchronicity grants advantage to Dexterity (Stealth) checks, since the target always finds a handy piece of cover available. Additionally, the target has advantage on all ability checks made to drive a vehicle. In the event that two or more creatures under the effect of synchronicity are attempting to avoid being inconvenienced by each other, the creatures engage in a contest of Charisma each time the effects of the spells would oppose each other. <i>Enchantment ^^T^^</i> 4th 1 Action Touch Concentration, up to 1 hour V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "System Backdoor (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "self"
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "hacking tools"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 1,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>4th-level transmutation (technomagic)</i> This spell allows you to bypass system security in order to create a secure login on a foreign system. The login you create allows you administrator-level privileges in any computer system not enhanced through technomagic. The login defeats any technomagic spells of 3rd level or lower. Once the duration of the spell expires, the login and all privileges are wiped from the system. System logs still show the activity of the user, but the user identification cannot be found or traced. <i>Transmutation ^^T^^</i> 4th 1 Minute Self Concentration, up to 1 hour V, S, M"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Thought Shield (UA)",
+		"source": "HB",
+		"level": 2,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "touch"
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": false,
+				"duration": {
+					"amount": 8,
+					"type": "hour"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You weave a clouding veil over the mind of one creature you touch. For the duration, the target’s mind can’t be read or detected, creatures can’t telepathically communicate with the target unless the target allows it, and the target has advantage on saving throws against any effect that would determine whether it is telling the truth. <i>Abjuration</i> 2nd 1 Action Touch 8 hours V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Unearthly Chorus (UA)",
+		"source": "HB",
+		"level": 1,
+		"school": "I",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "self",
+			"selfType": "radius",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": true,
+				"duration": {
+					"amount": 10,
+					"type": "minute"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": true,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } Music of a style you choose fills the air around you in a 30-foot radius. The music spreads around corners and can be heard from up to 100 feet away. The music moves with you, centered on you for the duration. Until the spell ends, you make Charisma (Performance) checks with advantage. In addition, you can use a bonus action on each of your turns to beguile one creature you choose within 30 feet of you that can see you and hear the music. The creature must make a Charisma saving throw. If you or your companions are attacking it, the creature automatically succeeds on the saving throw. On a failure, the creature becomes friendly to you for as long as it can hear the music and for 1 hour thereafter. You make Charisma (Deception) checks and Charisma (Persuasion) checks against creatures made friendly by this spell with advantage. <i>Illusion</i> 1st 1 Action Self (30-foot radius) Concentration, up to 10 minutes V"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Virtue (UA)",
+		"source": "HB",
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "touch"
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"concentration": false,
+				"duration": {
+					"amount": 1,
+					"type": "round"
+				}
+			}
+		],
+		"ritual": false,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } <i>Abjuration cantrip</i> You touch one creature, imbuing it with vitality. If the target has at least 1 hit point, it gains a number of temporary hit points equal to 1d4 + your spellcasting ability modifier. The temporary hit points are lost when the spell ends. <i>Abjuration</i> Cantrip 1 Action Touch 1 round V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
+	},
+	{
+		"name": "Wild Cunning (UA)",
+		"source": "HB",
+		"level": 1,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 120
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"ritual": true,
+		"concentration": false,
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"If there are any tracks on the ground within range, you know where they are, and you make Wisdom (Survival) checks to follow these tracks with advantage for 1 hour or until you cast this spell again.",
+					"If there is edible forage within range, you know it and where to find it.",
+					"If there is clean drinking water within range, you know it and where to find it.",
+					"If there is suitable shelter for you and your companions within range, you know it and where to find it.",
+					"Send the spirits to bring back wood for a fire and to set up a campsite in the area using your supplies. The spirits build the fire in a circle of stones, put up tents, unroll bedrolls, and put out any rations and water for consumption.",
+					"Have the spirits instantly break down a campsite, which includes putting out a fire, taking down tents, packing up bags, and burying any rubbish."
+				]
+			},
+			{
+				"type": "text",
+				"content": ".page-tags { display: none; } You call out to the spirits of nature to aid you. When you cast this spell, choose one of the following effects: <i>Transmutation</i> 1st 1 Action <i>^^R^^</i> 120 feet Instantaneous V, S"
+			}
+		],
+		"page": 0,
+		"homebrew": true
 	}
 ]

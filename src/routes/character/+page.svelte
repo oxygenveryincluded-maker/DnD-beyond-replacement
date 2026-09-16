@@ -49,6 +49,7 @@
   let mounted = $state(false);
   let featsInput = $state('');
   let spellsInput = $state('');
+  let showHomebrew = $state(false);
   let equipInput = $state('');
   let equipQty = $state(1);
   let newSpellCantrip = $state(false);
@@ -82,12 +83,18 @@
   ];
 
   const allClasses = $derived(
-    [...new Map((classesData as any[]).map((c) => [c.name, c])).values()] as any[]
+    [...new Map(
+      (classesData as any[])
+        .filter((c: any) => !c.homebrew || showHomebrew)
+        .map((c) => [c.name, c])
+    ).values()] as any[]
   );
 
   const allRaces = $derived(
     [...new Map(
-      (racesData as any[]).map((r): [string, any] => [r.name, r])
+      (racesData as any[])
+        .filter((r: any) => !r.homebrew || showHomebrew)
+        .map((r): [string, any] => [r.name, r])
         .slice()
         .sort((a, b) => (b[1].entries?.length || 0) - (a[1].entries?.length || 0))
     ).values()].sort((a, b) => a.name.localeCompare(b.name)) as any[]
@@ -95,7 +102,9 @@
 
   const allBackgrounds = $derived(
     [...new Map(
-      (backgroundsData as any[]).map((b): [string, any] => [b.name, b])
+      (backgroundsData as any[])
+        .filter((b: any) => !b.homebrew || showHomebrew)
+        .map((b): [string, any] => [b.name, b])
         .slice()
         .sort((a, b2) => (b2[1].entries?.length || 0) - (a[1].entries?.length || 0))
     ).values()].sort((a, b) => a.name.localeCompare(b.name)) as any[]
@@ -129,7 +138,9 @@ const backgroundInfo = $derived(
   const allSubclasses = $derived.by(() => {
     if (!classInfo || !selectedChar?.class) return [];
     const cls = selectedChar.class;
-    const same = (subclassesData as any[]).filter((s) => s.className === cls);
+    const same = (subclassesData as any[])
+      .filter((s: any) => !s.homebrew || showHomebrew)
+      .filter((s) => s.className === cls);
     const pool = same.filter((s) => s.edition === classInfo.edition);
     const usable = pool.length ? pool : same;
     const seen = new Set<string>();
@@ -614,6 +625,14 @@ const backgroundInfo = $derived(
         {/each}
       </div>
 
+      <div class="flex justify-end mb-3">
+        <label class="inline-flex items-center gap-2 cursor-pointer select-none" title="Show homebrew / Unearthed Arcana / extra content sourced from the SRD wiki">
+          <input type="checkbox" bind:checked={showHomebrew}
+            class="w-4 h-4 accent-amber-500" />
+          <span class="text-[10px] uppercase tracking-wider text-dnd-text-muted font-semibold">Include homebrew</span>
+        </label>
+      </div>
+
       <div class="card mb-4 fade-in">
         {#if builderStep === 0}
           <h2 class="font-display text-lg font-semibold text-dnd-gold mb-3">Basic Info</h2>
@@ -1053,7 +1072,9 @@ const backgroundInfo = $derived(
           </div>
           <SearchPicker
             label="Browse feats list"
-            items={(featsData as any[]).map((f) => ({ name: f.name, source: f.source, sub: f.category || '' }))}
+            items={(featsData as any[])
+              .filter((f: any) => !f.homebrew || showHomebrew)
+              .map((f) => ({ name: f.name, source: f.source, sub: f.category || '' }))}
             onAdd={(item) => addFeat(item.name)}
           />
           <div class="space-y-1 mt-3">
@@ -1123,11 +1144,13 @@ const backgroundInfo = $derived(
           </div>
           <SearchPicker
             label="Browse spell list"
-            items={(spellsData as any[]).map((s) => ({
-              name: s.name,
-              source: s.source,
-              sub: s.level === 0 ? 'Cantrip' : `${levelText(s.level)} · ${s.school || ''}`.trim()
-            }))}
+            items={(spellsData as any[])
+              .filter((s: any) => !s.homebrew || showHomebrew)
+              .map((s) => ({
+                name: s.name,
+                source: s.source,
+                sub: s.level === 0 ? 'Cantrip' : `${levelText(s.level)} · ${s.school || ''}`.trim()
+              }))}
             onAdd={addSpellFromList}
           />
 
