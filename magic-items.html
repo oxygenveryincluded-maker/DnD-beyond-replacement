@@ -11,14 +11,14 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-		<link href="./_app/immutable/entry/start.CAC0nDEB.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/DF59c9rp.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/start.D82XIz6u.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/B0hfUNGv.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/Q8PUvoxe.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/CJkChvkQ.js" rel="modulepreload">
-		<link href="./_app/immutable/entry/app.BmLPIPnf.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.CvqIULzS.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
-		<link href="./_app/immutable/nodes/0.D9oEd-BX.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/B_8NfOFV.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.BUPeYS8r.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BrYuD6Kx.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/CBMO_mdk.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/CUd5k3l_.js" rel="modulepreload">
 		<link href="./_app/immutable/nodes/11.DSHgMF5E.js" rel="modulepreload">
@@ -27,11 +27,39 @@
 		<link href="./_app/immutable/assets/0.TFisz7X2.css" rel="stylesheet">
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[0--><!--[--><!--[0--><div class="min-h-dvh flex items-center justify-center bg-dnd-darker p-6"><div class="card w-full max-w-sm p-6"><h1 class="font-display text-2xl font-bold text-dnd-gold mb-1">D&amp;D Companion</h1> <p class="text-sm text-dnd-text-muted mb-5">Enter the master password to continue.</p> <form class="space-y-3"><input type="password" placeholder="Master password" autocomplete="current-password" class="w-full"/> <!--[-1--><!--]--> <button type="submit" class="filter-btn w-full py-3 font-semibold">Unlock</button></form></div></div><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+		<div style="display: contents">
+			<noscript>
+				<div id="dnd-noscript" style="position:fixed;inset:0;background:#0f0f1a;color:#c9a544;font-family:Inter,system-ui,sans-serif;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;z-index:99999">
+					<p style="font-size:14px;line-height:1.6;max-width:420px">D&D Companion needs JavaScript to run. Please enable JavaScript in your browser settings and reload this page.</p>
+				</div>
+			</noscript>
+			<div id="dnd-boot-error" style="display:none;position:fixed;inset:0;background:#0f0f1a;color:#f2ede0;font-family:Inter,system-ui,sans-serif;align-items:center;justify-content:center;text-align:center;padding:24px;z-index:99998;flex-direction:column;gap:10px">
+				<p style="font-size:15px;line-height:1.6;max-width:440px">Something went wrong loading the app. Try a hard refresh (hold Shift and reload), or open it in the latest Chrome or Safari, away from social-media in-app browsers.</p>
+				<p id="dnd-boot-error-msg" style="font-size:11px;color:#8a8578;word-break:break-word;max-width:440px"></p>
+				<button onclick="location.reload()" style="margin-top:8px;background:#c9a544;color:#0f0f1a;border:0;border-radius:8px;padding:10px 18px;font-size:13px;font-weight:600">Reload</button>
+			</div>
+			<script>
+				(function () {
+					var el = document.getElementById('dnd-boot-error');
+					function show(msg) {
+						if (el && el.style.display !== 'flex') {
+							el.style.display = 'flex';
+							var m = document.getElementById('dnd-boot-error-msg');
+							if (m && msg) m.textContent = String(msg).slice(0, 300);
+						}
+					}
+					function ok() { window.__dndBooted = true; }
+					window.addEventListener('load', ok);
+					window.addEventListener('error', function (e) { window.__dndBooted = false; show((e && e.message) || (e && e.error && e.error.message) || 'Script error'); });
+					window.addEventListener('unhandledrejection', function () { show('A runtime error interrupted the app.'); });
+					setTimeout(function () { if (!window.__dndBooted) show(''); }, 6000);
+				})();
+			</script>
+			<!--[--><!--[0--><!--[--><!--[0--><div class="min-h-dvh flex items-center justify-center bg-dnd-darker p-6"><div class="card w-full max-w-sm p-6"><h1 class="font-display text-2xl font-bold text-dnd-gold mb-1">D&amp;D Companion</h1> <p class="text-sm text-dnd-text-muted mb-5">Enter the master password to continue.</p> <form class="space-y-3"><input type="password" placeholder="Master password" autocomplete="current-password" class="w-full"/> <!--[-1--><!--]--> <button type="submit" class="filter-btn w-full py-3 font-semibold">Unlock</button></form></div></div><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_1h622k2 = {
+					__sveltekit_1hxvot7 = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/DnD-beyond-replacement"
 					};
@@ -39,8 +67,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("./_app/immutable/entry/start.CAC0nDEB.js"),
-						import("./_app/immutable/entry/app.BmLPIPnf.js")
+						import("./_app/immutable/entry/start.D82XIz6u.js"),
+						import("./_app/immutable/entry/app.CvqIULzS.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 11],
@@ -51,6 +79,7 @@
 					});
 				}
 			</script>
+		
 		</div>
 	</body>
 </html>
