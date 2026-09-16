@@ -1,1 +1,0 @@
-var e=`BETTERDNDBEYOND`,t=`https://dnlbufxvujuebkzxqnub.supabase.co`,n=`sb_publishable_GRxdAkEXO1NN9Kjd1bjZag_uhNRA0KC`;export{n,t as r,e as t};
