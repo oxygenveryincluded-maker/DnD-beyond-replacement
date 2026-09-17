@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import { base } from '$app/paths';
   import SearchBar from '$lib/components/SearchBar.svelte';
   import {
     initCloudAuth,
@@ -199,7 +200,7 @@
   
   <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
     {#each quickLinks as link}
-      <a href={link.href} class="card group bg-gradient-to-br {link.color} hover:border-dnd-gold transition-all">
+      <a href={base + link.href} class="card group bg-gradient-to-br {link.color} hover:border-dnd-gold transition-all">
         <h3 class="font-display font-semibold text-dnd-text group-hover:text-dnd-gold transition-colors">{link.label}</h3>
         <p class="text-xs text-dnd-text-muted mt-0.5">{link.desc}</p>
       </a>
