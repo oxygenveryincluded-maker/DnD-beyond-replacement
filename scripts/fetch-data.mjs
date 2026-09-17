@@ -1,6 +1,7 @@
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { generateEquipmentEntries } from './equipment-entries.mjs';
+import { buildSearchIndex } from './build-search-index.mjs';
 
 const BASE = 'https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/main/data';
 const OUT = join(import.meta.dirname, '..', 'src', 'lib', 'data');
@@ -559,54 +560,11 @@ async function main() {
 	writeFileSync(join(OUT, 'conditions.json'), JSON.stringify(processedConditions, null, '\t'));
 	console.log(`Processed ${processedConditions.length} conditions`);
 
-	// 8. Build search index
+	// 8. Build search index (deduped, homebrew-flagged) from the data files
 	console.log('\n=== SEARCH INDEX ===');
-	const searchIndex = [];
-	for (const s of processedSpells) {
-		searchIndex.push({ type: 'spell', name: s.name, source: s.source, path: '/spells', extra: `Level ${s.level}` });
-	}
-	for (const c of processedClasses) {
-		searchIndex.push({ type: 'class', name: c.name, source: c.source, path: `/classes/${c.name.toLowerCase()}`, extra: c.edition });
-	}
-	for (const sc of processedSubclasses) {
-		searchIndex.push({ type: 'subclass', name: sc.name, source: sc.source, path: `/classes/${sc.className.toLowerCase()}`, extra: sc.className });
-	}
-	for (const i of processedItems.filter(i => i.rarity && i.rarity !== 'none')) {
-		searchIndex.push({ type: 'magic-item', name: i.name, source: i.source, path: '/magic-items', extra: i.rarity });
-	}
-	for (const e of processedEquipment) {
-		searchIndex.push({ type: 'equipment', name: e.name, source: e.source, path: '/equipment', extra: e.type });
-	}
-	for (const f of processedFeats) {
-		searchIndex.push({ type: 'feat', name: f.name, source: f.source, path: '/feats', extra: f.category || '' });
-	}
-	for (const r of processedRaces) {
-		searchIndex.push({ type: 'race', name: r.name, source: r.source, path: '/races', extra: r.edition });
-	}
-	for (const b of processedBGs) {
-		searchIndex.push({ type: 'background', name: b.name, source: b.source, path: '/backgrounds' });
-	}
-	for (const c of processedConditions) {
-		searchIndex.push({ type: 'condition', name: c.name, source: c.source, path: '/rules' });
-	}
-	for (const o of processedOptionalClean) {
-		searchIndex.push({ type: 'optional-feature', name: o.name, source: o.source, path: '/invocations', extra: o.category });
-	}
-
-	const SRCPREF = ['PHB', 'XPHB', 'XDMG', 'MPMM', 'DMG', 'EEPC', 'VGM', 'TCE', 'XGE', 'SCAG', 'VRGR', 'ERLW', 'EFA', 'RHW', 'ToA', 'LFL', 'WttHC'];
-	const prefOrder = new Map(SRCPREF.map((s, i) => [s, i]));
-	const indexBest = new Map();
-	for (const e of searchIndex) {
-		const key = `${e.type}|${String(e.name).trim().toLowerCase()}`;
-		const cur = indexBest.get(key);
-		if (!cur) { indexBest.set(key, e); continue; }
-		const curScore = (!cur.homebrew ? 1 : 0) + Math.max(0, SRCPREF.length - (prefOrder.get(cur.source) ?? 999));
-		const eScore = (!e.homebrew ? 1 : 0) + Math.max(0, SRCPREF.length - (prefOrder.get(e.source) ?? 999));
-		if (eScore > curScore) indexBest.set(key, e);
-	}
-	const dedupedIndex = Array.from(indexBest.values());
-	writeFileSync(join(OUT, 'search-index.json'), JSON.stringify(dedupedIndex, null, '\t'));
-	console.log(`Search index: ${dedupedIndex.length} entries (${searchIndex.length} raw, deduped)`);
+	const indexEntries = buildSearchIndex();
+	writeFileSync(join(OUT, 'search-index.json'), JSON.stringify(indexEntries, null, '\t'));
+	console.log(`Search index: ${indexEntries.length} entries`);
 
 	console.log('\n=== DONE ===');
 }

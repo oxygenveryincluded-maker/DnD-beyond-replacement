@@ -1,15 +1,18 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
-  import { formatSource, dedupeRecords } from '$lib/utils/dnd';
+  import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
+  import { formatSource, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
   import racesData from '$lib/data/races.json';
 
   let search = $state('');
   let selectedEdition = $state<'classic' | 'one'>('classic');
+  let showHomebrew = $state(false);
   let expanded = $state<string | null>(null);
 
   const filtered = $derived.by(() => {
     let result = racesData as any[];
+    if (!showHomebrew) result = result.filter((r: any) => !isHomebrew(r));
     if (search) result = result.filter((r: any) => r.name.toLowerCase().includes(search.toLowerCase()));
     result = result.filter((r: any) => r.edition === selectedEdition);
     result = dedupeRecords(result, selectedEdition);
@@ -48,6 +51,10 @@
   <div class="mb-3">
     <p class="text-xs text-dnd-text-muted mb-1">Edition</p>
     <EditionToggle value={selectedEdition} onchange={(v) => selectedEdition = v} />
+  </div>
+
+  <div class="flex justify-end mb-2">
+    <HomebrewToggle value={showHomebrew} onchange={(v) => showHomebrew = v} />
   </div>
 
   <p class="text-xs text-dnd-text-muted mb-2">{filtered.length} race{filtered.length !== 1 ? 's' : ''}</p>

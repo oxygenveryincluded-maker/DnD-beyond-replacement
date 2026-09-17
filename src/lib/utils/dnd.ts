@@ -48,6 +48,10 @@ function preferredOver(a: any, b: any, edition: 'classic' | 'one' | undefined): 
   return (a.entries?.length || 0) + JSON.stringify(a).length > (b.entries?.length || 0) + JSON.stringify(b).length;
 }
 
+export function isHomebrew(entry: any): boolean {
+  return !!entry?.homebrew || entry?.source === 'HB';
+}
+
 export function dedupeRecords(records: any[], edition: 'classic' | 'one' | undefined = undefined): any[] {
   const best = new Map<string, any>();
   for (const r of records) {

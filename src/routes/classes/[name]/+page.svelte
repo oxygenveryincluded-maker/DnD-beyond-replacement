@@ -2,8 +2,9 @@
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import LevelTables from '$lib/components/LevelTables.svelte';
   import { base } from '$app/paths';
-  import { formatSource, dedupeRecords } from '$lib/utils/dnd';
+  import { formatSource, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
+  import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
   import classesData from '$lib/data/classes.json';
   import subclassesData from '$lib/data/subclasses.json';
   import { page } from '$app/state';
@@ -20,9 +21,10 @@
   );
   
   let editionFilter = $state<'classic' | 'one'>('classic');
+  let showHomebrew = $state(false);
   const filteredSubclasses = $derived(
     dedupeRecords(
-      matchingSubclasses.filter((sc: any) => sc.edition === editionFilter),
+      matchingSubclasses.filter((sc: any) => sc.edition === editionFilter && (showHomebrew || !isHomebrew(sc))),
       editionFilter
     )
   );
@@ -94,12 +96,18 @@
       {/each}
     </div>
     
-    {#if filteredSubclasses.length > 0}
+    {#if matchingSubclasses.length > 0}
       <div class="flex gap-1.5 mb-3">
         <EditionToggle value={editionFilter} onchange={(v) => editionFilter = v} />
       </div>
+      <div class="flex justify-end mb-2">
+        <HomebrewToggle value={showHomebrew} onchange={(v) => showHomebrew = v} />
+      </div>
       
       <h2 class="font-display text-lg font-semibold text-dnd-gold mb-2">Subclasses</h2>
+      {#if filteredSubclasses.length === 0}
+        <p class="text-xs text-dnd-text-muted">No subclasses match these filters.</p>
+      {/if}
       <div class="space-y-3">
         {#each filteredSubclasses as sub (sub.name + sub.source + sub.edition)}
           <div class="stat-block">

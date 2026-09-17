@@ -1,13 +1,15 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
-  import { formatSource, editionOf, dedupeRecords } from '$lib/utils/dnd';
+  import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
+  import { formatSource, editionOf, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
   import featsData from '$lib/data/feats.json';
 
   let search = $state('');
   let selectedCategory = $state<string | null>(null);
   let selectedSource = $state<string | null>(null);
   let selectedEdition = $state<'classic' | 'one'>('classic');
+  let showHomebrew = $state(false);
   let expanded = $state<string | null>(null);
 
   const categories = [
@@ -36,6 +38,7 @@
 
   const filtered = $derived.by(() => {
     let result = featsData as any[];
+    if (!showHomebrew) result = result.filter((f: any) => !isHomebrew(f));
     if (search) result = result.filter((f: any) => f.name.toLowerCase().includes(search.toLowerCase()));
     if (selectedCategory) result = result.filter((f: any) => f.category === selectedCategory);
     if (selectedSource) result = result.filter((f: any) => f.source === selectedSource);
@@ -91,6 +94,9 @@
   <h1 class="font-display text-2xl font-bold text-dnd-gold mb-3">Feats</h1>
 
   <EditionToggle value={selectedEdition} onchange={(v) => selectedEdition = v} />
+  <div class="flex justify-end mb-2">
+    <HomebrewToggle value={showHomebrew} onchange={(v) => showHomebrew = v} />
+  </div>
 
   <input type="text" bind:value={search} placeholder="Search feats..." class="w-full mb-3" />
 

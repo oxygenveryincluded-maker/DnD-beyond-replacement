@@ -1,13 +1,18 @@
 <script lang="ts">
   import { base } from '$app/paths';
-  import { formatSource, dedupeRecords } from '$lib/utils/dnd';
+  import { formatSource, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
+  import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
   import classesData from '$lib/data/classes.json';
   
   let edition = $state<'classic' | 'one'>('classic');
+  let showHomebrew = $state(false);
   
   const classes = $derived(
-    dedupeRecords((classesData as any[]).filter((c) => c.edition === edition), edition)
+    dedupeRecords(
+      (classesData as any[]).filter((c) => c.edition === edition && (showHomebrew || !isHomebrew(c))),
+      edition
+    )
   );
   
   const classColors: Record<string, string> = {
@@ -34,6 +39,10 @@
   
   <div class="flex gap-1.5 mb-4">
     <EditionToggle value={edition} onchange={(v) => edition = v} />
+  </div>
+
+  <div class="flex justify-end mb-2">
+    <HomebrewToggle value={showHomebrew} onchange={(v) => showHomebrew = v} />
   </div>
   
   <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">

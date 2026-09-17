@@ -1,14 +1,19 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { base } from '$app/paths';
-  import { formatSource } from '$lib/utils/dnd';
+  import { formatSource, isHomebrew } from '$lib/utils/dnd';
+  import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
   import searchIndex from '$lib/data/search-index.json';
   
   const query = $derived(page.url.searchParams.get('q') || '');
+  let showHomebrew = $state(false);
   const results = $derived.by(() => {
     if (!query) return [];
     const q = query.toLowerCase();
-    return searchIndex.filter((e: any) => e.name.toLowerCase().includes(q)).slice(0, 50);
+    return searchIndex
+      .filter((e: any) => !isHomebrew(e) || showHomebrew)
+      .filter((e: any) => e.name.toLowerCase().includes(q))
+      .slice(0, 50);
   });
   
   const typeColors: Record<string, string> = {
@@ -30,6 +35,10 @@
 <div class="px-4 pt-4 pb-4 max-w-3xl mx-auto">
   <h1 class="font-display text-xl font-bold text-dnd-gold mb-1">Search Results</h1>
   <p class="text-sm text-dnd-text-muted mb-4">"{query}" &mdash; {results.length} result{results.length !== 1 ? 's' : ''}</p>
+  
+  <div class="flex justify-end mb-3">
+    <HomebrewToggle value={showHomebrew} onchange={(v) => showHomebrew = v} />
+  </div>
   
   <div class="space-y-2">
     {#each results as r (r.type + r.name + r.source)}

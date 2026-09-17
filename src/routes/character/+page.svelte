@@ -996,7 +996,7 @@ const backgroundInfo = $derived(
             </div>
             <SearchPicker
               label="Browse equipment list"
-              items={(equipmentData as any[]).map((e) => ({
+              items={dedupeRecords(equipmentData as any[]).map((e) => ({
                 name: e.name,
                 source: e.source,
                 sub: e.armorCategory || EQUIP_TYPE[e.type] || e.weaponCategory || 'Gear'

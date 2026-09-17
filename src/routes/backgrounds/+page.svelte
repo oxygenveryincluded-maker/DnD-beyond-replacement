@@ -1,12 +1,14 @@
 <script lang="ts">
   import CollapsibleEntries from '$lib/components/CollapsibleEntries.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
-  import { formatSource, editionOf, dedupeRecords } from '$lib/utils/dnd';
+  import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
+  import { formatSource, editionOf, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
   import backgroundsData from '$lib/data/backgrounds.json';
 
   let search = $state('');
   let selectedSource = $state<string | null>(null);
   let selectedEdition = $state<'classic' | 'one'>('classic');
+  let showHomebrew = $state(false);
   let expanded = $state<string | null>(null);
 
   const sources = $derived.by(() => {
@@ -17,6 +19,7 @@
 
   const filtered = $derived.by(() => {
     let result = backgroundsData as any[];
+    if (!showHomebrew) result = result.filter((b: any) => !isHomebrew(b));
     if (search) result = result.filter((b: any) => b.name.toLowerCase().includes(search.toLowerCase()));
     if (selectedSource) result = result.filter((b: any) => b.source === selectedSource);
     result = result.filter((b: any) => editionOf(b) === selectedEdition);
@@ -54,6 +57,9 @@
   <h1 class="font-display text-2xl font-bold text-dnd-gold mb-3">Backgrounds</h1>
 
   <EditionToggle value={selectedEdition} onchange={(v) => selectedEdition = v} />
+  <div class="flex justify-end mb-2">
+    <HomebrewToggle value={showHomebrew} onchange={(v) => showHomebrew = v} />
+  </div>
 
   <input type="text" bind:value={search} placeholder="Search backgrounds..." class="w-full mb-3" />
 

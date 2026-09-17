@@ -1,11 +1,13 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
-  import { formatSchool, getSchoolColor, levelText, formatTime, formatRange, formatComponents, formatDuration, formatSource } from '$lib/utils/dnd';
+  import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
+  import { formatSchool, getSchoolColor, levelText, formatTime, formatRange, formatComponents, formatDuration, formatSource, isHomebrew } from '$lib/utils/dnd';
   import spellsData from '$lib/data/spells.json';
   import { page } from '$app/state';
   
   let spells: any[] = $state(spellsData);
   let search = $state('');
+  let showHomebrew = $state(false);
   let selectedLevel = $state<number | null>(null);
   let selectedSchool = $state<string | null>(null);
   let selectedClass = $state<string | null>(null);
@@ -23,6 +25,7 @@
   
   const filtered = $derived.by(() => {
     let result = spells;
+    if (!showHomebrew) result = result.filter((s: any) => !isHomebrew(s));
     const q = (search || '').toLowerCase();
     if (q) result = result.filter(s => s.name.toLowerCase().includes(q));
     if (selectedLevel !== null) result = result.filter(s => s.level === selectedLevel);
@@ -39,8 +42,12 @@
 <svelte:head><title>Spells - D&D Companion</title></svelte:head>
 
 <div class="px-4 pt-4 pb-4 max-w-3xl mx-auto">
-  <h1 class="font-display text-2xl font-bold text-dnd-gold mb-4">Spells</h1>
-  
+<h1 class="font-display text-2xl font-bold text-dnd-gold mb-4">Spells</h1>
+
+  <div class="flex justify-end mb-2">
+    <HomebrewToggle value={showHomebrew} onchange={(v) => showHomebrew = v} />
+  </div>
+
   <input type="text" bind:value={search} placeholder="Search spells..." class="w-full mb-3" />
   
   <div class="mb-3">
