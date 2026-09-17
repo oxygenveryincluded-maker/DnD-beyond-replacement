@@ -2,7 +2,7 @@
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
   import SourceLegend from '$lib/components/SourceLegend.svelte';
-  import { formatSource, editionOf, dedupeRecords } from '$lib/utils/dnd';
+  import { formatSource, formatEquipType, editionOf, dedupeRecords } from '$lib/utils/dnd';
   import equipmentData from '$lib/data/equipment.json';
   
   let search = $state('');
@@ -37,12 +37,15 @@
   
   <input type="text" bind:value={search} placeholder="Search equipment..." class="w-full mb-3" />
   
-  <div class="flex flex-wrap gap-1.5 mb-3">
-    {#each types as t}
-      <button class="filter-btn text-xs" class:active={selectedType === t} onclick={() => selectedType = t}>
-        {t || 'All'}
-      </button>
-    {/each}
+  <div class="mb-3">
+    <p class="text-xs text-dnd-text-muted mb-1">Type</p>
+    <div class="flex flex-wrap gap-1.5">
+      {#each types as t}
+        <button class="filter-btn text-xs" class:active={selectedType === t} onclick={() => selectedType = t}>
+          {t ? formatEquipType(t) : 'All'}
+        </button>
+      {/each}
+    </div>
   </div>
   
   <p class="text-xs text-dnd-text-muted mb-2">{filtered.length} item{filtered.length !== 1 ? 's' : ''}</p>
@@ -55,7 +58,7 @@
         <div class="flex justify-between items-start gap-2">
           <div>
             <span class="font-semibold text-sm text-dnd-text">{item.name}</span>
-            <span class="text-[10px] text-dnd-text-muted ml-2">{item.type}</span>
+            <span class="text-[10px] text-dnd-text-muted ml-2">{formatEquipType(item.type)}</span>
             <span class="text-[10px] text-dnd-text-muted ml-2">{formatSource(item.source)}</span>
           </div>
           <div class="text-right text-[10px] text-dnd-text-muted shrink-0">

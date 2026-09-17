@@ -32,6 +32,30 @@ export function formatSourceShort(source: string): string {
   return SOURCE_SHORT[source] || SOURCE_NAMES[source] || source;
 }
 
+export const EQUIP_TYPE: Record<string, string> = {
+  A: 'Ammunition',
+  AF: 'Ammunition (Firearm)',
+  AT: "Artisan's Tools",
+  GS: 'Gaming Set',
+  G: 'Adventuring Gear',
+  HA: 'Heavy Armor',
+  MA: 'Medium Armor',
+  LA: 'Light Armor',
+  S: 'Shield',
+  M: 'Melee Weapon',
+  R: 'Ranged Weapon',
+  INS: 'Musical Instrument',
+  SCF: 'Spellcasting Focus',
+  RD: 'Rod',
+  ST: 'Staff',
+  WD: 'Wand',
+  T: 'Tools'
+};
+
+export function formatEquipType(type: string): string {
+  return EQUIP_TYPE[type] || type;
+}
+
 export function editionOf(entry: any): 'classic' | 'one' {
   if (entry.edition === 'one' || entry.edition === 'classic') return entry.edition;
   if (entry.source === 'XPHB' || entry.source === 'XDMG') return 'one';

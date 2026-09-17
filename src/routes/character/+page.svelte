@@ -29,7 +29,8 @@
     backgroundFeatNames,
     raceBackgroundLanguages,
     equipmentNamesFromEntries,
-    dedupeRecords
+    dedupeRecords,
+    formatEquipType
   } from '$lib/utils/dnd';
   import CharacterSheet from '$lib/components/CharacterSheet.svelte';
   import SearchPicker from '$lib/components/SearchPicker.svelte';
@@ -72,12 +73,6 @@
     'Lawful Neutral', 'True Neutral', 'Chaotic Neutral',
     'Lawful Evil', 'Neutral Evil', 'Chaotic Evil', 'Unaligned'
   ];
-  const EQUIP_TYPE: Record<string, string> = {
-    HA: 'Heavy Armor', MA: 'Medium Armor', LA: 'Light Armor', S: 'Shield',
-    M: 'Melee Weapon', R: 'Ranged Weapon', A: 'Ammunition',
-    AT: 'Adventuring Tools', INS: 'Instrument', SCF: 'Spellcasting Focus', AF: 'Adventuring Gear'
-  };
-
   const STEPS = [
     'Info', 'Class', 'Subclass', 'Race', 'Background',
     'Ability Scores', 'Skills', 'Combat', 'Equipment', 'Feats', 'Spells', 'Notes'
@@ -999,7 +994,7 @@ const backgroundInfo = $derived(
               items={dedupeRecords(equipmentData as any[]).map((e) => ({
                 name: e.name,
                 source: e.source,
-                sub: e.armorCategory || EQUIP_TYPE[e.type] || e.weaponCategory || 'Gear'
+                sub: e.armorCategory || formatEquipType(e.type) || e.weaponCategory || 'Gear'
               }))}
               onAdd={addEquipmentFromList}
             />
