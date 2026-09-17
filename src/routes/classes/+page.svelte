@@ -1,19 +1,20 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import { formatSource } from '$lib/utils/dnd';
+  import EditionToggle from '$lib/components/EditionToggle.svelte';
   import classesData from '$lib/data/classes.json';
   
-  let edition = $state<'all' | 'classic' | 'one'>('all');
+  let edition = $state<'classic' | 'one'>('classic');
   
   const classes = $derived.by(() => {
     const seen = new Map<string, any>();
     for (const c of classesData as any[]) {
       const key = c.name;
-      if (!seen.has(key) || (edition !== 'all' && c.edition === edition)) {
+      if (!seen.has(key) && c.edition === edition) {
         seen.set(key, c);
       }
     }
-    return Array.from(seen.values()).filter(c => edition === 'all' || c.edition === edition);
+    return Array.from(seen.values());
   });
   
   const classColors: Record<string, string> = {
@@ -39,9 +40,7 @@
   <h1 class="font-display text-2xl font-bold text-dnd-gold mb-3">Classes</h1>
   
   <div class="flex gap-1.5 mb-4">
-    <button class="filter-btn text-xs" class:active={edition === 'all'} onclick={() => edition = 'all'}>All</button>
-    <button class="filter-btn text-xs" class:active={edition === 'classic'} onclick={() => edition = 'classic'}>2014 (5e)</button>
-    <button class="filter-btn text-xs" class:active={edition === 'one'} onclick={() => edition = 'one'}>2024 (5.5e)</button>
+    <EditionToggle value={edition} onchange={(v) => edition = v} />
   </div>
   
   <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">

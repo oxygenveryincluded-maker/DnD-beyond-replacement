@@ -3,6 +3,7 @@
   import LevelTables from '$lib/components/LevelTables.svelte';
   import { base } from '$app/paths';
   import { formatSource } from '$lib/utils/dnd';
+  import EditionToggle from '$lib/components/EditionToggle.svelte';
   import classesData from '$lib/data/classes.json';
   import subclassesData from '$lib/data/subclasses.json';
   import { page } from '$app/state';
@@ -18,10 +19,10 @@
     allSubclasses.filter((sc: any) => sc.className?.toLowerCase() === className)
   );
   
-  let editionFilter = $state<'all' | 'classic' | 'one'>('all');
+  let editionFilter = $state<'classic' | 'one'>('classic');
   const filteredSubclasses = $derived(
     matchingSubclasses.filter((sc: any) => 
-      editionFilter === 'all' || sc.edition === editionFilter
+      sc.edition === editionFilter
     ).filter((sc: any, i: number, arr: any[]) => 
       arr.findIndex((s: any) => s.name === sc.name) === i
     )
@@ -96,9 +97,7 @@
     
     {#if filteredSubclasses.length > 0}
       <div class="flex gap-1.5 mb-3">
-        <button class="filter-btn text-xs" class:active={editionFilter === 'all'} onclick={() => editionFilter = 'all'}>All</button>
-        <button class="filter-btn text-xs" class:active={editionFilter === 'classic'} onclick={() => editionFilter = 'classic'}>2014</button>
-        <button class="filter-btn text-xs" class:active={editionFilter === 'one'} onclick={() => editionFilter = 'one'}>2024</button>
+        <EditionToggle value={editionFilter} onchange={(v) => editionFilter = v} />
       </div>
       
       <h2 class="font-display text-lg font-semibold text-dnd-gold mb-2">Subclasses</h2>

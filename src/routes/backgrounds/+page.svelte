@@ -1,10 +1,12 @@
 <script lang="ts">
   import CollapsibleEntries from '$lib/components/CollapsibleEntries.svelte';
-  import { formatSource } from '$lib/utils/dnd';
+  import EditionToggle from '$lib/components/EditionToggle.svelte';
+  import { formatSource, editionOf } from '$lib/utils/dnd';
   import backgroundsData from '$lib/data/backgrounds.json';
 
   let search = $state('');
   let selectedSource = $state<string | null>(null);
+  let selectedEdition = $state<'classic' | 'one'>('classic');
   let expanded = $state<string | null>(null);
 
   const sources = $derived.by(() => {
@@ -17,6 +19,7 @@
     let result = backgroundsData as any[];
     if (search) result = result.filter((b: any) => b.name.toLowerCase().includes(search.toLowerCase()));
     if (selectedSource) result = result.filter((b: any) => b.source === selectedSource);
+    result = result.filter((b: any) => editionOf(b) === selectedEdition);
     return result;
   });
 
@@ -48,6 +51,8 @@
 
 <div class="px-4 pt-4 pb-4 max-w-3xl mx-auto">
   <h1 class="font-display text-2xl font-bold text-dnd-gold mb-3">Backgrounds</h1>
+
+  <EditionToggle value={selectedEdition} onchange={(v) => selectedEdition = v} />
 
   <input type="text" bind:value={search} placeholder="Search backgrounds..." class="w-full mb-3" />
 

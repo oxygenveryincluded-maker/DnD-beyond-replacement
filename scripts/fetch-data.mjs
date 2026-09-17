@@ -1,5 +1,6 @@
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
+import { generateEquipmentEntries } from './equipment-entries.mjs';
 
 const BASE = 'https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/main/data';
 const OUT = join(import.meta.dirname, '..', 'src', 'lib', 'data');
@@ -394,7 +395,8 @@ async function main() {
 	const ARMOR_CAT = { LA: 'Light', MA: 'Medium', HA: 'Heavy', S: 'Shield' };
 	const processedEquipment = (equipData.baseitem || []).map(e => {
 		const t = String(e.type || '').split('|')[0];
-		return {
+		const raw = {
+			entries: [],
 			name: e.name,
 			source: e.source,
 			edition: e.edition || 'classic',
@@ -411,9 +413,12 @@ async function main() {
 			ac: e.ac || null,
 			strMinimum: e.strength,
 			stealthDisadvantage: !!e.stealth,
-			entries: processEntries(e.entries),
 			page: e.page
 		};
+		raw.entries = e.entries && e.entries.length
+			? processEntries(e.entries)
+			: generateEquipmentEntries(raw);
+		return raw;
 	});
 	writeFileSync(join(OUT, 'equipment.json'), JSON.stringify(processedEquipment, null, '\t'));
 	console.log(`Processed ${processedEquipment.length} equipment`);

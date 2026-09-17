@@ -1,18 +1,17 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
+  import EditionToggle from '$lib/components/EditionToggle.svelte';
   import { formatSource } from '$lib/utils/dnd';
   import racesData from '$lib/data/races.json';
 
   let search = $state('');
-  let selectedEdition = $state<string | null>(null);
+  let selectedEdition = $state<'classic' | 'one'>('classic');
   let expanded = $state<string | null>(null);
-
-  const editions = [null, 'classic', 'one'];
 
   const filtered = $derived.by(() => {
     let result = racesData as any[];
     if (search) result = result.filter((r: any) => r.name.toLowerCase().includes(search.toLowerCase()));
-    if (selectedEdition) result = result.filter((r: any) => r.edition === selectedEdition);
+    result = result.filter((r: any) => r.edition === selectedEdition);
     return result;
   });
 
@@ -47,11 +46,7 @@
 
   <div class="mb-3">
     <p class="text-xs text-dnd-text-muted mb-1">Edition</p>
-    <div class="flex flex-wrap gap-1.5">
-      <button class="filter-btn text-xs" class:active={selectedEdition === null} onclick={() => selectedEdition = null}>All</button>
-      <button class="filter-btn text-xs" class:active={selectedEdition === 'classic'} onclick={() => selectedEdition = selectedEdition === 'classic' ? null : 'classic'}>2014 (5e)</button>
-      <button class="filter-btn text-xs" class:active={selectedEdition === 'one'} onclick={() => selectedEdition = selectedEdition === 'one' ? null : 'one'}>2024 (5.5e)</button>
-    </div>
+    <EditionToggle value={selectedEdition} onchange={(v) => selectedEdition = v} />
   </div>
 
   <p class="text-xs text-dnd-text-muted mb-2">{filtered.length} race{filtered.length !== 1 ? 's' : ''}</p>

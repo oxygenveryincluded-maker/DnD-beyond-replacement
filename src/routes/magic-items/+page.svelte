@@ -1,12 +1,14 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
-  import { formatSource } from '$lib/utils/dnd';
+  import EditionToggle from '$lib/components/EditionToggle.svelte';
+  import { formatSource, editionOf } from '$lib/utils/dnd';
   import itemsData from '$lib/data/items.json';
   
   let search = $state('');
   let selectedRarity = $state<string | null>(null);
   let selectedSource = $state<string | null>(null);
   let showAttunement = $state<boolean | null>(null);
+  let selectedEdition = $state<'classic' | 'one'>('classic');
   let expanded = $state<string | null>(null);
   
   const magicItems = $derived((itemsData as any[]).filter((i: any) => i.rarity && i.rarity !== 'none'));
@@ -37,6 +39,7 @@
         ? result.filter((i: any) => i.reqAttune)
         : result.filter((i: any) => !i.reqAttune);
     }
+    result = result.filter((i: any) => editionOf(i) === selectedEdition);
     return result;
   });
 </script>
@@ -45,6 +48,8 @@
 
 <div class="px-4 pt-4 pb-4 max-w-3xl mx-auto">
   <h1 class="font-display text-2xl font-bold text-dnd-gold mb-3">Magic Items</h1>
+  
+  <EditionToggle value={selectedEdition} onchange={(v) => selectedEdition = v} />
   
   <input type="text" bind:value={search} placeholder="Search magic items..." class="w-full mb-3" />
   

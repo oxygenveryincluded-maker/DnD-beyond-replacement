@@ -25,6 +25,12 @@ export function formatSource(source: string): string {
   return SOURCE_SHORT[source] || source;
 }
 
+export function editionOf(entry: any): 'classic' | 'one' {
+  if (entry.edition === 'one' || entry.edition === 'classic') return entry.edition;
+  if (entry.source === 'XPHB' || entry.source === 'XDMG') return 'one';
+  return 'classic';
+}
+
 export function formatTableTags(text: string): string {
   return String(text || '')
     .replace(/\{@([a-z]+)\s([^}|]*?)(?:\|[^}]*)?\}/gi, '$2');
