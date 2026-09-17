@@ -130,7 +130,6 @@
             {/if}
             <ContentRenderer entries={spell.entries} />
             {#if spell.entriesHigherLevel?.length}
-              <h4 class="mt-3 font-display text-sm font-semibold text-dnd-gold">At Higher Levels</h4>
               <ContentRenderer entries={spell.entriesHigherLevel} />
             {/if}
           </div>
