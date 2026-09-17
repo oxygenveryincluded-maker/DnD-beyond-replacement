@@ -1,7 +1,7 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
-  import { formatSource } from '$lib/utils/dnd';
+  import { formatSource, dedupeRecords } from '$lib/utils/dnd';
   import racesData from '$lib/data/races.json';
 
   let search = $state('');
@@ -12,6 +12,7 @@
     let result = racesData as any[];
     if (search) result = result.filter((r: any) => r.name.toLowerCase().includes(search.toLowerCase()));
     result = result.filter((r: any) => r.edition === selectedEdition);
+    result = dedupeRecords(result, selectedEdition);
     return result;
   });
 

@@ -27,7 +27,7 @@
 	{
 		"name": "Alchemist's Supplies",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 8,
 		"value": 5000,
@@ -842,7 +842,7 @@
 	{
 		"name": "Brewer's Supplies",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 9,
 		"value": 2000,
@@ -892,7 +892,7 @@
 	{
 		"name": "Calligrapher's Supplies",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 5,
 		"value": 1000,
@@ -942,7 +942,7 @@
 	{
 		"name": "Carpenter's Tools",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 6,
 		"value": 800,
@@ -992,7 +992,7 @@
 	{
 		"name": "Cartographer's Tools",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 6,
 		"value": 1500,
@@ -1267,7 +1267,7 @@
 	{
 		"name": "Cobbler's Tools",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 5,
 		"value": 500,
@@ -1317,7 +1317,7 @@
 	{
 		"name": "Cook's Utensils",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 8,
 		"value": 100,
@@ -2094,7 +2094,7 @@
 	{
 		"name": "Glassblower's Tools",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 5,
 		"value": 3000,
@@ -3234,7 +3234,7 @@
 	{
 		"name": "Jeweler's Tools",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 2,
 		"value": 2500,
@@ -3579,7 +3579,7 @@
 	{
 		"name": "Leatherworker's Tools",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 5,
 		"value": 500,
@@ -4235,7 +4235,7 @@
 	{
 		"name": "Mason's Tools",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 8,
 		"value": 1000,
@@ -4777,7 +4777,7 @@
 	{
 		"name": "Painter's Supplies",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 5,
 		"value": 1000,
@@ -5126,7 +5126,7 @@
 	{
 		"name": "Potter's Tools",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 3,
 		"value": 1000,
@@ -6478,7 +6478,7 @@
 	{
 		"name": "Smith's Tools",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 8,
 		"value": 2000,
@@ -6916,7 +6916,7 @@
 	{
 		"name": "Tinker's Tools",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 10,
 		"value": 5000,
@@ -7397,7 +7397,7 @@
 	{
 		"name": "Weaver's Tools",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 5,
 		"value": 100,
@@ -7539,7 +7539,7 @@
 	{
 		"name": "Woodcarver's Tools",
 		"source": "XPHB",
-		"edition": "classic",
+		"edition": "one",
 		"type": "AT",
 		"weight": 5,
 		"value": 100,

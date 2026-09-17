@@ -1,7 +1,7 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
-  import { formatSource, editionOf } from '$lib/utils/dnd';
+  import { formatSource, editionOf, dedupeRecords } from '$lib/utils/dnd';
   import featsData from '$lib/data/feats.json';
 
   let search = $state('');
@@ -40,6 +40,7 @@
     if (selectedCategory) result = result.filter((f: any) => f.category === selectedCategory);
     if (selectedSource) result = result.filter((f: any) => f.source === selectedSource);
     result = result.filter((f: any) => editionOf(f) === selectedEdition);
+    result = dedupeRecords(result, selectedEdition);
     return result;
   });
 

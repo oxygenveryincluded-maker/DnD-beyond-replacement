@@ -4474,24 +4474,10 @@
 	},
 	{
 		"type": "class",
-		"name": "Barbarian",
-		"source": "XPHB",
-		"path": "/classes/barbarian",
-		"extra": "one"
-	},
-	{
-		"type": "class",
 		"name": "Bard",
 		"source": "PHB",
 		"path": "/classes/bard",
 		"extra": "classic"
-	},
-	{
-		"type": "class",
-		"name": "Bard",
-		"source": "XPHB",
-		"path": "/classes/bard",
-		"extra": "one"
 	},
 	{
 		"type": "class",
@@ -4502,24 +4488,10 @@
 	},
 	{
 		"type": "class",
-		"name": "Cleric",
-		"source": "XPHB",
-		"path": "/classes/cleric",
-		"extra": "one"
-	},
-	{
-		"type": "class",
 		"name": "Druid",
 		"source": "PHB",
 		"path": "/classes/druid",
 		"extra": "classic"
-	},
-	{
-		"type": "class",
-		"name": "Druid",
-		"source": "XPHB",
-		"path": "/classes/druid",
-		"extra": "one"
 	},
 	{
 		"type": "class",
@@ -4530,24 +4502,10 @@
 	},
 	{
 		"type": "class",
-		"name": "Fighter",
-		"source": "XPHB",
-		"path": "/classes/fighter",
-		"extra": "one"
-	},
-	{
-		"type": "class",
 		"name": "Monk",
 		"source": "PHB",
 		"path": "/classes/monk",
 		"extra": "classic"
-	},
-	{
-		"type": "class",
-		"name": "Monk",
-		"source": "XPHB",
-		"path": "/classes/monk",
-		"extra": "one"
 	},
 	{
 		"type": "class",
@@ -4558,24 +4516,10 @@
 	},
 	{
 		"type": "class",
-		"name": "Paladin",
-		"source": "XPHB",
-		"path": "/classes/paladin",
-		"extra": "one"
-	},
-	{
-		"type": "class",
 		"name": "Ranger",
 		"source": "PHB",
 		"path": "/classes/ranger",
 		"extra": "classic"
-	},
-	{
-		"type": "class",
-		"name": "Ranger",
-		"source": "XPHB",
-		"path": "/classes/ranger",
-		"extra": "one"
 	},
 	{
 		"type": "class",
@@ -4586,24 +4530,10 @@
 	},
 	{
 		"type": "class",
-		"name": "Rogue",
-		"source": "XPHB",
-		"path": "/classes/rogue",
-		"extra": "one"
-	},
-	{
-		"type": "class",
 		"name": "Sorcerer",
 		"source": "PHB",
 		"path": "/classes/sorcerer",
 		"extra": "classic"
-	},
-	{
-		"type": "class",
-		"name": "Sorcerer",
-		"source": "XPHB",
-		"path": "/classes/sorcerer",
-		"extra": "one"
 	},
 	{
 		"type": "class",
@@ -4614,24 +4544,10 @@
 	},
 	{
 		"type": "class",
-		"name": "Warlock",
-		"source": "XPHB",
-		"path": "/classes/warlock",
-		"extra": "one"
-	},
-	{
-		"type": "class",
 		"name": "Wizard",
 		"source": "PHB",
 		"path": "/classes/wizard",
 		"extra": "classic"
-	},
-	{
-		"type": "class",
-		"name": "Wizard",
-		"source": "XPHB",
-		"path": "/classes/wizard",
-		"extra": "one"
 	},
 	{
 		"type": "class",
@@ -4639,13 +4555,6 @@
 		"source": "TCE",
 		"path": "/classes/artificer",
 		"extra": "classic"
-	},
-	{
-		"type": "class",
-		"name": "Artificer",
-		"source": "EFA",
-		"path": "/classes/artificer",
-		"extra": "one"
 	},
 	{
 		"type": "class",
@@ -4747,29 +4656,8 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Path of the Berserker",
-		"source": "PHB",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
 		"name": "Path of the Totem Warrior",
 		"source": "PHB",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "Path of the Totem Warrior",
-		"source": "PHB",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "Path of the Battlerager",
-		"source": "SCAG",
 		"path": "/classes/barbarian",
 		"extra": "Barbarian"
 	},
@@ -4789,20 +4677,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Path of the Ancestral Guardian",
-		"source": "XGE",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "Path of the Storm Herald",
-		"source": "XGE",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
 		"name": "Path of the Storm Herald",
 		"source": "XGE",
 		"path": "/classes/barbarian",
@@ -4811,63 +4685,28 @@
 	{
 		"type": "subclass",
 		"name": "Path of the Zealot",
-		"source": "XGE",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "Path of the Zealot",
-		"source": "XGE",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "Path of the Beast",
-		"source": "TCE",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "Path of the Beast",
-		"source": "TCE",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "Path of Wild Magic",
-		"source": "TCE",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "Path of Wild Magic",
-		"source": "TCE",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "Path of the Giant",
-		"source": "BGG",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "Path of the Giant",
-		"source": "BGG",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "Path of the Berserker",
 		"source": "XPHB",
+		"path": "/classes/barbarian",
+		"extra": "Barbarian"
+	},
+	{
+		"type": "subclass",
+		"name": "Path of the Beast",
+		"source": "TCE",
+		"path": "/classes/barbarian",
+		"extra": "Barbarian"
+	},
+	{
+		"type": "subclass",
+		"name": "Path of Wild Magic",
+		"source": "TCE",
+		"path": "/classes/barbarian",
+		"extra": "Barbarian"
+	},
+	{
+		"type": "subclass",
+		"name": "Path of the Giant",
+		"source": "BGG",
 		"path": "/classes/barbarian",
 		"extra": "Barbarian"
 	},
@@ -4887,70 +4726,28 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Path of the Zealot",
+		"name": "College of Lore",
+		"source": "PHB",
+		"path": "/classes/bard",
+		"extra": "Bard"
+	},
+	{
+		"type": "subclass",
+		"name": "College of Valor",
+		"source": "PHB",
+		"path": "/classes/bard",
+		"extra": "Bard"
+	},
+	{
+		"type": "subclass",
+		"name": "College of Glamour",
 		"source": "XPHB",
-		"path": "/classes/barbarian",
-		"extra": "Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "College of Lore",
-		"source": "PHB",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
-		"name": "College of Lore",
-		"source": "PHB",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
-		"name": "College of Valor",
-		"source": "PHB",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
-		"name": "College of Valor",
-		"source": "PHB",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
-		"name": "College of Glamour",
-		"source": "XGE",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
-		"name": "College of Glamour",
-		"source": "XGE",
 		"path": "/classes/bard",
 		"extra": "Bard"
 	},
 	{
 		"type": "subclass",
 		"name": "College of Swords",
-		"source": "XGE",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
-		"name": "College of Swords",
-		"source": "XGE",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
-		"name": "College of Whispers",
 		"source": "XGE",
 		"path": "/classes/bard",
 		"extra": "Bard"
@@ -4971,29 +4768,8 @@
 	},
 	{
 		"type": "subclass",
-		"name": "College of Creation",
-		"source": "TCE",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
 		"name": "College of Eloquence",
 		"source": "TCE",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
-		"name": "College of Eloquence",
-		"source": "TCE",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
-		"name": "College of Spirits",
-		"source": "VRGR",
 		"path": "/classes/bard",
 		"extra": "Bard"
 	},
@@ -5013,27 +4789,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "College of Glamour",
-		"source": "XPHB",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
-		"name": "College of Lore",
-		"source": "XPHB",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
-		"name": "College of Valor",
-		"source": "XPHB",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
 		"name": "College of the Moon",
 		"source": "FRHoF",
 		"path": "/classes/bard",
@@ -5041,20 +4796,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "College of Spirits",
-		"source": "RHW",
-		"path": "/classes/bard",
-		"extra": "Bard"
-	},
-	{
-		"type": "subclass",
-		"name": "Knowledge Domain",
-		"source": "PHB",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
 		"name": "Knowledge Domain",
 		"source": "PHB",
 		"path": "/classes/cleric",
@@ -5063,20 +4804,6 @@
 	{
 		"type": "subclass",
 		"name": "Life Domain",
-		"source": "PHB",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Life Domain",
-		"source": "PHB",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Light Domain",
 		"source": "PHB",
 		"path": "/classes/cleric",
 		"extra": "Cleric"
@@ -5097,20 +4824,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Nature Domain",
-		"source": "PHB",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Tempest Domain",
-		"source": "PHB",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
 		"name": "Tempest Domain",
 		"source": "PHB",
 		"path": "/classes/cleric",
@@ -5119,20 +4832,6 @@
 	{
 		"type": "subclass",
 		"name": "Trickery Domain",
-		"source": "PHB",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Trickery Domain",
-		"source": "PHB",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "War Domain",
 		"source": "PHB",
 		"path": "/classes/cleric",
 		"extra": "Cleric"
@@ -5153,20 +4852,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Death Domain",
-		"source": "DMG",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Arcana Domain",
-		"source": "SCAG",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
 		"name": "Arcana Domain",
 		"source": "SCAG",
 		"path": "/classes/cleric",
@@ -5175,20 +4860,6 @@
 	{
 		"type": "subclass",
 		"name": "Ambition Domain (PSA)",
-		"source": "PSA",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Ambition Domain (PSA)",
-		"source": "PSA",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Knowledge Domain (PSA)",
 		"source": "PSA",
 		"path": "/classes/cleric",
 		"extra": "Cleric"
@@ -5209,28 +4880,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Solidarity Domain (PSA)",
-		"source": "PSA",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
 		"name": "Strength Domain (PSA)",
-		"source": "PSA",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Strength Domain (PSA)",
-		"source": "PSA",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Zeal Domain (PSA)",
 		"source": "PSA",
 		"path": "/classes/cleric",
 		"extra": "Cleric"
@@ -5251,20 +4901,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Forge Domain",
-		"source": "XGE",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Grave Domain",
-		"source": "XGE",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
 		"name": "Grave Domain",
 		"source": "XGE",
 		"path": "/classes/cleric",
@@ -5273,20 +4909,6 @@
 	{
 		"type": "subclass",
 		"name": "Order Domain",
-		"source": "TCE",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Order Domain",
-		"source": "TCE",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Peace Domain",
 		"source": "TCE",
 		"path": "/classes/cleric",
 		"extra": "Cleric"
@@ -5307,77 +4929,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Twilight Domain",
-		"source": "TCE",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Life Domain",
-		"source": "XPHB",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Light Domain",
-		"source": "XPHB",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Trickery Domain",
-		"source": "XPHB",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "War Domain",
-		"source": "XPHB",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Knowledge Domain",
-		"source": "FRHoF",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Grave Domain",
-		"source": "RHW",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
-		"name": "Arcana Domain",
-		"source": "AU",
-		"path": "/classes/cleric",
-		"extra": "Cleric"
-	},
-	{
-		"type": "subclass",
 		"name": "Circle of the Land",
-		"source": "PHB",
-		"path": "/classes/druid",
-		"extra": "Druid"
-	},
-	{
-		"type": "subclass",
-		"name": "Circle of the Land",
-		"source": "PHB",
-		"path": "/classes/druid",
-		"extra": "Druid"
-	},
-	{
-		"type": "subclass",
-		"name": "Circle of the Moon",
 		"source": "PHB",
 		"path": "/classes/druid",
 		"extra": "Druid"
@@ -5398,29 +4950,8 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Circle of Dreams",
-		"source": "XGE",
-		"path": "/classes/druid",
-		"extra": "Druid"
-	},
-	{
-		"type": "subclass",
 		"name": "Circle of the Shepherd",
 		"source": "XGE",
-		"path": "/classes/druid",
-		"extra": "Druid"
-	},
-	{
-		"type": "subclass",
-		"name": "Circle of the Shepherd",
-		"source": "XGE",
-		"path": "/classes/druid",
-		"extra": "Druid"
-	},
-	{
-		"type": "subclass",
-		"name": "Circle of Spores",
-		"source": "TCE",
 		"path": "/classes/druid",
 		"extra": "Druid"
 	},
@@ -5440,36 +4971,8 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Circle of Stars",
-		"source": "TCE",
-		"path": "/classes/druid",
-		"extra": "Druid"
-	},
-	{
-		"type": "subclass",
 		"name": "Circle of Wildfire",
 		"source": "TCE",
-		"path": "/classes/druid",
-		"extra": "Druid"
-	},
-	{
-		"type": "subclass",
-		"name": "Circle of Wildfire",
-		"source": "TCE",
-		"path": "/classes/druid",
-		"extra": "Druid"
-	},
-	{
-		"type": "subclass",
-		"name": "Circle of the Land",
-		"source": "XPHB",
-		"path": "/classes/druid",
-		"extra": "Druid"
-	},
-	{
-		"type": "subclass",
-		"name": "Circle of the Moon",
-		"source": "XPHB",
 		"path": "/classes/druid",
 		"extra": "Druid"
 	},
@@ -5496,28 +4999,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Battle Master",
-		"source": "PHB",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
 		"name": "Champion",
-		"source": "PHB",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
-		"name": "Champion",
-		"source": "PHB",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
-		"name": "Eldritch Knight",
 		"source": "PHB",
 		"path": "/classes/fighter",
 		"extra": "Fighter"
@@ -5538,28 +5020,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Purple Dragon Knight (Banneret)",
-		"source": "SCAG",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
 		"name": "Arcane Archer",
-		"source": "XGE",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
-		"name": "Arcane Archer",
-		"source": "XGE",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
-		"name": "Cavalier",
 		"source": "XGE",
 		"path": "/classes/fighter",
 		"extra": "Fighter"
@@ -5580,20 +5041,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Samurai",
-		"source": "XGE",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
-		"name": "Echo Knight",
-		"source": "EGW",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
 		"name": "Echo Knight",
 		"source": "EGW",
 		"path": "/classes/fighter",
@@ -5602,14 +5049,7 @@
 	{
 		"type": "subclass",
 		"name": "Psi Warrior",
-		"source": "TCE",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
-		"name": "Psi Warrior",
-		"source": "TCE",
+		"source": "XPHB",
 		"path": "/classes/fighter",
 		"extra": "Fighter"
 	},
@@ -5617,41 +5057,6 @@
 		"type": "subclass",
 		"name": "Rune Knight",
 		"source": "TCE",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
-		"name": "Rune Knight",
-		"source": "TCE",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
-		"name": "Battle Master",
-		"source": "XPHB",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
-		"name": "Champion",
-		"source": "XPHB",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
-		"name": "Eldritch Knight",
-		"source": "XPHB",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
-		"name": "Psi Warrior",
-		"source": "XPHB",
 		"path": "/classes/fighter",
 		"extra": "Fighter"
 	},
@@ -5664,28 +5069,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Arcane Archer",
-		"source": "AU",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
 		"name": "Way of Shadow",
-		"source": "PHB",
-		"path": "/classes/monk",
-		"extra": "Monk"
-	},
-	{
-		"type": "subclass",
-		"name": "Way of Shadow",
-		"source": "PHB",
-		"path": "/classes/monk",
-		"extra": "Monk"
-	},
-	{
-		"type": "subclass",
-		"name": "Way of the Four Elements",
 		"source": "PHB",
 		"path": "/classes/monk",
 		"extra": "Monk"
@@ -5706,20 +5090,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Way of the Open Hand",
-		"source": "PHB",
-		"path": "/classes/monk",
-		"extra": "Monk"
-	},
-	{
-		"type": "subclass",
-		"name": "Way of the Long Death",
-		"source": "SCAG",
-		"path": "/classes/monk",
-		"extra": "Monk"
-	},
-	{
-		"type": "subclass",
 		"name": "Way of the Long Death",
 		"source": "SCAG",
 		"path": "/classes/monk",
@@ -5728,20 +5098,6 @@
 	{
 		"type": "subclass",
 		"name": "Way of the Drunken Master",
-		"source": "XGE",
-		"path": "/classes/monk",
-		"extra": "Monk"
-	},
-	{
-		"type": "subclass",
-		"name": "Way of the Drunken Master",
-		"source": "XGE",
-		"path": "/classes/monk",
-		"extra": "Monk"
-	},
-	{
-		"type": "subclass",
-		"name": "Way of the Kensei",
 		"source": "XGE",
 		"path": "/classes/monk",
 		"extra": "Monk"
@@ -5762,20 +5118,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Way of the Sun Soul",
-		"source": "XGE",
-		"path": "/classes/monk",
-		"extra": "Monk"
-	},
-	{
-		"type": "subclass",
-		"name": "Way of Mercy",
-		"source": "TCE",
-		"path": "/classes/monk",
-		"extra": "Monk"
-	},
-	{
-		"type": "subclass",
 		"name": "Way of Mercy",
 		"source": "TCE",
 		"path": "/classes/monk",
@@ -5785,20 +5127,6 @@
 		"type": "subclass",
 		"name": "Way of the Astral Self",
 		"source": "TCE",
-		"path": "/classes/monk",
-		"extra": "Monk"
-	},
-	{
-		"type": "subclass",
-		"name": "Way of the Astral Self",
-		"source": "TCE",
-		"path": "/classes/monk",
-		"extra": "Monk"
-	},
-	{
-		"type": "subclass",
-		"name": "Way of the Ascendant Dragon",
-		"source": "FTD",
 		"path": "/classes/monk",
 		"extra": "Monk"
 	},
@@ -5853,28 +5181,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Oath of Devotion",
-		"source": "PHB",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
 		"name": "Oath of the Ancients",
-		"source": "PHB",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
-		"name": "Oath of the Ancients",
-		"source": "PHB",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
-		"name": "Oath of Vengeance",
 		"source": "PHB",
 		"path": "/classes/paladin",
 		"extra": "Paladin"
@@ -5895,29 +5202,8 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Oathbreaker",
-		"source": "DMG",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
 		"name": "Oath of the Crown",
 		"source": "SCAG",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
-		"name": "Oath of the Crown",
-		"source": "SCAG",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
-		"name": "Oath of Conquest",
-		"source": "XGE",
 		"path": "/classes/paladin",
 		"extra": "Paladin"
 	},
@@ -5937,22 +5223,8 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Oath of Redemption",
-		"source": "XGE",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
 		"name": "Oath of Glory",
-		"source": "TCE",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
-		"name": "Oath of Glory",
-		"source": "TCE",
+		"source": "XPHB",
 		"path": "/classes/paladin",
 		"extra": "Paladin"
 	},
@@ -5960,41 +5232,6 @@
 		"type": "subclass",
 		"name": "Oath of the Watchers",
 		"source": "TCE",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
-		"name": "Oath of the Watchers",
-		"source": "TCE",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
-		"name": "Oath of Devotion",
-		"source": "XPHB",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
-		"name": "Oath of Glory",
-		"source": "XPHB",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
-		"name": "Oath of the Ancients",
-		"source": "XPHB",
-		"path": "/classes/paladin",
-		"extra": "Paladin"
-	},
-	{
-		"type": "subclass",
-		"name": "Oath of Vengeance",
-		"source": "XPHB",
 		"path": "/classes/paladin",
 		"extra": "Paladin"
 	},
@@ -6014,20 +5251,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Beast Master",
-		"source": "PHB",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
-		"name": "Hunter",
-		"source": "PHB",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
 		"name": "Hunter",
 		"source": "PHB",
 		"path": "/classes/ranger",
@@ -6036,21 +5259,7 @@
 	{
 		"type": "subclass",
 		"name": "Gloom Stalker",
-		"source": "XGE",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
-		"name": "Gloom Stalker",
-		"source": "XGE",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
-		"name": "Horizon Walker",
-		"source": "XGE",
+		"source": "XPHB",
 		"path": "/classes/ranger",
 		"extra": "Ranger"
 	},
@@ -6070,29 +5279,8 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Monster Slayer",
-		"source": "XGE",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
 		"name": "Fey Wanderer",
-		"source": "TCE",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
-		"name": "Fey Wanderer",
-		"source": "TCE",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
-		"name": "Swarmkeeper",
-		"source": "TCE",
+		"source": "XPHB",
 		"path": "/classes/ranger",
 		"extra": "Ranger"
 	},
@@ -6107,41 +5295,6 @@
 		"type": "subclass",
 		"name": "Drakewarden",
 		"source": "FTD",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
-		"name": "Drakewarden",
-		"source": "FTD",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
-		"name": "Beast Master",
-		"source": "XPHB",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
-		"name": "Fey Wanderer",
-		"source": "XPHB",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
-		"name": "Gloom Stalker",
-		"source": "XPHB",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
-		"name": "Hunter",
-		"source": "XPHB",
 		"path": "/classes/ranger",
 		"extra": "Ranger"
 	},
@@ -6168,28 +5321,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Arcane Trickster",
-		"source": "PHB",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
 		"name": "Assassin",
-		"source": "PHB",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
-		"name": "Assassin",
-		"source": "PHB",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
-		"name": "Thief",
 		"source": "PHB",
 		"path": "/classes/rogue",
 		"extra": "Rogue"
@@ -6210,28 +5342,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Inquisitive",
-		"source": "XGE",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
 		"name": "Mastermind",
-		"source": "XGE",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
-		"name": "Mastermind",
-		"source": "XGE",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
-		"name": "Scout",
 		"source": "XGE",
 		"path": "/classes/rogue",
 		"extra": "Rogue"
@@ -6252,20 +5363,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Swashbuckler",
-		"source": "XGE",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
-		"name": "Phantom",
-		"source": "TCE",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
 		"name": "Phantom",
 		"source": "TCE",
 		"path": "/classes/rogue",
@@ -6274,41 +5371,6 @@
 	{
 		"type": "subclass",
 		"name": "Soulknife",
-		"source": "TCE",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
-		"name": "Soulknife",
-		"source": "TCE",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
-		"name": "Arcane Trickster",
-		"source": "XPHB",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
-		"name": "Assassin",
-		"source": "XPHB",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
-		"name": "Soulknife",
-		"source": "XPHB",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
-		"name": "Thief",
 		"source": "XPHB",
 		"path": "/classes/rogue",
 		"extra": "Rogue"
@@ -6322,28 +5384,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Phantom",
-		"source": "RHW",
-		"path": "/classes/rogue",
-		"extra": "Rogue"
-	},
-	{
-		"type": "subclass",
 		"name": "Draconic Bloodline",
-		"source": "PHB",
-		"path": "/classes/sorcerer",
-		"extra": "Sorcerer"
-	},
-	{
-		"type": "subclass",
-		"name": "Draconic Bloodline",
-		"source": "PHB",
-		"path": "/classes/sorcerer",
-		"extra": "Sorcerer"
-	},
-	{
-		"type": "subclass",
-		"name": "Wild Magic",
 		"source": "PHB",
 		"path": "/classes/sorcerer",
 		"extra": "Sorcerer"
@@ -6364,28 +5405,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Pyromancer (PSK)",
-		"source": "PSK",
-		"path": "/classes/sorcerer",
-		"extra": "Sorcerer"
-	},
-	{
-		"type": "subclass",
 		"name": "Divine Soul",
-		"source": "XGE",
-		"path": "/classes/sorcerer",
-		"extra": "Sorcerer"
-	},
-	{
-		"type": "subclass",
-		"name": "Divine Soul",
-		"source": "XGE",
-		"path": "/classes/sorcerer",
-		"extra": "Sorcerer"
-	},
-	{
-		"type": "subclass",
-		"name": "Shadow Magic",
 		"source": "XGE",
 		"path": "/classes/sorcerer",
 		"extra": "Sorcerer"
@@ -6406,20 +5426,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Storm Sorcery",
-		"source": "XGE",
-		"path": "/classes/sorcerer",
-		"extra": "Sorcerer"
-	},
-	{
-		"type": "subclass",
-		"name": "Aberrant Mind",
-		"source": "TCE",
-		"path": "/classes/sorcerer",
-		"extra": "Sorcerer"
-	},
-	{
-		"type": "subclass",
 		"name": "Aberrant Mind",
 		"source": "TCE",
 		"path": "/classes/sorcerer",
@@ -6429,20 +5435,6 @@
 		"type": "subclass",
 		"name": "Clockwork Soul",
 		"source": "TCE",
-		"path": "/classes/sorcerer",
-		"extra": "Sorcerer"
-	},
-	{
-		"type": "subclass",
-		"name": "Clockwork Soul",
-		"source": "TCE",
-		"path": "/classes/sorcerer",
-		"extra": "Sorcerer"
-	},
-	{
-		"type": "subclass",
-		"name": "Lunar Sorcery",
-		"source": "DSotDQ",
 		"path": "/classes/sorcerer",
 		"extra": "Sorcerer"
 	},
@@ -6504,28 +5496,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "The Archfey",
-		"source": "PHB",
-		"path": "/classes/warlock",
-		"extra": "Warlock"
-	},
-	{
-		"type": "subclass",
 		"name": "The Fiend",
-		"source": "PHB",
-		"path": "/classes/warlock",
-		"extra": "Warlock"
-	},
-	{
-		"type": "subclass",
-		"name": "The Fiend",
-		"source": "PHB",
-		"path": "/classes/warlock",
-		"extra": "Warlock"
-	},
-	{
-		"type": "subclass",
-		"name": "The Great Old One",
 		"source": "PHB",
 		"path": "/classes/warlock",
 		"extra": "Warlock"
@@ -6546,28 +5517,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "The Undying",
-		"source": "SCAG",
-		"path": "/classes/warlock",
-		"extra": "Warlock"
-	},
-	{
-		"type": "subclass",
 		"name": "The Celestial",
-		"source": "XGE",
-		"path": "/classes/warlock",
-		"extra": "Warlock"
-	},
-	{
-		"type": "subclass",
-		"name": "The Celestial",
-		"source": "XGE",
-		"path": "/classes/warlock",
-		"extra": "Warlock"
-	},
-	{
-		"type": "subclass",
-		"name": "The Hexblade",
 		"source": "XGE",
 		"path": "/classes/warlock",
 		"extra": "Warlock"
@@ -6588,29 +5538,8 @@
 	},
 	{
 		"type": "subclass",
-		"name": "The Fathomless",
-		"source": "TCE",
-		"path": "/classes/warlock",
-		"extra": "Warlock"
-	},
-	{
-		"type": "subclass",
 		"name": "The Genie",
 		"source": "TCE",
-		"path": "/classes/warlock",
-		"extra": "Warlock"
-	},
-	{
-		"type": "subclass",
-		"name": "The Genie",
-		"source": "TCE",
-		"path": "/classes/warlock",
-		"extra": "Warlock"
-	},
-	{
-		"type": "subclass",
-		"name": "The Undead",
-		"source": "VRGR",
 		"path": "/classes/warlock",
 		"extra": "Warlock"
 	},
@@ -6672,28 +5601,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "School of Abjuration",
-		"source": "PHB",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
 		"name": "School of Conjuration",
-		"source": "PHB",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
-		"name": "School of Conjuration",
-		"source": "PHB",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
-		"name": "School of Divination",
 		"source": "PHB",
 		"path": "/classes/wizard",
 		"extra": "Wizard"
@@ -6714,28 +5622,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "School of Enchantment",
-		"source": "PHB",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
 		"name": "School of Evocation",
-		"source": "PHB",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
-		"name": "School of Evocation",
-		"source": "PHB",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
-		"name": "School of Illusion",
 		"source": "PHB",
 		"path": "/classes/wizard",
 		"extra": "Wizard"
@@ -6756,29 +5643,8 @@
 	},
 	{
 		"type": "subclass",
-		"name": "School of Necromancy",
-		"source": "PHB",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
 		"name": "School of Transmutation",
 		"source": "PHB",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
-		"name": "School of Transmutation",
-		"source": "PHB",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
-		"name": "War Magic",
-		"source": "XGE",
 		"path": "/classes/wizard",
 		"extra": "Wizard"
 	},
@@ -6798,20 +5664,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Chronurgy Magic",
-		"source": "EGW",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
-		"name": "Graviturgy Magic",
-		"source": "EGW",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
 		"name": "Graviturgy Magic",
 		"source": "EGW",
 		"path": "/classes/wizard",
@@ -6820,20 +5672,6 @@
 	{
 		"type": "subclass",
 		"name": "Bladesinging",
-		"source": "TCE",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
-		"name": "Bladesinging",
-		"source": "TCE",
-		"path": "/classes/wizard",
-		"extra": "Wizard"
-	},
-	{
-		"type": "subclass",
-		"name": "Order of Scribes",
 		"source": "TCE",
 		"path": "/classes/wizard",
 		"extra": "Wizard"
@@ -6917,28 +5755,7 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Alchemist",
-		"source": "TCE",
-		"path": "/classes/artificer",
-		"extra": "Artificer"
-	},
-	{
-		"type": "subclass",
 		"name": "Armorer",
-		"source": "TCE",
-		"path": "/classes/artificer",
-		"extra": "Artificer"
-	},
-	{
-		"type": "subclass",
-		"name": "Armorer",
-		"source": "TCE",
-		"path": "/classes/artificer",
-		"extra": "Artificer"
-	},
-	{
-		"type": "subclass",
-		"name": "Artillerist",
 		"source": "TCE",
 		"path": "/classes/artificer",
 		"extra": "Artificer"
@@ -6954,41 +5771,6 @@
 		"type": "subclass",
 		"name": "Battle Smith",
 		"source": "TCE",
-		"path": "/classes/artificer",
-		"extra": "Artificer"
-	},
-	{
-		"type": "subclass",
-		"name": "Battle Smith",
-		"source": "TCE",
-		"path": "/classes/artificer",
-		"extra": "Artificer"
-	},
-	{
-		"type": "subclass",
-		"name": "Alchemist",
-		"source": "EFA",
-		"path": "/classes/artificer",
-		"extra": "Artificer"
-	},
-	{
-		"type": "subclass",
-		"name": "Armorer",
-		"source": "EFA",
-		"path": "/classes/artificer",
-		"extra": "Artificer"
-	},
-	{
-		"type": "subclass",
-		"name": "Artillerist",
-		"source": "EFA",
-		"path": "/classes/artificer",
-		"extra": "Artificer"
-	},
-	{
-		"type": "subclass",
-		"name": "Battle Smith",
-		"source": "EFA",
 		"path": "/classes/artificer",
 		"extra": "Artificer"
 	},
@@ -7093,9 +5875,9 @@
 	{
 		"type": "subclass",
 		"name": "Hunter Conclave",
-		"source": "HB",
-		"path": "/classes/ranger (revised)",
-		"extra": "Ranger (Revised)"
+		"source": "PHB",
+		"path": "/classes/ranger",
+		"extra": "Ranger"
 	},
 	{
 		"type": "subclass",
@@ -7143,13 +5925,6 @@
 		"type": "subclass",
 		"name": "Totem Warrior",
 		"source": "PHB",
-		"path": "/classes/7 pack barbarian",
-		"extra": "7 Pack Barbarian"
-	},
-	{
-		"type": "subclass",
-		"name": "Wild Magic",
-		"source": "TCE",
 		"path": "/classes/7 pack barbarian",
 		"extra": "7 Pack Barbarian"
 	},
@@ -7477,13 +6252,6 @@
 	},
 	{
 		"type": "subclass",
-		"name": "Scout",
-		"source": "HB",
-		"path": "/classes/fighter",
-		"extra": "Fighter"
-	},
-	{
-		"type": "subclass",
 		"name": "Sharpshooter",
 		"source": "HB",
 		"path": "/classes/fighter",
@@ -7626,13 +6394,6 @@
 		"type": "subclass",
 		"name": "Horizon Walker Conclave",
 		"source": "XGE",
-		"path": "/classes/ranger",
-		"extra": "Ranger"
-	},
-	{
-		"type": "subclass",
-		"name": "Hunter Conclave",
-		"source": "PHB",
 		"path": "/classes/ranger",
 		"extra": "Ranger"
 	},
@@ -8031,21 +6792,7 @@
 	{
 		"type": "magic-item",
 		"name": "+1 Rod of the Pact Keeper",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "+1 Rod of the Pact Keeper",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "+1 Wand of the War Mage",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -8129,21 +6876,7 @@
 	{
 		"type": "magic-item",
 		"name": "+2 Rod of the Pact Keeper",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "+2 Rod of the Pact Keeper",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "+2 Wand of the War Mage",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -8227,21 +6960,7 @@
 	{
 		"type": "magic-item",
 		"name": "+3 Rod of the Pact Keeper",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "+3 Rod of the Pact Keeper",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "+3 Wand of the War Mage",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -8332,13 +7051,6 @@
 	{
 		"type": "magic-item",
 		"name": "Alchemy Jug",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Alchemy Jug",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -8402,23 +7114,9 @@
 	{
 		"type": "magic-item",
 		"name": "Amulet of Health",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Amulet of Health",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Amulet of Proof against Detection and Location",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -8458,21 +7156,7 @@
 	{
 		"type": "magic-item",
 		"name": "Amulet of the Planes",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Amulet of the Planes",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Animated Shield",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -8482,13 +7166,6 @@
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Apparatus of Kwalish",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -8542,13 +7219,6 @@
 	{
 		"type": "magic-item",
 		"name": "Armor of Invulnerability",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Armor of Invulnerability",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "legendary"
@@ -8570,13 +7240,6 @@
 	{
 		"type": "magic-item",
 		"name": "Armor of Vulnerability (Slashing)",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Arrow-Catching Shield",
 		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -8629,13 +7292,6 @@
 		"source": "TCE",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Axe of the Dwarvish Lords",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "artifact"
 	},
 	{
 		"type": "magic-item",
@@ -8703,23 +7359,9 @@
 	{
 		"type": "magic-item",
 		"name": "Bag of Beans",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Bag of Beans",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Bag of Devouring",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -8731,21 +7373,7 @@
 	{
 		"type": "magic-item",
 		"name": "Bag of Holding",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Bag of Holding",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Bag of Tricks, Gray",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -8759,21 +7387,7 @@
 	{
 		"type": "magic-item",
 		"name": "Bag of Tricks, Rust",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Bag of Tricks, Rust",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Bag of Tricks, Tan",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -8864,13 +7478,6 @@
 	{
 		"type": "magic-item",
 		"name": "Bead of Force",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Bead of Force",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -8884,22 +7491,8 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Bead of Nourishment",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Bead of Refreshment",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Bead of Refreshment",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -8927,23 +7520,9 @@
 	{
 		"type": "magic-item",
 		"name": "Belt of Cloud Giant Strength",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Belt of Cloud Giant Strength",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Belt of Dwarvenkind",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -8955,21 +7534,7 @@
 	{
 		"type": "magic-item",
 		"name": "Belt of Fire Giant Strength",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Belt of Fire Giant Strength",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Belt of Frost Giant Strength",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -8983,13 +7548,6 @@
 	{
 		"type": "magic-item",
 		"name": "Belt of Hill Giant Strength",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Belt of Hill Giant Strength",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -8997,23 +7555,9 @@
 	{
 		"type": "magic-item",
 		"name": "Belt of Stone Giant Strength",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Belt of Stone Giant Strength",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Belt of Storm Giant Strength",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -9053,23 +7597,9 @@
 	{
 		"type": "magic-item",
 		"name": "Black Dragon Scale Mail",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Black Dragon Scale Mail",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Blackrazor",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -9186,13 +7716,6 @@
 	{
 		"type": "magic-item",
 		"name": "Blue Dragon Scale Mail",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Blue Dragon Scale Mail",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -9221,21 +7744,7 @@
 	{
 		"type": "magic-item",
 		"name": "Book of Exalted Deeds",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Book of Exalted Deeds",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Book of Vile Darkness",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "artifact"
 	},
@@ -9270,13 +7779,6 @@
 	{
 		"type": "magic-item",
 		"name": "Boots of Elvenkind",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Boots of Elvenkind",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -9290,29 +7792,8 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Boots of False Tracks",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Boots of Levitation",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
 		"name": "Boots of Levitation",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Boots of Speed",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -9322,13 +7803,6 @@
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Boots of Striding and Springing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -9341,13 +7815,6 @@
 		"type": "magic-item",
 		"name": "Boots of the Winding Path",
 		"source": "EFA",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Boots of the Winterlands",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -9389,13 +7856,6 @@
 	{
 		"type": "magic-item",
 		"name": "Bowl of Commanding Water Elementals",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Bowl of Commanding Water Elementals",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -9413,13 +7873,6 @@
 		"source": "WDH",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Bracers of Archery",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -9445,13 +7898,6 @@
 	{
 		"type": "magic-item",
 		"name": "Bracers of Defense",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Bracers of Defense",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -9459,23 +7905,9 @@
 	{
 		"type": "magic-item",
 		"name": "Brass Dragon Scale Mail",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Brass Dragon Scale Mail",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Brazier of Commanding Fire Elementals",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -9508,13 +7940,6 @@
 	{
 		"type": "magic-item",
 		"name": "Bronze Dragon Scale Mail",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Bronze Dragon Scale Mail",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -9523,13 +7948,6 @@
 		"type": "magic-item",
 		"name": "Brooch of Living Essence",
 		"source": "EGW",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Brooch of Shielding",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -9546,13 +7964,6 @@
 		"source": "NF",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Broom of Flying",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -9592,13 +8003,6 @@
 	{
 		"type": "magic-item",
 		"name": "Candle of Invocation",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Candle of Invocation",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -9607,13 +8011,6 @@
 		"type": "magic-item",
 		"name": "Candle of the Deep",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Candle of the Deep",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -9634,13 +8031,6 @@
 	{
 		"type": "magic-item",
 		"name": "Cap of Water Breathing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Cap of Water Breathing",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -9651,13 +8041,6 @@
 		"source": "PaBTSO",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Cape of the Mountebank",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -9676,21 +8059,7 @@
 	{
 		"type": "magic-item",
 		"name": "Carpet of Flying, 3 ft. × 5 ft.",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Carpet of Flying, 3 ft. × 5 ft.",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Carpet of Flying, 4 ft. × 6 ft.",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -9704,21 +8073,7 @@
 	{
 		"type": "magic-item",
 		"name": "Carpet of Flying, 5 ft. × 7 ft.",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Carpet of Flying, 5 ft. × 7 ft.",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Carpet of Flying, 6 ft. × 9 ft.",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -9753,23 +8108,9 @@
 	{
 		"type": "magic-item",
 		"name": "Cauldron of Rebirth",
-		"source": "TCE",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Cauldron of Rebirth",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Censer of Controlling Air Elementals",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -9782,13 +8123,6 @@
 		"type": "magic-item",
 		"name": "Charlatan's Die",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Charlatan's Die",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -9823,13 +8157,6 @@
 	{
 		"type": "magic-item",
 		"name": "Chime of Opening",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Chime of Opening",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -9847,13 +8174,6 @@
 		"source": "AI",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Circlet of Blasting",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -9893,13 +8213,6 @@
 	{
 		"type": "magic-item",
 		"name": "Cloak of Arachnida",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Cloak of Arachnida",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -9913,20 +8226,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Cloak of Billowing",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Cloak of Displacement",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
 		"name": "Cloak of Displacement",
 		"source": "XDMG",
 		"path": "/magic-items",
@@ -9935,23 +8234,9 @@
 	{
 		"type": "magic-item",
 		"name": "Cloak of Elvenkind",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Cloak of Elvenkind",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Cloak of Invisibility",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -9969,20 +8254,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Cloak of Many Fashions",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Cloak of Protection",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
 		"name": "Cloak of Protection",
 		"source": "XDMG",
 		"path": "/magic-items",
@@ -9991,23 +8262,9 @@
 	{
 		"type": "magic-item",
 		"name": "Cloak of the Bat",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Cloak of the Bat",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Cloak of the Manta Ray",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -10020,13 +8277,6 @@
 		"type": "magic-item",
 		"name": "Clockwork Amulet",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Clockwork Amulet",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -10041,13 +8291,6 @@
 		"type": "magic-item",
 		"name": "Clothes of Mending",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Clothes of Mending",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -10145,13 +8388,6 @@
 	{
 		"type": "magic-item",
 		"name": "Copper Dragon Scale Mail",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Copper Dragon Scale Mail",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -10222,23 +8458,9 @@
 	{
 		"type": "magic-item",
 		"name": "Crystal Ball",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Crystal Ball",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Crystal Ball of Mind Reading",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -10257,21 +8479,7 @@
 	{
 		"type": "magic-item",
 		"name": "Crystal Ball of Telepathy",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Crystal Ball of Telepathy",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Crystal Ball of True Seeing",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "legendary"
 	},
@@ -10292,13 +8500,6 @@
 	{
 		"type": "magic-item",
 		"name": "Cube of Force",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Cube of Force",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -10309,13 +8510,6 @@
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Cubic Gate",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -10341,13 +8535,6 @@
 	{
 		"type": "magic-item",
 		"name": "Daern's Instant Fortress",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Daern's Instant Fortress",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -10365,13 +8552,6 @@
 		"source": "WDMM",
 		"path": "/magic-items",
 		"extra": "unknown (magic)"
-	},
-	{
-		"type": "magic-item",
-		"name": "Dagger of Venom",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -10410,24 +8590,10 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Dark Shard Amulet",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Dawnbringer",
 		"source": "OotA",
 		"path": "/magic-items",
 		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Decanter of Endless Water",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -10446,13 +8612,6 @@
 	{
 		"type": "magic-item",
 		"name": "Deck of Illusions",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Deck of Illusions",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -10461,20 +8620,6 @@
 		"type": "magic-item",
 		"name": "Deck of Many More Things",
 		"source": "BMT",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Deck of Many Things",
-		"source": "BMT",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Deck of Many Things",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "legendary"
 	},
@@ -10544,13 +8689,6 @@
 	{
 		"type": "magic-item",
 		"name": "Demonomicon of Iggwilv",
-		"source": "TCE",
-		"path": "/magic-items",
-		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Demonomicon of Iggwilv",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "artifact"
@@ -10610,13 +8748,6 @@
 		"source": "AI",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Dimensional Shackles",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -10739,13 +8870,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Dragonguard",
-		"source": "PaBTSO",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
 		"name": "Dragonstaff of Ahghairon",
 		"source": "WDH",
 		"path": "/magic-items",
@@ -10767,24 +8891,10 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Dread Helm",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Dream Weaver",
 		"source": "AU",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Driftglobe",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -10831,13 +8941,6 @@
 	{
 		"type": "magic-item",
 		"name": "Dust of Disappearance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Dust of Disappearance",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -10845,21 +8948,7 @@
 	{
 		"type": "magic-item",
 		"name": "Dust of Dryness",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Dust of Dryness",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Dust of Sneezing and Choking",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -10873,13 +8962,6 @@
 	{
 		"type": "magic-item",
 		"name": "Dwarven Plate",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Dwarven Thrower",
 		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -10914,13 +8996,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Ear Horn of Hearing",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Earring of Message",
 		"source": "CRCotN",
 		"path": "/magic-items",
@@ -10939,13 +9014,6 @@
 		"source": "RHW",
 		"path": "/magic-items",
 		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Efreeti Bottle",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -11020,21 +9088,7 @@
 	{
 		"type": "magic-item",
 		"name": "Elemental Gem, Blue Sapphire",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Elemental Gem, Blue Sapphire",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Elemental Gem, Emerald",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -11048,21 +9102,7 @@
 	{
 		"type": "magic-item",
 		"name": "Elemental Gem, Red Corundum",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Elemental Gem, Red Corundum",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Elemental Gem, Yellow Diamond",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -11072,13 +9112,6 @@
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Elixir of Health",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -11119,13 +9152,6 @@
 		"type": "magic-item",
 		"name": "Enduring Spellbook",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Enduring Spellbook",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -11215,13 +9241,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Ersatz Eye",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Euryale Card",
 		"source": "BMT",
 		"path": "/magic-items",
@@ -11251,13 +9270,6 @@
 	{
 		"type": "magic-item",
 		"name": "Eversmoking Bottle",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Eversmoking Bottle",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -11265,23 +9277,9 @@
 	{
 		"type": "magic-item",
 		"name": "Eye of Vecna",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Eye of Vecna",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Eyes of Charming",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -11300,21 +9298,7 @@
 	{
 		"type": "magic-item",
 		"name": "Eyes of Minute Seeing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Eyes of Minute Seeing",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Eyes of the Eagle",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -11412,21 +9396,7 @@
 	{
 		"type": "magic-item",
 		"name": "Figurine of Wondrous Power, Bronze Griffon",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Figurine of Wondrous Power, Bronze Griffon",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Figurine of Wondrous Power, Ebony Fly",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -11440,21 +9410,7 @@
 	{
 		"type": "magic-item",
 		"name": "Figurine of Wondrous Power, Golden Lions",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Figurine of Wondrous Power, Golden Lions",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Figurine of Wondrous Power, Ivory Goats",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -11468,23 +9424,9 @@
 	{
 		"type": "magic-item",
 		"name": "Figurine of Wondrous Power, Marble Elephant",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Figurine of Wondrous Power, Marble Elephant",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Figurine of Wondrous Power, Obsidian Steed",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -11496,21 +9438,7 @@
 	{
 		"type": "magic-item",
 		"name": "Figurine of Wondrous Power, Onyx Dog",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Figurine of Wondrous Power, Onyx Dog",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Figurine of Wondrous Power, Serpentine Owl",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -11520,13 +9448,6 @@
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Figurine of Wondrous Power, Silver Raven",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -11636,13 +9557,6 @@
 	{
 		"type": "magic-item",
 		"name": "Folding Boat",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Folding Boat",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -11692,13 +9606,6 @@
 	{
 		"type": "magic-item",
 		"name": "Gauntlets of Ogre Power",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Gauntlets of Ogre Power",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -11727,23 +9634,9 @@
 	{
 		"type": "magic-item",
 		"name": "Gem of Brightness",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Gem of Brightness",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Gem of Seeing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -11769,23 +9662,9 @@
 	{
 		"type": "magic-item",
 		"name": "Glamoured Studded Leather",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Glamoured Studded Leather",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Gloves of Missile Snaring",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -11804,21 +9683,7 @@
 	{
 		"type": "magic-item",
 		"name": "Gloves of Swimming and Climbing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Gloves of Swimming and Climbing",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Gloves of Thievery",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -11846,13 +9711,6 @@
 	{
 		"type": "magic-item",
 		"name": "Goggles of Night",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Goggles of Night",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -11870,13 +9728,6 @@
 		"source": "FTD",
 		"path": "/magic-items",
 		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Gold Dragon Scale Mail",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -11958,13 +9809,6 @@
 	{
 		"type": "magic-item",
 		"name": "Green Dragon Scale Mail",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Green Dragon Scale Mail",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -12021,13 +9865,6 @@
 	{
 		"type": "magic-item",
 		"name": "Hag Eye",
-		"source": "MM",
-		"path": "/magic-items",
-		"extra": "unknown (magic)"
-	},
-	{
-		"type": "magic-item",
-		"name": "Hag Eye",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -12056,23 +9893,9 @@
 	{
 		"type": "magic-item",
 		"name": "Hand of Vecna",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Hand of Vecna",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Harkon's Bite",
-		"source": "RHW",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -12092,13 +9915,6 @@
 		"type": "magic-item",
 		"name": "Harper Pin",
 		"source": "FRAiF",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Hat of Disguise",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -12125,13 +9941,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Hat of Vermin",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Hat of Vortexes",
 		"source": "NF",
 		"path": "/magic-items",
@@ -12146,24 +9955,10 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Hat of Wizardry",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Hazirawn",
 		"source": "HotDQ",
 		"path": "/magic-items",
 		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Headband of Intellect",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -12210,23 +10005,9 @@
 	{
 		"type": "magic-item",
 		"name": "Helm of Brilliance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Helm of Brilliance",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Helm of Comprehending Languages",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -12259,23 +10040,9 @@
 	{
 		"type": "magic-item",
 		"name": "Helm of Telepathy",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Helm of Telepathy",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Helm of Teleportation",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -12321,20 +10088,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Hew",
-		"source": "PaBTSO",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Heward's Handy Haversack",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
 		"name": "Heward's Handy Haversack",
 		"source": "XDMG",
 		"path": "/magic-items",
@@ -12344,13 +10097,6 @@
 		"type": "magic-item",
 		"name": "Heward's Handy Spice Pouch",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Heward's Handy Spice Pouch",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -12420,13 +10166,6 @@
 	{
 		"type": "magic-item",
 		"name": "Horn of Blasting",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Horn of Blasting",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -12440,31 +10179,10 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Horn of Silent Alarm",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Horn of Valhalla, Brass",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
 		"name": "Horn of Valhalla, Brass",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Horn of Valhalla, Bronze",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -12476,23 +10194,9 @@
 	{
 		"type": "magic-item",
 		"name": "Horn of Valhalla, Iron",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Horn of Valhalla, Iron",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Horn of Valhalla, Silver",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -12511,23 +10215,9 @@
 	{
 		"type": "magic-item",
 		"name": "Horseshoes of a Zephyr",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Horseshoes of a Zephyr",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Horseshoes of Speed",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -12584,13 +10274,6 @@
 		"source": "GGR",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Immovable Rod",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -12657,31 +10340,10 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Instrument of Illusions",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Instrument of Scribing",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Instrument of Scribing",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Instrument of the Bards, Anstruth Harp",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -12693,21 +10355,7 @@
 	{
 		"type": "magic-item",
 		"name": "Instrument of the Bards, Canaith Mandolin",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Instrument of the Bards, Canaith Mandolin",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Instrument of the Bards, Cli Lyre",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -12721,21 +10369,7 @@
 	{
 		"type": "magic-item",
 		"name": "Instrument of the Bards, Doss Lute",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Instrument of the Bards, Doss Lute",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Instrument of the Bards, Fochlucan Bandore",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -12749,23 +10383,9 @@
 	{
 		"type": "magic-item",
 		"name": "Instrument of the Bards, Mac-Fuirmidh Cittern",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Instrument of the Bards, Mac-Fuirmidh Cittern",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Instrument of the Bards, Ollamh Harp",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -12784,21 +10404,7 @@
 	{
 		"type": "magic-item",
 		"name": "Ioun Stone, Absorption",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Absorption",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Agility",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -12812,13 +10418,6 @@
 	{
 		"type": "magic-item",
 		"name": "Ioun Stone, Awareness",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Awareness",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -12826,23 +10425,9 @@
 	{
 		"type": "magic-item",
 		"name": "Ioun Stone, Fortitude",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Fortitude",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Greater Absorption",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -12861,21 +10446,7 @@
 	{
 		"type": "magic-item",
 		"name": "Ioun Stone, Insight",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Insight",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Intellect",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -12896,23 +10467,9 @@
 	{
 		"type": "magic-item",
 		"name": "Ioun Stone, Leadership",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Leadership",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Mastery",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -12931,23 +10488,9 @@
 	{
 		"type": "magic-item",
 		"name": "Ioun Stone, Protection",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Protection",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Regeneration",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -12960,13 +10503,6 @@
 		"type": "magic-item",
 		"name": "Ioun Stone, Religious Knowledge",
 		"source": "LLK",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Reserve",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -12987,13 +10523,6 @@
 	{
 		"type": "magic-item",
 		"name": "Ioun Stone, Strength",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Strength",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -13002,13 +10531,6 @@
 		"type": "magic-item",
 		"name": "Ioun Stone, Supreme Intellect",
 		"source": "LLK",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ioun Stone, Sustenance",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -13029,23 +10551,9 @@
 	{
 		"type": "magic-item",
 		"name": "Iron Bands of Bilarro",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Iron Bands of Bilarro",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Iron Flask",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -13099,13 +10607,6 @@
 	{
 		"type": "magic-item",
 		"name": "Javelin of Lightning",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Javelin of Lightning",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -13144,13 +10645,6 @@
 		"source": "DSotDQ",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Keoghtom's Ointment",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -13221,13 +10715,6 @@
 		"source": "ERLW",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Lantern of Revealing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -13357,13 +10844,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Lightbringer",
-		"source": "PaBTSO",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
 		"name": "Lightning Absorbing Tattoo",
 		"source": "TCE",
 		"path": "/magic-items",
@@ -13394,13 +10874,6 @@
 		"type": "magic-item",
 		"name": "Lock of Trickery",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Lock of Trickery",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -13491,13 +10964,6 @@
 	{
 		"type": "magic-item",
 		"name": "Mace of Disruption",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Mace of Disruption",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -13505,21 +10971,7 @@
 	{
 		"type": "magic-item",
 		"name": "Mace of Smiting",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Mace of Smiting",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Mace of Terror",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -13589,13 +11041,6 @@
 	{
 		"type": "magic-item",
 		"name": "Mantle of Spell Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Mantle of Spell Resistance",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -13603,21 +11048,7 @@
 	{
 		"type": "magic-item",
 		"name": "Manual of Bodily Health",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Manual of Bodily Health",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Manual of Clay Golems",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -13631,21 +11062,7 @@
 	{
 		"type": "magic-item",
 		"name": "Manual of Flesh Golems",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Manual of Flesh Golems",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Manual of Gainful Exercise",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -13659,13 +11076,6 @@
 	{
 		"type": "magic-item",
 		"name": "Manual of Iron Golems",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Manual of Iron Golems",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -13673,21 +11083,7 @@
 	{
 		"type": "magic-item",
 		"name": "Manual of Quickness of Action",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Manual of Quickness of Action",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Manual of Stone Golems",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -13862,13 +11258,6 @@
 	{
 		"type": "magic-item",
 		"name": "Medallion of Thoughts",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Medallion of Thoughts",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -13981,13 +11370,6 @@
 	{
 		"type": "magic-item",
 		"name": "Mirror of Life Trapping",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Mirror of Life Trapping",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -14085,13 +11467,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Mystery Key",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Mythallar Bracelet",
 		"source": "NF",
 		"path": "/magic-items",
@@ -14114,13 +11489,6 @@
 	{
 		"type": "magic-item",
 		"name": "Nature's Mantle",
-		"source": "TCE",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Nature's Mantle",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -14135,13 +11503,6 @@
 	{
 		"type": "magic-item",
 		"name": "Necklace of Adaptation",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Necklace of Adaptation",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -14149,21 +11510,7 @@
 	{
 		"type": "magic-item",
 		"name": "Necklace of Fireballs",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Necklace of Fireballs",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Necklace of Prayer Beads",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -14289,13 +11636,6 @@
 	{
 		"type": "magic-item",
 		"name": "Nolzur's Marvelous Pigments",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Nolzur's Marvelous Pigments",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -14331,13 +11671,6 @@
 	{
 		"type": "magic-item",
 		"name": "Oil of Etherealness",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Oil of Etherealness",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -14345,23 +11678,9 @@
 	{
 		"type": "magic-item",
 		"name": "Oil of Sharpness",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Oil of Sharpness",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Oil of Slipperiness",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -14400,24 +11719,10 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Orb of Direction",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Orb of Divination Detection",
 		"source": "AU",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Orb of Dragonkind",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "artifact"
 	},
 	{
 		"type": "magic-item",
@@ -14465,13 +11770,6 @@
 		"type": "magic-item",
 		"name": "Orb of Time",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Orb of Time",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -14590,13 +11888,6 @@
 	{
 		"type": "magic-item",
 		"name": "Pearl of Power",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Pearl of Power",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -14631,20 +11922,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Perfume of Bewitching",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Periapt of Health",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
 		"name": "Periapt of Health",
 		"source": "XDMG",
 		"path": "/magic-items",
@@ -14653,23 +11930,9 @@
 	{
 		"type": "magic-item",
 		"name": "Periapt of Proof against Poison",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Periapt of Proof against Poison",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Periapt of Wound Closure",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -14684,13 +11947,6 @@
 		"source": "ToA",
 		"path": "/magic-items",
 		"extra": "unknown (magic)"
-	},
-	{
-		"type": "magic-item",
-		"name": "Philter of Love",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -14722,20 +11978,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Pipe of Smoke Monsters",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Pipes of Haunting",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
 		"name": "Pipes of Haunting",
 		"source": "XDMG",
 		"path": "/magic-items",
@@ -14745,13 +11987,6 @@
 		"type": "magic-item",
 		"name": "Pipes of Pestilence",
 		"source": "WttHC",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Pipes of the Sewers",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -14848,31 +12083,10 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Pole of Angling",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Pole of Collapsing",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Pole of Collapsing",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Portable Hole",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -14904,20 +12118,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Pot of Awakening",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Acid Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
 		"name": "Potion of Acid Resistance",
 		"source": "XDMG",
 		"path": "/magic-items",
@@ -14927,13 +12127,6 @@
 		"type": "magic-item",
 		"name": "Potion of Advantage",
 		"source": "WBtW",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Animal Friendship",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -14954,23 +12147,9 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Clairvoyance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Clairvoyance",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Climbing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "common"
 	},
 	{
 		"type": "magic-item",
@@ -14982,23 +12161,9 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Cloud Giant Strength",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Cloud Giant Strength",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Cold Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -15010,23 +12175,9 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Comprehension",
-		"source": "WDMM",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Comprehension",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Diminution",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -15052,23 +12203,9 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Fire Breath",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Fire Breath",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Fire Giant Strength",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -15080,23 +12217,9 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Fire Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Fire Resistance",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Flying",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -15108,13 +12231,6 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Force Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Force Resistance",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -15122,21 +12238,7 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Frost Giant Strength",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Frost Giant Strength",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Gaseous Form",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -15157,13 +12259,6 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Greater Healing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Greater Healing",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -15178,23 +12273,9 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Growth",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Growth",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Healing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "common"
 	},
 	{
 		"type": "magic-item",
@@ -15206,23 +12287,9 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Heroism",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Heroism",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Hill Giant Strength",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -15234,21 +12301,7 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Invisibility",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Invisibility",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Invulnerability",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -15262,23 +12315,9 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Lightning Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Lightning Resistance",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Longevity",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -15318,23 +12357,9 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Mind Reading",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Mind Reading",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Necrotic Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -15346,21 +12371,7 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Poison",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Poison",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Poison Resistance",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -15395,13 +12406,6 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Psychic Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Psychic Resistance",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -15416,23 +12420,9 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Radiant Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Radiant Resistance",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Speed",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -15444,23 +12434,9 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Stone Giant Strength",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Stone Giant Strength",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Storm Giant Strength",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -15472,13 +12448,6 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Superior Healing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Superior Healing",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -15486,23 +12455,9 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Supreme Healing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Supreme Healing",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Thunder Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -15521,13 +12476,6 @@
 	{
 		"type": "magic-item",
 		"name": "Potion of Vitality",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Vitality",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -15538,13 +12486,6 @@
 		"source": "WDMM",
 		"path": "/magic-items",
 		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Potion of Water Breathing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -15640,13 +12581,6 @@
 	{
 		"type": "magic-item",
 		"name": "Prosthetic Limb",
-		"source": "TCE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Prosthetic Limb",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "common"
@@ -15717,13 +12651,6 @@
 	{
 		"type": "magic-item",
 		"name": "Quaal's Feather Token, Anchor",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Quaal's Feather Token, Anchor",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -15731,21 +12658,7 @@
 	{
 		"type": "magic-item",
 		"name": "Quaal's Feather Token, Bird",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Quaal's Feather Token, Bird",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Quaal's Feather Token, Fan",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -15759,21 +12672,7 @@
 	{
 		"type": "magic-item",
 		"name": "Quaal's Feather Token, Swan Boat",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Quaal's Feather Token, Swan Boat",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Quaal's Feather Token, Tree",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -15783,13 +12682,6 @@
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Quaal's Feather Token, Whip",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -15818,13 +12710,6 @@
 		"source": "AU",
 		"path": "/magic-items",
 		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Quiver of Ehlonna",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -15899,13 +12784,6 @@
 	{
 		"type": "magic-item",
 		"name": "Red Dragon Scale Mail",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Red Dragon Scale Mail",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -15962,13 +12840,6 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Acid Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Acid Resistance",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -15990,13 +12861,6 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Animal Influence",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Animal Influence",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -16007,13 +12871,6 @@
 		"source": "AUD",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Cold Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -16035,13 +12892,6 @@
 		"source": "AU",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Djinni Summoning",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -16088,21 +12938,7 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Evasion",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Evasion",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Feather Falling",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -16123,21 +12959,7 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Fire Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Fire Resistance",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Force Resistance",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -16151,23 +12973,9 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Free Action",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Free Action",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Invisibility",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -16179,23 +12987,9 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Jumping",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Jumping",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Lightning Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -16207,23 +13001,9 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Mind Shielding",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Mind Shielding",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Necrotic Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -16242,13 +13022,6 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Poison Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Poison Resistance",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -16256,21 +13029,7 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Protection",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Protection",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Psychic Resistance",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -16291,13 +13050,6 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Radiant Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Radiant Resistance",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -16312,21 +13064,7 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Regeneration",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Regeneration",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Shooting Stars",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -16340,23 +13078,9 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Spell Storing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Spell Storing",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Spell Turning",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -16368,23 +13092,9 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Swimming",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Swimming",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Telekinesis",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -16417,13 +13127,6 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of the Ram",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of the Ram",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -16431,23 +13134,9 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Three Wishes",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Three Wishes",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Thunder Resistance",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -16473,13 +13162,6 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of Warmth",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Warmth",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -16490,13 +13172,6 @@
 		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of Water Walking",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -16515,13 +13190,6 @@
 	{
 		"type": "magic-item",
 		"name": "Ring of X-ray Vision",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ring of X-ray Vision",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -16536,23 +13204,9 @@
 	{
 		"type": "magic-item",
 		"name": "Robe of Eyes",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Robe of Eyes",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Robe of Scintillating Colors",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -16567,13 +13221,6 @@
 		"source": "SKT",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Robe of Stars",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -16599,23 +13246,9 @@
 	{
 		"type": "magic-item",
 		"name": "Robe of the Archmagi",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Robe of the Archmagi",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Robe of Useful Items",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -16627,21 +13260,7 @@
 	{
 		"type": "magic-item",
 		"name": "Rod of Absorption",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Rod of Absorption",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Rod of Alertness",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -16662,21 +13281,7 @@
 	{
 		"type": "magic-item",
 		"name": "Rod of Lordly Might",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Rod of Lordly Might",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Rod of Resurrection",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "legendary"
 	},
@@ -16697,23 +13302,9 @@
 	{
 		"type": "magic-item",
 		"name": "Rod of Rulership",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Rod of Rulership",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Rod of Security",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -16753,23 +13344,9 @@
 	{
 		"type": "magic-item",
 		"name": "Rope of Climbing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Rope of Climbing",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Rope of Entanglement",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -16782,13 +13359,6 @@
 		"type": "magic-item",
 		"name": "Rope of Mending",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Rope of Mending",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -16803,13 +13373,6 @@
 		"type": "magic-item",
 		"name": "Ruby of the War Mage",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Ruby of the War Mage",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -16875,13 +13438,6 @@
 		"source": "ToA",
 		"path": "/magic-items",
 		"extra": "unknown"
-	},
-	{
-		"type": "magic-item",
-		"name": "Saddle of the Cavalier",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -16970,13 +13526,6 @@
 	{
 		"type": "magic-item",
 		"name": "Scarab of Protection",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Scarab of Protection",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "legendary"
@@ -16994,13 +13543,6 @@
 		"source": "AU",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Scimitar of Speed",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -17299,13 +13841,6 @@
 	{
 		"type": "magic-item",
 		"name": "Sending Stones",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Sending Stones",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -17314,13 +13849,6 @@
 		"type": "magic-item",
 		"name": "Sensory Stone",
 		"source": "SatO",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Sentinel Shield",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -17438,22 +13966,8 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Shield of Expression",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Shield of Far Sight",
 		"source": "VGM",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Shield of Missile Attraction",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -17533,13 +14047,6 @@
 		"source": "EGW",
 		"path": "/magic-items",
 		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Silver Dragon Scale Mail",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -17635,13 +14142,6 @@
 	{
 		"type": "magic-item",
 		"name": "Slippers of Spider Climbing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Slippers of Spider Climbing",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -17708,13 +14208,6 @@
 		"source": "BGDIA",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Sovereign Glue",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -17901,13 +14394,6 @@
 	{
 		"type": "magic-item",
 		"name": "Spell Scroll (Cantrip)",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Spell Scroll (Cantrip)",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "common"
@@ -17992,13 +14478,6 @@
 	{
 		"type": "magic-item",
 		"name": "Spellguard Shield",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Spellguard Shield",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -18062,13 +14541,6 @@
 	{
 		"type": "magic-item",
 		"name": "Sphere of Annihilation",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Sphere of Annihilation",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "legendary"
@@ -18077,13 +14549,6 @@
 		"type": "magic-item",
 		"name": "Spider Staff",
 		"source": "LMoP",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Spider Staff",
-		"source": "PaBTSO",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -18138,31 +14603,10 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Staff of Adornment",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
 		"name": "Staff of Birdcalls",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of Birdcalls",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of Charming",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -18175,13 +14619,6 @@
 		"type": "magic-item",
 		"name": "Staff of Defense",
 		"source": "LMoP",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of Defense",
-		"source": "PaBTSO",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -18202,13 +14639,6 @@
 	{
 		"type": "magic-item",
 		"name": "Staff of Fire",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of Fire",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -18222,20 +14652,6 @@
 	},
 	{
 		"type": "magic-item",
-		"name": "Staff of Flowers",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of Frost",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
 		"name": "Staff of Frost",
 		"source": "XDMG",
 		"path": "/magic-items",
@@ -18244,23 +14660,9 @@
 	{
 		"type": "magic-item",
 		"name": "Staff of Healing",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of Healing",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of Power",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -18279,13 +14681,6 @@
 	{
 		"type": "magic-item",
 		"name": "Staff of Striking",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of Striking",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -18293,23 +14688,9 @@
 	{
 		"type": "magic-item",
 		"name": "Staff of Swarming Insects",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of Swarming Insects",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of the Adder",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -18342,23 +14723,9 @@
 	{
 		"type": "magic-item",
 		"name": "Staff of the Magi",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of the Magi",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of the Python",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -18384,13 +14751,6 @@
 	{
 		"type": "magic-item",
 		"name": "Staff of the Woodlands",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of the Woodlands",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -18398,23 +14758,9 @@
 	{
 		"type": "magic-item",
 		"name": "Staff of Thunder and Lightning",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of Thunder and Lightning",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Staff of Withering",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -18475,13 +14821,6 @@
 	{
 		"type": "magic-item",
 		"name": "Stone of Controlling Earth Elementals",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Stone of Controlling Earth Elementals",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -18499,13 +14838,6 @@
 		"source": "WDH",
 		"path": "/magic-items",
 		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Stone of Good Luck",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -18569,13 +14901,6 @@
 		"source": "SCC",
 		"path": "/magic-items",
 		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Sun Blade",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -18699,13 +15024,6 @@
 	{
 		"type": "magic-item",
 		"name": "Sword of Kas",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Sword of Kas",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "artifact"
@@ -18741,13 +15059,6 @@
 	{
 		"type": "magic-item",
 		"name": "Talisman of Pure Good",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Talisman of Pure Good",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "legendary"
@@ -18755,21 +15066,7 @@
 	{
 		"type": "magic-item",
 		"name": "Talisman of the Sphere",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Talisman of the Sphere",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Talisman of Ultimate Evil",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "legendary"
 	},
@@ -18784,13 +15081,6 @@
 		"type": "magic-item",
 		"name": "Talking Doll",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Talking Doll",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -18812,13 +15102,6 @@
 		"type": "magic-item",
 		"name": "Tankard of Sobriety",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Tankard of Sobriety",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -18875,13 +15158,6 @@
 		"type": "magic-item",
 		"name": "Ten Keyholes Dagger",
 		"source": "AU",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Tentacle Rod",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -19021,21 +15297,7 @@
 	{
 		"type": "magic-item",
 		"name": "Tome of Clear Thought",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Tome of Clear Thought",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Tome of Leadership and Influence",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "very rare"
 	},
@@ -19056,23 +15318,9 @@
 	{
 		"type": "magic-item",
 		"name": "Tome of the Stilled Tongue",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Tome of the Stilled Tongue",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Tome of Understanding",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -19108,13 +15356,6 @@
 		"source": "AU",
 		"path": "/magic-items",
 		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Trident of Fish Command",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -19168,13 +15409,6 @@
 	{
 		"type": "magic-item",
 		"name": "Universal Solvent",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Universal Solvent",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "legendary"
@@ -19211,13 +15445,6 @@
 		"type": "magic-item",
 		"name": "Veteran's Cane",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Veteran's Cane",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -19308,13 +15535,6 @@
 	{
 		"type": "magic-item",
 		"name": "Wand of Binding",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Binding",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -19325,20 +15545,6 @@
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Conducting",
-		"source": "XGE",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Enemy Detection",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -19364,21 +15570,7 @@
 	{
 		"type": "magic-item",
 		"name": "Wand of Fear",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Fear",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Fireballs",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -19399,13 +15591,6 @@
 	{
 		"type": "magic-item",
 		"name": "Wand of Lightning Bolts",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Lightning Bolts",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
@@ -19413,21 +15598,7 @@
 	{
 		"type": "magic-item",
 		"name": "Wand of Magic Detection",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Magic Detection",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Magic Missiles",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
 	},
@@ -19441,13 +15612,6 @@
 	{
 		"type": "magic-item",
 		"name": "Wand of Orcus",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "artifact"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Orcus",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "artifact"
@@ -19455,23 +15619,9 @@
 	{
 		"type": "magic-item",
 		"name": "Wand of Paralysis",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Paralysis",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Polymorph",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
 	},
 	{
 		"type": "magic-item",
@@ -19484,13 +15634,6 @@
 		"type": "magic-item",
 		"name": "Wand of Pyrotechnics",
 		"source": "XDMG",
-		"path": "/magic-items",
-		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Pyrotechnics",
-		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
 	},
@@ -19500,13 +15643,6 @@
 		"source": "XGE",
 		"path": "/magic-items",
 		"extra": "common"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Secrets",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
 	},
 	{
 		"type": "magic-item",
@@ -19546,13 +15682,6 @@
 	{
 		"type": "magic-item",
 		"name": "Wand of Web",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Web",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -19561,13 +15690,6 @@
 		"type": "magic-item",
 		"name": "Wand of Winter",
 		"source": "HotDQ",
-		"path": "/magic-items",
-		"extra": "rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wand of Wonder",
-		"source": "DMG",
 		"path": "/magic-items",
 		"extra": "rare"
 	},
@@ -19609,13 +15731,6 @@
 	{
 		"type": "magic-item",
 		"name": "Wave",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wave",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "artifact"
@@ -19644,13 +15759,6 @@
 	{
 		"type": "magic-item",
 		"name": "Well of Many Worlds",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
-	},
-	{
-		"type": "magic-item",
-		"name": "Well of Many Worlds",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "legendary"
@@ -19668,13 +15776,6 @@
 		"source": "ERLW",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Whelm",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "legendary"
 	},
 	{
 		"type": "magic-item",
@@ -19721,13 +15822,6 @@
 	{
 		"type": "magic-item",
 		"name": "White Dragon Scale Mail",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "very rare"
-	},
-	{
-		"type": "magic-item",
-		"name": "White Dragon Scale Mail",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "very rare"
@@ -19756,13 +15850,6 @@
 	{
 		"type": "magic-item",
 		"name": "Wind Fan",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wind Fan",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
@@ -19784,23 +15871,9 @@
 	{
 		"type": "magic-item",
 		"name": "Winged Boots",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Winged Boots",
 		"source": "XDMG",
 		"path": "/magic-items",
 		"extra": "uncommon"
-	},
-	{
-		"type": "magic-item",
-		"name": "Wings of Flying",
-		"source": "DMG",
-		"path": "/magic-items",
-		"extra": "rare"
 	},
 	{
 		"type": "magic-item",
@@ -21883,20 +17956,6 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Alchemist's Supplies",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
-		"name": "Antimatter Rifle",
-		"source": "DMG",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
 		"name": "Antimatter Rifle",
 		"source": "XDMG",
 		"path": "/equipment",
@@ -21911,22 +17970,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Arrow",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "A"
-	},
-	{
-		"type": "equipment",
 		"name": "Arrows (20)",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "A"
-	},
-	{
-		"type": "equipment",
-		"name": "Arrows (20)",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "A"
 	},
@@ -21940,13 +17985,6 @@
 	{
 		"type": "equipment",
 		"name": "Automatic Rifle",
-		"source": "DMG",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
-		"name": "Automatic Rifle",
 		"source": "XDMG",
 		"path": "/equipment",
 		"extra": "R"
@@ -21955,13 +17993,6 @@
 		"type": "equipment",
 		"name": "Bagpipes",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "INS"
-	},
-	{
-		"type": "equipment",
-		"name": "Bagpipes",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "INS"
 	},
@@ -21981,13 +18012,6 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Battleaxe",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Birdpipes",
 		"source": "SCAG",
 		"path": "/equipment",
@@ -21997,13 +18021,6 @@
 		"type": "equipment",
 		"name": "Blowgun",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
-		"name": "Blowgun",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "R"
 	},
@@ -22044,22 +18061,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Breastplate",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "MA"
-	},
-	{
-		"type": "equipment",
 		"name": "Brewer's Supplies",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
-		"name": "Brewer's Supplies",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "AT"
 	},
@@ -22072,22 +18075,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Calligrapher's Supplies",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
 		"name": "Carpenter's Tools",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
-		"name": "Carpenter's Tools",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "AT"
 	},
@@ -22100,13 +18089,6 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Cartographer's Tools",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
 		"name": "Chain Mail",
 		"source": "PHB",
 		"path": "/equipment",
@@ -22114,22 +18096,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Chain Mail",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "HA"
-	},
-	{
-		"type": "equipment",
 		"name": "Chain Shirt",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "MA"
-	},
-	{
-		"type": "equipment",
-		"name": "Chain Shirt",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "MA"
 	},
@@ -22149,13 +18117,6 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Club",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Cobbler's Tools",
 		"source": "PHB",
 		"path": "/equipment",
@@ -22163,22 +18124,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Cobbler's Tools",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
 		"name": "Cook's Utensils",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
-		"name": "Cook's Utensils",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "AT"
 	},
@@ -22205,13 +18152,6 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Crystal",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "SCF"
-	},
-	{
-		"type": "equipment",
 		"name": "Dagger",
 		"source": "PHB",
 		"path": "/equipment",
@@ -22219,22 +18159,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Dagger",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Dart",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
-		"name": "Dart",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "R"
 	},
@@ -22254,31 +18180,10 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Drum",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "INS"
-	},
-	{
-		"type": "equipment",
 		"name": "Dulcimer",
 		"source": "PHB",
 		"path": "/equipment",
 		"extra": "INS"
-	},
-	{
-		"type": "equipment",
-		"name": "Dulcimer",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "INS"
-	},
-	{
-		"type": "equipment",
-		"name": "Energy Cell",
-		"source": "DMG",
-		"path": "/equipment",
-		"extra": "AF"
 	},
 	{
 		"type": "equipment",
@@ -22310,22 +18215,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Flail",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Flute",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "INS"
-	},
-	{
-		"type": "equipment",
-		"name": "Flute",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "INS"
 	},
@@ -22338,22 +18229,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Glaive",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Glassblower's Tools",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
-		"name": "Glassblower's Tools",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "AT"
 	},
@@ -22373,22 +18250,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Greataxe",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Greatclub",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Greatclub",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "M"
 	},
@@ -22401,22 +18264,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Greatsword",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Halberd",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Halberd",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "M"
 	},
@@ -22429,22 +18278,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Half Plate Armor",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "MA"
-	},
-	{
-		"type": "equipment",
 		"name": "Hand Crossbow",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
-		"name": "Hand Crossbow",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "R"
 	},
@@ -22464,13 +18299,6 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Handaxe",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Heavy Crossbow",
 		"source": "PHB",
 		"path": "/equipment",
@@ -22478,22 +18306,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Heavy Crossbow",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
 		"name": "Hide Armor",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "MA"
-	},
-	{
-		"type": "equipment",
-		"name": "Hide Armor",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "MA"
 	},
@@ -22520,20 +18334,6 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Horn",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "INS"
-	},
-	{
-		"type": "equipment",
-		"name": "Hunting Rifle",
-		"source": "DMG",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
 		"name": "Hunting Rifle",
 		"source": "XDMG",
 		"path": "/equipment",
@@ -22548,22 +18348,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Javelin",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Jeweler's Tools",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
-		"name": "Jeweler's Tools",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "AT"
 	},
@@ -22573,32 +18359,11 @@
 		"source": "PHB",
 		"path": "/equipment",
 		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Lance",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Laser Pistol",
-		"source": "DMG",
-		"path": "/equipment",
-		"extra": "R"
 	},
 	{
 		"type": "equipment",
 		"name": "Laser Pistol",
 		"source": "XDMG",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
-		"name": "Laser Rifle",
-		"source": "DMG",
 		"path": "/equipment",
 		"extra": "R"
 	},
@@ -22618,22 +18383,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Leather Armor",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "LA"
-	},
-	{
-		"type": "equipment",
 		"name": "Leatherworker's Tools",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
-		"name": "Leatherworker's Tools",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "AT"
 	},
@@ -22646,22 +18397,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Light Crossbow",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
 		"name": "Light Hammer",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Light Hammer",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "M"
 	},
@@ -22681,13 +18418,6 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Longbow",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
 		"name": "Longhorn",
 		"source": "SCAG",
 		"path": "/equipment",
@@ -22702,22 +18432,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Longsword",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Lute",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "INS"
-	},
-	{
-		"type": "equipment",
-		"name": "Lute",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "INS"
 	},
@@ -22730,22 +18446,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Lyre",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "INS"
-	},
-	{
-		"type": "equipment",
 		"name": "Mace",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Mace",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "M"
 	},
@@ -22758,22 +18460,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Mason's Tools",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
 		"name": "Maul",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Maul",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "M"
 	},
@@ -22797,20 +18485,6 @@
 		"source": "PHB",
 		"path": "/equipment",
 		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Morningstar",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Musket",
-		"source": "DMG",
-		"path": "/equipment",
-		"extra": "R"
 	},
 	{
 		"type": "equipment",
@@ -22849,22 +18523,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Orb",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "SCF"
-	},
-	{
-		"type": "equipment",
 		"name": "Padded Armor",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "LA"
-	},
-	{
-		"type": "equipment",
-		"name": "Padded Armor",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "LA"
 	},
@@ -22877,22 +18537,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Painter's Supplies",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
 		"name": "Pan Flute",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "INS"
-	},
-	{
-		"type": "equipment",
-		"name": "Pan Flute",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "INS"
 	},
@@ -22902,20 +18548,6 @@
 		"source": "PHB",
 		"path": "/equipment",
 		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Pike",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Pistol",
-		"source": "DMG",
-		"path": "/equipment",
-		"extra": "R"
 	},
 	{
 		"type": "equipment",
@@ -22933,22 +18565,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Plate Armor",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "HA"
-	},
-	{
-		"type": "equipment",
 		"name": "Potter's Tools",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
-		"name": "Potter's Tools",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "AT"
 	},
@@ -22961,22 +18579,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Quarterstaff",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Rapier",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Rapier",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "M"
 	},
@@ -22997,13 +18601,6 @@
 	{
 		"type": "equipment",
 		"name": "Revolver",
-		"source": "DMG",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
-		"name": "Revolver",
 		"source": "XDMG",
 		"path": "/equipment",
 		"extra": "R"
@@ -23017,22 +18614,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Ring Mail",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "HA"
-	},
-	{
-		"type": "equipment",
 		"name": "Rod",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "SCF"
-	},
-	{
-		"type": "equipment",
-		"name": "Rod",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "SCF"
 	},
@@ -23045,22 +18628,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Scale Mail",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "MA"
-	},
-	{
-		"type": "equipment",
 		"name": "Scimitar",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Scimitar",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "M"
 	},
@@ -23080,29 +18649,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Shawm",
-		"source": "SCAG",
-		"path": "/equipment",
-		"extra": "INS"
-	},
-	{
-		"type": "equipment",
-		"name": "Shawm",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "INS"
-	},
-	{
-		"type": "equipment",
 		"name": "Shield",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "S"
-	},
-	{
-		"type": "equipment",
-		"name": "Shield",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "S"
 	},
@@ -23115,31 +18663,10 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Shortbow",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
 		"name": "Shortsword",
 		"source": "PHB",
 		"path": "/equipment",
 		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Shortsword",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "Shotgun",
-		"source": "DMG",
-		"path": "/equipment",
-		"extra": "R"
 	},
 	{
 		"type": "equipment",
@@ -23157,22 +18684,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Sickle",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Sling",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "R"
-	},
-	{
-		"type": "equipment",
-		"name": "Sling",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "R"
 	},
@@ -23185,13 +18698,6 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Sling Bullet",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "A"
-	},
-	{
-		"type": "equipment",
 		"name": "Sling Bullets (20)",
 		"source": "PHB",
 		"path": "/equipment",
@@ -23199,22 +18705,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Sling Bullets (20)",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "A"
-	},
-	{
-		"type": "equipment",
 		"name": "Smith's Tools",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
-		"name": "Smith's Tools",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "AT"
 	},
@@ -23234,13 +18726,6 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Spear",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Spiked Armor",
 		"source": "SCAG",
 		"path": "/equipment",
@@ -23255,13 +18740,6 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Splint Armor",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "HA"
-	},
-	{
-		"type": "equipment",
 		"name": "Staff",
 		"source": "PHB",
 		"path": "/equipment",
@@ -23269,22 +18747,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Staff",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "SCF"
-	},
-	{
-		"type": "equipment",
 		"name": "Studded Leather Armor",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "LA"
-	},
-	{
-		"type": "equipment",
-		"name": "Studded Leather Armor",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "LA"
 	},
@@ -23311,13 +18775,6 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Tinker's Tools",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
 		"name": "Tocken",
 		"source": "SCAG",
 		"path": "/equipment",
@@ -23332,22 +18789,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Trident",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Viol",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "INS"
-	},
-	{
-		"type": "equipment",
-		"name": "Viol",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "INS"
 	},
@@ -23360,22 +18803,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Wand",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "SCF"
-	},
-	{
-		"type": "equipment",
 		"name": "War Pick",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
-		"name": "War Pick",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "M"
 	},
@@ -23395,22 +18824,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Warhammer",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Weaver's Tools",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
-		"name": "Weaver's Tools",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "AT"
 	},
@@ -23423,22 +18838,8 @@
 	},
 	{
 		"type": "equipment",
-		"name": "Whip",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "M"
-	},
-	{
-		"type": "equipment",
 		"name": "Woodcarver's Tools",
 		"source": "PHB",
-		"path": "/equipment",
-		"extra": "AT"
-	},
-	{
-		"type": "equipment",
-		"name": "Woodcarver's Tools",
-		"source": "XPHB",
 		"path": "/equipment",
 		"extra": "AT"
 	},
@@ -23448,20 +18849,6 @@
 		"source": "PHB",
 		"path": "/equipment",
 		"extra": "SCF"
-	},
-	{
-		"type": "equipment",
-		"name": "Wooden Staff",
-		"source": "XPHB",
-		"path": "/equipment",
-		"extra": "SCF"
-	},
-	{
-		"type": "equipment",
-		"name": "Yarting",
-		"source": "FRHoF",
-		"path": "/equipment",
-		"extra": "INS"
 	},
 	{
 		"type": "equipment",
@@ -23494,13 +18881,6 @@
 	{
 		"type": "feat",
 		"name": "Aberrant Dragonmark",
-		"source": "EFA",
-		"path": "/feats",
-		"extra": "D"
-	},
-	{
-		"type": "feat",
-		"name": "Aberrant Dragonmark",
 		"source": "ERLW",
 		"path": "/feats",
 		"extra": ""
@@ -23525,13 +18905,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Actor",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -23567,13 +18940,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Alert",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "O"
 	},
 	{
 		"type": "feat",
@@ -23651,13 +19017,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Athlete",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -23941,20 +19300,6 @@
 	},
 	{
 		"type": "feat",
-		"name": "Charger",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
-		"name": "Chef",
-		"source": "TCE",
-		"path": "/feats",
-		"extra": ""
-	},
-	{
-		"type": "feat",
 		"name": "Chef",
 		"source": "XPHB",
 		"path": "/feats",
@@ -24011,20 +19356,6 @@
 	},
 	{
 		"type": "feat",
-		"name": "Crossbow Expert",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
-		"name": "Crusher",
-		"source": "TCE",
-		"path": "/feats",
-		"extra": ""
-	},
-	{
-		"type": "feat",
 		"name": "Crusher",
 		"source": "XPHB",
 		"path": "/feats",
@@ -24050,13 +19381,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Defensive Duelist",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -24123,13 +19447,6 @@
 	},
 	{
 		"type": "feat",
-		"name": "Dual Wielder",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
 		"name": "Dueling",
 		"source": "XPHB",
 		"path": "/feats",
@@ -24148,13 +19465,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Durable",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -24183,13 +19493,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Elemental Adept",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -24347,13 +19650,6 @@
 	},
 	{
 		"type": "feat",
-		"name": "Grappler",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
 		"name": "Great Weapon Fighting",
 		"source": "XPHB",
 		"path": "/feats",
@@ -24365,13 +19661,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Great Weapon Master",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -24501,13 +19790,6 @@
 	},
 	{
 		"type": "feat",
-		"name": "Healer",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "O"
-	},
-	{
-		"type": "feat",
 		"name": "Heavily Armored",
 		"source": "PHB",
 		"path": "/feats",
@@ -24515,24 +19797,10 @@
 	},
 	{
 		"type": "feat",
-		"name": "Heavily Armored",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
 		"name": "Heavy Armor Master",
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Heavy Armor Master",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -24564,13 +19832,6 @@
 	},
 	{
 		"type": "feat",
-		"name": "Inspiring Leader",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
 		"name": "Interception",
 		"source": "XPHB",
 		"path": "/feats",
@@ -24582,13 +19843,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Keen Mind",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -24634,13 +19888,6 @@
 	},
 	{
 		"type": "feat",
-		"name": "Lightly Armored",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
 		"name": "Linguist",
 		"source": "PHB",
 		"path": "/feats",
@@ -24683,24 +19930,10 @@
 	},
 	{
 		"type": "feat",
-		"name": "Lucky",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "O"
-	},
-	{
-		"type": "feat",
 		"name": "Mage Slayer",
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Mage Slayer",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -24715,13 +19948,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Magic Initiate",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "O"
 	},
 	{
 		"type": "feat",
@@ -24830,13 +20056,6 @@
 	},
 	{
 		"type": "feat",
-		"name": "Medium Armor Master",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
 		"name": "Metamagic Adept",
 		"source": "TCE",
 		"path": "/feats",
@@ -24865,24 +20084,10 @@
 	},
 	{
 		"type": "feat",
-		"name": "Moderately Armored",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
 		"name": "Mounted Combatant",
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Mounted Combatant",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -24911,13 +20116,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Observant",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -24950,13 +20148,6 @@
 	{
 		"type": "feat",
 		"name": "Piercer",
-		"source": "TCE",
-		"path": "/feats",
-		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Piercer",
 		"source": "XPHB",
 		"path": "/feats",
 		"extra": "G"
@@ -24965,13 +20156,6 @@
 		"type": "feat",
 		"name": "Planar Wanderer",
 		"source": "SatO",
-		"path": "/feats",
-		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Poisoner",
-		"source": "TCE",
 		"path": "/feats",
 		"extra": ""
 	},
@@ -24988,13 +20172,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Polearm Master",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -25068,13 +20245,6 @@
 	},
 	{
 		"type": "feat",
-		"name": "Resilient",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
 		"name": "Revenant Blade",
 		"source": "ERLW",
 		"path": "/feats",
@@ -25096,13 +20266,6 @@
 	},
 	{
 		"type": "feat",
-		"name": "Ritual Caster",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
 		"name": "Rune Shaper",
 		"source": "BGG",
 		"path": "/feats",
@@ -25114,13 +20277,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Savage Attacker",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "O"
 	},
 	{
 		"type": "feat",
@@ -25149,13 +20305,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Sentinel",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -25201,29 +20350,8 @@
 	},
 	{
 		"type": "feat",
-		"name": "Sharpshooter",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
 		"name": "Shield Master",
 		"source": "PHB",
-		"path": "/feats",
-		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Shield Master",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
-		"name": "Skill Expert",
-		"source": "TCE",
 		"path": "/feats",
 		"extra": ""
 	},
@@ -25243,29 +20371,8 @@
 	},
 	{
 		"type": "feat",
-		"name": "Skilled",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "O"
-	},
-	{
-		"type": "feat",
 		"name": "Skulker",
 		"source": "PHB",
-		"path": "/feats",
-		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Skulker",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
-		"name": "Slasher",
-		"source": "TCE",
 		"path": "/feats",
 		"extra": ""
 	},
@@ -25310,13 +20417,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Spell Sniper",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -25411,31 +20511,10 @@
 	},
 	{
 		"type": "feat",
-		"name": "Tavern Brawler",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "O"
-	},
-	{
-		"type": "feat",
-		"name": "Telekinetic",
-		"source": "TCE",
-		"path": "/feats",
-		"extra": ""
-	},
-	{
-		"type": "feat",
 		"name": "Telekinetic",
 		"source": "XPHB",
 		"path": "/feats",
 		"extra": "G"
-	},
-	{
-		"type": "feat",
-		"name": "Telepathic",
-		"source": "TCE",
-		"path": "/feats",
-		"extra": ""
 	},
 	{
 		"type": "feat",
@@ -25471,13 +20550,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Tough",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "O"
 	},
 	{
 		"type": "feat",
@@ -25565,13 +20637,6 @@
 	},
 	{
 		"type": "feat",
-		"name": "War Caster",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
-	},
-	{
-		"type": "feat",
 		"name": "Warlike Familiar",
 		"source": "AU",
 		"path": "/feats",
@@ -25590,13 +20655,6 @@
 		"source": "PHB",
 		"path": "/feats",
 		"extra": ""
-	},
-	{
-		"type": "feat",
-		"name": "Weapon Master",
-		"source": "XPHB",
-		"path": "/feats",
-		"extra": "G"
 	},
 	{
 		"type": "feat",
@@ -26266,42 +21324,7 @@
 	{
 		"type": "race",
 		"name": "Aarakocra",
-		"source": "DMG",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Aarakocra",
-		"source": "EEPC",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Aarakocra",
 		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Aasimar",
-		"source": "DMG",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Aasimar",
-		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Aasimar",
-		"source": "VGM",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -26342,13 +21365,6 @@
 	},
 	{
 		"type": "race",
-		"name": "Aven",
-		"source": "PSD",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
 		"name": "Boggart",
 		"source": "LFL",
 		"path": "/races",
@@ -26357,21 +21373,7 @@
 	{
 		"type": "race",
 		"name": "Bugbear",
-		"source": "ERLW",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Bugbear",
 		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Bugbear",
-		"source": "VGM",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -26385,35 +21387,7 @@
 	{
 		"type": "race",
 		"name": "Centaur",
-		"source": "GGR",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Centaur",
-		"source": "MOT",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Centaur",
 		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Changeling",
-		"source": "EFA",
-		"path": "/races",
-		"extra": "one"
-	},
-	{
-		"type": "race",
-		"name": "Changeling",
-		"source": "ERLW",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -26441,13 +21415,6 @@
 	{
 		"type": "race",
 		"name": "Dhampir",
-		"source": "RHW",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Dhampir",
 		"source": "VRGR",
 		"path": "/races",
 		"extra": "classic"
@@ -26458,13 +21425,6 @@
 		"source": "PHB",
 		"path": "/races",
 		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Dragonborn",
-		"source": "XPHB",
-		"path": "/races",
-		"extra": "one"
 	},
 	{
 		"type": "race",
@@ -26503,13 +21463,6 @@
 	},
 	{
 		"type": "race",
-		"name": "Dwarf",
-		"source": "XPHB",
-		"path": "/races",
-		"extra": "one"
-	},
-	{
-		"type": "race",
 		"name": "Dwarf (Kaladesh)",
 		"source": "PSK",
 		"path": "/races",
@@ -26525,23 +21478,9 @@
 	{
 		"type": "race",
 		"name": "Elf",
-		"source": "LFL",
-		"path": "/races",
-		"extra": "one"
-	},
-	{
-		"type": "race",
-		"name": "Elf",
 		"source": "PHB",
 		"path": "/races",
 		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Elf",
-		"source": "XPHB",
-		"path": "/races",
-		"extra": "one"
 	},
 	{
 		"type": "race",
@@ -26573,13 +21512,6 @@
 	},
 	{
 		"type": "race",
-		"name": "Fairy",
-		"source": "WBtW",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
 		"name": "Firbolg",
 		"source": "MPMM",
 		"path": "/races",
@@ -26587,22 +21519,8 @@
 	},
 	{
 		"type": "race",
-		"name": "Firbolg",
-		"source": "VGM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
 		"name": "Flamekin",
 		"source": "LFL",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Genasi",
-		"source": "EEPC",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -26657,13 +21575,6 @@
 	},
 	{
 		"type": "race",
-		"name": "Gnome",
-		"source": "XPHB",
-		"path": "/races",
-		"extra": "one"
-	},
-	{
-		"type": "race",
 		"name": "Gnome (Deep)",
 		"source": "DMG",
 		"path": "/races",
@@ -26672,42 +21583,7 @@
 	{
 		"type": "race",
 		"name": "Goblin",
-		"source": "DMG",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Goblin",
-		"source": "ERLW",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Goblin",
-		"source": "GGR",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Goblin",
 		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Goblin",
-		"source": "PSZ",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Goblin",
-		"source": "VGM",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -26715,20 +21591,6 @@
 		"type": "race",
 		"name": "Goblin (Dankwood)",
 		"source": "AWM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Goliath",
-		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Goliath",
-		"source": "VGM",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -26783,31 +21645,10 @@
 	},
 	{
 		"type": "race",
-		"name": "Halfling",
-		"source": "XPHB",
-		"path": "/races",
-		"extra": "one"
-	},
-	{
-		"type": "race",
 		"name": "Harengon",
 		"source": "MPMM",
 		"path": "/races",
 		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Harengon",
-		"source": "WBtW",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Hexblood",
-		"source": "RHW",
-		"path": "/races",
-		"extra": "one"
 	},
 	{
 		"type": "race",
@@ -26819,28 +21660,7 @@
 	{
 		"type": "race",
 		"name": "Hobgoblin",
-		"source": "DMG",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Hobgoblin",
-		"source": "ERLW",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Hobgoblin",
 		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Hobgoblin",
-		"source": "VGM",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -26850,13 +21670,6 @@
 		"source": "PHB",
 		"path": "/races",
 		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Human",
-		"source": "XPHB",
-		"path": "/races",
-		"extra": "one"
 	},
 	{
 		"type": "race",
@@ -26889,13 +21702,6 @@
 	{
 		"type": "race",
 		"name": "Kalashtar",
-		"source": "EFA",
-		"path": "/races",
-		"extra": "one"
-	},
-	{
-		"type": "race",
-		"name": "Kalashtar",
 		"source": "ERLW",
 		"path": "/races",
 		"extra": "classic"
@@ -26910,21 +21716,7 @@
 	{
 		"type": "race",
 		"name": "Kenku",
-		"source": "DMG",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Kenku",
 		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Kenku",
-		"source": "VGM",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -26952,21 +21744,7 @@
 	{
 		"type": "race",
 		"name": "Kobold",
-		"source": "DMG",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Kobold",
 		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Kobold",
-		"source": "VGM",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -26994,21 +21772,7 @@
 	{
 		"type": "race",
 		"name": "Lizardfolk",
-		"source": "DMG",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Lizardfolk",
 		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Lizardfolk",
-		"source": "VGM",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -27049,27 +21813,6 @@
 	},
 	{
 		"type": "race",
-		"name": "Merfolk",
-		"source": "PSZ",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Minotaur",
-		"source": "GGR",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Minotaur",
-		"source": "MOT",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
 		"name": "Minotaur",
 		"source": "MPMM",
 		"path": "/races",
@@ -27086,41 +21829,6 @@
 		"type": "race",
 		"name": "Naga",
 		"source": "PSA",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Orc",
-		"source": "DMG",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Orc",
-		"source": "EGW",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Orc",
-		"source": "ERLW",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Orc",
-		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Orc",
-		"source": "VGM",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -27155,13 +21863,6 @@
 	{
 		"type": "race",
 		"name": "Reborn",
-		"source": "RHW",
-		"path": "/races",
-		"extra": "one"
-	},
-	{
-		"type": "race",
-		"name": "Reborn",
 		"source": "VRGR",
 		"path": "/races",
 		"extra": "classic"
@@ -27170,13 +21871,6 @@
 		"type": "race",
 		"name": "Rimekin",
 		"source": "LFL",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Satyr",
-		"source": "MOT",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -27198,20 +21892,6 @@
 		"type": "race",
 		"name": "Shadar-Kai",
 		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Shifter",
-		"source": "EFA",
-		"path": "/races",
-		"extra": "one"
-	},
-	{
-		"type": "race",
-		"name": "Shifter",
-		"source": "ERLW",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -27252,13 +21932,6 @@
 	},
 	{
 		"type": "race",
-		"name": "Tabaxi",
-		"source": "VGM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
 		"name": "Thri-kreen",
 		"source": "AAG",
 		"path": "/races",
@@ -27273,13 +21946,6 @@
 	},
 	{
 		"type": "race",
-		"name": "Tiefling",
-		"source": "XPHB",
-		"path": "/races",
-		"extra": "one"
-	},
-	{
-		"type": "race",
 		"name": "Tortle",
 		"source": "MPMM",
 		"path": "/races",
@@ -27287,29 +21953,8 @@
 	},
 	{
 		"type": "race",
-		"name": "Tortle",
-		"source": "TTP",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Triton",
-		"source": "MOT",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
 		"name": "Triton",
 		"source": "MPMM",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Triton",
-		"source": "VGM",
 		"path": "/races",
 		"extra": "classic"
 	},
@@ -27336,24 +21981,10 @@
 	},
 	{
 		"type": "race",
-		"name": "Vedalken",
-		"source": "PSK",
-		"path": "/races",
-		"extra": "classic"
-	},
-	{
-		"type": "race",
 		"name": "Verdan",
 		"source": "AI",
 		"path": "/races",
 		"extra": "classic"
-	},
-	{
-		"type": "race",
-		"name": "Warforged",
-		"source": "EFA",
-		"path": "/races",
-		"extra": "one"
 	},
 	{
 		"type": "race",
@@ -28769,12 +23400,6 @@
 	},
 	{
 		"type": "background",
-		"name": "Acolyte",
-		"source": "XPHB",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
 		"name": "Agent of the Ninth Quill",
 		"source": "AU",
 		"path": "/backgrounds"
@@ -28789,12 +23414,6 @@
 		"type": "background",
 		"name": "Archaeologist",
 		"source": "EFA",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
-		"name": "Archaeologist",
-		"source": "ToA",
 		"path": "/backgrounds"
 	},
 	{
@@ -28937,12 +23556,6 @@
 	},
 	{
 		"type": "background",
-		"name": "Charlatan",
-		"source": "XPHB",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
 		"name": "Chondathan Freebooter",
 		"source": "FRHoF",
 		"path": "/backgrounds"
@@ -28997,12 +23610,6 @@
 	},
 	{
 		"type": "background",
-		"name": "Criminal",
-		"source": "XPHB",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
 		"name": "Crucible Storm Chaser",
 		"source": "AU",
 		"path": "/backgrounds"
@@ -29041,12 +23648,6 @@
 		"type": "background",
 		"name": "Entertainer",
 		"source": "PHB",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
-		"name": "Entertainer",
-		"source": "XPHB",
 		"path": "/backgrounds"
 	},
 	{
@@ -29178,12 +23779,6 @@
 	{
 		"type": "background",
 		"name": "Haunted One",
-		"source": "RHW",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
-		"name": "Haunted One",
 		"source": "VRGR",
 		"path": "/backgrounds"
 	},
@@ -29195,20 +23790,8 @@
 	},
 	{
 		"type": "background",
-		"name": "Hermit",
-		"source": "XPHB",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
 		"name": "Horizon Weaver Initiate",
 		"source": "AU",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
-		"name": "House Agent",
-		"source": "EFA",
 		"path": "/backgrounds"
 	},
 	{
@@ -29334,12 +23917,6 @@
 	{
 		"type": "background",
 		"name": "Investigator",
-		"source": "RHW",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
-		"name": "Investigator",
 		"source": "VRGR",
 		"path": "/backgrounds"
 	},
@@ -29453,12 +24030,6 @@
 	},
 	{
 		"type": "background",
-		"name": "Noble",
-		"source": "XPHB",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
 		"name": "Orzhov Representative",
 		"source": "GGR",
 		"path": "/backgrounds"
@@ -29555,20 +24126,8 @@
 	},
 	{
 		"type": "background",
-		"name": "Sage",
-		"source": "XPHB",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
 		"name": "Sailor",
 		"source": "PHB",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
-		"name": "Sailor",
-		"source": "XPHB",
 		"path": "/backgrounds"
 	},
 	{
@@ -29629,12 +24188,6 @@
 		"type": "background",
 		"name": "Soldier",
 		"source": "PHB",
-		"path": "/backgrounds"
-	},
-	{
-		"type": "background",
-		"name": "Soldier",
-		"source": "XPHB",
 		"path": "/backgrounds"
 	},
 	{
@@ -29969,20 +24522,8 @@
 	},
 	{
 		"type": "condition",
-		"name": "Blinded",
-		"source": "XPHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
 		"name": "Charmed",
 		"source": "PHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
-		"name": "Charmed",
-		"source": "XPHB",
 		"path": "/rules"
 	},
 	{
@@ -29993,20 +24534,8 @@
 	},
 	{
 		"type": "condition",
-		"name": "Deafened",
-		"source": "XPHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
 		"name": "Exhaustion",
 		"source": "PHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
-		"name": "Exhaustion",
-		"source": "XPHB",
 		"path": "/rules"
 	},
 	{
@@ -30017,20 +24546,8 @@
 	},
 	{
 		"type": "condition",
-		"name": "Frightened",
-		"source": "XPHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
 		"name": "Grappled",
 		"source": "PHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
-		"name": "Grappled",
-		"source": "XPHB",
 		"path": "/rules"
 	},
 	{
@@ -30041,20 +24558,8 @@
 	},
 	{
 		"type": "condition",
-		"name": "Incapacitated",
-		"source": "XPHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
 		"name": "Invisible",
 		"source": "PHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
-		"name": "Invisible",
-		"source": "XPHB",
 		"path": "/rules"
 	},
 	{
@@ -30065,20 +24570,8 @@
 	},
 	{
 		"type": "condition",
-		"name": "Paralyzed",
-		"source": "XPHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
 		"name": "Petrified",
 		"source": "PHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
-		"name": "Petrified",
-		"source": "XPHB",
 		"path": "/rules"
 	},
 	{
@@ -30089,20 +24582,8 @@
 	},
 	{
 		"type": "condition",
-		"name": "Poisoned",
-		"source": "XPHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
 		"name": "Prone",
 		"source": "PHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
-		"name": "Prone",
-		"source": "XPHB",
 		"path": "/rules"
 	},
 	{
@@ -30113,32 +24594,14 @@
 	},
 	{
 		"type": "condition",
-		"name": "Restrained",
-		"source": "XPHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
 		"name": "Stunned",
 		"source": "PHB",
 		"path": "/rules"
 	},
 	{
 		"type": "condition",
-		"name": "Stunned",
-		"source": "XPHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
 		"name": "Unconscious",
 		"source": "PHB",
-		"path": "/rules"
-	},
-	{
-		"type": "condition",
-		"name": "Unconscious",
-		"source": "XPHB",
 		"path": "/rules"
 	},
 	{

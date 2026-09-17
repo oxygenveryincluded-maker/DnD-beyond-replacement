@@ -28,7 +28,8 @@
     expandProficiencies,
     backgroundFeatNames,
     raceBackgroundLanguages,
-    equipmentNamesFromEntries
+    equipmentNamesFromEntries,
+    dedupeRecords
   } from '$lib/utils/dnd';
   import CharacterSheet from '$lib/components/CharacterSheet.svelte';
   import SearchPicker from '$lib/components/SearchPicker.svelte';
@@ -83,31 +84,15 @@
   ];
 
   const allClasses = $derived(
-    [...new Map(
-      (classesData as any[])
-        .filter((c: any) => !c.homebrew || showHomebrew)
-        .map((c) => [c.name, c])
-    ).values()] as any[]
+    dedupeRecords((classesData as any[]).filter((c: any) => !c.homebrew || showHomebrew))
   );
 
   const allRaces = $derived(
-    [...new Map(
-      (racesData as any[])
-        .filter((r: any) => !r.homebrew || showHomebrew)
-        .map((r): [string, any] => [r.name, r])
-        .slice()
-        .sort((a, b) => (b[1].entries?.length || 0) - (a[1].entries?.length || 0))
-    ).values()].sort((a, b) => a.name.localeCompare(b.name)) as any[]
+    dedupeRecords((racesData as any[]).filter((r: any) => !r.homebrew || showHomebrew))
   );
 
   const allBackgrounds = $derived(
-    [...new Map(
-      (backgroundsData as any[])
-        .filter((b: any) => !b.homebrew || showHomebrew)
-        .map((b): [string, any] => [b.name, b])
-        .slice()
-        .sort((a, b2) => (b2[1].entries?.length || 0) - (a[1].entries?.length || 0))
-    ).values()].sort((a, b) => a.name.localeCompare(b.name)) as any[]
+    dedupeRecords((backgroundsData as any[]).filter((b: any) => !b.homebrew || showHomebrew))
   );
 
   const selectedChar = $derived(characters.find((c) => c.id === selectedId) ?? null);
@@ -143,12 +128,7 @@ const backgroundInfo = $derived(
       .filter((s) => s.className === cls);
     const pool = same.filter((s) => s.edition === classInfo.edition);
     const usable = pool.length ? pool : same;
-    const seen = new Set<string>();
-    return usable.filter((s) => {
-      if (seen.has(s.name)) return false;
-      seen.add(s.name);
-      return true;
-    });
+    return dedupeRecords(usable, classInfo.edition);
   });
 
   const spellDerived = $derived(
@@ -1072,8 +1052,8 @@ const backgroundInfo = $derived(
           </div>
           <SearchPicker
             label="Browse feats list"
-            items={(featsData as any[])
-              .filter((f: any) => !f.homebrew || showHomebrew)
+            items={dedupeRecords((featsData as any[])
+              .filter((f: any) => !f.homebrew || showHomebrew))
               .map((f) => ({ name: f.name, source: f.source, sub: f.category || '' }))}
             onAdd={(item) => addFeat(item.name)}
           />
@@ -1144,8 +1124,8 @@ const backgroundInfo = $derived(
           </div>
           <SearchPicker
             label="Browse spell list"
-            items={(spellsData as any[])
-              .filter((s: any) => !s.homebrew || showHomebrew)
+            items={dedupeRecords((spellsData as any[])
+              .filter((s: any) => !s.homebrew || showHomebrew))
               .map((s) => ({
                 name: s.name,
                 source: s.source,

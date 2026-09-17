@@ -1,7 +1,7 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
-  import { formatSource, editionOf } from '$lib/utils/dnd';
+  import { formatSource, editionOf, dedupeRecords } from '$lib/utils/dnd';
   import itemsData from '$lib/data/items.json';
   
   let search = $state('');
@@ -40,6 +40,7 @@
         : result.filter((i: any) => !i.reqAttune);
     }
     result = result.filter((i: any) => editionOf(i) === selectedEdition);
+    result = dedupeRecords(result, selectedEdition);
     return result;
   });
 </script>

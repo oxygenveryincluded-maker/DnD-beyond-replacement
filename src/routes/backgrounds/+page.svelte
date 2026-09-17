@@ -1,7 +1,7 @@
 <script lang="ts">
   import CollapsibleEntries from '$lib/components/CollapsibleEntries.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
-  import { formatSource, editionOf } from '$lib/utils/dnd';
+  import { formatSource, editionOf, dedupeRecords } from '$lib/utils/dnd';
   import backgroundsData from '$lib/data/backgrounds.json';
 
   let search = $state('');
@@ -20,6 +20,7 @@
     if (search) result = result.filter((b: any) => b.name.toLowerCase().includes(search.toLowerCase()));
     if (selectedSource) result = result.filter((b: any) => b.source === selectedSource);
     result = result.filter((b: any) => editionOf(b) === selectedEdition);
+    result = dedupeRecords(result, selectedEdition);
     return result;
   });
 

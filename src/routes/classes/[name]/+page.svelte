@@ -2,7 +2,7 @@
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import LevelTables from '$lib/components/LevelTables.svelte';
   import { base } from '$app/paths';
-  import { formatSource } from '$lib/utils/dnd';
+  import { formatSource, dedupeRecords } from '$lib/utils/dnd';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
   import classesData from '$lib/data/classes.json';
   import subclassesData from '$lib/data/subclasses.json';
@@ -21,10 +21,9 @@
   
   let editionFilter = $state<'classic' | 'one'>('classic');
   const filteredSubclasses = $derived(
-    matchingSubclasses.filter((sc: any) => 
-      sc.edition === editionFilter
-    ).filter((sc: any, i: number, arr: any[]) => 
-      arr.findIndex((s: any) => s.name === sc.name) === i
+    dedupeRecords(
+      matchingSubclasses.filter((sc: any) => sc.edition === editionFilter),
+      editionFilter
     )
   );
   

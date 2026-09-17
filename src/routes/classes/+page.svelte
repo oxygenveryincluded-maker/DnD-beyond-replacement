@@ -1,21 +1,14 @@
 <script lang="ts">
   import { base } from '$app/paths';
-  import { formatSource } from '$lib/utils/dnd';
+  import { formatSource, dedupeRecords } from '$lib/utils/dnd';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
   import classesData from '$lib/data/classes.json';
   
   let edition = $state<'classic' | 'one'>('classic');
   
-  const classes = $derived.by(() => {
-    const seen = new Map<string, any>();
-    for (const c of classesData as any[]) {
-      const key = c.name;
-      if (!seen.has(key) && c.edition === edition) {
-        seen.set(key, c);
-      }
-    }
-    return Array.from(seen.values());
-  });
+  const classes = $derived(
+    dedupeRecords((classesData as any[]).filter((c) => c.edition === edition), edition)
+  );
   
   const classColors: Record<string, string> = {
     'Barbarian': 'from-red-900/60 to-rose-950/60',

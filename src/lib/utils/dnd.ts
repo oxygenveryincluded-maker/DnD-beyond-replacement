@@ -31,6 +31,34 @@ export function editionOf(entry: any): 'classic' | 'one' {
   return 'classic';
 }
 
+const SOURCE_PREFERENCE = ['PHB', 'XPHB', 'XDMG', 'MPMM', 'DMG', 'EEPC', 'VGM', 'TCE', 'XGE', 'SCAG', 'VRGR', 'ERLW', 'EFA', 'RHW', 'ToA', 'LFL', 'WttHC', 'HB'];
+const MODERN_SOURCES = new Set(['XPHB', 'XDMG']);
+
+function preferredOver(a: any, b: any, edition: 'classic' | 'one' | undefined): boolean {
+  const ah = !!a.homebrew;
+  const bh = !!b.homebrew;
+  if (ah !== bh) return !ah;
+  const modern = (s: string) => edition === 'one' && MODERN_SOURCES.has(s);
+  const modDiff = (modern(a.source) ? 1 : 0) - (modern(b.source) ? 1 : 0);
+  if (modDiff !== 0) return modDiff > 0;
+  const order = new Map(SOURCE_PREFERENCE.map((s, i) => [s, i]));
+  const ai = order.get(a.source) ?? 999;
+  const bi = order.get(b.source) ?? 999;
+  if (ai !== bi) return ai < bi;
+  return (a.entries?.length || 0) + JSON.stringify(a).length > (b.entries?.length || 0) + JSON.stringify(b).length;
+}
+
+export function dedupeRecords(records: any[], edition: 'classic' | 'one' | undefined = undefined): any[] {
+  const best = new Map<string, any>();
+  for (const r of records) {
+    const key = String(r.name || '').trim().toLowerCase();
+    if (!key) continue;
+    const cur = best.get(key);
+    if (!cur || preferredOver(r, cur, edition)) best.set(key, r);
+  }
+  return Array.from(best.values());
+}
+
 export function formatTableTags(text: string): string {
   return String(text || '')
     .replace(/\{@([a-z]+)\s([^}|]*?)(?:\|[^}]*)?\}/gi, '$2');

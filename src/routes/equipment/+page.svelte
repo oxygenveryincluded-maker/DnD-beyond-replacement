@@ -1,7 +1,7 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
-  import { formatSource } from '$lib/utils/dnd';
+  import { formatSource, editionOf, dedupeRecords } from '$lib/utils/dnd';
   import equipmentData from '$lib/data/equipment.json';
   
   let search = $state('');
@@ -21,7 +21,8 @@
     let result = items;
     if (search) result = result.filter((i: any) => i.name.toLowerCase().includes(search.toLowerCase()));
     if (selectedType) result = result.filter((i: any) => i.type === selectedType);
-    result = result.filter((i: any) => (i.edition ?? 'classic') === selectedEdition);
+    result = result.filter((i: any) => editionOf(i) === selectedEdition);
+    result = dedupeRecords(result, selectedEdition);
     return result;
   });
 </script>

@@ -399,7 +399,7 @@ async function main() {
 			entries: [],
 			name: e.name,
 			source: e.source,
-			edition: e.edition || 'classic',
+			edition: e.edition === 'one' || e.source === 'XPHB' || e.source === 'XDMG' ? 'one' : 'classic',
 			type: t,
 			weight: e.weight,
 			value: e.value,
@@ -592,8 +592,21 @@ async function main() {
 	for (const o of processedOptionalClean) {
 		searchIndex.push({ type: 'optional-feature', name: o.name, source: o.source, path: '/invocations', extra: o.category });
 	}
-	writeFileSync(join(OUT, 'search-index.json'), JSON.stringify(searchIndex, null, '\t'));
-	console.log(`Search index: ${searchIndex.length} entries`);
+
+	const SRCPREF = ['PHB', 'XPHB', 'XDMG', 'MPMM', 'DMG', 'EEPC', 'VGM', 'TCE', 'XGE', 'SCAG', 'VRGR', 'ERLW', 'EFA', 'RHW', 'ToA', 'LFL', 'WttHC'];
+	const prefOrder = new Map(SRCPREF.map((s, i) => [s, i]));
+	const indexBest = new Map();
+	for (const e of searchIndex) {
+		const key = `${e.type}|${String(e.name).trim().toLowerCase()}`;
+		const cur = indexBest.get(key);
+		if (!cur) { indexBest.set(key, e); continue; }
+		const curScore = (!cur.homebrew ? 1 : 0) + Math.max(0, SRCPREF.length - (prefOrder.get(cur.source) ?? 999));
+		const eScore = (!e.homebrew ? 1 : 0) + Math.max(0, SRCPREF.length - (prefOrder.get(e.source) ?? 999));
+		if (eScore > curScore) indexBest.set(key, e);
+	}
+	const dedupedIndex = Array.from(indexBest.values());
+	writeFileSync(join(OUT, 'search-index.json'), JSON.stringify(dedupedIndex, null, '\t'));
+	console.log(`Search index: ${dedupedIndex.length} entries (${searchIndex.length} raw, deduped)`);
 
 	console.log('\n=== DONE ===');
 }
