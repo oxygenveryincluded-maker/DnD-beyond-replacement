@@ -1,6 +1,7 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
+  import SourceLegend from '$lib/components/SourceLegend.svelte';
   import { formatSchool, getSchoolColor, levelText, formatTime, formatRange, formatComponents, formatDuration, formatSource, isHomebrew } from '$lib/utils/dnd';
   import spellsData from '$lib/data/spells.json';
   import { page } from '$app/state';
@@ -84,6 +85,8 @@
   </div>
   
   <p class="text-xs text-dnd-text-muted mb-2">{filtered.length} spell{filtered.length !== 1 ? 's' : ''}</p>
+  
+  <SourceLegend codes={filtered.map((s: any) => s.source)} />
   
   <div class="space-y-2">
     {#each filtered as spell (spell.name + spell.source)}

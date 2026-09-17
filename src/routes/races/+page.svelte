@@ -2,6 +2,7 @@
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
   import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
+  import SourceLegend from '$lib/components/SourceLegend.svelte';
   import { formatSource, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
   import racesData from '$lib/data/races.json';
 
@@ -58,6 +59,8 @@
   </div>
 
   <p class="text-xs text-dnd-text-muted mb-2">{filtered.length} race{filtered.length !== 1 ? 's' : ''}</p>
+
+  <SourceLegend codes={filtered.map((r: any) => r.source)} />
 
   <div class="space-y-1.5">
     {#each filtered as race (race.name + race.source)}

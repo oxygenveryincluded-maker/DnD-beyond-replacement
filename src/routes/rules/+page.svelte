@@ -1,5 +1,6 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
+  import SourceLegend from '$lib/components/SourceLegend.svelte';
   import conditionsData from '$lib/data/conditions.json';
   import { formatSource } from '$lib/utils/dnd';
 
@@ -154,6 +155,8 @@
   <p class="text-xs text-dnd-text-muted mb-2">
     {filteredConditions.length} condition{filteredConditions.length !== 1 ? 's' : ''}
   </p>
+
+  <SourceLegend codes={filteredConditions.map((c: any) => c.source)} />
 
   <div class="space-y-1.5">
     {#each filteredConditions as cond (cond.name + cond.source)}

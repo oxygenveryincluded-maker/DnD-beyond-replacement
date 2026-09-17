@@ -1,5 +1,6 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
+  import SourceLegend from '$lib/components/SourceLegend.svelte';
   import { formatSource } from '$lib/utils/dnd';
   import invocationsData from '$lib/data/invocations.json';
   import allOptionalData from '$lib/data/optional-features.json';
@@ -50,6 +51,8 @@
   </div>
 
   <p class="text-xs text-dnd-text-muted mb-2">{filtered.length} item{filtered.length !== 1 ? 's' : ''}</p>
+
+  <SourceLegend codes={filtered.map((i: any) => i.source)} />
 
   <div class="space-y-1.5">
     {#each filtered as inv (inv.name + inv.source + inv.category)}

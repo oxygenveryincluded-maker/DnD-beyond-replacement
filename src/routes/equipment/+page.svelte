@@ -1,6 +1,7 @@
 <script lang="ts">
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
+  import SourceLegend from '$lib/components/SourceLegend.svelte';
   import { formatSource, editionOf, dedupeRecords } from '$lib/utils/dnd';
   import equipmentData from '$lib/data/equipment.json';
   
@@ -46,6 +47,8 @@
   
   <p class="text-xs text-dnd-text-muted mb-2">{filtered.length} item{filtered.length !== 1 ? 's' : ''}</p>
   
+  <SourceLegend codes={filtered.map((i: any) => i.source)} />
+  
   <div class="space-y-1.5">
     {#each filtered as item (item.name + item.source)}
       <button class="w-full card text-left" onclick={() => expanded = expanded === item.name ? null : item.name}>
@@ -53,6 +56,7 @@
           <div>
             <span class="font-semibold text-sm text-dnd-text">{item.name}</span>
             <span class="text-[10px] text-dnd-text-muted ml-2">{item.type}</span>
+            <span class="text-[10px] text-dnd-text-muted ml-2">{formatSource(item.source)}</span>
           </div>
           <div class="text-right text-[10px] text-dnd-text-muted shrink-0">
             {#if item.value}<span>{item.value / 100} gp</span>{/if}

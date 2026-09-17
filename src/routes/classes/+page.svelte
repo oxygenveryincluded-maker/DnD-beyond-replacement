@@ -3,6 +3,7 @@
   import { formatSource, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
   import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
+  import SourceLegend from '$lib/components/SourceLegend.svelte';
   import classesData from '$lib/data/classes.json';
   
   let edition = $state<'classic' | 'one'>('classic');
@@ -44,6 +45,8 @@
   <div class="flex justify-end mb-2">
     <HomebrewToggle value={showHomebrew} onchange={(v) => showHomebrew = v} />
   </div>
+
+  <SourceLegend codes={classes.map((c: any) => c.source)} />
   
   <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
     {#each classes as cls (cls.name + cls.source)}

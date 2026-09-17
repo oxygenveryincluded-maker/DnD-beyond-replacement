@@ -5,6 +5,7 @@
   import { formatSource, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
   import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
+  import SourceLegend from '$lib/components/SourceLegend.svelte';
   import classesData from '$lib/data/classes.json';
   import subclassesData from '$lib/data/subclasses.json';
   import { page } from '$app/state';
@@ -108,6 +109,7 @@
       {#if filteredSubclasses.length === 0}
         <p class="text-xs text-dnd-text-muted">No subclasses match these filters.</p>
       {/if}
+      <SourceLegend codes={filteredSubclasses.map((sc: any) => sc.source)} />
       <div class="space-y-3">
         {#each filteredSubclasses as sub (sub.name + sub.source + sub.edition)}
           <div class="stat-block">

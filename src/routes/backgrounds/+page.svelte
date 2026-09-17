@@ -2,6 +2,7 @@
   import CollapsibleEntries from '$lib/components/CollapsibleEntries.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
   import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
+  import SourceLegend from '$lib/components/SourceLegend.svelte';
   import { formatSource, editionOf, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
   import backgroundsData from '$lib/data/backgrounds.json';
 
@@ -76,6 +77,8 @@
   </div>
 
   <p class="text-xs text-dnd-text-muted mb-2">{filtered.length} background{filtered.length !== 1 ? 's' : ''}</p>
+
+  <SourceLegend codes={filtered.map((b: any) => b.source)} />
 
   <div class="space-y-1.5">
     {#each filtered as bg (bg.name + bg.source)}
