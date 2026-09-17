@@ -3,7 +3,7 @@
   import EditionToggle from '$lib/components/EditionToggle.svelte';
   import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
   import SourceLegend from '$lib/components/SourceLegend.svelte';
-  import { formatSource, editionOf, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
+  import { formatSource, formatSourceShort, editionOf, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
   import featsData from '$lib/data/feats.json';
 
   let search = $state('');
@@ -119,7 +119,7 @@
       <button class="filter-btn text-xs" class:active={selectedSource === null} onclick={() => selectedSource = null}>All</button>
       {#each sources as src}
         <button class="filter-btn text-xs" class:active={selectedSource === src} onclick={() => toggleSource(src)}>
-          {src ? formatSource(src) : 'All'}
+          {src ? formatSourceShort(src) : 'All'}
         </button>
       {/each}
     </div>

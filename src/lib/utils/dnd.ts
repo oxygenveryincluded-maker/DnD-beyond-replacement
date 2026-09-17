@@ -10,6 +10,8 @@ export const SCHOOL_COLORS: Record<string, string> = {
   'N': 'tag-school-nec', 'T': 'tag-school-trans'
 };
 
+import { SOURCE_NAMES } from './sources';
+
 export const SOURCE_SHORT: Record<string, string> = {
   'PHB': "Player's Handbook", 'XPHB': "Player's Handbook (2024)",
   'DMG': "Dungeon Master's Guide", 'XDMG': "DMG (2024)",
@@ -22,7 +24,12 @@ export const SOURCE_SHORT: Record<string, string> = {
 };
 
 export function formatSource(source: string): string {
-  return SOURCE_SHORT[source] || source;
+  const name = SOURCE_NAMES[source];
+  return name ? `${source} — ${name}` : source;
+}
+
+export function formatSourceShort(source: string): string {
+  return SOURCE_SHORT[source] || SOURCE_NAMES[source] || source;
 }
 
 export function editionOf(entry: any): 'classic' | 'one' {

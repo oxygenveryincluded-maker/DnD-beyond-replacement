@@ -2,7 +2,7 @@
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
   import SourceLegend from '$lib/components/SourceLegend.svelte';
-  import { formatSchool, getSchoolColor, levelText, formatTime, formatRange, formatComponents, formatDuration, formatSource, isHomebrew } from '$lib/utils/dnd';
+  import { formatSchool, getSchoolColor, levelText, formatTime, formatRange, formatComponents, formatDuration, formatSource, formatSourceShort, isHomebrew } from '$lib/utils/dnd';
   import spellsData from '$lib/data/spells.json';
   import { page } from '$app/state';
   
@@ -56,7 +56,7 @@
     <div class="flex flex-wrap gap-1.5">
       {#each sources as src}
         <button class="filter-btn text-xs" class:active={selectedSource === src} onclick={() => toggleSource(src)}>
-          {src ? formatSource(src) : 'All'}
+          {src ? formatSourceShort(src) : 'All'}
         </button>
       {/each}
     </div>

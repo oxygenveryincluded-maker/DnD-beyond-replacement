@@ -2,7 +2,7 @@
   import { SOURCE_NAMES } from '$lib/utils/sources';
 
   let { codes = [] }: { codes?: string[] } = $props();
-  let open = $state(false);
+  let open = $state(true);
 
   const entries = $derived(
     [...new Set(codes.filter(Boolean))]

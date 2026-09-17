@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { formatSource } from '$lib/utils/dnd';
+  import { formatSourceShort } from '$lib/utils/dnd';
 
   interface PickerItem {
     name: string;
@@ -78,7 +78,7 @@
                 {#if item.sub}<span class="block text-[10px] text-dnd-text-muted truncate">{item.sub}</span>{/if}
               </span>
               {#if item.source}
-                <span class="text-[10px] text-dnd-text-muted shrink-0">{formatSource(item.source)}</span>
+                <span class="text-[10px] text-dnd-text-muted shrink-0">{formatSourceShort(item.source)}</span>
               {/if}
             </button>
           {/each}

@@ -2,7 +2,7 @@
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import SourceLegend from '$lib/components/SourceLegend.svelte';
   import conditionsData from '$lib/data/conditions.json';
-  import { formatSource } from '$lib/utils/dnd';
+  import { formatSource, formatSourceShort } from '$lib/utils/dnd';
 
   const conditions = conditionsData as any[];
 
@@ -147,7 +147,7 @@
         class:active={selectedSource === src}
         onclick={() => selectedSource = selectedSource === src ? null : src}
       >
-        {src ? formatSource(src) : 'All'}
+        {src ? formatSourceShort(src) : 'All'}
       </button>
     {/each}
   </div>
