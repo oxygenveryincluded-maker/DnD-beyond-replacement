@@ -211,6 +211,202 @@ function convertClassTables(groups) {
 	}));
 }
 
+async function fetchClassData() {
+	const classNames = ['barbarian', 'bard', 'cleric', 'druid', 'fighter', 'monk', 'paladin', 'ranger', 'rogue', 'sorcerer', 'warlock', 'wizard', 'artificer'];
+	const allClasses = [];
+	const allSubclasses = [];
+	const allClassFeatures = [];
+	const allSubclassFeatures = [];
+	const classEditionMap = new Map();
+
+	for (const cls of classNames) {
+		try {
+			const data = await fetchJSON(`${BASE}/class/class-${cls}.json`);
+			if (data.class) {
+				allClasses.push(...data.class);
+				for (const c of data.class) {
+					classEditionMap.set(`${c.name}|${c.source}`, c.edition || 'classic');
+				}
+			}
+			if (data.subclass) allSubclasses.push(...data.subclass);
+			if (data.classFeature) allClassFeatures.push(...data.classFeature);
+			if (data.subclassFeature) allSubclassFeatures.push(...data.subclassFeature);
+		} catch (e) {
+			console.log(`Skipping ${cls}: ${e.message}`);
+		}
+	}
+
+	// Index features so {refClassFeature|refSubclassFeature} pointers can be resolved.
+	const classFeatureIndex = new Map();
+	for (const f of allClassFeatures) {
+		const key = `${f.name}|${f.className}|${f.level}`;
+		if (!classFeatureIndex.has(key)) classFeatureIndex.set(key, []);
+		classFeatureIndex.get(key).push(f);
+	}
+	const subclassFeatureIndex = new Map();
+	for (const f of allSubclassFeatures) {
+		const key = `${f.name}|${f.className}|${f.subclassShortName || ''}|${f.level}`;
+		if (!subclassFeatureIndex.has(key)) subclassFeatureIndex.set(key, []);
+		subclassFeatureIndex.get(key).push(f);
+	}
+
+	function lookupRef(ref, kind) {
+		const parts = ref.split('|');
+		const name = parts[0];
+		const className = parts[1];
+		let level;
+		let src;
+		if (/^\d+$/.test(parts[parts.length - 1])) {
+			level = parts[parts.length - 1];
+			src = parts[parts.length - 2];
+		} else {
+			level = parts[parts.length - 2];
+			src = parts[parts.length - 1];
+		}
+		if (kind === 'subclass') {
+			const sub = parts[parts.length - 3];
+			const cands = subclassFeatureIndex.get(`${name}|${className}|${sub}|${level}`) || [];
+			return cands.find(c => !src || c.source === src) || cands[0];
+		}
+		const cands = classFeatureIndex.get(`${name}|${className}|${level}`) || [];
+		return cands.find(c => !src || c.source === src) || cands[0];
+	}
+
+	function resolveRefNode(node) {
+		if (Array.isArray(node)) {
+			let changed = false;
+			const value = node.map(n => {
+				const r = resolveRefNode(n);
+				if (r.changed) changed = true;
+				return r.value;
+			});
+			return { value, changed };
+		}
+		if (node && typeof node === 'object') {
+			if (node.type === 'refSubclassFeature' || node.type === 'refClassFeature') {
+				const target = lookupRef(node.subclassFeature || node.classFeature, node.type === 'refSubclassFeature' ? 'subclass' : 'class');
+				if (target) return {
+					value: {
+						type: 'section',
+						name: target.name,
+						entries: Array.isArray(target.entries) ? target.entries.map(n => resolveRefNode(n).value) : []
+					},
+					changed: true
+				};
+			}
+			const value = {};
+			let changed = false;
+			for (const k in node) {
+				const r = resolveRefNode(node[k]);
+				value[k] = r.value;
+				if (r.changed) changed = true;
+			}
+			return { value, changed };
+		}
+		return { value: node, changed: false };
+	}
+
+	function resolveFeatureRefs(entries, depth = 0) {
+		if (!Array.isArray(entries) || depth > 10) return entries;
+		return entries.map(e => {
+			if (typeof e === 'string') {
+				const t = e.trim();
+				if (t.startsWith('{')) {
+					try {
+						const r = resolveRefNode(JSON.parse(t));
+						if (r.changed) return JSON.stringify(r.value);
+					} catch (err) { /* not ref json; leave as plain text */ }
+				}
+				return e;
+			}
+			if (e && typeof e === 'object') {
+				const r = resolveRefNode(e);
+				return r.changed ? r.value : e;
+			}
+			return e;
+		});
+	}
+
+	const processedClasses = allClasses.map(c => ({
+		name: c.name,
+		source: c.source,
+		edition: c.edition || 'classic',
+		hitDice: c.hd,
+		proficiency: c.proficiency,
+		startingProficiencies: c.startingProficiencies,
+		savingThrows: c.proficiency,
+		spellcastingAbility: c.spellcastingAbility || null,
+		preparedSpells: c.preparedSpells || null,
+		cantripProgression: c.cantripProgression || null,
+		spellsKnownProgression: c.spellsKnownProgressionFixed || null,
+		startingEquipment: processStartingEquipment(c.startingEquipment),
+		classTableGroups: c.classTableGroups,
+		tables: convertClassTables(c.classTableGroups),
+		subclassTitle: c.subclassTitle,
+		features: (c.classFeatures || []).map(f => {
+			if (typeof f === 'string') {
+				const match = f.match(/^(.+?)\|(.+?)(?:\|([^|]*))?\|(\d+)$/);
+				if (match) {
+					const [, name, cls, edition, level] = match;
+					const resolved = allClassFeatures.find(cf =>
+						cf.name === name && cf.className === cls && String(cf.level) === level &&
+						(edition ? cf.source === edition : true)
+					);
+					if (resolved) {
+						return {
+							name: resolved.name,
+							level: resolved.level,
+							entries: processEntries(resolveFeatureRefs(resolved.entries)),
+							source: resolved.source
+						};
+					}
+				}
+				return { name: f, level: 0, entries: [] };
+			}
+			if (f.classFeature) {
+				return { name: f.classFeature, level: 0, entries: [], gainSubclassFeature: true };
+			}
+			return f;
+		})
+	}));
+
+	const processedSubclasses = allSubclasses.map(sc => ({
+		name: sc.name,
+		shortName: sc.shortName,
+		source: sc.source,
+		className: sc.className,
+		classSource: sc.classSource,
+		edition: sc.edition || classEditionMap.get(`${sc.className}|${sc.classSource}`) || 'classic',
+		features: (sc.subclassFeatures || []).map(f => {
+			if (typeof f === 'string') {
+				const match = f.match(/^(.+?)\|(.+?)(?:\|([^|]*))?\|(.+?)(?:\|([^|]*))?\|(\d+)$/);
+				if (match) {
+					const [, name, cls, edition, sub, subEdition, level] = match;
+					const resolved = allSubclassFeatures.find(sf =>
+						sf.name === name && sf.className === cls &&
+						sf.subclassShortName === sub && String(sf.level) === level
+					);
+					if (resolved) {
+						return {
+							name: resolved.name,
+							level: resolved.level,
+							entries: processEntries(resolveFeatureRefs(resolved.entries)),
+							source: resolved.source
+						};
+					}
+				}
+				return { name: f, level: 0, entries: [] };
+			}
+			if (f && typeof f === 'object' && Array.isArray(f.entries)) {
+				return { ...f, entries: processEntries(resolveFeatureRefs(f.entries)) };
+			}
+			return f;
+		})
+	}));
+
+	return { processedClasses, processedSubclasses };
+}
+
 async function main() {
 	// 1. Spells
 	console.log('\n=== SPELLS ===');
@@ -262,105 +458,9 @@ async function main() {
 
 	// 2. Classes & Subclasses
 	console.log('\n=== CLASSES ===');
-	const classNames = ['barbarian', 'bard', 'cleric', 'druid', 'fighter', 'monk', 'paladin', 'ranger', 'rogue', 'sorcerer', 'warlock', 'wizard', 'artificer'];
-	const allClasses = [];
-	const allSubclasses = [];
-	const allClassFeatures = [];
-	const allSubclassFeatures = [];
-	const classEditionMap = new Map();
-
-	for (const cls of classNames) {
-		try {
-			const data = await fetchJSON(`${BASE}/class/class-${cls}.json`);
-			if (data.class) {
-				allClasses.push(...data.class);
-				for (const c of data.class) {
-					classEditionMap.set(`${c.name}|${c.source}`, c.edition || 'classic');
-				}
-			}
-			if (data.subclass) allSubclasses.push(...data.subclass);
-			if (data.classFeature) allClassFeatures.push(...data.classFeature);
-			if (data.subclassFeature) allSubclassFeatures.push(...data.subclassFeature);
-		} catch (e) {
-			console.log(`Skipping ${cls}: ${e.message}`);
-		}
-	}
-
-	const processedClasses = allClasses.map(c => ({
-		name: c.name,
-		source: c.source,
-		edition: c.edition || 'classic',
-		hitDice: c.hd,
-		proficiency: c.proficiency,
-		startingProficiencies: c.startingProficiencies,
-		savingThrows: c.proficiency,
-		spellcastingAbility: c.spellcastingAbility || null,
-		preparedSpells: c.preparedSpells || null,
-		cantripProgression: c.cantripProgression || null,
-		spellsKnownProgression: c.spellsKnownProgressionFixed || null,
-		startingEquipment: processStartingEquipment(c.startingEquipment),
-		classTableGroups: c.classTableGroups,
-		tables: convertClassTables(c.classTableGroups),
-		subclassTitle: c.subclassTitle,
-		features: (c.classFeatures || []).map(f => {
-			if (typeof f === 'string') {
-				const match = f.match(/^(.+?)\|(.+?)(?:\|([^|]*))?\|(\d+)$/);
-				if (match) {
-					const [, name, cls, edition, level] = match;
-					const resolved = allClassFeatures.find(cf =>
-						cf.name === name && cf.className === cls && String(cf.level) === level &&
-						(edition ? cf.source === edition : true)
-					);
-					if (resolved) {
-						return {
-							name: resolved.name,
-							level: resolved.level,
-							entries: processEntries(resolved.entries),
-							source: resolved.source
-						};
-					}
-				}
-				return { name: f, level: 0, entries: [] };
-			}
-			if (f.classFeature) {
-				return { name: f.classFeature, level: 0, entries: [], gainSubclassFeature: true };
-			}
-			return f;
-		})
-	}));
+	const { processedClasses, processedSubclasses } = await fetchClassData();
 	writeFileSync(join(OUT, 'classes.json'), JSON.stringify(processedClasses, null, '\t'));
 	console.log(`Processed ${processedClasses.length} classes`);
-
-	const processedSubclasses = allSubclasses.map(sc => ({
-		name: sc.name,
-		shortName: sc.shortName,
-		source: sc.source,
-		className: sc.className,
-		classSource: sc.classSource,
-		edition: sc.edition || classEditionMap.get(`${sc.className}|${sc.classSource}`) || 'classic',
-		features: (sc.subclassFeatures || []).map(f => {
-			if (typeof f === 'string') {
-				const match = f.match(/^(.+?)\|(.+?)(?:\|([^|]*))?\|(.+?)(?:\|([^|]*))?\|(\d+)$/);
-				if (match) {
-					const [, name, cls, edition, sub, subEdition, level] = match;
-					const resolved = allSubclassFeatures.find(sf =>
-						sf.name === name && sf.className === cls &&
-						sf.subclassShortName === sub && String(sf.level) === level
-					);
-					if (resolved) {
-						return {
-							name: resolved.name,
-							level: resolved.level,
-							entries: processEntries(resolved.entries),
-							source: resolved.source
-						};
-					}
-				}
-				return { name: f, level: 0, entries: [] };
-			}
-			return f;
-		})
-	}));
 	writeFileSync(join(OUT, 'subclasses.json'), JSON.stringify(processedSubclasses, null, '\t'));
 	console.log(`Processed ${processedSubclasses.length} subclasses`);
 
@@ -569,4 +669,10 @@ async function main() {
 	console.log('\n=== DONE ===');
 }
 
-main().catch(console.error);
+if (process.env.FETCH_DATA_SKIP_MAIN === '1') {
+	// allow scripts to import helpers without triggering the full pipeline
+} else {
+	main().catch(console.error);
+}
+
+export { BASE, OUT, fetchJSON, strip5eTags, processEntries, fetchClassData };

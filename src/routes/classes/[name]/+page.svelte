@@ -82,12 +82,12 @@
     <div class="space-y-1.5 mb-6">
       {#each (currentClass.features || []) as feature}
         {#if feature.level > 0}
-          <button class="w-full card text-left text-sm" onclick={() => expandedFeature = expandedFeature === feature.name ? null : feature.name}>
+          <button class="w-full card text-left text-sm" onclick={() => expandedFeature = expandedFeature === `{feature.name}|{feature.level}` ? null : `{feature.name}|{feature.level}`}>
             <div class="flex justify-between items-center">
               <span class="font-semibold text-dnd-text">{feature.name}</span>
               <span class="text-[10px] text-dnd-text-muted bg-dnd-darker px-2 py-0.5 rounded">Lv {feature.level}</span>
             </div>
-            {#if expandedFeature === feature.name}
+            {#if expandedFeature === `{feature.name}|{feature.level}`}
               <div class="mt-2 pt-2 border-t border-dnd-border fade-in">
                 <ContentRenderer entries={feature.entries} />
               </div>

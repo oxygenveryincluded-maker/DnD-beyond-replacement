@@ -4945,7 +4945,7 @@
 						"entries": [
 							{
 								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"refClassFeature\",\"classFeature\":\"Protector|Cleric|XPHB|1|XPHB\"},{\"type\":\"refClassFeature\",\"classFeature\":\"Thaumaturge|Cleric|XPHB|1|XPHB\"}]}"
+								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Protector\",\"entries\":[\"Trained for battle, you gain proficiency with <i>Martial weapons</i> and training with <i>Heavy armor</i>.\"]},{\"type\":\"section\",\"name\":\"Thaumaturge\",\"entries\":[\"You know one extra cantrip from the <i>Cleric spell list</i>. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (<i>Arcana</i> or <i>Religion</i>) checks. The bonus equals your Wisdom modifier (minimum of +1).\"]}]}"
 							}
 						]
 					}
@@ -4973,12 +4973,28 @@
 						"name": "",
 						"entries": [
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Divine Spark|Cleric|XPHB|2|XPHB\"}"
+								"type": "section",
+								"name": "Divine Spark",
+								"entries": [
+									{
+										"type": "text",
+										"content": "As a <b>Magic</b> action, you point your <b>Holy Symbol</b> at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll <span class=\"text-green-400 font-mono\">1d8</span> and add your Wisdom modifier. You either restore <i>Hit Points</i> to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage (round down)."
+									},
+									{
+										"type": "text",
+										"content": "You roll an additional <span class=\"text-green-400 font-mono\">d8</span> when you reach Cleric levels 7 (<span class=\"text-green-400 font-mono\">2d8</span>), 13 (<span class=\"text-green-400 font-mono\">3d8</span>), and 18 (<span class=\"text-green-400 font-mono\">4d8</span>)."
+									}
+								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Turn Undead|Cleric|XPHB|2|XPHB\"}"
+								"type": "section",
+								"name": "Turn Undead",
+								"entries": [
+									{
+										"type": "text",
+										"content": "As a <b>Magic</b> action, you present your <b>Holy Symbol</b> and censure Undead creatures. Each Undead of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the <i class=\"text-dnd-gold\">Frightened</i> and <i class=\"text-dnd-gold\">Incapacitated</i> conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the <i class=\"text-dnd-gold\">Incapacitated</i> condition, or if you die."
+									}
+								]
 							}
 						]
 					}
@@ -5032,12 +5048,24 @@
 						"name": "",
 						"entries": [
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Divine Strike|Cleric|XPHB|7\"}"
+								"type": "section",
+								"name": "Divine Strike",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra <span class=\"text-red-400 font-semibold\">1d8</span> Necrotic or Radiant damage (your choice)."
+									}
+								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Potent Spellcasting|Cleric|XPHB|7\"}"
+								"type": "section",
+								"name": "Potent Spellcasting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Add your Wisdom modifier to the damage you deal with any Cleric cantrip."
+									}
+								]
 							}
 						]
 					}
@@ -6620,7 +6648,7 @@
 						"entries": [
 							{
 								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"refClassFeature\",\"classFeature\":\"Magician|Druid|XPHB|1\"},{\"type\":\"refClassFeature\",\"classFeature\":\"Warden|Druid|XPHB|1\"}]}"
+								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Magician\",\"entries\":[\"You know one extra cantrip from the <i>Druid spell list</i>. In addition, your mystical connection to nature gives you a bonus to your Intelligence (<i>Arcana</i> or <i>Nature</i>) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).\"]},{\"type\":\"section\",\"name\":\"Warden\",\"entries\":[\"Trained for battle, you gain proficiency with <i>Martial weapons</i> and training with <i>Medium armor</i>.\"]}]}"
 							}
 						]
 					}
@@ -6901,7 +6929,7 @@
 						"entries": [
 							{
 								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"refClassFeature\",\"classFeature\":\"Potent Spellcasting|Druid|XPHB|7\"},{\"type\":\"refClassFeature\",\"classFeature\":\"Primal Strike|Druid|XPHB|7\"}]}"
+								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Potent Spellcasting\",\"entries\":[\"Add your Wisdom modifier to the damage you deal with any Druid cantrip.\"]},{\"type\":\"section\",\"name\":\"Primal Strike\",\"entries\":[\"Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra <span class=\"text-red-400 font-semibold\">1d8</span> Cold, Fire, Lightning, or Thunder damage (choose when you hit).\"]}]}"
 							}
 						]
 					}
@@ -8620,16 +8648,34 @@
 						"name": "",
 						"entries": [
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Flurry of Blows|Monk||2\"}"
+								"type": "section",
+								"name": "Flurry of Blows",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Immediately after you take the <b>Attack</b> action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action."
+									}
+								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Patient Defense|Monk||2\"}"
+								"type": "section",
+								"name": "Patient Defense",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can spend 1 ki point to take the <b>Dodge</b> action as a bonus action on your turn."
+									}
+								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Step of the Wind|Monk||2\"}"
+								"type": "section",
+								"name": "Step of the Wind",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can spend 1 ki point to take the <b>Disengage</b> or <b>Dash</b> action as a bonus action on your turn, and your jump distance is doubled for the turn."
+									}
+								]
 							}
 						]
 					}
@@ -9518,16 +9564,34 @@
 						"name": "",
 						"entries": [
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Bonus Unarmed Strike|Monk|XPHB|1\"}"
+								"type": "section",
+								"name": "Bonus Unarmed Strike",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can make an <i>Unarmed Strike</i> as a <i>Bonus Action</i>."
+									}
+								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Martial Arts Die|Monk|XPHB|1\"}"
+								"type": "section",
+								"name": "Martial Arts Die",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can roll <span class=\"text-red-400 font-semibold\">1d6</span> in place of the normal damage of your <i>Unarmed Strike</i> or Monk weapons. This die changes as you gain Monk levels, as shown in the Martial Arts column of the Monk Features table."
+									}
+								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Dexterous Attacks|Monk|XPHB|1\"}"
+								"type": "section",
+								"name": "Dexterous Attacks",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons. In addition, when you use the Grapple or Shove option of your <i>Unarmed Strike</i>, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC."
+									}
+								]
 							}
 						]
 					}
@@ -9570,16 +9634,34 @@
 						"name": "",
 						"entries": [
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Flurry of Blows|Monk|XPHB|2\"}"
+								"type": "section",
+								"name": "Flurry of Blows",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can expend 1 Focus Point to make two Unarmed Strikes as a <i>Bonus Action</i>."
+									}
+								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Patient Defense|Monk|XPHB|2\"}"
+								"type": "section",
+								"name": "Patient Defense",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can take the <b>Disengage</b> action as a <i>Bonus Action</i>. Alternatively, you can expend 1 Focus Point to take both the <b>Disengage</b> and the <b>Dodge</b> actions as a <i>Bonus Action</i>."
+									}
+								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Step of the Wind|Monk|XPHB|2\"}"
+								"type": "section",
+								"name": "Step of the Wind",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can take the <b>Dash</b> action as a <i>Bonus Action</i>. Alternatively, you can expend 1 Focus Point to take both the <b>Disengage</b> and <b>Dash</b> actions as a <i>Bonus Action</i>, and your jump distance is doubled for the turn."
+									}
+								]
 							}
 						]
 					}
@@ -11055,8 +11137,14 @@
 						"name": "",
 						"entries": [
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Divine Sense|Paladin|XPHB|3|XPHB\"}"
+								"type": "section",
+								"name": "Divine Sense",
+								"entries": [
+									{
+										"type": "text",
+										"content": "As a <i>Bonus Action</i>, you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the <i class=\"text-dnd-gold\">Incapacitated</i> condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <a href=\"/spells?search=Hallow\" class=\"text-dnd-gold hover:underline\">Hallow</a> spell."
+									}
+								]
 							}
 						]
 					}
@@ -14201,16 +14289,38 @@
 						"name": "",
 						"entries": [
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Poison (Cost: 1d6)|Rogue|XPHB|5|XPHB\"}"
+								"type": "section",
+								"name": "Poison (Cost: 1d6)",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the <i class=\"text-dnd-gold\">Poisoned</i> condition for 1 minute. At the end of each of its turns, the <i class=\"text-dnd-gold\">Poisoned</i> target repeats the save, ending the effect on itself on a success."
+									},
+									{
+										"type": "text",
+										"content": "To use this effect, you must have a <b>Poisoner's Kit</b> on your person."
+									}
+								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Trip (Cost: 1d6)|Rogue|XPHB|5|XPHB\"}"
+								"type": "section",
+								"name": "Trip (Cost: 1d6)",
+								"entries": [
+									{
+										"type": "text",
+										"content": "If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the <i class=\"text-dnd-gold\">Prone</i> condition."
+									}
+								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Withdraw (Cost: 1d6)|Rogue|XPHB|5|XPHB\"}"
+								"type": "section",
+								"name": "Withdraw (Cost: 1d6)",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Immediately after the attack, you move up to half your <i>Speed</i> without provoking <b>Opportunity Attack</b>."
+									}
+								]
 							}
 						]
 					}
@@ -14330,16 +14440,34 @@
 						"name": "",
 						"entries": [
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Daze (Cost: 2d6)|Rogue|XPHB|14|XPHB\"}"
+								"type": "section",
+								"name": "Daze (Cost: 2d6)",
+								"entries": [
+									{
+										"type": "text",
+										"content": "The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a <i>Bonus Action</i>."
+									}
+								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Knock Out (Cost: 6d6)|Rogue|XPHB|14|XPHB\"}"
+								"type": "section",
+								"name": "Knock Out (Cost: 6d6)",
+								"entries": [
+									{
+										"type": "text",
+										"content": "The target must succeed on a Constitution saving throw, or it has the <i class=\"text-dnd-gold\">Unconscious</i> condition for 1 minute or until it takes any damage. The <i class=\"text-dnd-gold\">Unconscious</i> target repeats the save at the end of each of its turns, ending the effect on itself on a success."
+									}
+								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Obscure (Cost: 3d6)|Rogue|XPHB|14|XPHB\"}"
+								"type": "section",
+								"name": "Obscure (Cost: 3d6)",
+								"entries": [
+									{
+										"type": "text",
+										"content": "The target must succeed on a Dexterity saving throw, or it has the <i class=\"text-dnd-gold\">Blinded</i> condition until the end of its next turn."
+									}
+								]
 							}
 						]
 					}
@@ -15201,12 +15329,74 @@
 						"content": "At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Sorcery Points|Sorcerer||2\"}"
+						"type": "section",
+						"name": "Sorcery Points",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You have 2 sorcery points, and you gain one additional point every time you level up, to a maximum of 20 at level 20. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest."
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Flexible Casting|Sorcerer||2\"}"
+						"type": "section",
+						"name": "Flexible Casting",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels."
+							},
+							{
+								"type": "section",
+								"name": "Creating Spell Slots",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a long rest. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th."
+									},
+									{
+										"type": "table",
+										"caption": "Creating Spell Slots",
+										"colLabels": [
+											"Spell Slot Level",
+											"Sorcery Point Cost"
+										],
+										"rows": [
+											[
+												"1st",
+												"2"
+											],
+											[
+												"2nd",
+												"3"
+											],
+											[
+												"3rd",
+												"5"
+											],
+											[
+												"4th",
+												"6"
+											],
+											[
+												"5th",
+												"7"
+											]
+										]
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Converting a Spell Slot to Sorcery Points",
+								"entries": [
+									{
+										"type": "text",
+										"content": "As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -20157,8 +20347,18 @@
 						"content": "You've gained the ability to imbue mundane items with certain magical infusions, turning those objects into magic items."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refClassFeature\",\"classFeature\":\"Infusions Known|Artificer|TCE|2\"}"
+						"type": "section",
+						"name": "Infusions Known",
+						"entries": [
+							{
+								"type": "text",
+								"content": "When you gain this feature, pick four artificer infusions to learn, choosing from the \"<i>Artificer Infusions</i>\" section at the end of the class's description. You learn additional infusions of your choice when you reach certain levels in this class, as shown in the Infusions Known column of the Artificer table."
+							},
+							{
+								"type": "text",
+								"content": "Whenever you gain a level in this class, you can replace one of the artificer infusions you learned with a new one."
+							}
+						]
 					},
 					{
 						"type": "text",
