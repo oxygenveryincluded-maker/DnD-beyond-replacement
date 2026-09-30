@@ -26,7 +26,6 @@ body {
 	min-height: 100dvh;
 	font-family: var(--font-sans);
 	-webkit-tap-highlight-color: transparent;
-	-webkit-touch-callout: none;
 	overscroll-behavior: none;
 }
 
