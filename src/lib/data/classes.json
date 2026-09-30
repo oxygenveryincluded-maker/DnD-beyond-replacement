@@ -2036,14 +2036,6 @@
 							{
 								"type": "text",
 								"content": "Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one."
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"cha\"]}"
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"cha\"]}"
 							}
 						]
 					},
@@ -3300,8 +3292,18 @@
 						"content": "For example, if you make a Strength (<i>Athletics</i>) check and lack <i>Athletics</i> proficiency, you can add half your <i>Proficiency</i> to the check."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"inset\",\"name\":\"A Bard's Repertoire\",\"entries\":[\"Does your Bard beat a <b>drum</b> while chanting the deeds of ancient heroes? Strum a <b>lute</b> while crooning romantic tunes? Perform arias of stirring power? Recite dramatic monologues from classic tragedies? Use the rhythm of a folk dance to coordinate the movement of allies in battle? Compose naughty limericks?\",\"When you play a Bard, consider the style of artistic performance you favor, the moods you might invoke, and the themes that inspire your own creations. Are your poems inspired by moments of natural beauty, or are they brooding reflections on loss? Do you prefer lofty hymns or rowdy tavern songs? Are you drawn to laments for the fallen or celebrations of joy? Do you dance merry jigs or perform elaborate interpretive choreography? Do you focus on one style of performance or strive to master them all?\"]}"
+						"type": "section",
+						"name": "A Bard's Repertoire",
+						"entries": [
+							{
+								"type": "text",
+								"content": "Does your Bard beat a <b>drum</b> while chanting the deeds of ancient heroes? Strum a <b>lute</b> while crooning romantic tunes? Perform arias of stirring power? Recite dramatic monologues from classic tragedies? Use the rhythm of a folk dance to coordinate the movement of allies in battle? Compose naughty limericks?"
+							},
+							{
+								"type": "text",
+								"content": "When you play a Bard, consider the style of artistic performance you favor, the moods you might invoke, and the themes that inspire your own creations. Are your poems inspired by moments of natural beauty, or are they brooding reflections on loss? Do you prefer lofty hymns or rowdy tavern songs? Are you drawn to laments for the fallen or celebrations of joy? Do you dance merry jigs or perform elaborate interpretive choreography? Do you focus on one style of performance or strive to master them all?"
+							}
+						]
 					}
 				],
 				"source": "XPHB"
@@ -4005,14 +4007,6 @@
 							{
 								"type": "text",
 								"content": "Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one."
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"wis\"]}"
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"wis\"]}"
 							}
 						]
 					},
@@ -4944,8 +4938,30 @@
 						"name": "",
 						"entries": [
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Protector\",\"entries\":[\"Trained for battle, you gain proficiency with <i>Martial weapons</i> and training with <i>Heavy armor</i>.\"]},{\"type\":\"section\",\"name\":\"Thaumaturge\",\"entries\":[\"You know one extra cantrip from the <i>Cleric spell list</i>. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (<i>Arcana</i> or <i>Religion</i>) checks. The bonus equals your Wisdom modifier (minimum of +1).\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Protector",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Trained for battle, you gain proficiency with <i>Martial weapons</i> and training with <i>Heavy armor</i>."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Thaumaturge",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You know one extra cantrip from the <i>Cleric spell list</i>. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (<i>Arcana</i> or <i>Religion</i>) checks. The bonus equals your Wisdom modifier (minimum of +1)."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -5763,14 +5779,6 @@
 							{
 								"type": "text",
 								"content": "Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one."
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"wis\"]}"
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"wis\"]}"
 							}
 						]
 					},
@@ -6647,8 +6655,30 @@
 						"name": "",
 						"entries": [
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Magician\",\"entries\":[\"You know one extra cantrip from the <i>Druid spell list</i>. In addition, your mystical connection to nature gives you a bonus to your Intelligence (<i>Arcana</i> or <i>Nature</i>) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).\"]},{\"type\":\"section\",\"name\":\"Warden\",\"entries\":[\"Trained for battle, you gain proficiency with <i>Martial weapons</i> and training with <i>Medium armor</i>.\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Magician",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You know one extra cantrip from the <i>Druid spell list</i>. In addition, your mystical connection to nature gives you a bonus to your Intelligence (<i>Arcana</i> or <i>Nature</i>) checks. The bonus equals your Wisdom modifier (minimum bonus of +1)."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Warden",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Trained for battle, you gain proficiency with <i>Martial weapons</i> and training with <i>Medium armor</i>."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -6928,8 +6958,30 @@
 						"name": "",
 						"entries": [
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Potent Spellcasting\",\"entries\":[\"Add your Wisdom modifier to the damage you deal with any Druid cantrip.\"]},{\"type\":\"section\",\"name\":\"Primal Strike\",\"entries\":[\"Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra <span class=\"text-red-400 font-semibold\">1d8</span> Cold, Fire, Lightning, or Thunder damage (choose when you hit).\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Potent Spellcasting",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Add your Wisdom modifier to the damage you deal with any Druid cantrip."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Primal Strike",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra <span class=\"text-red-400 font-semibold\">1d8</span> Cold, Fire, Lightning, or Thunder damage (choose when you hit)."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -7179,8 +7231,132 @@
 						"content": "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Archery\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Defense\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Dueling\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Great Weapon Fighting\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Protection\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Two-Weapon Fighting\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Blind Fighting|TCE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Interception|TCE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Superior Technique|TCE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Thrown Weapon Fighting|TCE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Unarmed Fighting|TCE\"}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Archery",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain a +2 bonus to attack rolls you make with ranged weapons."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Defense",
+								"entries": [
+									{
+										"type": "text",
+										"content": "While you are wearing armor, you gain a +1 bonus to AC."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Dueling",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Great Weapon Fighting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Protection",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Two-Weapon Fighting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Blind Fighting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You have <i>blindsight</i> with a range of 10 feet. Within that range, you can effectively see anything that isn't behind Cover, even if you're <i class=\"text-dnd-gold\">blinded</i> or in darkness. Moreover, you can see an <i class=\"text-dnd-gold\">invisible</i> creature within that range, unless the creature successfully hides from you."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Interception",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by <span class=\"text-green-400 font-mono\">1d10</span> + your proficiency bonus (to a minimum of 0 damage). You must be wielding a <b>shield</b> or a <i>simple or martial weapon</i> to use this reaction."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Superior Technique",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You learn one <i>maneuver</i> of your choice from among those available to the <b>fighter</b> archetype. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice)."
+									},
+									{
+										"type": "text",
+										"content": "You gain one superiority die, which is a <span class=\"text-green-400 font-mono\">d6</span> (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Thrown Weapon Fighting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can draw a weapon that has the thrown property as part of the attack you make with the weapon."
+									},
+									{
+										"type": "text",
+										"content": "In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Unarmed Fighting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Your unarmed strikes can deal bludgeoning damage equal to <span class=\"text-red-400 font-semibold\">1d6</span> + your Strength modifier on a hit. If you aren't wielding any weapons or a <b>shield</b> when you make the attack roll, the <span class=\"text-red-400 font-semibold\">d6</span> becomes a <span class=\"text-red-400 font-semibold\">d8</span>."
+									},
+									{
+										"type": "text",
+										"content": "At the start of each of your turns, you can deal <span class=\"text-red-400 font-semibold\">1d4</span> bludgeoning damage to one creature <i class=\"text-dnd-gold\">grappled</i> by you."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -8640,10 +8816,6 @@
 						"content": "Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:"
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"abilityDc\",\"name\":\"Ki\",\"attributes\":[\"wis\"]}"
-					},
-					{
 						"type": "section",
 						"name": "",
 						"entries": [
@@ -9639,7 +9811,7 @@
 								"entries": [
 									{
 										"type": "text",
-										"content": "You can expend 1 Focus Point to make two Unarmed Strikes as a <i>Bonus Action</i>."
+										"content": "Immediately after you take the <b>Attack</b> action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action."
 									}
 								]
 							},
@@ -9649,7 +9821,7 @@
 								"entries": [
 									{
 										"type": "text",
-										"content": "You can take the <b>Disengage</b> action as a <i>Bonus Action</i>. Alternatively, you can expend 1 Focus Point to take both the <b>Disengage</b> and the <b>Dodge</b> actions as a <i>Bonus Action</i>."
+										"content": "You can spend 1 ki point to take the <b>Dodge</b> action as a bonus action on your turn."
 									}
 								]
 							},
@@ -9659,7 +9831,7 @@
 								"entries": [
 									{
 										"type": "text",
-										"content": "You can take the <b>Dash</b> action as a <i>Bonus Action</i>. Alternatively, you can expend 1 Focus Point to take both the <b>Disengage</b> and <b>Dash</b> actions as a <i>Bonus Action</i>, and your jump distance is doubled for the turn."
+										"content": "You can spend 1 ki point to take the <b>Disengage</b> or <b>Dash</b> action as a bonus action on your turn, and your jump distance is doubled for the turn."
 									}
 								]
 							}
@@ -10280,8 +10452,80 @@
 						"content": "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Defense\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Dueling\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Great Weapon Fighting\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Protection\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Blessed Warrior|TCE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Blind Fighting|TCE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Interception|TCE\"}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Defense",
+								"entries": [
+									{
+										"type": "text",
+										"content": "While you are wearing armor, you gain a +1 bonus to AC."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Dueling",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Great Weapon Fighting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Protection",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Blessed Warrior",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You learn two cantrips of your choice from the <i>cleric spell list</i>. They count as paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Blind Fighting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You have <i>blindsight</i> with a range of 10 feet. Within that range, you can effectively see anything that isn't behind Cover, even if you're <i class=\"text-dnd-gold\">blinded</i> or in darkness. Moreover, you can see an <i class=\"text-dnd-gold\">invisible</i> creature within that range, unless the creature successfully hides from you."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Interception",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by <span class=\"text-green-400 font-mono\">1d10</span> + your proficiency bonus (to a minimum of 0 damage). You must be wielding a <b>shield</b> or a <i>simple or martial weapon</i> to use this reaction."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -10323,14 +10567,6 @@
 							{
 								"type": "text",
 								"content": "Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one."
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"cha\"]}"
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"cha\"]}"
 							}
 						]
 					},
@@ -11098,7 +11334,7 @@
 						"entries": [
 							{
 								"type": "text",
-								"content": "{\"type\":\"refFeat\",\"feat\":\"Blessed Warrior|XPHB\"}"
+								"content": "See the Blessed Warrior feat."
 							}
 						]
 					}
@@ -11806,8 +12042,84 @@
 						"content": "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Archery\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Defense\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Dueling\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Two-Weapon Fighting\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Blind Fighting|TCE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Druidic Warrior|TCE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Thrown Weapon Fighting|TCE\"}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Archery",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain a +2 bonus to attack rolls you make with ranged weapons."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Defense",
+								"entries": [
+									{
+										"type": "text",
+										"content": "While you are wearing armor, you gain a +1 bonus to AC."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Dueling",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Two-Weapon Fighting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Blind Fighting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You have <i>blindsight</i> with a range of 10 feet. Within that range, you can effectively see anything that isn't behind Cover, even if you're <i class=\"text-dnd-gold\">blinded</i> or in darkness. Moreover, you can see an <i class=\"text-dnd-gold\">invisible</i> creature within that range, unless the creature successfully hides from you."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Druidic Warrior",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You learn two cantrips of your choice from the <i>druid spell list</i>. They count as ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the druid spell list."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Thrown Weapon Fighting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can draw a weapon that has the thrown property as part of the attack you make with the weapon."
+									},
+									{
+										"type": "text",
+										"content": "In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -11859,14 +12171,6 @@
 							{
 								"type": "text",
 								"content": "Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one."
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"wis\"]}"
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"wis\"]}"
 							}
 						]
 					}
@@ -12831,7 +13135,7 @@
 						"entries": [
 							{
 								"type": "text",
-								"content": "{\"type\":\"refFeat\",\"feat\":\"Druidic Warrior|XPHB\"}"
+								"content": "See the Druidic Warrior feat."
 							}
 						]
 					}
@@ -15290,14 +15594,6 @@
 							{
 								"type": "text",
 								"content": "Charisma is your spellcasting ability for your sorcerer spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when making an attack roll with one."
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"cha\"]}"
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"cha\"]}"
 							}
 						]
 					},
@@ -15414,8 +15710,102 @@
 						"content": "You can use only one Metamagic option on a spell when you cast it, unless otherwise noted."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":2,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Careful Spell\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Distant Spell\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Empowered Spell\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Extended Spell\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Heightened Spell\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Quickened Spell\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Subtle Spell\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Twinned Spell\",\"preserve\":{\"consumes\":true}}]}"
+						"type": "section",
+						"name": "Choose 2 of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Careful Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Distant Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell."
+									},
+									{
+										"type": "text",
+										"content": "When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Empowered Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls."
+									},
+									{
+										"type": "text",
+										"content": "You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Extended Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Heightened Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Quickened Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Subtle Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Twinned Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip)."
+									},
+									{
+										"type": "text",
+										"content": "To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, <a href=\"/spells?search=magic missile\" class=\"text-dnd-gold hover:underline\">magic missile</a> and <a href=\"/spells?search=scorching ray\" class=\"text-dnd-gold hover:underline\">scorching ray</a> aren't eligible, but <a href=\"/spells?search=ray of frost\" class=\"text-dnd-gold hover:underline\">ray of frost</a> and <a href=\"/spells?search=chromatic orb\" class=\"text-dnd-gold hover:underline\">chromatic orb</a> are."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -16468,8 +16858,126 @@
 						"content": "The following options are available to your Metamagic feature. The options are presented in alphabetical order."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":2,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Careful Spell|XPHB\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Distant Spell|XPHB\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Empowered Spell|XPHB\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Extended Spell|XPHB\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Heightened Spell|XPHB\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Quickened Spell|XPHB\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Seeking Spell|XPHB\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Subtle Spell|XPHB\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Transmuted Spell|XPHB\",\"preserve\":{\"consumes\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Twinned Spell|XPHB\",\"preserve\":{\"consumes\":true}}]}"
+						"type": "section",
+						"name": "Choose 2 of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Careful Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Distant Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell."
+									},
+									{
+										"type": "text",
+										"content": "When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Empowered Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls."
+									},
+									{
+										"type": "text",
+										"content": "You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Extended Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Heightened Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Quickened Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Seeking Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "If you make an attack roll for a spell and miss, you can spend 2 sorcery points to reroll the <span class=\"text-green-400 font-mono\">d20</span>, and you must use the new roll."
+									},
+									{
+										"type": "text",
+										"content": "You can use Seeking Spell even if you have already used a different Metamagic option during the casting of the spell."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Subtle Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Transmuted Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, thunder."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Twinned Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip)."
+									},
+									{
+										"type": "text",
+										"content": "To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, <a href=\"/spells?search=magic missile\" class=\"text-dnd-gold hover:underline\">magic missile</a> and <a href=\"/spells?search=scorching ray\" class=\"text-dnd-gold hover:underline\">scorching ray</a> aren't eligible, but <a href=\"/spells?search=ray of frost\" class=\"text-dnd-gold hover:underline\">ray of frost</a> and <a href=\"/spells?search=chromatic orb\" class=\"text-dnd-gold hover:underline\">chromatic orb</a> are."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "XPHB"
@@ -17105,14 +17613,6 @@
 							{
 								"type": "text",
 								"content": "Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one."
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"cha\"]}"
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"cha\"]}"
 							}
 						]
 					},
@@ -17167,8 +17667,70 @@
 						"content": "At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Pact of the Chain\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Pact of the Blade\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Pact of the Tome\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Pact of the Talisman|TCE\"}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Pact of the Chain",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You learn the <a href=\"/spells?search=find familiar\" class=\"text-dnd-gold hover:underline\">find familiar</a> spell and can cast it as a ritual. The spell doesn't count against your number of spells known."
+									},
+									{
+										"type": "text",
+										"content": "When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: <b>imp</b>, <b>pseudodragon</b>, <b>quasit</b>, or <b>sprite</b>."
+									},
+									{
+										"type": "text",
+										"content": "Additionally, when you take the <b>Attack</b> action, you can forgo one of your own attacks to allow your familiar to use its reaction to make one attack of its own."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Pact of the Blade",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+									},
+									{
+										"type": "text",
+										"content": "Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die."
+									},
+									{
+										"type": "text",
+										"content": "You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Pact of the Tome",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three <i>cantrips</i> from any class's spell list. The cantrips do not need to be from the same spell list. While the book is on your person, you can cast those cantrips at will. They don't count against your number of cantrips known. Any cantrip you cast with this feature is considered a warlock cantrip for you. If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Pact of the Talisman",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a <span class=\"text-green-400 font-mono\">d4</span> to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest."
+									},
+									{
+										"type": "text",
+										"content": "If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -17913,8 +18475,344 @@
 						"content": "Eldritch Invocation options appear in alphabetical order."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Agonizing Blast|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Armor of Shadows|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Ascendant Step|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Devil's Sight|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Devouring Blade|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Eldritch Mind|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Eldritch Smite|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Eldritch Spear|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Fiendish Vigor|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Gaze of Two Minds|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Gift of the Depths|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Gift of the Protectors|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Investment of the Chain Master|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Lessons of the First Ones|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Lifedrinker|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Mask of Many Faces|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Master of Myriad Forms|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Misty Visions|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"One with Shadows|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Otherworldly Leap|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Pact of the Blade|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Pact of the Chain|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Pact of the Tome|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Repelling Blast|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Thirsting Blade|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Visions of Distant Realms|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Whispers of the Grave|XPHB\",\"preserve\":{\"prerequisite\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Witch Sight|XPHB\",\"preserve\":{\"prerequisite\":true}}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Agonizing Blast",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast <a href=\"/spells?search=eldritch blast\" class=\"text-dnd-gold hover:underline\">eldritch blast</a>, add your Charisma modifier to the damage it deals on a hit."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Armor of Shadows",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can cast <a href=\"/spells?search=mage armor\" class=\"text-dnd-gold hover:underline\">mage armor</a> on yourself at will, without expending a spell slot or material components."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Ascendant Step",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can cast <a href=\"/spells?search=levitate\" class=\"text-dnd-gold hover:underline\">levitate</a> on yourself at will, without expending a spell slot or material components."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Devil's Sight",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Devouring Blade",
+								"entries": [
+									{
+										"type": "text",
+										"content": "The Extra Attack of your Thirsting Blade invocation confers two extra attacks rather than one."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Eldritch Mind",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You have advantage on Constitution saving throws that you make to maintain your <i>concentration</i> on a spell."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Eldritch Smite",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Once per turn when you hit a creature with your pact weapon, you can expend a warlock spell slot to deal an extra <span class=\"text-red-400 font-semibold\">1d8</span> force damage to the target, plus another <span class=\"text-red-400 font-semibold\">1d8</span> per level of the spell slot, and you can knock the target <i class=\"text-dnd-gold\">prone</i> if it is Huge or smaller."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Eldritch Spear",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast <a href=\"/spells?search=eldritch blast\" class=\"text-dnd-gold hover:underline\">eldritch blast</a>, its range is 300 feet."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Fiendish Vigor",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can cast <a href=\"/spells?search=false life\" class=\"text-dnd-gold hover:underline\">false life</a> on yourself at will as a 1st-level spell, without expending a spell slot or material components."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Gaze of Two Minds",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are <i class=\"text-dnd-gold\">blinded</i> and <i class=\"text-dnd-gold\">deafened</i> to your own surroundings."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Gift of the Depths",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can breathe underwater, and you gain a swimming speed equal to your walking speed."
+									},
+									{
+										"type": "text",
+										"content": "You can also cast <a href=\"/spells?search=water breathing\" class=\"text-dnd-gold hover:underline\">water breathing</a> once without expending a spell slot. You regain the ability to do so when you finish a long rest."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Gift of the Protectors",
+								"entries": [
+									{
+										"type": "text",
+										"content": "A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can contain a number of names equal to your proficiency bonus."
+									},
+									{
+										"type": "text",
+										"content": "When any creature whose name is on the page is reduced to 0 hit points but not killed outright, the creature magically drops to 1 hit point instead. Once this magic is triggered, no creature can benefit from it until you finish a long rest."
+									},
+									{
+										"type": "text",
+										"content": "As an action, you can magically erase a name on the page by touching it."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Investment of the Chain Master",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast <a href=\"/spells?search=find familiar\" class=\"text-dnd-gold hover:underline\">find familiar</a>, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits:"
+									},
+									{
+										"type": "list",
+										"items": [
+											"The familiar gains either a flying speed or a swimming speed (your choice) of 40 feet.",
+											"As a bonus action, you can command the familiar to take the <b>Attack</b> action.",
+											"The familiar's weapon attacks are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks.",
+											"If the familiar forces a creature to make a saving throw, it uses your spell save DC.",
+											"When the familiar takes damage, you can use your reaction to grant it resistance against that damage."
+										]
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Lessons of the First Ones",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You have received knowledge from an elder entity of the multiverse, allowing you to gain one <i>Origin feat</i> of your choice."
+									},
+									{
+										"type": "section",
+										"name": "",
+										"entries": [
+											{
+												"type": "section",
+												"name": "Repeatable",
+												"entries": [
+													{
+														"type": "text",
+														"content": "You can gain this invocation more than once. Each time you do so, choose a different Origin feat."
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Lifedrinker",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum of 1)."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Mask of Many Faces",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can cast <a href=\"/spells?search=disguise self\" class=\"text-dnd-gold hover:underline\">disguise self</a> at will, without expending a spell slot."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Master of Myriad Forms",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can cast <a href=\"/spells?search=alter self\" class=\"text-dnd-gold hover:underline\">alter self</a> at will, without expending a spell slot."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Misty Visions",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can cast <a href=\"/spells?search=silent image\" class=\"text-dnd-gold hover:underline\">silent image</a> at will, without expending a spell slot or material components."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "One with Shadows",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you are in an area of dim light or darkness, you can use your action to become <i class=\"text-dnd-gold\">invisible</i> until you move or take an action or a reaction."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Otherworldly Leap",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can cast <a href=\"/spells?search=jump\" class=\"text-dnd-gold hover:underline\">jump</a> on yourself at will, without expending a spell slot or material components."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Pact of the Blade",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+									},
+									{
+										"type": "text",
+										"content": "Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die."
+									},
+									{
+										"type": "text",
+										"content": "You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Pact of the Chain",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You learn the <a href=\"/spells?search=find familiar\" class=\"text-dnd-gold hover:underline\">find familiar</a> spell and can cast it as a ritual. The spell doesn't count against your number of spells known."
+									},
+									{
+										"type": "text",
+										"content": "When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: <b>imp</b>, <b>pseudodragon</b>, <b>quasit</b>, or <b>sprite</b>."
+									},
+									{
+										"type": "text",
+										"content": "Additionally, when you take the <b>Attack</b> action, you can forgo one of your own attacks to allow your familiar to use its reaction to make one attack of its own."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Pact of the Tome",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three <i>cantrips</i> from any class's spell list. The cantrips do not need to be from the same spell list. While the book is on your person, you can cast those cantrips at will. They don't count against your number of cantrips known. Any cantrip you cast with this feature is considered a warlock cantrip for you. If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Repelling Blast",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you hit a creature with <a href=\"/spells?search=eldritch blast\" class=\"text-dnd-gold hover:underline\">eldritch blast</a>, you can push the creature up to 10 feet away from you in a straight line."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Thirsting Blade",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can attack with your pact weapon twice, instead of once, whenever you take the <b>Attack</b> action on your turn."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Visions of Distant Realms",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can cast <a href=\"/spells?search=arcane eye\" class=\"text-dnd-gold hover:underline\">arcane eye</a> at will, without expending a spell slot."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Whispers of the Grave",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can cast <a href=\"/spells?search=speak with dead\" class=\"text-dnd-gold hover:underline\">speak with dead</a> at will, without expending a spell slot."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Witch Sight",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "XPHB"
@@ -18681,14 +19579,6 @@
 							{
 								"type": "text",
 								"content": "Intelligence is your spellcasting ability for your wizard spells, since you learn your wizard spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one."
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"int\"]}"
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"int\"]}"
 							}
 						]
 					},
@@ -18723,8 +19613,88 @@
 						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"inset\",\"name\":\"Your Spellbook\",\"entries\":[\"The spells that you add to your spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other spells during your adventures. You could discover a spell recorded on a scroll in an evil wizard's chest, for example, or in a dusty tome in an ancient library.\",\"A spellbook doesn't contain cantrips.\",{\"type\":\"entries\",\"entries\":[{\"type\":\"entries\",\"name\":\"Copying a Spell into the Book\",\"entries\":[\"When you find a wizard spell of 1st level or higher, you can add it to your spellbook if it is of a spell level you can prepare and if you can spare the time to decipher and copy it.\",\"Copying a spell into your spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the wizard who wrote it. You must practice the spell until you understand the sounds or gestures required, then transcribe it into your spellbook using your own notation.\",\"For each level of the spell, the process takes 2 hours and costs 50 gp. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it. Once you have spent this time and money, you can prepare the spell just like your other spells.\",{\"type\":\"entries\",\"name\":\"Copying from a Spell Scroll\",\"source\":\"DMG\",\"page\":139,\"entries\":[\"A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When you copy a spell from a spell scroll, you must succeed on an Intelligence (<i>Arcana</i>) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.\"]}]}]},{\"type\":\"entries\",\"entries\":[{\"type\":\"entries\",\"name\":\"Replacing the Book\",\"entries\":[\"You can copy a spell from your own spellbook into another book—for example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own notation and already know how to cast the spell. You need spend only 1 hour and 10 gp for each level of the copied spell.\",\"If you lose your spellbook, you can use the same procedure to transcribe the spells that you have prepared into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place.\"]}]},{\"type\":\"entries\",\"entries\":[{\"type\":\"entries\",\"name\":\"The Book's Appearance\",\"entries\":[\"Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap.\"]}]}]}"
+						"type": "section",
+						"name": "Your Spellbook",
+						"entries": [
+							{
+								"type": "text",
+								"content": "The spells that you add to your spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other spells during your adventures. You could discover a spell recorded on a scroll in an evil wizard's chest, for example, or in a dusty tome in an ancient library."
+							},
+							{
+								"type": "text",
+								"content": "A spellbook doesn't contain cantrips."
+							},
+							{
+								"type": "section",
+								"name": "",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Copying a Spell into the Book",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you find a wizard spell of 1st level or higher, you can add it to your spellbook if it is of a spell level you can prepare and if you can spare the time to decipher and copy it."
+											},
+											{
+												"type": "text",
+												"content": "Copying a spell into your spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the wizard who wrote it. You must practice the spell until you understand the sounds or gestures required, then transcribe it into your spellbook using your own notation."
+											},
+											{
+												"type": "text",
+												"content": "For each level of the spell, the process takes 2 hours and costs 50 gp. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it. Once you have spent this time and money, you can prepare the spell just like your other spells."
+											},
+											{
+												"type": "section",
+												"name": "Copying from a Spell Scroll",
+												"entries": [
+													{
+														"type": "text",
+														"content": "A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When you copy a spell from a spell scroll, you must succeed on an Intelligence (<i>Arcana</i>) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Replacing the Book",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can copy a spell from your own spellbook into another book—for example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own notation and already know how to cast the spell. You need spend only 1 hour and 10 gp for each level of the copied spell."
+											},
+											{
+												"type": "text",
+												"content": "If you lose your spellbook, you can use the same procedure to transcribe the spells that you have prepared into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place."
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "",
+								"entries": [
+									{
+										"type": "section",
+										"name": "The Book's Appearance",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap."
+											}
+										]
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -19516,8 +20486,38 @@
 								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"inset\",\"name\":\"Expanding and Replacing a Spellbook\",\"entries\":[\"The spells you add to your spellbook as you gain levels reflect your ongoing magical research, but you might find other spells during your adventures that you can add to the book. You could discover a Wizard spell on a <b>Spell Scroll</b>, for example, and then copy it into your spellbook.\",{\"type\":\"entries\",\"name\":\"Copying a Spell into the Book\",\"entries\":[\"When you find a level 1+ Wizard spell, you can copy it into your spellbook if it's of a level you can prepare and if you have time to copy it. For each level of the spell, the transcription takes 2 hours and costs 50 GP. Afterward you can prepare the spell like the other spells in your spellbook.\"]},{\"type\":\"entries\",\"name\":\"Copying the Book\",\"entries\":[\"You can copy a spell from your spellbook into another book. This is like copying a new spell into your spellbook but faster, since you already know how to cast the spell. You need spend only 1 hour and 10 GP for each level of the copied spell.\",\"If you lose your spellbook, you can use the same procedure to transcribe the Wizard spells that you have prepared into a new spellbook. Filling out the remainder of the new book requires you to find new spells to do so. For this reason, many wizards keep a backup spellbook.\"]}]}"
+								"type": "section",
+								"name": "Expanding and Replacing a Spellbook",
+								"entries": [
+									{
+										"type": "text",
+										"content": "The spells you add to your spellbook as you gain levels reflect your ongoing magical research, but you might find other spells during your adventures that you can add to the book. You could discover a Wizard spell on a <b>Spell Scroll</b>, for example, and then copy it into your spellbook."
+									},
+									{
+										"type": "section",
+										"name": "Copying a Spell into the Book",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you find a level 1+ Wizard spell, you can copy it into your spellbook if it's of a level you can prepare and if you have time to copy it. For each level of the spell, the transcription takes 2 hours and costs 50 GP. Afterward you can prepare the spell like the other spells in your spellbook."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Copying the Book",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can copy a spell from your spellbook into another book. This is like copying a new spell into your spellbook but faster, since you already know how to cast the spell. You need spend only 1 hour and 10 GP for each level of the copied spell."
+											},
+											{
+												"type": "text",
+												"content": "If you lose your spellbook, you can use the same procedure to transcribe the Wizard spells that you have prepared into a new spellbook. Filling out the remainder of the new book requires you to find new spells to do so. For this reason, many wizards keep a backup spellbook."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -20262,8 +21262,22 @@
 								"content": "After you gain the Infuse Item feature at 2nd level, you can also use any item bearing one of your infusions as a spellcasting focus."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"inset\",\"name\":\"The Magic of Artifice\",\"entries\":[\"As an artificer, you use tools when you cast your spells. When describing your spellcasting, think about how you're using a tool to perform the spell effect. If you cast <a href=\"/spells?search=cure wounds\" class=\"text-dnd-gold hover:underline\">cure wounds</a> using <b>alchemist's supplies</b>, you could be quickly producing a salve. If you cast it using <b>tinker's tools</b>, you might have a miniature mechanical spider that binds wounds. When you cast <a href=\"/spells?search=poison spray\" class=\"text-dnd-gold hover:underline\">poison spray</a>, you could fling foul chemicals or use a wand that spits venom. The effect of the spell is the same as for a spellcaster of any other class, but your method of spellcasting is special.\",\"The same principle applies when you prepare your spells. As an artificer, you don't study a spellbook or pray to prepare your spells. Instead, you work with your tools and create the specialized items you'll use to produce your effects. If you replace <a href=\"/spells?search=cure wounds\" class=\"text-dnd-gold hover:underline\">cure wounds</a> with <a href=\"/spells?search=heat metal\" class=\"text-dnd-gold hover:underline\">heat metal</a>, you might be altering the device you use to heal—perhaps modifying a tool so that it channels heat instead of healing energy.\",\"Such details don't limit you in any way or provide you with any benefit beyond the spell's effects. You don't have to justify how you're using tools to cast a spell. But describing your spellcasting creatively is a fun way to distinguish yourself from other spellcasters.\"]}"
+								"type": "section",
+								"name": "The Magic of Artifice",
+								"entries": [
+									{
+										"type": "text",
+										"content": "As an artificer, you use tools when you cast your spells. When describing your spellcasting, think about how you're using a tool to perform the spell effect. If you cast <a href=\"/spells?search=cure wounds\" class=\"text-dnd-gold hover:underline\">cure wounds</a> using <b>alchemist's supplies</b>, you could be quickly producing a salve. If you cast it using <b>tinker's tools</b>, you might have a miniature mechanical spider that binds wounds. When you cast <a href=\"/spells?search=poison spray\" class=\"text-dnd-gold hover:underline\">poison spray</a>, you could fling foul chemicals or use a wand that spits venom. The effect of the spell is the same as for a spellcaster of any other class, but your method of spellcasting is special."
+									},
+									{
+										"type": "text",
+										"content": "The same principle applies when you prepare your spells. As an artificer, you don't study a spellbook or pray to prepare your spells. Instead, you work with your tools and create the specialized items you'll use to produce your effects. If you replace <a href=\"/spells?search=cure wounds\" class=\"text-dnd-gold hover:underline\">cure wounds</a> with <a href=\"/spells?search=heat metal\" class=\"text-dnd-gold hover:underline\">heat metal</a>, you might be altering the device you use to heal—perhaps modifying a tool so that it channels heat instead of healing energy."
+									},
+									{
+										"type": "text",
+										"content": "Such details don't limit you in any way or provide you with any benefit beyond the spell's effects. You don't have to justify how you're using tools to cast a spell. But describing your spellcasting creatively is a fun way to distinguish yourself from other spellcasters."
+									}
+								]
 							}
 						]
 					},
@@ -20310,14 +21324,6 @@
 							{
 								"type": "text",
 								"content": "Intelligence is your spellcasting ability for your artificer spells; your understanding of the theory behind magic allows you to wield these spells with superior skill. You use your Intelligence whenever an artificer spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for an artificer spell you cast and when making an attack roll with one."
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"int\"]}"
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"int\"]}"
 							}
 						]
 					},
@@ -20361,8 +21367,26 @@
 						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"inset\",\"name\":\"Artificer Infusions\",\"entries\":[\"Artificers have invented numerous magical infusions, extraordinary processes that rapidly create magic items. To many, artificers seem like wonderworkers, accomplishing in hours what others need weeks to complete.\",\"The description of each of the following infusions details the type of item that can receive it, along with whether the resulting magic item requires attunement.\",\"Some infusions specify a minimum artificer level. You can't learn such an infusion until you are at least that level.\",\"Unless an infusion's description says otherwise, you can't learn an infusion more than once.\"]}"
+						"type": "section",
+						"name": "Artificer Infusions",
+						"entries": [
+							{
+								"type": "text",
+								"content": "Artificers have invented numerous magical infusions, extraordinary processes that rapidly create magic items. To many, artificers seem like wonderworkers, accomplishing in hours what others need weeks to complete."
+							},
+							{
+								"type": "text",
+								"content": "The description of each of the following infusions details the type of item that can receive it, along with whether the resulting magic item requires attunement."
+							},
+							{
+								"type": "text",
+								"content": "Some infusions specify a minimum artificer level. You can't learn such an infusion until you are at least that level."
+							},
+							{
+								"type": "text",
+								"content": "Unless an infusion's description says otherwise, you can't learn an infusion more than once."
+							}
+						]
 					},
 					{
 						"type": "section",

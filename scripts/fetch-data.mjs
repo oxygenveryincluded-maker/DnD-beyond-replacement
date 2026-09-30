@@ -74,43 +74,84 @@ function strip5eTags(text) {
 		.replace(/\{@[a-z]+ ([^}|]+?)(?:\|[^}]*)?\}/g, '$1');
 }
 
+function processEntry(e) {
+	if (typeof e === 'string') return { type: 'text', content: strip5eTags(e) };
+	if (e.type === 'entries' || e.type === 'section') {
+		return {
+			type: 'section',
+			name: e.name || '',
+			entries: processEntries(e.entries)
+		};
+	}
+	if (e.type === 'list') {
+		return {
+			type: 'list',
+			items: (e.items || []).map(item => {
+				if (typeof item === 'string') return strip5eTags(item);
+				if (item.type === 'item') {
+					return {
+						type: 'item',
+						name: item.name || '',
+						entry: strip5eTags(item.entry || item.entries?.join('\n') || '')
+					};
+				}
+				return strip5eTags(item.name || item.entry || JSON.stringify(item));
+			})
+		};
+	}
+	if (e.type === 'table') {
+		return {
+			type: 'table',
+			caption: e.caption || '',
+			colLabels: e.colLabels || [],
+			rows: (e.rows || []).map(row => row.map(cell => strip5eTags(String(cell))))
+		};
+	}
+	if (e.type === 'options') {
+		const count = typeof e.count === 'number' ? e.count : 1;
+		const title = count > 1 ? `Choose ${count} of the following options:` : 'Choose one of the following options:';
+		return {
+			type: 'section',
+			name: title,
+			entries: processEntries(e.entries)
+		};
+	}
+	if (e.type === 'inset') {
+		return {
+			type: 'section',
+			name: e.name || '',
+			entries: processEntries(e.entries)
+		};
+	}
+	if (e.type === 'quote') {
+		const text = (e.entries || []).map(x => (typeof x === 'string' ? x : x?.name || '')).join(' ');
+		const by = e.by ? ` — ${strip5eTags(String(e.by))}` : '';
+		return { type: 'text', content: strip5eTags(`\u201C${text}\u201D${by}`) };
+	}
+	if (e.type === 'item') {
+		return {
+			type: 'text',
+			content: `<b>${strip5eTags(e.name || '')}</b>. ${strip5eTags(e.entry || '')}`
+		};
+	}
+	if (e.type === 'refFeat') {
+		const feat = String(e.feat || '').split('|')[0].trim() || 'related';
+		return { type: 'text', content: `See the ${strip5eTags(feat)} feat.` };
+	}
+	return { type: 'text', content: strip5eTags(JSON.stringify(e)) };
+}
+
+const SKIP_ENTRY = new Set(['abilityDc', 'abilityAttackMod', 'abilityCheck', 'attack', 'dc', 'savingThrow']);
+
 function processEntries(entries) {
 	if (!entries) return [];
-	return entries.map(e => {
-		if (typeof e === 'string') return { type: 'text', content: strip5eTags(e) };
-		if (e.type === 'entries' || e.type === 'section') {
-			return {
-				type: 'section',
-				name: e.name || '',
-				entries: processEntries(e.entries)
-			};
-		}
-		if (e.type === 'list') {
-			return {
-				type: 'list',
-				items: (e.items || []).map(item => {
-					if (typeof item === 'string') return strip5eTags(item);
-					if (item.type === 'item') {
-						return {
-							type: 'item',
-							name: item.name || '',
-							entry: strip5eTags(item.entry || item.entries?.join('\n') || '')
-						};
-					}
-					return strip5eTags(item.name || item.entry || JSON.stringify(item));
-				})
-			};
-		}
-		if (e.type === 'table') {
-			return {
-				type: 'table',
-				caption: e.caption || '',
-				colLabels: e.colLabels || [],
-				rows: (e.rows || []).map(row => row.map(cell => strip5eTags(String(cell))))
-			};
-		}
-		return { type: 'text', content: strip5eTags(JSON.stringify(e)) };
-	});
+	const out = [];
+	for (const e of entries) {
+		if (e && typeof e === 'object' && SKIP_ENTRY.has(e.type)) continue;
+		const p = processEntry(e);
+		if (p) out.push(p);
+	}
+	return out;
 }
 
 // Resolves 5etools `_copy` inheritance. Variant entries (e.g. "Baldur's Gate
@@ -244,32 +285,45 @@ async function fetchClassData() {
 		classFeatureIndex.get(key).push(f);
 	}
 	const subclassFeatureIndex = new Map();
+	const subclassFeatureByName = new Map();
 	for (const f of allSubclassFeatures) {
 		const key = `${f.name}|${f.className}|${f.subclassShortName || ''}|${f.level}`;
 		if (!subclassFeatureIndex.has(key)) subclassFeatureIndex.set(key, []);
 		subclassFeatureIndex.get(key).push(f);
+		const bk = `${f.name}|${f.className}|${f.level}`;
+		if (!subclassFeatureByName.has(bk)) subclassFeatureByName.set(bk, []);
+		subclassFeatureByName.get(bk).push(f);
+	}
+
+	const optionalFeatureData = await fetchJSON(`${BASE}/optionalfeatures.json`).catch(() => ({ optionalfeature: [] }));
+	const optionalFeatureIndex = new Map();
+	for (const f of optionalFeatureData.optionalfeature || []) {
+		if (!optionalFeatureIndex.has(f.name)) optionalFeatureIndex.set(f.name, f);
 	}
 
 	function lookupRef(ref, kind) {
 		const parts = ref.split('|');
 		const name = parts[0];
 		const className = parts[1];
-		let level;
-		let src;
-		if (/^\d+$/.test(parts[parts.length - 1])) {
-			level = parts[parts.length - 1];
-			src = parts[parts.length - 2];
-		} else {
-			level = parts[parts.length - 2];
-			src = parts[parts.length - 1];
-		}
+		let levelIdx = parts.length - 1;
+		while (levelIdx >= 2 && !/^\d+$/.test(parts[levelIdx])) levelIdx--;
+		const level = parts[levelIdx];
+		if (levelIdx < 2) return undefined;
 		if (kind === 'subclass') {
-			const sub = parts[parts.length - 3];
-			const cands = subclassFeatureIndex.get(`${name}|${className}|${sub}|${level}`) || [];
-			return cands.find(c => !src || c.source === src) || cands[0];
+			const cands = subclassFeatureByName.get(`${name}|${className}|${level}`) || [];
+			if (!cands.length) return undefined;
+			const span = parts.slice(2, levelIdx);
+			const inSpan = cands.filter(c => span.includes(c.subclassShortName || ''));
+			const pool = inSpan.length ? inSpan : cands;
+			const src = parts[levelIdx + 1] || '';
+			const bySrc = pool.filter(c => src && c.source === src);
+			return bySrc[0] || pool[0];
 		}
 		const cands = classFeatureIndex.get(`${name}|${className}|${level}`) || [];
-		return cands.find(c => !src || c.source === src) || cands[0];
+		if (!cands.length) return undefined;
+		const src = parts[levelIdx + 1] || '';
+		const bySrc = cands.filter(c => src && c.source === src);
+		return bySrc[0] || cands[0];
 	}
 
 	function resolveRefNode(node) {
@@ -284,13 +338,35 @@ async function fetchClassData() {
 		}
 		if (node && typeof node === 'object') {
 			if (node.type === 'refSubclassFeature' || node.type === 'refClassFeature') {
-				const target = lookupRef(node.subclassFeature || node.classFeature, node.type === 'refSubclassFeature' ? 'subclass' : 'class');
+				const ref = node.subclassFeature || node.classFeature;
+				const target = lookupRef(ref, node.type === 'refSubclassFeature' ? 'subclass' : 'class');
 				if (target) return {
 					value: {
 						type: 'section',
 						name: target.name,
 						entries: Array.isArray(target.entries) ? target.entries.map(n => resolveRefNode(n).value) : []
 					},
+					changed: true
+				};
+				const featName = String(ref || '').split('|')[0].trim();
+				return {
+					value: { type: 'text', content: `See the ${featName || 'referenced'} feature.` },
+					changed: true
+				};
+			}
+			if (node.type === 'refOptionalfeature') {
+				const name = String(node.optionalfeature || '').split('|')[0].trim();
+				const target = optionalFeatureIndex.get(name);
+				if (target) return {
+					value: {
+						type: 'section',
+						name: target.name,
+						entries: Array.isArray(target.entries) ? target.entries.map(n => resolveRefNode(n).value) : []
+					},
+					changed: true
+				};
+				return {
+					value: { type: 'text', content: `See the ${name || 'related'} option.` },
 					changed: true
 				};
 			}
@@ -313,8 +389,7 @@ async function fetchClassData() {
 				const t = e.trim();
 				if (t.startsWith('{')) {
 					try {
-						const r = resolveRefNode(JSON.parse(t));
-						if (r.changed) return JSON.stringify(r.value);
+						return resolveRefNode(JSON.parse(t)).value;
 					} catch (err) { /* not ref json; leave as plain text */ }
 				}
 				return e;

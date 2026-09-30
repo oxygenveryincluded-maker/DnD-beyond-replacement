@@ -119,8 +119,60 @@
 								"content": "Your totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Bear\",\"entries\":[\"While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment.\"]},{\"type\":\"section\",\"name\":\"Eagle\",\"entries\":[\"While you're raging and aren't wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the <b>Dash</b> action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease.\"]},{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Elk|Barbarian|PHB|Totem Warrior||3|SCAG\"},{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Tiger|Barbarian|PHB|Totem Warrior||3|SCAG\"},{\"type\":\"section\",\"name\":\"Wolf\",\"entries\":[\"While you're raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters.\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Bear",
+										"entries": [
+											{
+												"type": "text",
+												"content": "While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Eagle",
+										"entries": [
+											{
+												"type": "text",
+												"content": "While you're raging and aren't wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the <b>Dash</b> action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Elk",
+										"entries": [
+											{
+												"type": "text",
+												"content": "While you're raging and aren't wearing heavy armor, your walking speed increases by 15 feet. The spirit of the elk makes you extraordinarily swift."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Tiger",
+										"entries": [
+											{
+												"type": "text",
+												"content": "While raging, you can add 10 feet to your long jump distance and 3 feet to your high jump distance. The spirit of the tiger empowers your leaps."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Wolf",
+										"entries": [
+											{
+												"type": "text",
+												"content": "While you're raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -136,8 +188,60 @@
 						"content": "At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Bear\",\"entries\":[\"You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.\"]},{\"type\":\"section\",\"name\":\"Eagle\",\"entries\":[\"You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom (<i>Perception</i>) checks.\"]},{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Elk|Barbarian|PHB|Totem Warrior||6|SCAG\"},{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Tiger|Barbarian|PHB|Totem Warrior||6|SCAG\"},{\"type\":\"section\",\"name\":\"Wolf\",\"entries\":[\"You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Bear",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Eagle",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom (<i>Perception</i>) checks."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Elk",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they're within 60 feet of you and you're not <i class=\"text-dnd-gold\">incapacitated</i>. The elk spirit helps you roam far and fast."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Tiger",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain proficiency in two skills from the following list: <i>Athletics</i>, <i>Acrobatics</i>, <i>Stealth</i>, and <i>Survival</i>. The cat spirit hones your survival instincts."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Wolf",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -162,8 +266,60 @@
 						"content": "At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Bear\",\"entries\":[\"While you're raging, any creature within 5 feet of you that's hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can't see or hear you or if it can't be <i class=\"text-dnd-gold\">frightened</i>.\"]},{\"type\":\"section\",\"name\":\"Eagle\",\"entries\":[\"While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft.\"]},{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Elk|Barbarian|PHB|Totem Warrior||14|SCAG\"},{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Tiger|Barbarian|PHB|Totem Warrior||14|SCAG\"},{\"type\":\"section\",\"name\":\"Wolf\",\"entries\":[\"While you're raging, you can use a bonus action on your turn to knock a Large or smaller creature <i class=\"text-dnd-gold\">prone</i> when you hit it with a melee weapon attack.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Bear",
+								"entries": [
+									{
+										"type": "text",
+										"content": "While you're raging, any creature within 5 feet of you that's hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can't see or hear you or if it can't be <i class=\"text-dnd-gold\">frightened</i>."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Eagle",
+								"entries": [
+									{
+										"type": "text",
+										"content": "While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Elk",
+								"entries": [
+									{
+										"type": "text",
+										"content": "While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked <i class=\"text-dnd-gold\">prone</i> and take bludgeoning damage equal to <span class=\"text-red-400 font-semibold\">1d12</span> + your Strength modifier."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Tiger",
+								"entries": [
+									{
+										"type": "text",
+										"content": "While you're raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Wolf",
+								"entries": [
+									{
+										"type": "text",
+										"content": "While you're raging, you can use a bonus action on your turn to knock a Large or smaller creature <i class=\"text-dnd-gold\">prone</i> when you hit it with a melee weapon attack."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -396,8 +552,40 @@
 								"content": "If your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"section\",\"name\":\"Desert\",\"entries\":[\"When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.\"]},{\"type\":\"section\",\"name\":\"Sea\",\"entries\":[\"When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes <span class=\"text-red-400 font-semibold\">1d6</span> lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to <span class=\"text-red-400 font-semibold\">2d6</span> at 10th level, <span class=\"text-red-400 font-semibold\">3d6</span> at 15th level, and <span class=\"text-red-400 font-semibold\">4d6</span> at 20th level.\"]},{\"type\":\"section\",\"name\":\"Tundra\",\"entries\":[\"When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Desert",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Sea",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes <span class=\"text-red-400 font-semibold\">1d6</span> lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to <span class=\"text-red-400 font-semibold\">2d6</span> at 10th level, <span class=\"text-red-400 font-semibold\">3d6</span> at 15th level, and <span class=\"text-red-400 font-semibold\">4d6</span> at 20th level."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Tundra",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -413,8 +601,40 @@
 						"content": "At 6th level, the storm grants you benefits even when your aura isn't active. The benefits are based on the environment you chose for your Storm Aura."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"section\",\"name\":\"Desert\",\"entries\":[\"You gain resistance to fire damage, and you don't suffer the effects of extreme heat, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch a flammable object that isn't being worn or carried by anyone else and set it on fire.\"]},{\"type\":\"section\",\"name\":\"Sea\",\"entries\":[\"You gain resistance to lightning damage, and you can breathe underwater. You also gain a swimming speed of 30 feet.\"]},{\"type\":\"section\",\"name\":\"Tundra\",\"entries\":[\"You gain resistance to cold damage, and you don't suffer the effects of extreme cold, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Desert",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain resistance to fire damage, and you don't suffer the effects of extreme heat, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch a flammable object that isn't being worn or carried by anyone else and set it on fire."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Sea",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain resistance to lightning damage, and you can breathe underwater. You also gain a swimming speed of 30 feet."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Tundra",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain resistance to cold damage, and you don't suffer the effects of extreme cold, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "XGE"
@@ -439,8 +659,40 @@
 						"content": "At 14th level, the power of the storm you channel grows mightier, lashing out at your foes. The effect is based on the environment you chose for your Storm Aura."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"section\",\"name\":\"Desert\",\"entries\":[\"Immediately after a creature in your aura hits you with an attack, you can use your reaction to force that creature to make a Dexterity saving throw. On a failed save, the creature takes fire damage equal to half your barbarian level.\"]},{\"type\":\"section\",\"name\":\"Sea\",\"entries\":[\"When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked <i class=\"text-dnd-gold\">prone</i>, as if struck by a wave.\"]},{\"type\":\"section\",\"name\":\"Tundra\",\"entries\":[\"Whenever the effect of your Storm Aura is activated, you can choose one creature you can see in the aura. That creature must succeed on a Strength saving throw, or its speed is reduced to 0 until the start of your next turn, as magical frost covers it.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Desert",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Immediately after a creature in your aura hits you with an attack, you can use your reaction to force that creature to make a Dexterity saving throw. On a failed save, the creature takes fire damage equal to half your barbarian level."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Sea",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked <i class=\"text-dnd-gold\">prone</i>, as if struck by a wave."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Tundra",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Whenever the effect of your Storm Aura is activated, you can choose one creature you can see in the aura. That creature must succeed on a Strength saving throw, or its speed is reduced to 0 until the start of your next turn, as magical frost covers it."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "XGE"
@@ -1784,8 +2036,30 @@
 								"content": "At 3rd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if something in the game lets you choose again."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Dueling\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Two-Weapon Fighting\"}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Dueling",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Two-Weapon Fighting",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
+											}
+										]
+									}
+								]
 							}
 						]
 					},
@@ -1802,8 +2076,40 @@
 								"content": "Whenever you take the <b>Attack</b> action on your turn, your walking speed increases by 10 feet until the end of the turn, and if a weapon attack that you make as part of this action hits a creature, you can use one of the following Blade Flourish options of your choice. You can use only one Blade Flourish option per turn."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"section\",\"name\":\"Defensive Flourish\",\"entries\":[\"You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You also add the number rolled to your AC until the start of your next turn.\"]},{\"type\":\"section\",\"name\":\"Slashing Flourish\",\"entries\":[\"You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit and to any other creature of your choice that you can see within 5 feet of you. The damage equals the number you roll on the Bardic Inspiration die.\"]},{\"type\":\"section\",\"name\":\"Mobile Flourish\",\"entries\":[\"You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can also push the target up to 5 feet away from you, plus a number of feet equal to the number you roll on that die. You can then immediately use your reaction to move up to your walking speed to an unoccupied space within 5 feet of the target.\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Defensive Flourish",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You also add the number rolled to your AC until the start of your next turn."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Slashing Flourish",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit and to any other creature of your choice that you can see within 5 feet of you. The damage equals the number you roll on the Bardic Inspiration die."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Mobile Flourish",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can also push the target up to 5 feet away from you, plus a number of feet equal to the number you roll on that die. You can then immediately use your reaction to move up to your walking speed to an unoccupied space within 5 feet of the target."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -2401,8 +2707,14 @@
 						"content": "You now have the ability to nudge the spirits of Tales from Beyond toward certain tales. Whenever you roll on the Spirit Tales table, you can roll the die twice and choose which of the two effects to bestow. If you roll the same number on both dice, you can ignore the number and choose any effect on the table."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"inset\",\"name\":\"Spirit Tales\",\"entries\":[\"Storytellers, like bards of the College of Spirits, often give voice to tales inspired by some greater theme or body of work. When determining what stories you tell, consider what unites them. Do they all feature characters from a specific group, like archetypes from the tarokka deck, figures from constellations, childhood imaginary friends, or characters in a particular storybook? Or are your inspirations more general, incorporating historic champions, mythological heroes, or urban legends? Use the tales you tell to define your niche as a storytelling adventurer.\"]}"
+						"type": "section",
+						"name": "Spirit Tales",
+						"entries": [
+							{
+								"type": "text",
+								"content": "Storytellers, like bards of the College of Spirits, often give voice to tales inspired by some greater theme or body of work. When determining what stories you tell, consider what unites them. Do they all feature characters from a specific group, like archetypes from the tarokka deck, figures from constellations, childhood imaginary friends, or characters in a particular storybook? Or are your inspirations more general, incorporating historic champions, mythological heroes, or urban legends? Use the tales you tell to define your niche as a storytelling adventurer."
+							}
+						]
 					}
 				],
 				"source": "VRGR"
@@ -3016,16 +3328,60 @@
 						"content": "Gods of knowledge vary from masters of arcane magic to patrons of craft and invention. In Faerûn, Clerics of the Knowledge Domain worship deities of learning and ingenuity such as Oghma and Gond, among many others."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Blessings of Knowledge|Cleric|XPHB|Knowledge|FRHoF|3|FRHoF\"}"
+						"type": "section",
+						"name": "Blessings of Knowledge",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You gain proficiency with one type of <b>Artisan's Tools</b> of your choice and in two of the following skills of your choice: <i>Arcana</i>, <i>History</i>, <i>Nature</i>, or <i>Religion</i>. You have <i>Expertise</i> in those two skills."
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Knowledge Domain Spells|Cleric|XPHB|Knowledge|FRHoF|3|FRHoF\"}"
+						"type": "section",
+						"name": "Knowledge Domain Spells",
+						"entries": [
+							{
+								"type": "text",
+								"content": "When you reach a Cleric level specified in the Knowledge Domain Spells table, you thereafter always have the listed spells prepared."
+							},
+							{
+								"type": "table",
+								"caption": "",
+								"colLabels": [
+									"Cleric Level",
+									"Spells"
+								],
+								"rows": [
+									[
+										"3",
+										"<a href=\"/spells?search=Command\" class=\"text-dnd-gold hover:underline\">Command</a>, <a href=\"/spells?search=Comprehend Languages\" class=\"text-dnd-gold hover:underline\">Comprehend Languages</a>*, <a href=\"/spells?search=Detect Magic\" class=\"text-dnd-gold hover:underline\">Detect Magic</a>*, <a href=\"/spells?search=Detect Thoughts\" class=\"text-dnd-gold hover:underline\">Detect Thoughts</a>*, <a href=\"/spells?search=Identify\" class=\"text-dnd-gold hover:underline\">Identify</a>*, <a href=\"/spells?search=Mind Spike\" class=\"text-dnd-gold hover:underline\">Mind Spike</a>*"
+									],
+									[
+										"5",
+										"<a href=\"/spells?search=Dispel Magic\" class=\"text-dnd-gold hover:underline\">Dispel Magic</a>, <a href=\"/spells?search=Nondetection\" class=\"text-dnd-gold hover:underline\">Nondetection</a>, <a href=\"/spells?search=Tongues\" class=\"text-dnd-gold hover:underline\">Tongues</a>*"
+									],
+									[
+										"7",
+										"<a href=\"/spells?search=Arcane Eye\" class=\"text-dnd-gold hover:underline\">Arcane Eye</a>*, <a href=\"/spells?search=Banishment\" class=\"text-dnd-gold hover:underline\">Banishment</a>, <a href=\"/spells?search=Confusion\" class=\"text-dnd-gold hover:underline\">Confusion</a>"
+									],
+									[
+										"9",
+										"<a href=\"/spells?search=Legend Lore\" class=\"text-dnd-gold hover:underline\">Legend Lore</a>*, <a href=\"/spells?search=Scrying\" class=\"text-dnd-gold hover:underline\">Scrying</a>*, <a href=\"/spells?search=Synaptic Static\" class=\"text-dnd-gold hover:underline\">Synaptic Static</a>"
+									]
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Mind Magic|Cleric|XPHB|Knowledge|FRHoF|3|FRHoF\"}"
+						"type": "section",
+						"name": "Mind Magic",
+						"entries": [
+							{
+								"type": "text",
+								"content": "As a <b>Magic</b> action, you can expend one use of your Channel Divinity to manifest your magical knowledge. Choose one spell from the Divination school on the Knowledge Domain Spells table that you have prepared. As part of that action, you cast that spell without expending a spell slot or needing Material components."
+							}
+						]
 					}
 				],
 				"source": "FRHoF"
@@ -4503,16 +4859,100 @@
 						"content": "Gods associated with the Arcana Domain know the secrets and potential of magic intimately. These gods are often connected to knowledge, secrecy, or power."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Arcana Domain Spells|Cleric|XPHB|Arcana|AU|3|AU\"}"
+						"type": "section",
+						"name": "Arcana Domain Spells",
+						"entries": [
+							{
+								"type": "text",
+								"content": "Your connection to this divine domain means you always have certain spells ready. When you reach a Cleric level specified in the Arcana Domain Spells table, you thereafter always have the listed spells prepared."
+							},
+							{
+								"type": "table",
+								"caption": "Arcana Domain Spells",
+								"colLabels": [
+									"Cleric Level",
+									"Prepared Spells"
+								],
+								"rows": [
+									[
+										"3",
+										"<a href=\"/spells?search=Detect Magic\" class=\"text-dnd-gold hover:underline\">Detect Magic</a>, <a href=\"/spells?search=Magic Missile\" class=\"text-dnd-gold hover:underline\">Magic Missile</a>, <a href=\"/spells?search=Magic Weapon\" class=\"text-dnd-gold hover:underline\">Magic Weapon</a>, <a href=\"/spells?search=Nystul's Magic Aura\" class=\"text-dnd-gold hover:underline\">Nystul's Magic Aura</a>"
+									],
+									[
+										"5",
+										"<a href=\"/spells?search=Counterspell\" class=\"text-dnd-gold hover:underline\">Counterspell</a>, <a href=\"/spells?search=Dispel Magic\" class=\"text-dnd-gold hover:underline\">Dispel Magic</a>"
+									],
+									[
+										"7",
+										"<a href=\"/spells?search=Arcane Eye\" class=\"text-dnd-gold hover:underline\">Arcane Eye</a>, <a href=\"/spells?search=Leomund's Secret Chest\" class=\"text-dnd-gold hover:underline\">Leomund's Secret Chest</a>"
+									],
+									[
+										"9",
+										"<a href=\"/spells?search=Bigby's Hand\" class=\"text-dnd-gold hover:underline\">Bigby's Hand</a>, <a href=\"/spells?search=Teleportation Circle\" class=\"text-dnd-gold hover:underline\">Teleportation Circle</a>"
+									]
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Modify Magic|Cleric|XPHB|Arcana|AU|3|AU\"}"
+						"type": "section",
+						"name": "Modify Magic",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You can use your Channel Divinity to alter your spells as you cast them. When you cast a spell, you can expend one use of your Channel Divinity and change the spell in one of the following ways (no action required)."
+							},
+							{
+								"type": "section",
+								"name": "Fortifying Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "One target of the spell gains a number of <i>Temporary Hit Points</i> equal to <span class=\"text-green-400 font-mono\">2d8</span> plus your Cleric level."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Tenacious Spell",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you cast a spell that forces a creature to make a saving throw, and a creature you can see succeeds on that saving throw, roll <span class=\"text-green-400 font-mono\">1d6</span> and subtract the number rolled from the target's first saving throw against the spell's effect."
+									}
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Student of Arcana|Cleric|XPHB|Arcana|AU|3|AU\"}"
+						"type": "section",
+						"name": "Student of Arcana",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You gain the following benefits."
+							},
+							{
+								"type": "section",
+								"name": "Magical Knowledge",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain proficiency in the <i>Arcana</i> skill or one skill of your choice from the skills available to Clerics at level 1."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Cantrips",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You learn two <i>Wizard cantrips</i> of your choice. Whenever you gain a Cleric level, you can replace one of these cantrips with another <i>Wizard cantrip</i>."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "AU"
@@ -4561,7 +5001,7 @@
 				"entries": [
 					{
 						"type": "text",
-						"content": "{\"type\":\"quote\",\"entries\":[\"The worthy shall strive for greatness—supremacy in life leads to supremacy in the afterlife.\"]}"
+						"content": "“The worthy shall strive for greatness—supremacy in life leads to supremacy in the afterlife.”"
 					},
 					{
 						"type": "text",
@@ -4735,7 +5175,7 @@
 				"entries": [
 					{
 						"type": "text",
-						"content": "{\"type\":\"quote\",\"entries\":[\"The worthy shall cultivate a nimble mind that can perceive the wonders beyond imagination that wait in the afterlife.\"]}"
+						"content": "“The worthy shall cultivate a nimble mind that can perceive the wonders beyond imagination that wait in the afterlife.”"
 					},
 					{
 						"type": "text",
@@ -5011,7 +5451,7 @@
 				"entries": [
 					{
 						"type": "text",
-						"content": "{\"type\":\"quote\",\"entries\":[\"The worthy must know and respect all others whom the God-Pharaoh deems worthy, for in the afterlife, all will be united in purpose and action.\"]}"
+						"content": "“The worthy must know and respect all others whom the God-Pharaoh deems worthy, for in the afterlife, all will be united in purpose and action.”"
 					},
 					{
 						"type": "text",
@@ -5187,7 +5627,7 @@
 				"entries": [
 					{
 						"type": "text",
-						"content": "{\"type\":\"quote\",\"entries\":[\"The worthy shall hone a strong body that can withstand the boundless energies of the afterlife.\"]}"
+						"content": "“The worthy shall hone a strong body that can withstand the boundless energies of the afterlife.”"
 					},
 					{
 						"type": "text",
@@ -5359,7 +5799,7 @@
 				"entries": [
 					{
 						"type": "text",
-						"content": "{\"type\":\"quote\",\"entries\":[\"The worthy shall rush to the God-Pharaoh's side with relentless zeal, rising to overcome every obstacle in their way.\"]}"
+						"content": "“The worthy shall rush to the God-Pharaoh's side with relentless zeal, rising to overcome every obstacle in their way.”"
 					},
 					{
 						"type": "text",
@@ -5910,16 +6350,88 @@
 						"content": "The magic of this domain also allows these Clerics to stave off death for a time. But this is merely a delay of death, not a denial of it, for the grave will always claim its due."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Grave Domain Spells|Cleric|XPHB|Grave|RHW|3|RHW\"}"
+						"type": "section",
+						"name": "Grave Domain Spells",
+						"entries": [
+							{
+								"type": "text",
+								"content": "Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Grave Domain Spells table, you thereafter always have the listed spells prepared."
+							},
+							{
+								"type": "table",
+								"caption": "Grave Domain Spells",
+								"colLabels": [
+									"Cleric Level",
+									"Spells"
+								],
+								"rows": [
+									[
+										"3",
+										"<a href=\"/spells?search=Detect Evil and Good\" class=\"text-dnd-gold hover:underline\">Detect Evil and Good</a>, <a href=\"/spells?search=False Life\" class=\"text-dnd-gold hover:underline\">False Life</a>, <a href=\"/spells?search=Gentle Repose\" class=\"text-dnd-gold hover:underline\">Gentle Repose</a>, <a href=\"/spells?search=Ray of Enfeeblement\" class=\"text-dnd-gold hover:underline\">Ray of Enfeeblement</a>, <a href=\"/spells?search=Spare the Dying\" class=\"text-dnd-gold hover:underline\">Spare the Dying</a>"
+									],
+									[
+										"5",
+										"<a href=\"/spells?search=Revivify\" class=\"text-dnd-gold hover:underline\">Revivify</a>, <a href=\"/spells?search=Vampiric Touch\" class=\"text-dnd-gold hover:underline\">Vampiric Touch</a>"
+									],
+									[
+										"7",
+										"<a href=\"/spells?search=Blight\" class=\"text-dnd-gold hover:underline\">Blight</a>, <a href=\"/spells?search=Death Ward\" class=\"text-dnd-gold hover:underline\">Death Ward</a>"
+									],
+									[
+										"9",
+										"<a href=\"/spells?search=Dispel Evil and Good\" class=\"text-dnd-gold hover:underline\">Dispel Evil and Good</a>, <a href=\"/spells?search=Raise Dead\" class=\"text-dnd-gold hover:underline\">Raise Dead</a>"
+									]
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Circle of Mortality|Cleric|XPHB|Grave|RHW|3|RHW\"}"
+						"type": "section",
+						"name": "Circle of Mortality",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You can manipulate the balance between life and death, granting you the following benefits."
+							},
+							{
+								"type": "section",
+								"name": "Pull of Death",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Once per turn, when you deal damage to a creature that's missing any <i>Hit Points</i> by casting a spell or by hitting with an attack roll, that creature takes an extra <span class=\"text-red-400 font-semibold\">1d4</span> Necrotic damage. This extra damage increases to <span class=\"text-green-400 font-mono\">1d6</span> when you reach Cleric level 11."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Return to Life",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can cast <a href=\"/spells?search=Spare the Dying\" class=\"text-dnd-gold hover:underline\">Spare the Dying</a> as a <i>Bonus Action</i>."
+									},
+									{
+										"type": "text",
+										"content": "Additionally, when you would normally roll one or more dice to restore <i>Hit Points</i> to a creature at 0 <i>Hit Points</i> with a spell or Channel Divinity, don't roll those dice for the healing; instead, use the highest number possible for each die. For example, instead of restoring <span class=\"text-green-400 font-mono\">2d4</span> <i>Hit Points</i> to a creature at 0 <i>Hit Points</i> with a spell, you restore 8."
+									}
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Path to the Grave|Cleric|XPHB|Grave|RHW|3|RHW\"}"
+						"type": "section",
+						"name": "Path to the Grave",
+						"entries": [
+							{
+								"type": "text",
+								"content": "As a Bonus Action, you present your Holy Symbol and expend a use of Channel Divinity to curse one creature you can see within 30 feet of yourself until the start of your next turn. While cursed, the creature has <i>Disadvantage</i> on attack rolls and saving throws."
+							},
+							{
+								"type": "text",
+								"content": "When you or an ally you can see hits the cursed target with an attack roll, you can end the curse early (no action required) to make the attack deal extra Necrotic or Radiant damage (your choice) equal to your Cleric level."
+							}
+						]
 					}
 				],
 				"source": "RHW"
@@ -9161,10 +9673,6 @@
 											{
 												"type": "text",
 												"content": "Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:"
-											},
-											{
-												"type": "text",
-												"content": "{\"type\":\"abilityDc\",\"name\":\"Maneuver\",\"attributes\":[\"str\",\"dex\"]}"
 											}
 										]
 									}
@@ -9181,14 +9689,272 @@
 								"content": "The maneuvers are presented in alphabetical order."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":3,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Commander's Strike\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Disarming Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Distracting Strike\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Evasive Footwork\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Feinting Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Goading Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Lunging Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Maneuvering Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Menacing Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Parry\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Precision Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Pushing Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Rally\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Riposte\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Sweeping Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Trip Attack\"}]}"
+								"type": "section",
+								"name": "Choose 3 of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Commander's Strike",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you take the <b>Attack</b> action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Disarming Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the superiority die to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Distracting Strike",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack's damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Evasive Footwork",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Feinting Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Goading Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Lunging Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack's damage roll."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Maneuvering Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Menacing Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, it is <i class=\"text-dnd-gold\">frightened</i> of you until the end of your next turn."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Parry",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Dexterity modifier."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Precision Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Pushing Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Rally",
+										"entries": [
+											{
+												"type": "text",
+												"content": "On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Riposte",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Sweeping Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Trip Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target <i class=\"text-dnd-gold\">prone</i>."
+											}
+										]
+									}
+								]
 							}
 						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Maneuver Options|Fighter||Battle Master||3|TCE\"}"
+						"type": "section",
+						"name": "Maneuver Options",
+						"entries": [
+							{
+								"type": "text",
+								"content": "<i>3rd-level fighter <i>optional class features</i></i>"
+							},
+							{
+								"type": "text",
+								"content": "If you have access to maneuvers, the following maneuvers are added to the list of options available to you. Maneuvers are available to Battle Masters but also to characters who have a special feature like the Superior Technique fighting style or the <a href=\"/feats?search=Martial Adept\" class=\"text-dnd-gold hover:underline\">Martial Adept</a> feat."
+							},
+							{
+								"type": "section",
+								"name": "",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Choose one of the following options:",
+										"entries": [
+											{
+												"type": "section",
+												"name": "Ambush",
+												"entries": [
+													{
+														"type": "text",
+														"content": "When you make a Dexterity (<i>Stealth</i>) check or an initiative roll, you can expend one superiority die and add the die to the roll, provided you aren't <i class=\"text-dnd-gold\">incapacitated</i>."
+													}
+												]
+											},
+											{
+												"type": "section",
+												"name": "Bait and Switch",
+												"entries": [
+													{
+														"type": "text",
+														"content": "When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't <i class=\"text-dnd-gold\">incapacitated</i>. This movement doesn't provoke opportunity attacks."
+													},
+													{
+														"type": "text",
+														"content": "Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled."
+													}
+												]
+											},
+											{
+												"type": "section",
+												"name": "Brace",
+												"entries": [
+													{
+														"type": "text",
+														"content": "When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's damage roll."
+													}
+												]
+											},
+											{
+												"type": "section",
+												"name": "Commanding Presence",
+												"entries": [
+													{
+														"type": "text",
+														"content": "When you make a Charisma (<i>Intimidation</i>), a Charisma (<i>Performance</i>), or a Charisma (<i>Persuasion</i>) check, you can expend one superiority die and add the superiority die to the ability check."
+													}
+												]
+											},
+											{
+												"type": "section",
+												"name": "Grappling Strike",
+												"entries": [
+													{
+														"type": "text",
+														"content": "Immediately after you hit a creature with a melee attack on your turn, you can expend one superiority die and then try to grapple the target as a bonus action (see the Player's Handbook for rules on grappling). Add the superiority die to your Strength (<i>Athletics</i>) check."
+													}
+												]
+											},
+											{
+												"type": "section",
+												"name": "Quick Toss",
+												"entries": [
+													{
+														"type": "text",
+														"content": "As a bonus action, you can expend one superiority die and make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. If you hit, add the superiority die to the weapon's damage roll."
+													}
+												]
+											},
+											{
+												"type": "section",
+												"name": "Tactical Assessment",
+												"entries": [
+													{
+														"type": "text",
+														"content": "When you make an Intelligence (<i>Investigation</i>), an Intelligence (<i>History</i>), or a Wisdom (<i>Insight</i>) check, you can expend one superiority die and add the superiority die to the ability check."
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -9496,14 +10262,6 @@
 											{
 												"type": "text",
 												"content": "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one."
-											},
-											{
-												"type": "text",
-												"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"int\"]}"
-											},
-											{
-												"type": "text",
-												"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"int\"]}"
 											}
 										]
 									}
@@ -9766,12 +10524,122 @@
 								"content": "If an option requires a saving throw, your Arcane Shot save DC is calculated as follows:"
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"abilityDc\",\"name\":\"Arcane Shot\",\"attributes\":[\"int\"]}"
-							},
-							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":2,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Banishing Arrow|XGE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Beguiling Arrow|XGE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Bursting Arrow|XGE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Enfeebling Arrow|XGE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Grasping Arrow|XGE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Piercing Arrow|XGE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Seeking Arrow|XGE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Shadow Arrow|XGE\"}]}"
+								"type": "section",
+								"name": "Choose 2 of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Banishing Arrow",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You use abjuration magic to try to temporarily banish your target to a harmless location in the Feywild. The creature hit by the arrow must also succeed on a Charisma saving throw or be banished. While banished in this way, the target's speed is 0, and it is <i class=\"text-dnd-gold\">incapacitated</i>. At the end of its next turn, the target reappears in the space it vacated or in the nearest unoccupied space if that space is occupied."
+											},
+											{
+												"type": "text",
+												"content": "After you reach 18th level in this class, a target also takes <span class=\"text-red-400 font-semibold\">2d6</span> force damage when the arrow hits it."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Beguiling Arrow",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Your enchantment magic causes this arrow to temporarily beguile its target. The creature hit by the arrow takes an extra <span class=\"text-red-400 font-semibold\">2d6</span> psychic damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is <i class=\"text-dnd-gold\">charmed</i> by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the <i class=\"text-dnd-gold\">charmed</i> target, deals damage to it, or forces it to make a saving throw."
+											},
+											{
+												"type": "text",
+												"content": "The psychic damage increases to <span class=\"text-red-400 font-semibold\">4d6</span> when you reach 18th level in this class."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Bursting Arrow",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You imbue your arrow with force energy drawn from the school of evocation. The energy detonates after your attack. Immediately after the arrow hits the creature, the target and all other creatures within 10 feet of it take <span class=\"text-red-400 font-semibold\">2d6</span> force damage each."
+											},
+											{
+												"type": "text",
+												"content": "The force damage increases to <span class=\"text-red-400 font-semibold\">4d6</span> when you reach 18th level in this class."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Enfeebling Arrow",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You weave necromantic magic into your arrow. The creature hit by the arrow takes an extra <span class=\"text-red-400 font-semibold\">2d6</span> necrotic damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn."
+											},
+											{
+												"type": "text",
+												"content": "The necrotic damage increases to <span class=\"text-red-400 font-semibold\">4d6</span> when you reach 18th level in this class."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Grasping Arrow",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When this arrow strikes its target, conjuration magic creates grasping, poisonous brambles, which wrap around the target. The creature hit by the arrow takes an extra <span class=\"text-red-400 font-semibold\">2d6</span> poison damage, its speed is reduced by 10 feet, and it takes <span class=\"text-red-400 font-semibold\">2d6</span> slashing damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the brambles with a successful Strength (<i>Athletics</i>) check against your Arcane Shot save DC. Otherwise, the brambles last for 1 minute or until you use this option again."
+											},
+											{
+												"type": "text",
+												"content": "The poison damage and slashing damage both increase to <span class=\"text-red-400 font-semibold\">4d6</span> when you reach 18th level in this class."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Piercing Arrow",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You use transmutation magic to give your arrow an ethereal quality. When you use this option, you don't make an attack roll for the attack. Instead, the arrow shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The arrow passes harmlessly through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the arrow, plus an extra <span class=\"text-red-400 font-semibold\">1d6</span> piercing damage. On a successful save, a target takes half as much damage."
+											},
+											{
+												"type": "text",
+												"content": "The piercing damage increases to <span class=\"text-red-400 font-semibold\">2d6</span> when you reach 18th level in this class."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Seeking Arrow",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Using divination magic, you grant your arrow the ability to seek out a target. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The arrow flies toward that creature, moving around corners if necessary and ignoring Cover and Cover. If the target is within the weapon's range and there is a path large enough for the arrow to travel to the target, the target must make a Dexterity saving throw. Otherwise, the arrow disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the arrow, plus an extra <span class=\"text-red-400 font-semibold\">1d6</span> force damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location."
+											},
+											{
+												"type": "text",
+												"content": "The force damage increases to <span class=\"text-red-400 font-semibold\">2d6</span> when you reach 18th level in this class."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Shadow Arrow",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You weave illusion magic into your arrow, causing it to occlude your foe's vision with shadows. The creature hit by the arrow takes an extra <span class=\"text-red-400 font-semibold\">2d6</span> psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn."
+											},
+											{
+												"type": "text",
+												"content": "The psychic damage increases to <span class=\"text-red-400 font-semibold\">4d6</span> when you reach 18th level in this class."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -10291,8 +11159,40 @@
 								"content": "The powers below use your Psionic Energy dice."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"style\":\"list-hang-notitle\",\"entries\":[{\"type\":\"section\",\"name\":\"Protective Field\",\"entries\":[\"When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force.\"]},{\"type\":\"section\",\"name\":\"Psionic Strike\",\"entries\":[\"You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier.\"]},{\"type\":\"section\",\"name\":\"Telekinetic Movement\",\"entries\":[\"You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Protective Field",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Psionic Strike",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Telekinetic Movement",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -10312,8 +11212,30 @@
 						"content": "You have mastered new ways to use your telekinetic abilities, detailed below."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"style\":\"list-hang-notitle\",\"entries\":[{\"type\":\"section\",\"name\":\"Psi-Powered Leap\",\"entries\":[\"As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.\"]},{\"type\":\"section\",\"name\":\"Telekinetic Thrust\",\"entries\":[\"When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target <i class=\"text-dnd-gold\">prone</i> or move it up to 10 feet in any direction horizontally.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Psi-Powered Leap",
+								"entries": [
+									{
+										"type": "text",
+										"content": "As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Telekinetic Thrust",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target <i class=\"text-dnd-gold\">prone</i> or move it up to 10 feet in any direction horizontally."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "TCE"
@@ -10459,8 +11381,94 @@
 								"content": "The following runes are available to you when you learn a rune. If a rune has a level requirement, you must be at least that level in this class to learn the rune. If a rune requires a saving throw, your Rune Magic save DC equals 8 + your proficiency bonus + your Constitution modifier."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":2,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Cloud Rune|TCE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Fire Rune|TCE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Frost Rune|TCE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Stone Rune|TCE\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Hill Rune|TCE\",\"name\":\"Hill Rune (7th Level or Higher)\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Storm Rune|TCE\",\"name\":\"Storm Rune (7th Level or Higher)\"}]}"
+								"type": "section",
+								"name": "Choose 2 of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Cloud Rune",
+										"entries": [
+											{
+												"type": "text",
+												"content": "This rune emulates the deceptive magic used by some cloud giants. While wearing or carrying an object inscribed with this rune, you have advantage on Dexterity (<i>Sleight of Hand</i>) checks and Charisma (<i>Deception</i>) checks."
+											},
+											{
+												"type": "text",
+												"content": "In addition, when you or a creature you can see within 30 feet of you is hit by an attack roll, you can use your reaction to invoke the rune and choose a different creature within 30 feet of you, other than the attacker. The chosen creature becomes the target of the attack, using the same roll. This magic can transfer the attack's effects regardless of the attack's range. Once you invoke this rune, you can't do so again until you finish a short or long rest."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Fire Rune",
+										"entries": [
+											{
+												"type": "text",
+												"content": "This rune's magic channels the masterful craftsmanship of great smiths. While wearing or carrying an object inscribed with this rune, your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool."
+											},
+											{
+												"type": "text",
+												"content": "In addition, when you hit a creature with an attack using a weapon, you can invoke the rune to summon fiery shackles: the target takes an extra <span class=\"text-red-400 font-semibold\">2d6</span> fire damage, and it must succeed on a Strength saving throw or be <i class=\"text-dnd-gold\">restrained</i> for 1 minute. While <i class=\"text-dnd-gold\">restrained</i> by the shackles, the target takes <span class=\"text-red-400 font-semibold\">2d6</span> fire damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, banishing the shackles on a success. Once you invoke this rune, you can't do so again until you finish a short or long rest."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Frost Rune",
+										"entries": [
+											{
+												"type": "text",
+												"content": "This rune's magic evokes the might of those who survive in the wintry wilderness, such as frost giants. While wearing or carrying an object inscribed with this rune, you have advantage on Wisdom (<i>Animal Handling</i>) checks and Charisma (<i>Intimidation</i>) checks."
+											},
+											{
+												"type": "text",
+												"content": "In addition, you can invoke the rune as a bonus action to increase your sturdiness. For 10 minutes, you gain a +2 bonus to all ability checks and saving throws that use Strength or Constitution. Once you invoke this rune, you can't do so again until you finish a short or long rest."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Stone Rune",
+										"entries": [
+											{
+												"type": "text",
+												"content": "This rune's magic channels the judiciousness associated with stone giants. While wearing or carrying an object inscribed with this rune, you have advantage on Wisdom (<i>Insight</i>) checks, and you have <i>darkvision</i> out to a range of 120 feet."
+											},
+											{
+												"type": "text",
+												"content": "In addition, when a creature you can see ends its turn within 30 feet of you, you can use your reaction to invoke the rune and force the creature to make a Wisdom saving throw. Unless the save succeeds, the creature is <i class=\"text-dnd-gold\">charmed</i> by you for 1 minute. While <i class=\"text-dnd-gold\">charmed</i> in this way, the creature has a speed of 0 and is <i class=\"text-dnd-gold\">incapacitated</i>, descending into a dreamy stupor. The creature repeats the saving throw at the end of each of its turns, ending the effect on a success. Once you invoke this rune, you can't do so again until you finish a short or long rest."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Hill Rune",
+										"entries": [
+											{
+												"type": "text",
+												"content": "This rune's magic bestows a resilience reminiscent of a hill giant. While wearing or carrying an object that bears this rune, you have advantage on saving throws against being <i class=\"text-dnd-gold\">poisoned</i>, and you have resistance against poison damage."
+											},
+											{
+												"type": "text",
+												"content": "In addition, you can invoke the rune as a bonus action, gaining resistance to bludgeoning, piercing, and slashing damage for 1 minute. Once you invoke this rune, you can't do so again until you finish a short or long rest."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Storm Rune",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Using this rune, you can glimpse the future like a storm giant seer. While wearing or carrying an object inscribed with this rune, you have advantage on Intelligence (<i>Arcana</i>) checks, and you can't be <i>surprised</i> as long as you aren't <i class=\"text-dnd-gold\">incapacitated</i>."
+											},
+											{
+												"type": "text",
+												"content": "In addition, you can invoke the rune as a bonus action to enter a prophetic state for 1 minute or until you're <i class=\"text-dnd-gold\">incapacitated</i>. Until the state ends, when you or another creature you can see within 60 feet of you makes an attack roll, a saving throw, or an ability check, you can use your reaction to cause the roll to have advantage or disadvantage. Once you invoke this rune, you can't do so again until you finish a short or long rest."
+											}
+										]
+									}
+								]
 							}
 						]
 					},
@@ -10702,10 +11710,6 @@
 											{
 												"type": "text",
 												"content": "Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:"
-											},
-											{
-												"type": "text",
-												"content": "{\"type\":\"abilityDc\",\"name\":\"Maneuver\",\"attributes\":[\"str\",\"dex\"]}"
 											}
 										]
 									}
@@ -10722,14 +11726,272 @@
 								"content": "The maneuvers are presented in alphabetical order."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":3,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Commander's Strike\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Disarming Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Distracting Strike\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Evasive Footwork\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Feinting Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Goading Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Lunging Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Maneuvering Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Menacing Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Parry\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Precision Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Pushing Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Rally\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Riposte\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Sweeping Attack\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Trip Attack\"}]}"
+								"type": "section",
+								"name": "Choose 3 of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Commander's Strike",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you take the <b>Attack</b> action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Disarming Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the superiority die to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Distracting Strike",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack's damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Evasive Footwork",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Feinting Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Goading Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Lunging Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack's damage roll."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Maneuvering Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Menacing Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, it is <i class=\"text-dnd-gold\">frightened</i> of you until the end of your next turn."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Parry",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Dexterity modifier."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Precision Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Pushing Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Rally",
+										"entries": [
+											{
+												"type": "text",
+												"content": "On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Riposte",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Sweeping Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Trip Attack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target <i class=\"text-dnd-gold\">prone</i>."
+											}
+										]
+									}
+								]
 							}
 						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Maneuver Options|Fighter||Battle Master||3|TCE\"}"
+						"type": "section",
+						"name": "Maneuver Options",
+						"entries": [
+							{
+								"type": "text",
+								"content": "<i>3rd-level fighter <i>optional class features</i></i>"
+							},
+							{
+								"type": "text",
+								"content": "If you have access to maneuvers, the following maneuvers are added to the list of options available to you. Maneuvers are available to Battle Masters but also to characters who have a special feature like the Superior Technique fighting style or the <a href=\"/feats?search=Martial Adept\" class=\"text-dnd-gold hover:underline\">Martial Adept</a> feat."
+							},
+							{
+								"type": "section",
+								"name": "",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Choose one of the following options:",
+										"entries": [
+											{
+												"type": "section",
+												"name": "Ambush",
+												"entries": [
+													{
+														"type": "text",
+														"content": "When you make a Dexterity (<i>Stealth</i>) check or an initiative roll, you can expend one superiority die and add the die to the roll, provided you aren't <i class=\"text-dnd-gold\">incapacitated</i>."
+													}
+												]
+											},
+											{
+												"type": "section",
+												"name": "Bait and Switch",
+												"entries": [
+													{
+														"type": "text",
+														"content": "When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't <i class=\"text-dnd-gold\">incapacitated</i>. This movement doesn't provoke opportunity attacks."
+													},
+													{
+														"type": "text",
+														"content": "Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled."
+													}
+												]
+											},
+											{
+												"type": "section",
+												"name": "Brace",
+												"entries": [
+													{
+														"type": "text",
+														"content": "When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's damage roll."
+													}
+												]
+											},
+											{
+												"type": "section",
+												"name": "Commanding Presence",
+												"entries": [
+													{
+														"type": "text",
+														"content": "When you make a Charisma (<i>Intimidation</i>), a Charisma (<i>Performance</i>), or a Charisma (<i>Persuasion</i>) check, you can expend one superiority die and add the superiority die to the ability check."
+													}
+												]
+											},
+											{
+												"type": "section",
+												"name": "Grappling Strike",
+												"entries": [
+													{
+														"type": "text",
+														"content": "Immediately after you hit a creature with a melee attack on your turn, you can expend one superiority die and then try to grapple the target as a bonus action (see the Player's Handbook for rules on grappling). Add the superiority die to your Strength (<i>Athletics</i>) check."
+													}
+												]
+											},
+											{
+												"type": "section",
+												"name": "Quick Toss",
+												"entries": [
+													{
+														"type": "text",
+														"content": "As a bonus action, you can expend one superiority die and make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. If you hit, add the superiority die to the weapon's damage roll."
+													}
+												]
+											},
+											{
+												"type": "section",
+												"name": "Tactical Assessment",
+												"entries": [
+													{
+														"type": "text",
+														"content": "When you make an Intelligence (<i>Investigation</i>), an Intelligence (<i>History</i>), or a Wisdom (<i>Insight</i>) check, you can expend one superiority die and add the superiority die to the ability check."
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -10960,14 +12222,6 @@
 											{
 												"type": "text",
 												"content": "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one."
-											},
-											{
-												"type": "text",
-												"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"int\"]}"
-											},
-											{
-												"type": "text",
-												"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"int\"]}"
 											}
 										]
 									}
@@ -11087,8 +12341,40 @@
 								"content": "The powers below use your Psionic Energy dice."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"style\":\"list-hang-notitle\",\"entries\":[{\"type\":\"section\",\"name\":\"Protective Field\",\"entries\":[\"When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force.\"]},{\"type\":\"section\",\"name\":\"Psionic Strike\",\"entries\":[\"You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier.\"]},{\"type\":\"section\",\"name\":\"Telekinetic Movement\",\"entries\":[\"You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Protective Field",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Psionic Strike",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Telekinetic Movement",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -11108,8 +12394,30 @@
 						"content": "You have mastered new ways to use your telekinetic abilities, detailed below."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"style\":\"list-hang-notitle\",\"entries\":[{\"type\":\"section\",\"name\":\"Psi-Powered Leap\",\"entries\":[\"As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.\"]},{\"type\":\"section\",\"name\":\"Telekinetic Thrust\",\"entries\":[\"When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target <i class=\"text-dnd-gold\">prone</i> or move it up to 10 feet in any direction horizontally.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Psi-Powered Leap",
+								"entries": [
+									{
+										"type": "text",
+										"content": "As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Telekinetic Thrust",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target <i class=\"text-dnd-gold\">prone</i> or move it up to 10 feet in any direction horizontally."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "TCE"
@@ -11408,8 +12716,189 @@
 								"content": "The elemental disciplines are presented in alphabetical order. If a discipline requires a level, you must be the level in this class to learn the discipline."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":2,\"entries\":[{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Breath of Winter\",\"name\":\"Breath of Winter (17th Level Required)\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Clench of the North Wind\",\"name\":\"Clench of the North Wind (6th Level Required)\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Elemental Attunement\",\"data\":{\"isRequiredOption\":true}},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Eternal Mountain Defense\",\"name\":\"Eternal Mountain Defense (17th Level Required)\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Fangs of the Fire Snake\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Fist of Four Thunders\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Unbroken Air\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Flames of the Phoenix\",\"name\":\"Flames of the Phoenix (11th Level Required)\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Gong of the Summit\",\"name\":\"Gong of the Summit (6th Level Required)\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Mist Stance\",\"name\":\"Mist Stance (11th Level Required)\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Ride the Wind\",\"name\":\"Ride the Wind (11th Level Required)\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"River of Hungry Flame\",\"name\":\"River of Hungry Flame (17th Level Required)\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Rush of the Gale Spirits\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Shape the Flowing River\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Sweeping Cinder Strike\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Water Whip\"},{\"type\":\"refOptionalfeature\",\"optionalfeature\":\"Wave of Rolling Earth\",\"name\":\"Wave of Rolling Earth (17th Level Required)\"}]}"
+								"type": "section",
+								"name": "Choose 2 of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Breath of Winter",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 6 ki points to cast <a href=\"/spells?search=cone of cold\" class=\"text-dnd-gold hover:underline\">cone of cold</a>."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Clench of the North Wind",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 3 ki points to cast <a href=\"/spells?search=hold person\" class=\"text-dnd-gold hover:underline\">hold person</a>."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Elemental Attunement",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can use your action to briefly control elemental forces within 30 feet of you, causing one of the following effects of your choice:"
+											},
+											{
+												"type": "list",
+												"items": [
+													"Create a harmless, instantaneous sensory effect related to air, earth, fire, or water, such as a shower of sparks, a puff of wind, a spray of light mist, or a gentle rumbling of stone.",
+													"Instantaneously light or snuff out a candle, a torch, or a small campfire.",
+													"Chill or warm up to 1 pound of nonliving material for up to 1 hour.",
+													"Cause earth, fire, water, or mist that can fit within a 1-foot cube to shape itself into a crude form you designate for 1 minute."
+												]
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Eternal Mountain Defense",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 5 ki points to cast <a href=\"/spells?search=stoneskin\" class=\"text-dnd-gold hover:underline\">stoneskin</a>, targeting yourself."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Fangs of the Fire Snake",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When you use the <b>Attack</b> action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet. Your reach with your unarmed strikes increases by 10 feet for that action, as well as the rest of the turn. A hit with such an attack deals fire damage instead of bludgeoning damage, and if you spend 1 ki point when the attack hits, it also deals an extra <span class=\"text-red-400 font-semibold\">1d10</span> fire damage."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Fist of Four Thunders",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 2 ki points to cast <a href=\"/spells?search=thunderwave\" class=\"text-dnd-gold hover:underline\">thunderwave</a>."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Unbroken Air",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes <span class=\"text-red-400 font-semibold\">3d10</span> bludgeoning damage, plus an extra <span class=\"text-red-400 font-semibold\">1d10</span> bludgeoning damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it <i class=\"text-dnd-gold\">prone</i>. On a successful save, the creature takes half as much damage, and you don't push it or knock it <i class=\"text-dnd-gold\">prone</i>."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Flames of the Phoenix",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 4 ki points to cast <a href=\"/spells?search=fireball\" class=\"text-dnd-gold hover:underline\">fireball</a>."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Gong of the Summit",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 3 ki points to cast <a href=\"/spells?search=shatter\" class=\"text-dnd-gold hover:underline\">shatter</a>."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Mist Stance",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 4 ki points to cast <a href=\"/spells?search=gaseous form\" class=\"text-dnd-gold hover:underline\">gaseous form</a>, targeting yourself."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Ride the Wind",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 4 ki points to cast <a href=\"/spells?search=fly\" class=\"text-dnd-gold hover:underline\">fly</a>, targeting yourself."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "River of Hungry Flame",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 5 ki points to cast <a href=\"/spells?search=wall of fire\" class=\"text-dnd-gold hover:underline\">wall of fire</a>."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Rush of the Gale Spirits",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 2 ki points to cast <a href=\"/spells?search=gust of wind\" class=\"text-dnd-gold hover:underline\">gust of wind</a>."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Shape the Flowing River",
+										"entries": [
+											{
+												"type": "text",
+												"content": "As an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high. raise or lower the square's elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can't shape the ice to trap or injure a creature in the area."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Sweeping Cinder Strike",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 2 ki points to cast <a href=\"/spells?search=burning hands\" class=\"text-dnd-gold hover:underline\">burning hands</a>."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Water Whip",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 2 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes <span class=\"text-red-400 font-semibold\">3d10</span> bludgeoning damage, plus an extra <span class=\"text-red-400 font-semibold\">1d10</span> bludgeoning damage for each additional ki point you spend, and you can either knock it <i class=\"text-dnd-gold\">prone</i> or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don't pull it or knock it <i class=\"text-dnd-gold\">prone</i>."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Wave of Rolling Earth",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can spend 6 ki points to cast <a href=\"/spells?search=wall of stone\" class=\"text-dnd-gold hover:underline\">wall of stone</a>."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -11682,8 +13171,30 @@
 						"content": "Starting at 6th level, you can move in sudden, swaying ways. You gain the following benefits."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"section\",\"name\":\"Leap to Your Feet\",\"entries\":[\"When you're <i class=\"text-dnd-gold\">prone</i>, you can stand up by spending 5 feet of movement, rather than half your speed.\"]},{\"type\":\"section\",\"name\":\"Redirect Attack\",\"entries\":[\"When a creature misses you with a melee attack roll, you can spend 1 ki point as a reaction to cause that attack to hit one creature of your choice, other than the attacker, that you can see within 5 feet of you.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Leap to Your Feet",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you're <i class=\"text-dnd-gold\">prone</i>, you can stand up by spending 5 feet of movement, rather than half your speed."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Redirect Attack",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When a creature misses you with a melee attack roll, you can spend 1 ki point as a reaction to cause that attack to hit one creature of your choice, other than the attacker, that you can see within 5 feet of you."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "XGE"
@@ -11760,8 +13271,30 @@
 								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"section\",\"name\":\"Agile Parry\",\"entries\":[\"If you make an unarmed strike as part of the <b>Attack</b> action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn, while the weapon is in your hand and you aren't <i class=\"text-dnd-gold\">incapacitated</i>.\"]},{\"type\":\"section\",\"name\":\"Kensei's Shot\",\"entries\":[\"You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon takes an extra <span class=\"text-red-400 font-semibold\">1d4</span> damage of the weapon's type. You retain this benefit until the end of the current turn.\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Agile Parry",
+										"entries": [
+											{
+												"type": "text",
+												"content": "If you make an unarmed strike as part of the <b>Attack</b> action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn, while the weapon is in your hand and you aren't <i class=\"text-dnd-gold\">incapacitated</i>."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Kensei's Shot",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon takes an extra <span class=\"text-red-400 font-semibold\">1d4</span> damage of the weapon's type. You retain this benefit until the end of the current turn."
+											}
+										]
+									}
+								]
 							},
 							{
 								"type": "section",
@@ -12566,7 +14099,11 @@
 						"entries": [
 							{
 								"type": "text",
-								"content": "Once per turn when you hit a creature with an <i>Unarmed Strike</i> and deal damage, you can expend 1 Focus Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier."
+								"content": "<i>3rd-level Way of Mercy feature</i>"
+							},
+							{
+								"type": "text",
+								"content": "You use your ki to inflict wounds. When you hit a creature with an unarmed strike, you can spend 1 ki point to deal extra necrotic damage equal to one roll of your Martial Arts die + your Wisdom modifier. You can use this feature only once per turn."
 							}
 						]
 					},
@@ -12576,7 +14113,15 @@
 						"entries": [
 							{
 								"type": "text",
-								"content": "As a <b>Magic</b> action, you can expend 1 Focus Point to touch a creature and restore a number of <i>Hit Points</i> equal to a roll of your Martial Arts die plus your Wisdom modifier. When you use your Flurry of Blows, you can replace one of the Unarmed Strikes with a use of this feature without expending a Focus Point for the healing."
+								"content": "<i>3rd-level Way of Mercy feature</i>"
+							},
+							{
+								"type": "text",
+								"content": "Your mystical touch can mend wounds. As an action, you can spend 1 ki point to touch a creature and restore a number of hit points equal to a roll of your Martial Arts die + your Wisdom modifier."
+							},
+							{
+								"type": "text",
+								"content": "When you use your Flurry of Blows, you can replace one of the unarmed strikes with a use of this feature without spending a ki point for the healing."
 							}
 						]
 					},
@@ -12586,7 +14131,49 @@
 						"entries": [
 							{
 								"type": "text",
-								"content": "You gain proficiency in the <i>Insight</i> and <i>Medicine</i> skills and proficiency with the <b>Herbalism Kit</b>."
+								"content": "<i>3rd-level Way of Mercy feature</i>"
+							},
+							{
+								"type": "text",
+								"content": "You gain proficiency in the <i>Insight</i> and <i>Medicine</i> skills, and you gain proficiency with the <b>herbalism kit</b>."
+							},
+							{
+								"type": "text",
+								"content": "You also gain a special mask, which you often wear when using the features of this subclass. You determine its appearance, or generate it randomly by rolling on the Merciful Mask table."
+							},
+							{
+								"type": "table",
+								"caption": "Merciful Mask",
+								"colLabels": [
+									"d6",
+									"Mask Appearance"
+								],
+								"rows": [
+									[
+										"1",
+										"Raven"
+									],
+									[
+										"2",
+										"Blank and white"
+									],
+									[
+										"3",
+										"Crying visage"
+									],
+									[
+										"4",
+										"Laughing visage"
+									],
+									[
+										"5",
+										"Skull"
+									],
+									[
+										"6",
+										"Butterfly"
+									]
+								]
 							}
 						]
 					}
@@ -12682,37 +14269,7 @@
 						"entries": [
 							{
 								"type": "text",
-								"content": "You have learned to draw on the power of the Shadowfell, gaining the following benefits."
-							},
-							{
-								"type": "section",
-								"name": "Darkness",
-								"entries": [
-									{
-										"type": "text",
-										"content": "You can expend 1 Focus Point to cast the <a href=\"/spells?search=Darkness\" class=\"text-dnd-gold hover:underline\">Darkness</a> spell without spell components. You can see within the spell's area when you cast it with this feature. While the spell persists, you can move its area of <i>Darkness</i> to a space within 60 feet of yourself at the start of each of your turns."
-									}
-								]
-							},
-							{
-								"type": "section",
-								"name": "Darkvision",
-								"entries": [
-									{
-										"type": "text",
-										"content": "You gain <i>Darkvision</i> with a range of 60 feet. If you already have <i>Darkvision</i>, its range increases by 60 feet."
-									}
-								]
-							},
-							{
-								"type": "section",
-								"name": "Shadowy Figments",
-								"entries": [
-									{
-										"type": "text",
-										"content": "You know the <a href=\"/spells?search=Minor Illusion\" class=\"text-dnd-gold hover:underline\">Minor Illusion</a> spell. Wisdom is your spellcasting ability for it."
-									}
-								]
+								"content": "You can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast <a href=\"/spells?search=darkness\" class=\"text-dnd-gold hover:underline\">darkness</a>, <a href=\"/spells?search=darkvision\" class=\"text-dnd-gold hover:underline\">darkvision</a>, <a href=\"/spells?search=pass without trace\" class=\"text-dnd-gold hover:underline\">pass without trace</a>, or <a href=\"/spells?search=silence\" class=\"text-dnd-gold hover:underline\">silence</a>, without providing material components. Additionally, you gain the <a href=\"/spells?search=minor illusion\" class=\"text-dnd-gold hover:underline\">minor illusion</a> cantrip if you don't already know it."
 							}
 						]
 					}
@@ -12948,36 +14505,14 @@
 						"entries": [
 							{
 								"type": "text",
-								"content": "Whenever you hit a creature with an attack granted by your Flurry of Blows, you can impose one of the following effects on that target."
+								"content": "You can manipulate your enemy's ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target."
 							},
 							{
-								"type": "section",
-								"name": "Addle",
-								"entries": [
-									{
-										"type": "text",
-										"content": "The target can't make <b>Opportunity Attack</b> until the start of its next turn."
-									}
-								]
-							},
-							{
-								"type": "section",
-								"name": "Push",
-								"entries": [
-									{
-										"type": "text",
-										"content": "The target must succeed on a Strength saving throw or be pushed up to 15 feet away from you."
-									}
-								]
-							},
-							{
-								"type": "section",
-								"name": "Topple",
-								"entries": [
-									{
-										"type": "text",
-										"content": "The target must succeed on a Dexterity saving throw or have the <i class=\"text-dnd-gold\">Prone</i> condition."
-									}
+								"type": "list",
+								"items": [
+									"It must succeed on a Dexterity saving throw or be knocked <i class=\"text-dnd-gold\">prone</i>.",
+									"It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.",
+									"It can't take reactions until the end of your next turn."
 								]
 							}
 						]
@@ -15980,8 +17515,30 @@
 						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Primal Companion|Ranger||Beast Master||3|TCE\"}"
+						"type": "section",
+						"name": "Primal Companion",
+						"entries": [
+							{
+								"type": "text",
+								"content": "<i>3rd-level Beast Master variant feature, which replaces the Ranger's Companion feature</i>"
+							},
+							{
+								"type": "text",
+								"content": "You magically summon a primal beast, which draws strength from your bond with nature. The beast is friendly to you and your companions and obeys your commands. Choose its stat block—<b>Beast of the Land</b>, <b>Beast of the Sea</b>, or <b>Beast of the Sky</b>—which uses your proficiency bonus (PB) in several places. You also determine the kind of animal the beast is, choosing a kind appropriate for the stat block. Whatever kind you choose, the beast bears primal markings, indicating its mystical origin."
+							},
+							{
+								"type": "text",
+								"content": "In combat, the beast acts during your turn. It can move and use its reaction on its own, but the only action it takes is the <b>Dodge</b> action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. You can also sacrifice one of your attacks when you take the <b>Attack</b> action to command the beast to take the <b>Attack</b> action. If you are <i class=\"text-dnd-gold\">incapacitated</i>, the beast can take any action of its choice, not just <b>Dodge</b>."
+							},
+							{
+								"type": "text",
+								"content": "If the beast has died within the last hour, you can use your action to touch it and expend a spell slot of 1st level or higher. The beast returns to life after 1 minute with all its hit points restored."
+							},
+							{
+								"type": "text",
+								"content": "When you finish a long rest, you can summon a different primal beast. The new beast appears in an unoccupied space within 5 feet of you, and you choose its stat block and appearance. If you already have a beast from this feature, it vanishes when the new beast appears. The beast also vanishes if you die."
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -16055,8 +17612,40 @@
 								"content": "At 3rd level, you gain one of the following features of your choice."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Colossus Slayer\",\"entries\":[\"Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra <span class=\"text-red-400 font-semibold\">1d8</span> damage if it's below its hit point maximum. You can deal this extra damage only once per turn.\"]},{\"type\":\"section\",\"name\":\"Giant Killer\",\"entries\":[\"When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.\"]},{\"type\":\"section\",\"name\":\"Horde Breaker\",\"entries\":[\"Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Colossus Slayer",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra <span class=\"text-red-400 font-semibold\">1d8</span> damage if it's below its hit point maximum. You can deal this extra damage only once per turn."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Giant Killer",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Horde Breaker",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -16072,8 +17661,40 @@
 						"content": "At 7th level, you gain one of the following features of your choice."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Escape the Horde\",\"entries\":[\"Opportunity attacks against you are made with disadvantage.\"]},{\"type\":\"section\",\"name\":\"Multiattack Defense\",\"entries\":[\"When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.\"]},{\"type\":\"section\",\"name\":\"Steel Will\",\"entries\":[\"You have advantage on saving throws against being <i class=\"text-dnd-gold\">frightened</i>.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Escape the Horde",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Opportunity attacks against you are made with disadvantage."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Multiattack Defense",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Steel Will",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You have advantage on saving throws against being <i class=\"text-dnd-gold\">frightened</i>."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -16087,8 +17708,30 @@
 						"content": "At 11th level, you gain one of the following features of your choice."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Volley\",\"entries\":[\"You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.\"]},{\"type\":\"section\",\"name\":\"Whirlwind Attack\",\"entries\":[\"You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Volley",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Whirlwind Attack",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -16102,8 +17745,40 @@
 						"content": "At 15th level, you gain one of the following features of your choice."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Evasion\",\"entries\":[\"You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a <a href=\"/spells?search=lightning bolt\" class=\"text-dnd-gold hover:underline\">lightning bolt</a> spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.\"]},{\"type\":\"section\",\"name\":\"Stand Against the Tide\",\"entries\":[\"When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.\"]},{\"type\":\"section\",\"name\":\"Uncanny Dodge\",\"entries\":[\"When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Evasion",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a <a href=\"/spells?search=lightning bolt\" class=\"text-dnd-gold hover:underline\">lightning bolt</a> spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Stand Against the Tide",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Uncanny Dodge",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -16800,8 +18475,18 @@
 								]
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"inset\",\"name\":\"It's Your Swarm\",\"entries\":[\"A Swarmkeeper's swarm and spells are reflections of the character's bond with nature spirits. Take the opportunity to describe the swarm and the ranger's magic in play. For example, when your ranger casts gaseous form, they might appear to melt into the swarm, instead of a cloud of mist, or the <a href=\"/spells?search=arcane eye\" class=\"text-dnd-gold hover:underline\">arcane eye</a> spell could create an extension of your swarm that spies for you. Such descriptions don't change the effects of spells, but they are an exciting opportunity to explore your character's narrative through their class abilities. For more guidance on customizing spells, see the \\\"Personalizing Spells\\\" section in chapter 3.\",\"Also, remember that the swarm's appearance is yours to customize, and don't feel confined to a single appearance. Perhaps the spirits' look changes with the ranger's mood or with the seasons. You decide!\"]}"
+								"type": "section",
+								"name": "It's Your Swarm",
+								"entries": [
+									{
+										"type": "text",
+										"content": "A Swarmkeeper's swarm and spells are reflections of the character's bond with nature spirits. Take the opportunity to describe the swarm and the ranger's magic in play. For example, when your ranger casts gaseous form, they might appear to melt into the swarm, instead of a cloud of mist, or the <a href=\"/spells?search=arcane eye\" class=\"text-dnd-gold hover:underline\">arcane eye</a> spell could create an extension of your swarm that spies for you. Such descriptions don't change the effects of spells, but they are an exciting opportunity to explore your character's narrative through their class abilities. For more guidance on customizing spells, see the \"Personalizing Spells\" section in chapter 3."
+									},
+									{
+										"type": "text",
+										"content": "Also, remember that the swarm's appearance is yours to customize, and don't feel confined to a single appearance. Perhaps the spirits' look changes with the ranger's mood or with the seasons. You decide!"
+									}
+								]
 							}
 						]
 					},
@@ -17195,8 +18880,30 @@
 						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Primal Companion|Ranger||Beast Master||3|TCE\"}"
+						"type": "section",
+						"name": "Primal Companion",
+						"entries": [
+							{
+								"type": "text",
+								"content": "<i>3rd-level Beast Master variant feature, which replaces the Ranger's Companion feature</i>"
+							},
+							{
+								"type": "text",
+								"content": "You magically summon a primal beast, which draws strength from your bond with nature. The beast is friendly to you and your companions and obeys your commands. Choose its stat block—<b>Beast of the Land</b>, <b>Beast of the Sea</b>, or <b>Beast of the Sky</b>—which uses your proficiency bonus (PB) in several places. You also determine the kind of animal the beast is, choosing a kind appropriate for the stat block. Whatever kind you choose, the beast bears primal markings, indicating its mystical origin."
+							},
+							{
+								"type": "text",
+								"content": "In combat, the beast acts during your turn. It can move and use its reaction on its own, but the only action it takes is the <b>Dodge</b> action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. You can also sacrifice one of your attacks when you take the <b>Attack</b> action to command the beast to take the <b>Attack</b> action. If you are <i class=\"text-dnd-gold\">incapacitated</i>, the beast can take any action of its choice, not just <b>Dodge</b>."
+							},
+							{
+								"type": "text",
+								"content": "If the beast has died within the last hour, you can use your action to touch it and expend a spell slot of 1st level or higher. The beast returns to life after 1 minute with all its hit points restored."
+							},
+							{
+								"type": "text",
+								"content": "When you finish a long rest, you can summon a different primal beast. The new beast appears in an unoccupied space within 5 feet of you, and you choose its stat block and appearance. If you already have a beast from this feature, it vanishes when the new beast appears. The beast also vanishes if you die."
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -17579,8 +19286,40 @@
 								"content": "At 3rd level, you gain one of the following features of your choice."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Colossus Slayer\",\"entries\":[\"Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra <span class=\"text-red-400 font-semibold\">1d8</span> damage if it's below its hit point maximum. You can deal this extra damage only once per turn.\"]},{\"type\":\"section\",\"name\":\"Giant Killer\",\"entries\":[\"When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.\"]},{\"type\":\"section\",\"name\":\"Horde Breaker\",\"entries\":[\"Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Colossus Slayer",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra <span class=\"text-red-400 font-semibold\">1d8</span> damage if it's below its hit point maximum. You can deal this extra damage only once per turn."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Giant Killer",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Horde Breaker",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon."
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -17596,8 +19335,40 @@
 						"content": "At 7th level, you gain one of the following features of your choice."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Escape the Horde\",\"entries\":[\"Opportunity attacks against you are made with disadvantage.\"]},{\"type\":\"section\",\"name\":\"Multiattack Defense\",\"entries\":[\"When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.\"]},{\"type\":\"section\",\"name\":\"Steel Will\",\"entries\":[\"You have advantage on saving throws against being <i class=\"text-dnd-gold\">frightened</i>.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Escape the Horde",
+								"entries": [
+									{
+										"type": "text",
+										"content": "Opportunity attacks against you are made with disadvantage."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Multiattack Defense",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Steel Will",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You have advantage on saving throws against being <i class=\"text-dnd-gold\">frightened</i>."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -17622,8 +19393,40 @@
 						"content": "At 15th level, you gain one of the following features of your choice."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"count\":1,\"entries\":[{\"type\":\"section\",\"name\":\"Evasion\",\"entries\":[\"You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a <a href=\"/spells?search=lightning bolt\" class=\"text-dnd-gold hover:underline\">lightning bolt</a> spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.\"]},{\"type\":\"section\",\"name\":\"Stand Against the Tide\",\"entries\":[\"When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.\"]},{\"type\":\"section\",\"name\":\"Uncanny Dodge\",\"entries\":[\"When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Evasion",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a <a href=\"/spells?search=lightning bolt\" class=\"text-dnd-gold hover:underline\">lightning bolt</a> spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Stand Against the Tide",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Uncanny Dodge",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -17789,14 +19592,6 @@
 											{
 												"type": "text",
 												"content": "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one."
-											},
-											{
-												"type": "text",
-												"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"int\"]}"
-											},
-											{
-												"type": "text",
-												"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"int\"]}"
 											}
 										]
 									}
@@ -18645,8 +20440,34 @@
 								"content": "The powers below use your Psionic Energy dice."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"section\",\"name\":\"Psi-Bolstered Knack\",\"entries\":[\"When your non-psionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds.\"]},{\"type\":\"section\",\"name\":\"Psychic Whispers\",\"entries\":[\"You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other.\",\"The first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you expend the die.\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Psi-Bolstered Knack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When your non-psionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Psychic Whispers",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other."
+											},
+											{
+												"type": "text",
+												"content": "The first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you expend the die."
+											}
+										]
+									}
+								]
 							}
 						]
 					},
@@ -18684,8 +20505,30 @@
 						"content": "Your Psychic Blades are now an expression of your psi-suffused soul, giving you these powers that use your Psionic Energy dice:"
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"section\",\"name\":\"Homing Strikes\",\"entries\":[\"If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die.\"]},{\"type\":\"section\",\"name\":\"Psychic Teleportation\",\"entries\":[\"As a bonus action, you manifest one of your Psychic Blades, expend one Psionic Energy die and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Homing Strikes",
+								"entries": [
+									{
+										"type": "text",
+										"content": "If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Psychic Teleportation",
+								"entries": [
+									{
+										"type": "text",
+										"content": "As a bonus action, you manifest one of your Psychic Blades, expend one Psionic Energy die and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "TCE"
@@ -18838,14 +20681,6 @@
 											{
 												"type": "text",
 												"content": "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one."
-											},
-											{
-												"type": "text",
-												"content": "{\"type\":\"abilityDc\",\"name\":\"Spell\",\"attributes\":[\"int\"]}"
-											},
-											{
-												"type": "text",
-												"content": "{\"type\":\"abilityAttackMod\",\"name\":\"Spell\",\"attributes\":[\"int\"]}"
 											}
 										]
 									}
@@ -19056,8 +20891,34 @@
 								"content": "The powers below use your Psionic Energy dice."
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"section\",\"name\":\"Psi-Bolstered Knack\",\"entries\":[\"When your non-psionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds.\"]},{\"type\":\"section\",\"name\":\"Psychic Whispers\",\"entries\":[\"You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other.\",\"The first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you expend the die.\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Psi-Bolstered Knack",
+										"entries": [
+											{
+												"type": "text",
+												"content": "When your non-psionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Psychic Whispers",
+										"entries": [
+											{
+												"type": "text",
+												"content": "You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other."
+											},
+											{
+												"type": "text",
+												"content": "The first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you expend the die."
+											}
+										]
+									}
+								]
 							}
 						]
 					},
@@ -19095,8 +20956,30 @@
 						"content": "Your Psychic Blades are now an expression of your psi-suffused soul, giving you these powers that use your Psionic Energy dice:"
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"section\",\"name\":\"Homing Strikes\",\"entries\":[\"If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die.\"]},{\"type\":\"section\",\"name\":\"Psychic Teleportation\",\"entries\":[\"As a bonus action, you manifest one of your Psychic Blades, expend one Psionic Energy die and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Homing Strikes",
+								"entries": [
+									{
+										"type": "text",
+										"content": "If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Psychic Teleportation",
+								"entries": [
+									{
+										"type": "text",
+										"content": "As a bonus action, you manifest one of your Psychic Blades, expend one Psionic Energy die and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "TCE"
@@ -23709,8 +25592,30 @@
 								"content": "While you are touching the vessel, you can use it in the following ways:"
 							},
 							{
-								"type": "text",
-								"content": "{\"type\":\"options\",\"style\":\"list-hang-notitle\",\"entries\":[{\"type\":\"section\",\"name\":\"Bottled Respite\",\"entries\":[\"As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest.\"]},{\"type\":\"section\",\"name\":\"Genie's Wrath\",\"entries\":[\"Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid).\"]}]}"
+								"type": "section",
+								"name": "Choose one of the following options:",
+								"entries": [
+									{
+										"type": "section",
+										"name": "Bottled Respite",
+										"entries": [
+											{
+												"type": "text",
+												"content": "As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest."
+											}
+										]
+									},
+									{
+										"type": "section",
+										"name": "Genie's Wrath",
+										"entries": [
+											{
+												"type": "text",
+												"content": "Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid)."
+											}
+										]
+									}
+								]
 							},
 							{
 								"type": "text",
@@ -25032,8 +26937,50 @@
 						"content": "Starting at 10th level, you can use your action to increase your powers of perception. When you do so, choose one of the following benefits, which lasts until you are <i class=\"text-dnd-gold\">incapacitated</i> or you take a short or long rest. You can't use the feature again until you finish a rest."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"entries\",\"name\":\"Darkvision\",\"entries\":[\"You gain <i>darkvision</i> out to a range of 60 feet.\"]},{\"type\":\"entries\",\"name\":\"Ethereal Sight\",\"entries\":[\"You can see into the Ethereal Plane within 60 feet of you.\"]},{\"type\":\"entries\",\"name\":\"Greater Comprehension\",\"entries\":[\"You can read any language.\"]},{\"type\":\"entries\",\"name\":\"See Invisibility\",\"entries\":[\"You can see <i class=\"text-dnd-gold\">invisible</i> creatures and objects within 10 feet of you that are within line of sight.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Darkvision",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain <i>darkvision</i> out to a range of 60 feet."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Ethereal Sight",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can see into the Ethereal Plane within 60 feet of you."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Greater Comprehension",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can read any language."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "See Invisibility",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can see <i class=\"text-dnd-gold\">invisible</i> creatures and objects within 10 feet of you that are within line of sight."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -25085,8 +27032,50 @@
 						"content": "Starting at 10th level, you can use your action to increase your powers of perception. When you do so, choose one of the following benefits, which lasts until you are <i class=\"text-dnd-gold\">incapacitated</i> or you take a short or long rest. You can't use the feature again until you finish a rest."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"entries\",\"name\":\"Darkvision\",\"entries\":[\"You gain <i>darkvision</i> out to a range of 60 feet.\"]},{\"type\":\"entries\",\"name\":\"Ethereal Sight\",\"entries\":[\"You can see into the Ethereal Plane within 60 feet of you.\"]},{\"type\":\"entries\",\"name\":\"Greater Comprehension\",\"entries\":[\"You can read any language.\"]},{\"type\":\"entries\",\"name\":\"See Invisibility\",\"entries\":[\"You can see <i class=\"text-dnd-gold\">invisible</i> creatures and objects within 10 feet of you that are within line of sight.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Darkvision",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain <i>darkvision</i> out to a range of 60 feet."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Ethereal Sight",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can see into the Ethereal Plane within 60 feet of you."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Greater Comprehension",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can read any language."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "See Invisibility",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can see <i class=\"text-dnd-gold\">invisible</i> creatures and objects within 10 feet of you that are within line of sight."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -25777,8 +27766,50 @@
 						"content": "Starting at 14th level, you can use your action to consume the reserve of transmutation magic stored within your transmuter's stone in a single burst. When you do so, choose one of the following effects. Your transmuter's stone is destroyed and can't be remade until you finish a long rest."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"entries\",\"name\":\"Major Transformation\",\"entries\":[\"You can transmute one nonmagical object—no larger than a 5-foot cube—into another nonmagical object of similar size and mass and of equal or lesser value. You must spend 10 minutes handling the object to transform it.\"]},{\"type\":\"entries\",\"name\":\"Panacea\",\"entries\":[\"You remove all curses, diseases, and poisons affecting a creature that you touch with the transmuter's stone. The creature also regains all its hit points.\"]},{\"type\":\"entries\",\"name\":\"Restore Life\",\"entries\":[\"You cast the <a href=\"/spells?search=raise dead\" class=\"text-dnd-gold hover:underline\">raise dead</a> spell on a creature you touch with the transmuter's stone, without expending a spell slot or needing to have the spell in your spellbook.\"]},{\"type\":\"entries\",\"name\":\"Restore Youth\",\"entries\":[\"You touch the transmuter's stone to a willing creature, and that creature's apparent age is reduced by <span class=\"text-green-400 font-mono\">3d10</span> years, to a minimum of 13 years. This effect doesn't extend the creature's lifespan.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Major Transformation",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can transmute one nonmagical object—no larger than a 5-foot cube—into another nonmagical object of similar size and mass and of equal or lesser value. You must spend 10 minutes handling the object to transform it."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Panacea",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You remove all curses, diseases, and poisons affecting a creature that you touch with the transmuter's stone. The creature also regains all its hit points."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Restore Life",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You cast the <a href=\"/spells?search=raise dead\" class=\"text-dnd-gold hover:underline\">raise dead</a> spell on a creature you touch with the transmuter's stone, without expending a spell slot or needing to have the spell in your spellbook."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Restore Youth",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You touch the transmuter's stone to a willing creature, and that creature's apparent age is reduced by <span class=\"text-green-400 font-mono\">3d10</span> years, to a minimum of 13 years. This effect doesn't extend the creature's lifespan."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -25851,8 +27882,50 @@
 						"content": "Starting at 14th level, you can use your action to consume the reserve of transmutation magic stored within your transmuter's stone in a single burst. When you do so, choose one of the following effects. Your transmuter's stone is destroyed and can't be remade until you finish a long rest."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"options\",\"entries\":[{\"type\":\"entries\",\"name\":\"Major Transformation\",\"entries\":[\"You can transmute one nonmagical object—no larger than a 5-foot cube—into another nonmagical object of similar size and mass and of equal or lesser value. You must spend 10 minutes handling the object to transform it.\"]},{\"type\":\"entries\",\"name\":\"Panacea\",\"entries\":[\"You remove all curses, diseases, and poisons affecting a creature that you touch with the transmuter's stone. The creature also regains all its hit points.\"]},{\"type\":\"entries\",\"name\":\"Restore Life\",\"entries\":[\"You cast the <a href=\"/spells?search=raise dead\" class=\"text-dnd-gold hover:underline\">raise dead</a> spell on a creature you touch with the transmuter's stone, without expending a spell slot or needing to have the spell in your spellbook.\"]},{\"type\":\"entries\",\"name\":\"Restore Youth\",\"entries\":[\"You touch the transmuter's stone to a willing creature, and that creature's apparent age is reduced by <span class=\"text-green-400 font-mono\">3d10</span> years, to a minimum of 13 years. This effect doesn't extend the creature's lifespan.\"]}]}"
+						"type": "section",
+						"name": "Choose one of the following options:",
+						"entries": [
+							{
+								"type": "section",
+								"name": "Major Transformation",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can transmute one nonmagical object—no larger than a 5-foot cube—into another nonmagical object of similar size and mass and of equal or lesser value. You must spend 10 minutes handling the object to transform it."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Panacea",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You remove all curses, diseases, and poisons affecting a creature that you touch with the transmuter's stone. The creature also regains all its hit points."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Restore Life",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You cast the <a href=\"/spells?search=raise dead\" class=\"text-dnd-gold hover:underline\">raise dead</a> spell on a creature you touch with the transmuter's stone, without expending a spell slot or needing to have the spell in your spellbook."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Restore Youth",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You touch the transmuter's stone to a willing creature, and that creature's apparent age is reduced by <span class=\"text-green-400 font-mono\">3d10</span> years, to a minimum of 13 years. This effect doesn't extend the creature's lifespan."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "PHB"
@@ -27427,16 +29500,142 @@
 						"content": "An Alchemist is an expert at combining reagents to produce magical effects. Alchemists use their creations to give life and to leech it away."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Tools of the Trade|Artificer|EFA|Alchemist|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Tools of the Trade",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You gain the following benefits."
+							},
+							{
+								"type": "section",
+								"name": "Tool Proficiency",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain proficiency with <b>Alchemist's Supplies</b> and the <b>Herbalism Kit</b>. If you already have one of these proficiencies, you gain proficiency with one other type of <b>Artisan's Tools</b> of your choice (or with two other types if you have both)."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Potion Crafting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you brew a potion using the crafting rules in the <i>Dungeon Master's Guide</i>, the amount of time required to craft it is halved."
+									}
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Alchemist Spells|Artificer|EFA|Alchemist|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Alchemist Spells",
+						"entries": [
+							{
+								"type": "text",
+								"content": "When you reach an Artificer level specified in the Alchemist Spells table, you thereafter always have the listed spells prepared."
+							},
+							{
+								"type": "table",
+								"caption": "Alchemist Spells",
+								"colLabels": [
+									"Artificer Level",
+									"Spells"
+								],
+								"rows": [
+									[
+										"3",
+										"<a href=\"/spells?search=Healing Word\" class=\"text-dnd-gold hover:underline\">Healing Word</a>, <a href=\"/spells?search=Ray of Sickness\" class=\"text-dnd-gold hover:underline\">Ray of Sickness</a>"
+									],
+									[
+										"5",
+										"<a href=\"/spells?search=Flaming Sphere\" class=\"text-dnd-gold hover:underline\">Flaming Sphere</a>, <a href=\"/spells?search=Melf's Acid Arrow\" class=\"text-dnd-gold hover:underline\">Melf's Acid Arrow</a>"
+									],
+									[
+										"9",
+										"<a href=\"/spells?search=Gaseous Form\" class=\"text-dnd-gold hover:underline\">Gaseous Form</a>, <a href=\"/spells?search=Mass Healing Word\" class=\"text-dnd-gold hover:underline\">Mass Healing Word</a>"
+									],
+									[
+										"13",
+										"<a href=\"/spells?search=Death Ward\" class=\"text-dnd-gold hover:underline\">Death Ward</a>, <a href=\"/spells?search=Vitriolic Sphere\" class=\"text-dnd-gold hover:underline\">Vitriolic Sphere</a>"
+									],
+									[
+										"17",
+										"<a href=\"/spells?search=Cloudkill\" class=\"text-dnd-gold hover:underline\">Cloudkill</a>, <a href=\"/spells?search=Raise Dead\" class=\"text-dnd-gold hover:underline\">Raise Dead</a>"
+									]
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Experimental Elixir|Artificer|EFA|Alchemist|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Experimental Elixir",
+						"entries": [
+							{
+								"type": "text",
+								"content": "Whenever you finish a <i>Long Rest</i> while holding <b>Alchemist's Supplies</b>, you can use that tool to magically produce two elixirs. For each elixir, roll on the Experimental Elixir table for the elixir's effect, which is triggered when someone drinks the elixir. The elixir appears in a vial, and the vial vanishes when the elixir is drunk or poured out. If any elixir remains when you finish a <i>Long Rest</i>, the elixir and its vial vanish."
+							},
+							{
+								"type": "section",
+								"name": "Drinking an Elixir",
+								"entries": [
+									{
+										"type": "text",
+										"content": "As a <i>Bonus Action</i>, a creature can drink the elixir or administer it to another creature within 5 feet of itself."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Creating Additional Elixirs",
+								"entries": [
+									{
+										"type": "text",
+										"content": "As a <b>Magic</b> action while holding <b>Alchemist's Supplies</b>, you can expend one spell slot to create another elixir. When you do so, you choose its effect from the Experimental Elixir table rather than rolling."
+									},
+									{
+										"type": "text",
+										"content": "When you reach certain Artificer levels, you can make an additional elixir at the end of each <i>Long Rest</i>: a total of three at level 5, four at level 9, and five at level 15."
+									}
+								]
+							},
+							{
+								"type": "table",
+								"caption": "Experimental Elixir",
+								"colLabels": [
+									"1d6",
+									"Effect"
+								],
+								"rows": [
+									[
+										"1",
+										"<b>Healing.</b> The drinker regains a number of <i>Hit Points</i> equal to <span class=\"text-green-400 font-mono\">2d8</span> plus your Intelligence modifier. The number of <i>Hit Points</i> restored increases by <span class=\"text-green-400 font-mono\">1d8</span> when you reach Artificer levels 9 (<span class=\"text-green-400 font-mono\">3d8</span>) and 15 (<span class=\"text-green-400 font-mono\">4d8</span>)."
+									],
+									[
+										"2",
+										"<b>Swiftness.</b> The drinker's <i>Speed</i> increases by 10 feet for 1 hour. This bonus increases when you reach Artificer levels 9 (15 feet) and 15 (20 feet)."
+									],
+									[
+										"3",
+										"<b>Resilience.</b> The drinker gains a +1 bonus to AC for 10 minutes. The duration increases when you reach Artificer levels 9 (1 hour) and 15 (8 hours)."
+									],
+									[
+										"4",
+										"<b>Boldness.</b> The drinker can roll <span class=\"text-green-400 font-mono\">1d4</span> and add the number rolled to every attack roll and saving throw they make for the next minute. The duration increases when you reach Artificer levels 9 (10 minutes) and 15 (1 hour)."
+									],
+									[
+										"5",
+										"<b>Flight.</b> The drinker gains a <i>Fly Speed</i> of 10 feet for 10 minutes. The <i>Fly Speed</i> increases when you reach Artificer levels 9 (20 feet) and 15 (30 feet)."
+									],
+									[
+										"6",
+										"You determine the elixir's effect by choosing one of the other rows in this table."
+									]
+								]
+							}
+						]
 					}
 				],
 				"source": "EFA"
@@ -27536,20 +29735,219 @@
 						"content": "An Armorer modifies armor to function almost like a second skin. The armor is enhanced to hone the Armorer's magic, unleash potent attacks, and generate a formidable defense."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Tools of the Trade|Artificer|EFA|Armorer|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Tools of the Trade",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You gain the following benefits."
+							},
+							{
+								"type": "section",
+								"name": "Armor Training",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain training with Heavy armor."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Tool Proficiency",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain proficiency with <b>Smith's Tools</b>. If you already have this tool proficiency, you gain proficiency with one other type of <b>Artisan's Tools</b> of your choice."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Armor Crafting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you craft nonmagical or magic armor, the amount of time required to craft it is halved."
+									}
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Armorer Spells|Artificer|EFA|Armorer|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Armorer Spells",
+						"entries": [
+							{
+								"type": "text",
+								"content": "When you reach an Artificer level specified in the Armorer Spells table, you thereafter always have the listed spells prepared."
+							},
+							{
+								"type": "table",
+								"caption": "Armorer Spells",
+								"colLabels": [
+									"Artificer Level",
+									"Spells"
+								],
+								"rows": [
+									[
+										"3",
+										"<a href=\"/spells?search=Magic Missile\" class=\"text-dnd-gold hover:underline\">Magic Missile</a>, <a href=\"/spells?search=Thunderwave\" class=\"text-dnd-gold hover:underline\">Thunderwave</a>"
+									],
+									[
+										"5",
+										"<a href=\"/spells?search=Mirror Image\" class=\"text-dnd-gold hover:underline\">Mirror Image</a>, <a href=\"/spells?search=Shatter\" class=\"text-dnd-gold hover:underline\">Shatter</a>"
+									],
+									[
+										"9",
+										"<a href=\"/spells?search=Hypnotic Pattern\" class=\"text-dnd-gold hover:underline\">Hypnotic Pattern</a>, <a href=\"/spells?search=Lightning Bolt\" class=\"text-dnd-gold hover:underline\">Lightning Bolt</a>"
+									],
+									[
+										"13",
+										"<a href=\"/spells?search=Fire Shield\" class=\"text-dnd-gold hover:underline\">Fire Shield</a>, <a href=\"/spells?search=Greater Invisibility\" class=\"text-dnd-gold hover:underline\">Greater Invisibility</a>"
+									],
+									[
+										"17",
+										"<a href=\"/spells?search=Passwall\" class=\"text-dnd-gold hover:underline\">Passwall</a>, <a href=\"/spells?search=Wall of Force\" class=\"text-dnd-gold hover:underline\">Wall of Force</a>"
+									]
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Arcane Armor|Artificer|EFA|Armorer|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Arcane Armor",
+						"entries": [
+							{
+								"type": "text",
+								"content": "As a <b>Magic</b> action while you have <b>Smith's Tools</b> in hand, you can turn a suit of armor you are wearing into Arcane Armor. The armor continues to be Arcane Armor until you don another suit of armor or you die."
+							},
+							{
+								"type": "text",
+								"content": "You gain the following benefits while wearing your Arcane Armor."
+							},
+							{
+								"type": "section",
+								"name": "No Strength Requirement",
+								"entries": [
+									{
+										"type": "text",
+										"content": "If the armor normally has a Strength requirement, the Arcane Armor lacks this requirement for you."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Quick Don and Doff",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can don or doff the armor as a <b>Utilize</b> action. The armor can't be removed against your will."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Spellcasting Focus",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You can use the Arcane Armor as a <i>Spellcasting Focus</i> for your Artificer spells."
+									}
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Armor Model|Artificer|EFA|Armorer|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Armor Model",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You can customize your Arcane Armor. When you do so, choose one of the following armor models: {@subclassFeature Dreadnaught|Artificer|EFA|Armorer|EFA|3|EFA}, {@subclassFeature Guardian|Artificer|EFA|Armorer|EFA|3|EFA}, or {@subclassFeature Infiltrator|Artificer|EFA|Armorer|EFA|3|EFA}. The model you choose gives you special benefits while you wear it."
+							},
+							{
+								"type": "text",
+								"content": "Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of your Strength or Dexterity modifier, to the attack and damage rolls."
+							},
+							{
+								"type": "text",
+								"content": "You can change the armor's model whenever you finish a <i>Short Rest</i> or <i>Long Rest</i> if you have <b>Smith's Tools</b> in hand."
+							},
+							{
+								"type": "section",
+								"name": "Dreadnaught",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You design your armor to become a towering juggernaut in battle. It has the following features:"
+									},
+									{
+										"type": "list",
+										"items": [
+											{
+												"type": "item",
+												"name": "Force Demolisher",
+												"entry": "An arcane wrecking ball or sledgehammer projects from your armor. The demolisher counts as a Simple Melee weapon with the <i>R</i> property, and it deals <span class=\"text-red-400 font-semibold\">1d10</span> Force damage on a hit. If you hit a creature that is at least one size smaller than you with the demolisher, you can push the creature up to 10 feet straight away from yourself or pull the creature up to 10 feet toward yourself."
+											},
+											{
+												"type": "item",
+												"name": "Giant Stature",
+												"entry": "As a <i>Bonus Action</i>, you transform and enlarge your armor for 1 minute. For the duration, your reach increases by 5 feet, and if you are smaller than Large, you become Large, along with anything you are wearing. If there isn't enough room for you to increase your size, your size doesn't change. You can use this <i>Bonus Action</i> a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a <i>Long Rest</i>."
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Guardian",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You design your armor to be in the front line of conflict. It has the following features:"
+									},
+									{
+										"type": "text",
+										"content": "<b>Thunder Pulse</b>. "
+									},
+									{
+										"type": "text",
+										"content": "<b>Defensive Field</b>. "
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Infiltrator",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You customize your armor for subtler undertakings. It has the following features:"
+									},
+									{
+										"type": "list",
+										"items": [
+											{
+												"type": "item",
+												"name": "Lightning Launcher",
+												"entry": "A gemlike node appears on your armor, from which you can shoot bolts of lightning. The launcher counts as a Simple Ranged weapon with a normal range of 90 feet and a long range of 300 feet, and it deals <span class=\"text-red-400 font-semibold\">1d6</span> Lightning damage on a hit. Once on each of your turns when you hit a creature with the launcher, you can deal an extra <span class=\"text-red-400 font-semibold\">1d6</span> Lightning damage to that target."
+											},
+											{
+												"type": "item",
+												"name": "Powered Steps",
+												"entry": "Your <i>Speed</i> increases by 5 feet."
+											},
+											{
+												"type": "item",
+												"name": "Dampening Field",
+												"entry": "You have <i>Advantage</i> on Dexterity (<i>Stealth</i>) checks. If the armor imposes <i>Disadvantage</i> on such checks, the <i>Advantage</i> and <i>Disadvantage</i> cancel each other, as normal."
+											}
+										]
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "EFA"
@@ -27669,16 +30067,98 @@
 						"content": "An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Tools of the Trade|Artificer|EFA|Artillerist|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Tools of the Trade",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You gain the following benefits."
+							},
+							{
+								"type": "section",
+								"name": "Ranged Weaponry",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain proficiency with <i>Martial Ranged weapons</i>."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Tool Proficiency",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain proficiency with <b>Woodcarver's Tools</b>. If you already have this proficiency, you gain proficiency with one other type of <b>Artisan's Tools</b> of your choice."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Wand Crafting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you craft a magic <b>Wand</b>, the amount of time required to craft it is halved."
+									}
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Artillerist Spells|Artificer|EFA|Artillerist|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Artillerist Spells",
+						"entries": [
+							{
+								"type": "text",
+								"content": "When you reach an Artificer level specified in the Artillerist Spells table, you thereafter always have the listed spells prepared."
+							},
+							{
+								"type": "table",
+								"caption": "Artillerist Spells",
+								"colLabels": [
+									"Artificer Level",
+									"Spells"
+								],
+								"rows": [
+									[
+										"3",
+										"<a href=\"/spells?search=Shield\" class=\"text-dnd-gold hover:underline\">Shield</a>, <a href=\"/spells?search=Thunderwave\" class=\"text-dnd-gold hover:underline\">Thunderwave</a>"
+									],
+									[
+										"5",
+										"<a href=\"/spells?search=Scorching Ray\" class=\"text-dnd-gold hover:underline\">Scorching Ray</a>, <a href=\"/spells?search=Shatter\" class=\"text-dnd-gold hover:underline\">Shatter</a>"
+									],
+									[
+										"9",
+										"<a href=\"/spells?search=Fireball\" class=\"text-dnd-gold hover:underline\">Fireball</a>, <a href=\"/spells?search=Wind Wall\" class=\"text-dnd-gold hover:underline\">Wind Wall</a>"
+									],
+									[
+										"13",
+										"<a href=\"/spells?search=Ice Storm\" class=\"text-dnd-gold hover:underline\">Ice Storm</a>, <a href=\"/spells?search=Wall of Fire\" class=\"text-dnd-gold hover:underline\">Wall of Fire</a>"
+									],
+									[
+										"17",
+										"<a href=\"/spells?search=Cone of Cold\" class=\"text-dnd-gold hover:underline\">Cone of Cold</a>, <a href=\"/spells?search=Wall of Force\" class=\"text-dnd-gold hover:underline\">Wall of Force</a>"
+									]
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Eldritch Cannon|Artificer|EFA|Artillerist|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Eldritch Cannon",
+						"entries": [
+							{
+								"type": "text",
+								"content": "Using <b>Smith's Tools</b> or <b>Woodcarver's Tools</b>, you can take a <b>Magic</b> action to create a Small or Tiny Eldritch Cannon in an unoccupied space on a horizontal surface within 5 feet of yourself. You determine its appearance, including whether you carry it or not (and your choice of legs or wheels, for the latter). It disappears if it is reduced to 0 <i>Hit Points</i> or after 1 hour. You can dismiss it early as a <b>Magic</b> action."
+							},
+							{
+								"type": "text",
+								"content": "Once you create a cannon, you can't do so again until you finish a <i>Long Rest</i> or expend a spell slot to create one. You can have only one cannon at a time and can't create one while you already have one."
+							}
+						]
 					}
 				],
 				"source": "EFA"
@@ -27739,7 +30219,7 @@
 					},
 					{
 						"type": "text",
-						"content": "{\"type\":\"item\",\"name\":\"Double Firepower\",\"entries\":[\"You can now have two cannons at the same time, and you can create two with the same <b>Magic</b> action. (If you expend a spell slot to create the first cannon, you must expend another spell slot to create the second.) You can activate both of them with the same <i>Bonus Action</i>, ordering them to use the same activation option or different ones. You can't create a third cannon while you have two.\"]}"
+						"content": "<b>Double Firepower</b>. "
 					},
 					{
 						"type": "section",
@@ -27786,20 +30266,142 @@
 						"content": "A Battle Smith is a combination of protector and medic, an expert at defending others and repairing both materiel and personnel. To aid in their work, Battle Smiths are accompanied by a <b>Steel Defender</b>, a protective companion of their own creation."
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Tools of the Trade|Artificer|EFA|Battle Smith|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Tools of the Trade",
+						"entries": [
+							{
+								"type": "text",
+								"content": "You gain the following benefits."
+							},
+							{
+								"type": "section",
+								"name": "Tool Proficiency",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain proficiency with <b>Smith's Tools</b>. If you already have this proficiency, you gain proficiency with one other type of <b>Artisan's Tools</b> of your choice."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Weapon Crafting",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you craft a nonmagical or magic weapon, the amount of time required to craft it is halved."
+									}
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Battle Smith Spells|Artificer|EFA|Battle Smith|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Battle Smith Spells",
+						"entries": [
+							{
+								"type": "text",
+								"content": "When you reach an Artificer level specified in the Battle Smith Spells table, you thereafter always have the listed spells prepared."
+							},
+							{
+								"type": "table",
+								"caption": "Battle Smith Spells",
+								"colLabels": [
+									"Artificer Level",
+									"Spells"
+								],
+								"rows": [
+									[
+										"3",
+										"<a href=\"/spells?search=Heroism\" class=\"text-dnd-gold hover:underline\">Heroism</a>, <a href=\"/spells?search=Shield\" class=\"text-dnd-gold hover:underline\">Shield</a>"
+									],
+									[
+										"5",
+										"<a href=\"/spells?search=Shining Smite\" class=\"text-dnd-gold hover:underline\">Shining Smite</a>, <a href=\"/spells?search=Warding Bond\" class=\"text-dnd-gold hover:underline\">Warding Bond</a>"
+									],
+									[
+										"9",
+										"<a href=\"/spells?search=Aura of Vitality\" class=\"text-dnd-gold hover:underline\">Aura of Vitality</a>, <a href=\"/spells?search=Conjure Barrage\" class=\"text-dnd-gold hover:underline\">Conjure Barrage</a>"
+									],
+									[
+										"13",
+										"<a href=\"/spells?search=Aura of Purity\" class=\"text-dnd-gold hover:underline\">Aura of Purity</a>, <a href=\"/spells?search=Fire Shield\" class=\"text-dnd-gold hover:underline\">Fire Shield</a>"
+									],
+									[
+										"17",
+										"<a href=\"/spells?search=Banishing Smite\" class=\"text-dnd-gold hover:underline\">Banishing Smite</a>, <a href=\"/spells?search=Mass Cure Wounds\" class=\"text-dnd-gold hover:underline\">Mass Cure Wounds</a>"
+									]
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Battle Ready|Artificer|EFA|Battle Smith|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Battle Ready",
+						"entries": [
+							{
+								"type": "text",
+								"content": "Your combat training and your experiments with magic have paid off in two ways."
+							},
+							{
+								"type": "section",
+								"name": "Arcane Empowerment",
+								"entries": [
+									{
+										"type": "text",
+										"content": "When you attack with a magic weapon, you can use your Intelligence modifier, instead of your Strength or Dexterity modifier, for the attack and damage rolls."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Weapon Knowledge",
+								"entries": [
+									{
+										"type": "text",
+										"content": "You gain proficiency with <i>Martial weapons</i>. You can use a weapon with which you have proficiency as a <i>Spellcasting Focus</i> for your Artificer spells."
+									}
+								]
+							}
+						]
 					},
 					{
-						"type": "text",
-						"content": "{\"type\":\"refSubclassFeature\",\"subclassFeature\":\"Steel Defender|Artificer|EFA|Battle Smith|EFA|3|EFA\"}"
+						"type": "section",
+						"name": "Steel Defender",
+						"entries": [
+							{
+								"type": "text",
+								"content": "Your tinkering has borne you a companion, a <b>Steel Defender</b>. You determine the defender's appearance and whether it has two legs or four; your choices don't affect the defender's game statistics."
+							},
+							{
+								"type": "text",
+								"content": "The <b>Steel Defender</b> is <i>Friendly [Attitude]</i> to you and your allies and obeys you. It vanishes if you die."
+							},
+							{
+								"type": "section",
+								"name": "The Defender in Combat",
+								"entries": [
+									{
+										"type": "text",
+										"content": "In combat, the defender acts during your turn. It can move and take its <i>Reaction</i> on its own, but the only action it takes is the <b>Dodge</b> action unless you take a <i>Bonus Action</i> to command it to take an action. If you have the <i class=\"text-dnd-gold\">Incapacitated</i> condition, the defender acts on its own and isn't limited to the <b>Dodge</b> action."
+									}
+								]
+							},
+							{
+								"type": "section",
+								"name": "Restoring or Replacing the Defender",
+								"entries": [
+									{
+										"type": "text",
+										"content": "If the defender has died within the last hour, you can take a <b>Magic</b> action to touch it and expend a spell slot. The defender returns to life after 1 minute with all its <i>Hit Points</i> restored."
+									},
+									{
+										"type": "text",
+										"content": "Whenever you finish a <i>Long Rest</i>, you can create a new <b>Steel Defender</b> if you have <b>Smith's Tools</b> in hand. If you already have a defender from this feature, the first one vanishes."
+									}
+								]
+							}
+						]
 					}
 				],
 				"source": "EFA"
