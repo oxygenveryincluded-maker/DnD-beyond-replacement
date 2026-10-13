@@ -40,6 +40,7 @@
   import racesData from '$lib/data/races.json';
   import backgroundsData from '$lib/data/backgrounds.json';
   import spellsData from '$lib/data/spells.json';
+  import spellClassesData from '$lib/data/spell-classes.json';
   import featsData from '$lib/data/feats.json';
   import equipmentData from '$lib/data/equipment.json';
 
@@ -56,6 +57,7 @@
   let equipInput = $state('');
   let equipQty = $state(1);
   let newSpellCantrip = $state(false);
+  let showAllSpells = $state(false);
   let pendingDeleteId = $state<string | null>(null);
   let openSpellLevels = $state<Record<number, boolean>>({});
 
@@ -167,12 +169,36 @@ const backgroundInfo = $derived(
     return out;
   });
 
-  // NOTE: spells.json has no per-class spell lists (the fetch script drops the
-  // upstream `classes` field), so these groups show the full list per spell
-  // level. If class lists are preserved later, filter here by selectedChar.class.
+  // Class spell lists parsed from the dnd5e.wikidot.com dump
+  // (scripts/parse-wikidot-spells.mjs -> spell-classes.json). Lookup by
+  // lowercase spell name; a spell with no entry (or no class list, e.g.
+  // thunder-step) can't be proven off-list, so it is always included.
+  const spellClassMap = new Map<string, string[]>(
+    ((spellClassesData as any)?.spells || []).map((s: any) => [
+      String(s.name).toLowerCase(),
+      (s.classes || []).map((c: string) => String(c).toLowerCase())
+    ])
+  );
+  const knownSpellClasses = $derived.by(() => {
+    const set = new Set<string>();
+    for (const classes of spellClassMap.values()) {
+      for (const c of classes) set.add(c);
+    }
+    return set;
+  });
+  // Lowercase class name if it has its own spell list, else null (unfiltered).
+  const spellListFilter = $derived.by(() => {
+    const cls = String(selectedChar?.class || '').toLowerCase();
+    return cls && knownSpellClasses.has(cls) ? cls : null;
+  });
+
   const spellsByLevel = $derived.by(() => {
     const map = new Map<number, any[]>();
     for (const s of (spellsData as any[]).filter((x: any) => !x.homebrew || showHomebrew)) {
+      if (!showAllSpells && spellListFilter) {
+        const classes = spellClassMap.get(String(s.name).toLowerCase());
+        if (classes && !classes.includes(spellListFilter)) continue;
+      }
       const lvl = Number(s.level ?? 0);
       if (!map.has(lvl)) map.set(lvl, []);
       map.get(lvl)!.push(s);
@@ -1201,7 +1227,15 @@ const backgroundInfo = $derived(
           {/if}
 
           <div class="stat-block mb-3">
-            <p class="text-[10px] uppercase tracking-wider text-dnd-text-muted font-semibold mb-1">Spells by level — what you can pick</p>
+            <div class="flex items-center justify-between gap-2 mb-1">
+              <p class="text-[10px] uppercase tracking-wider text-dnd-text-muted font-semibold">Spells by level — what you can pick</p>
+              {#if spellListFilter}
+                <label class="inline-flex items-center gap-1.5 cursor-pointer select-none shrink-0" title="Uncheck to browse spells from every class list">
+                  <input type="checkbox" bind:checked={showAllSpells} class="w-3.5 h-3.5 accent-amber-500" />
+                  <span class="text-[10px] text-dnd-text-muted font-medium">All classes</span>
+                </label>
+              {/if}
+            </div>
             {#if !spellDerived.isCaster}
               <p class="text-[11px] text-dnd-text-muted">Your class has no spellcasting, so no spell levels unlock as you level up. You can still add spells manually below.</p>
             {:else if maxSpellLevel < 0}
@@ -1209,7 +1243,8 @@ const backgroundInfo = $derived(
             {:else}
               <p class="text-[11px] text-dnd-text-muted mb-2">
                 Lv.{selectedChar.level} {selectedChar.class}: you can cast up to {maxSpellLevel === 0 ? 'cantrips' : `level ${maxSpellLevel} spells`}{#if newSpellLevels.length}
-                — <span class="text-dnd-gold font-semibold">new: {newSpellLevels.map((l) => `level ${l}`).join(', ')}</span>{/if}.
+                — <span class="text-dnd-gold font-semibold">new: {newSpellLevels.map((l) => `level ${l}`).join(', ')}</span>{/if}.{#if spellListFilter && !showAllSpells}
+                <span class="block mt-0.5">Filtered to the {selectedChar.class} spell list.</span>{/if}
               </p>
               <div class="space-y-1.5">
                 {#each [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] as lvl}
