@@ -56,6 +56,8 @@
   let equipInput = $state('');
   let equipQty = $state(1);
   let newSpellCantrip = $state(false);
+  let pendingDeleteId = $state<string | null>(null);
+  let openSpellLevels = $state<Record<number, boolean>>({});
 
   const ABILITY_KEYS = ['str', 'dex', 'con', 'int', 'wis', 'cha'] as const;
   const ABILITY_LABELS: Record<string, string> = {
@@ -132,6 +134,71 @@ const backgroundInfo = $derived(
       ? derivedSpellcasting(classInfo, selectedChar?.level || 1, selectedChar?.abilityScores || {})
       : { isCaster: false, ability: null, saveDC: null, attackBonus: null, preparedCount: null, preparedFormula: null, cantripsKnown: 0, spellsKnown: 0, slots: [] as number[] }
   );
+
+  // Highest spell level with at least one slot (-1 = no casting). Used for the
+  // D&D Beyond-style "spells by level" picker: groups unlock as you level up.
+  const maxSpellLevel = $derived.by(() => {
+    const slots = spellDerived.slots || [];
+    let max = -1;
+    for (let i = 0; i < slots.length; i++) {
+      if ((slots[i] ?? 0) > 0) max = i;
+    }
+    if (max < 0 && spellDerived.cantripsKnown > 0) return 0;
+    return max;
+  });
+
+  const prevSlots = $derived.by(() => {
+    const lvl = selectedChar?.level || 1;
+    if (!classInfo || lvl <= 1) return [] as number[];
+    try {
+      return derivedSpellcasting(classInfo, lvl - 1, selectedChar?.abilityScores || {}).slots || [];
+    } catch {
+      return [] as number[];
+    }
+  });
+
+  // Spell levels (1-based) that gained their first slot at the current level.
+  const newSpellLevels = $derived.by(() => {
+    const cur = spellDerived.slots || [];
+    const out: number[] = [];
+    for (let i = 0; i < cur.length; i++) {
+      if ((cur[i] ?? 0) > 0 && (prevSlots[i] ?? 0) === 0) out.push(i + 1);
+    }
+    return out;
+  });
+
+  // NOTE: spells.json has no per-class spell lists (the fetch script drops the
+  // upstream `classes` field), so these groups show the full list per spell
+  // level. If class lists are preserved later, filter here by selectedChar.class.
+  const spellsByLevel = $derived.by(() => {
+    const map = new Map<number, any[]>();
+    for (const s of (spellsData as any[]).filter((x: any) => !x.homebrew || showHomebrew)) {
+      const lvl = Number(s.level ?? 0);
+      if (!map.has(lvl)) map.set(lvl, []);
+      map.get(lvl)!.push(s);
+    }
+    for (const arr of map.values()) {
+      arr.sort((a, b) => String(a.name).localeCompare(String(b.name)));
+    }
+    return map;
+  });
+
+  const addedSpellNames = $derived.by(() => new Set(
+    [...(selectedChar?.spellsCantrips || []), ...(selectedChar?.spellsKnown || [])]
+      .map((n) => String(n).toLowerCase())
+  ));
+
+  const knownCountByLevel = $derived.by(() => {
+    const counts = new Map<number, number>();
+    for (const name of selectedChar?.spellsKnown || []) {
+      const meta = (spellsData as any[]).find(
+        (s) => s.name.toLowerCase() === String(name).toLowerCase()
+      );
+      const lvl = Number(meta?.level ?? -1);
+      if (lvl > 0) counts.set(lvl, (counts.get(lvl) ?? 0) + 1);
+    }
+    return counts;
+  });
 
   const hpDerived = $derived(
     selectedChar?.hitDice
@@ -221,11 +288,21 @@ const backgroundInfo = $derived(
     selectedId = c.id;
     builderStep = 0;
     viewMode = 'builder';
+    pendingDeleteId = null;
   }
 
   function deleteCharacter(id: string) {
     characters = characters.filter((c) => c.id !== id);
     if (selectedId === id) selectedId = null;
+    if (pendingDeleteId === id) pendingDeleteId = null;
+  }
+
+  function requestDelete(id: string) {
+    pendingDeleteId = id;
+  }
+
+  function cancelDelete() {
+    pendingDeleteId = null;
   }
 
   function set(field: string, value: any) {
@@ -529,8 +606,8 @@ const backgroundInfo = $derived(
       <div class="space-y-3">
         {#each characters as char (char.id)}
           <div class="w-full card text-left min-h-[44px] cursor-pointer" role="button" tabindex="0"
-            onclick={() => { selectedId = char.id; viewMode = 'builder'; }}
-            onkeydown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectedId = char.id; viewMode = 'builder'; } }}>
+            onclick={() => { selectedId = char.id; viewMode = 'builder'; pendingDeleteId = null; }}
+            onkeydown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectedId = char.id; viewMode = 'builder'; pendingDeleteId = null; } }}>
             <div class="flex items-start justify-between gap-3">
               <div class="flex-1 min-w-0">
                 <h3 class="font-semibold text-dnd-text text-sm">{char.name}</h3>
@@ -545,15 +622,28 @@ const backgroundInfo = $derived(
                 </div>
               </div>
               <div class="flex items-center gap-1 shrink-0">
-                <button
-                  class="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg text-dnd-text-muted hover:text-red-400 hover:bg-red-900/20"
-                  onclick={(e) => { e.stopPropagation(); deleteCharacter(char.id); }}
-                  aria-label="Delete character"
-                >
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
-                  </svg>
-                </button>
+                {#if pendingDeleteId === char.id}
+                  <span class="inline-flex items-center gap-1" role="group" aria-label="Confirm delete character">
+                    <button
+                      class="filter-btn px-2 py-2 min-h-[44px] text-[11px] font-semibold text-red-300"
+                      onclick={(e) => { e.stopPropagation(); deleteCharacter(char.id); }}
+                    >Delete?</button>
+                    <button
+                      class="filter-btn px-2 py-2 min-h-[44px] text-[11px]"
+                      onclick={(e) => { e.stopPropagation(); cancelDelete(); }}
+                    >Keep</button>
+                  </span>
+                {:else}
+                  <button
+                    class="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg text-dnd-text-muted hover:text-red-400 hover:bg-red-900/20"
+                    onclick={(e) => { e.stopPropagation(); requestDelete(char.id); }}
+                    aria-label="Delete character"
+                  >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                    </svg>
+                  </button>
+                {/if}
                 <svg class="w-5 h-5 text-dnd-text-muted shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                 </svg>
@@ -567,7 +657,7 @@ const backgroundInfo = $derived(
   {:else if selectedChar}
     <!-- Selected character view -->
     <div class="mb-3 flex items-center gap-2">
-      <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" onclick={() => { selectedId = null; }}>← Back</button>
+      <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" onclick={() => { selectedId = null; pendingDeleteId = null; }}>← Back</button>
       <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" class:active={viewMode === 'builder'} onclick={() => viewMode = 'builder'}>Builder</button>
       <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" class:active={viewMode === 'spells'} onclick={() => viewMode = 'spells'}>Spells</button>
       <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" class:active={viewMode === 'sheet'} onclick={() => viewMode = 'sheet'}>Sheet</button>
@@ -1110,6 +1200,73 @@ const backgroundInfo = $derived(
             </div>
           {/if}
 
+          <div class="stat-block mb-3">
+            <p class="text-[10px] uppercase tracking-wider text-dnd-text-muted font-semibold mb-1">Spells by level — what you can pick</p>
+            {#if !spellDerived.isCaster}
+              <p class="text-[11px] text-dnd-text-muted">Your class has no spellcasting, so no spell levels unlock as you level up. You can still add spells manually below.</p>
+            {:else if maxSpellLevel < 0}
+              <p class="text-[11px] text-dnd-text-muted">No spell slots at character level {selectedChar.level} yet — check back when you level up.</p>
+            {:else}
+              <p class="text-[11px] text-dnd-text-muted mb-2">
+                Lv.{selectedChar.level} {selectedChar.class}: you can cast up to {maxSpellLevel === 0 ? 'cantrips' : `level ${maxSpellLevel} spells`}{#if newSpellLevels.length}
+                — <span class="text-dnd-gold font-semibold">new: {newSpellLevels.map((l) => `level ${l}`).join(', ')}</span>{/if}.
+              </p>
+              <div class="space-y-1.5">
+                {#each [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] as lvl}
+                  {@const list = spellsByLevel.get(lvl) || []}
+                  {@const unlocked = lvl <= maxSpellLevel}
+                  {@const isNew = newSpellLevels.includes(lvl)}
+                  {@const open = openSpellLevels[lvl] ?? isNew}
+                  {@const picked = lvl === 0 ? selectedChar.spellsCantrips.length : (knownCountByLevel.get(lvl) ?? 0)}
+                  {@const slotCount = lvl > 0 ? (spellDerived.slots[lvl - 1] ?? 0) : 0}
+                  <div class="rounded-lg border {unlocked ? 'border-dnd-border' : 'border-dnd-border/50 opacity-70'}">
+                    <button
+                      class="w-full flex items-center gap-2 px-2 py-2 min-h-[44px] text-left"
+                      onclick={() => { openSpellLevels[lvl] = !(openSpellLevels[lvl] ?? newSpellLevels.includes(lvl)); }}
+                      aria-expanded={open}
+                    >
+                      <span class="text-xs font-bold text-dnd-text w-[4.5rem] shrink-0">{lvl === 0 ? 'Cantrips' : `Level ${lvl}`}</span>
+                      {#if isNew}
+                        <span class="tag text-[9px] font-bold bg-dnd-gold/20 text-dnd-gold shrink-0">NEW</span>
+                      {/if}
+                      {#if !unlocked}
+                        <span class="tag text-[9px] bg-dnd-dark text-dnd-text-muted shrink-0">locked</span>
+                      {:else if slotCount > 0}
+                        <span class="tag text-[9px] bg-dnd-dark text-dnd-text-muted shrink-0">{slotCount} slot{slotCount > 1 ? 's' : ''}</span>
+                      {/if}
+                      <span class="text-[10px] text-dnd-text-muted ml-auto shrink-0">{picked} picked · {list.length} to browse</span>
+                      <span class="text-dnd-text-muted text-xs shrink-0" aria-hidden="true">{open ? '▾' : '▸'}</span>
+                    </button>
+                    {#if open}
+                      <div class="border-t border-dnd-border max-h-64 overflow-y-auto">
+                        {#if list.length === 0}
+                          <p class="text-[11px] text-dnd-text-muted px-2 py-2">No spells at this level in the current list.</p>
+                        {/if}
+                        {#each list as sp}
+                          {@const added = addedSpellNames.has(String(sp.name).toLowerCase())}
+                          <div class="flex items-center gap-2 px-2 py-1.5 border-b border-dnd-border/30 last:border-0 min-h-[40px]">
+                            <span class="flex-1 min-w-0">
+                              <span class="text-xs text-dnd-text truncate block">{sp.name}</span>
+                              <span class="text-[10px] text-dnd-text-muted">{formatSource(sp.source)}{sp.school ? ` · ${sp.school}` : ''}</span>
+                            </span>
+                            {#if added}
+                              <span class="tag text-[10px] bg-emerald-900/40 text-emerald-300 shrink-0">added</span>
+                            {:else}
+                              <button
+                                class="filter-btn text-[10px] px-2 py-1 min-h-[32px] shrink-0"
+                                onclick={() => addSpellFromList(sp)}
+                              >+ Add</button>
+                            {/if}
+                          </div>
+                        {/each}
+                      </div>
+                    {/if}
+                  </div>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
           <div class="flex gap-2 mb-3">
             <button class="filter-btn px-3 min-h-[44px] text-xs {newSpellCantrip ? 'active' : ''}"
               onclick={() => newSpellCantrip = true}>Cantrip</button>
@@ -1200,8 +1357,17 @@ const backgroundInfo = $derived(
           <div class="flex gap-2 items-center">
             <button class="filter-btn px-2 py-1 text-[10px] {selectedChar.inspiration ? 'active' : ''}"
               onclick={() => set('inspiration', !selectedChar.inspiration)}>Inspiration</button>
-            <button class="filter-btn text-[10px] px-3 text-red-400 hover:text-red-300 hover:bg-red-900/20"
-              onclick={() => deleteCharacter(selectedChar.id)}>Delete</button>
+            {#if pendingDeleteId === selectedChar.id}
+              <span class="inline-flex items-center gap-1" role="group" aria-label="Confirm delete character">
+                <button class="filter-btn text-[10px] px-3 font-semibold text-red-300"
+                  onclick={() => deleteCharacter(selectedChar.id)}>Confirm?</button>
+                <button class="filter-btn text-[10px] px-2"
+                  onclick={cancelDelete}>Cancel</button>
+              </span>
+            {:else}
+              <button class="filter-btn text-[10px] px-3 text-red-400 hover:text-red-300 hover:bg-red-900/20"
+                onclick={() => requestDelete(selectedChar.id)}>Delete</button>
+            {/if}
           </div>
         </div>
         <div class="grid grid-cols-6 gap-2 text-center">
