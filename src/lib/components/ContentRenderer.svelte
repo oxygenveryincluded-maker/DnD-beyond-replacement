@@ -14,6 +14,8 @@
     }
   }
 
+  // Pure: never mutates its input (entries may be $state proxies shared with
+  // the data store - mutating them inside $derived throws state_unsafe_mutation).
   function normalizeEntry(e: any): any {
     if (!e || typeof e !== 'object') return e;
     // If a text node contains embedded structured content, unwrap it
@@ -21,26 +23,33 @@
       const inner = tryParseEmbeddedJson(e.content);
       if (inner) return normalizeEntry(inner);
     }
+    let out = e;
     if (Array.isArray(e.entries)) {
-      e.entries = e.entries.map((x: any) => normalizeEntry(x));
+      out = { ...out, entries: e.entries.map((x: any) => normalizeEntry(x)) };
     }
     if (Array.isArray(e.items)) {
-      e.items = e.items.map((x: any) =>
-        typeof x === 'object' && x ? normalizeEntry(x) : x
-      );
+      out = {
+        ...out,
+        items: e.items.map((x: any) =>
+          x && typeof x === 'object' ? normalizeEntry({ ...x }) : x
+        )
+      };
     }
     if (Array.isArray(e.rows)) {
-      e.rows = e.rows.map((row: any[]) =>
-        row.map((cell: any) => {
-          if (typeof cell === 'string') {
-            const inner = tryParseEmbeddedJson(cell);
-            return inner ? normalizeEntry(inner) : cell;
-          }
-          return normalizeEntry(cell);
-        })
-      );
+      out = {
+        ...out,
+        rows: e.rows.map((row: any[]) =>
+          (Array.isArray(row) ? row : [row]).map((cell: any) => {
+            if (typeof cell === 'string') {
+              const inner = tryParseEmbeddedJson(cell);
+              return inner ? normalizeEntry(inner) : cell;
+            }
+            return cell && typeof cell === 'object' ? normalizeEntry({ ...cell }) : cell;
+          })
+        )
+      };
     }
-    return e;
+    return out;
   }
 
   let normEntries = $derived((entries || []).map((x: any) => normalizeEntry(x)));
@@ -49,6 +58,12 @@
 {#each normEntries as entry}
   {#if entry.type === 'text'}
     <p class="mb-2 text-sm leading-relaxed text-dnd-text">{@html entry.content}</p>
+  {:else if entry.type === 'quote'}
+    <blockquote class="mb-2 border-l-2 border-dnd-gold/60 pl-3 text-sm italic text-dnd-text">
+      {#if entry.entries?.length}
+        <Recursive entries={entry.entries} depth={depth + 1} />
+      {/if}
+    </blockquote>
   {:else if entry.type === 'section'}
     {#if entry.name}
       <h4 class="mt-4 mb-1 font-display text-base font-semibold text-dnd-gold">{entry.name}</h4>
