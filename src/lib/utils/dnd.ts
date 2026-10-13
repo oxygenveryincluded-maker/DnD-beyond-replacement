@@ -201,21 +201,67 @@ export function spellSlotsAtLevel(
 ): SpellSlots {
   const result: SpellSlots = { cantripsKnown: 0, spellsKnown: 0, slots: [] };
   if (!tables?.length) return result;
-
   for (const table of tables) {
     const title = (table.title || '').toLowerCase();
     const labels = (table.colLabels || []).map((c) => c.replace(/<[^>]*>/g, '').toLowerCase());
     const rowCells = table.rows[characterLevel - 1] || [];
     if (!rowCells.length) continue;
-
     if (title.includes('cantrip') || labels.some((l) => l.includes('cantrip'))) {
-      result.cantripsKnown = parseInt(rowCells[rowCells.length - 1], 10) || 0;
+      result.cantripsKnown = parseInt(rowCells[rowCells.length - 1], 10) || result.cantripsKnown;
     }
     if (title.includes('spells known') || labels.some((l) => l.includes('spells known'))) {
-      result.spellsKnown = parseInt(rowCells[rowCells.length - 1], 10) || 0;
+      result.spellsKnown = parseInt(rowCells[rowCells.length - 1], 10) || result.spellsKnown;
     }
-    if (title.includes('spell slots') || labels.some((l) => l.match(/^[1-9](st|nd|rd|th)?$/))) {
-      result.slots = rowCells.map((c) => parseInt(c, 10) || 0);
+    if (title.includes('spell slots') || labels.includes('spell slots') || labels.some((l) => l.match(/^[1-9](st|nd|rd|th)?$/)) || (labels.includes('slot level') && rowCells.some(c=>String(c).match(/<i>.*level/i)))) {
+      const slotCountIdx = labels.findIndex(l=>l==='spell slots');
+      if (slotCountIdx !== -1 && rowCells[slotCountIdx] !== undefined) {
+        const lvl = characterLevel > 0 ? Math.min(characterLevel, 9) : 1;
+        result.slots = Array(9).fill(0);
+        const sc = parseInt(rowCells[slotCountIdx], 10) || 0;
+        const sl = parseInt(String(rowCells.find(c=>String(c).match(/d+st|d+nd|d+rd|d+th/))||'').replace(/[^d]/g,''), 10) || labels.findIndex(l=>l.match(/^[1-9]/));
+        if (!isNaN(Number(sl)) && Number(sl) >=1) {
+          const slev = Number(sl);
+          const slotsArr = Array(9).fill(0);
+          slotsArr[slev-1] = sc;
+          result.slots = slotsArr;
+        } else {
+          result.slots = [sc, sc>0?sc:0, 0,0,0,0,0,0,0].slice(0,9);
+        }
+      } else {
+        result.slots = rowCells.map((c) => parseInt(c, 10) || 0);
+      }
+    }
+    if (labels.includes('prepared spells') && !result.spellsKnown) {
+      result.spellsKnown = parseInt(rowCells[rowCells.length - 1], 10) || result.spellsKnown;
+    }
+    if ((rowCells.length === 2 || rowCells.length === 3) && (labels.includes('spells known') || labels.includes('cantrips known') || labels.includes('prepared spells'))) {
+      const hasCantrip = labels.some(l=>l.includes('cantrip'));
+      const hasKnown = labels.some(l=>l.includes('known') || l.includes('prepared'));
+      if (hasCantrip && hasKnown) {
+        const canIdx = labels.findIndex(l=>l.includes('cantrip'));
+        const knIdx = labels.findIndex(l=>l.includes('known') || l.includes('prepared'));
+        if (canIdx >= 0) result.cantripsKnown = parseInt(rowCells[canIdx], 10) || result.cantripsKnown;
+        if (knIdx >= 0) result.spellsKnown = parseInt(rowCells[knIdx], 10) || result.spellsKnown;
+      } else if (hasKnown && !hasCantrip) {
+        const knIdx = labels.findIndex(l=>l.includes('known') || l.includes('prepared'));
+        if (knIdx >= 0) result.spellsKnown = parseInt(rowCells[knIdx], 10) || result.spellsKnown;
+      }
+    } {
+      const hasCantrip = labels.some(l=>l.includes('cantrip'));
+      const hasKnown = labels.some(l=>l.includes('known') || l.includes('prepared'));
+      if (hasCantrip && hasKnown) {
+        const canIdx = labels.findIndex(l=>l.includes('cantrip'));
+        const knIdx = labels.findIndex(l=>l.includes('known') || l.includes('prepared'));
+        if (canIdx >= 0) result.cantripsKnown = parseInt(rowCells[canIdx], 10) || result.cantripsKnown;
+        if (knIdx >= 0) result.spellsKnown = parseInt(rowCells[knIdx], 10) || result.spellsKnown;
+      } else if (hasKnown && !hasCantrip) {
+        const knIdx = labels.findIndex(l=>l.includes('known') || l.includes('prepared'));
+        if (knIdx >= 0) result.spellsKnown = parseInt(rowCells[knIdx], 10) || result.spellsKnown;
+      } else if (hasCantrip && !hasKnown && rowCells.length === 2) {
+        const canIdx = labels.findIndex(l=>l.includes('cantrip'));
+        if (canIdx >= 0) result.cantripsKnown = parseInt(rowCells[canIdx], 10) || result.cantripsKnown;
+        result.spellsKnown = parseInt(rowCells[rowCells.length - 1], 10) || result.spellsKnown;
+      }
     }
   }
   return result;

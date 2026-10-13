@@ -33,6 +33,7 @@
     formatEquipType
   } from '$lib/utils/dnd';
   import CharacterSheet from '$lib/components/CharacterSheet.svelte';
+  import SpellsPanel from '$lib/components/SpellsPanel.svelte';
   import SearchPicker from '$lib/components/SearchPicker.svelte';
   import classesData from '$lib/data/classes.json';
   import subclassesData from '$lib/data/subclasses.json';
@@ -46,7 +47,7 @@
   let cloudStatus = $state<'off' | 'syncing' | 'synced' | 'error'>('off');
   let didInitialSync = false;
   let selectedId = $state<string | null>(null);
-  let viewMode = $state<'builder' | 'sheet'>('builder');
+  let viewMode = $state<'builder' | 'spells' | 'sheet'>('builder');
   let builderStep = $state(0);
   let mounted = $state(false);
   let featsInput = $state('');
@@ -568,6 +569,7 @@ const backgroundInfo = $derived(
     <div class="mb-3 flex items-center gap-2">
       <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" onclick={() => { selectedId = null; }}>← Back</button>
       <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" class:active={viewMode === 'builder'} onclick={() => viewMode = 'builder'}>Builder</button>
+      <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" class:active={viewMode === 'spells'} onclick={() => viewMode = 'spells'}>Spells</button>
       <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" class:active={viewMode === 'sheet'} onclick={() => viewMode = 'sheet'}>Sheet</button>
       <span class="ml-auto inline-flex items-center gap-1 text-[10px] font-medium px-2 py-1 rounded-lg shrink-0
         {cloudStatus === 'synced' ? 'bg-emerald-900/40 text-emerald-300'
@@ -582,6 +584,8 @@ const backgroundInfo = $derived(
         char={selectedChar}
         onLayoutChange={(pos) => updateChar(selectedChar.id, (c) => { c.layoutPos = pos; })}
       />
+    {:else if viewMode === 'spells'}
+      <SpellsPanel char={selectedChar} classData={classInfo} edition={classInfo?.edition} />
     {:else}
       <!-- Builder mode -->
       <div class="flex gap-1.5 mb-4 overflow-x-auto pb-1 -mx-1 px-1">

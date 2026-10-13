@@ -2,9 +2,51 @@
   import Recursive from './ContentRenderer.svelte';
 
   let { entries = [], depth = 0 }: { entries: any[]; depth?: number } = $props();
+
+  function tryParseEmbeddedJson(content: string): any | null {
+    const t = (content || '').trim();
+    if (!(t.startsWith('{') || t.startsWith('['))) return null;
+    try {
+      const p = JSON.parse(t);
+      return p && typeof p === 'object' ? p : null;
+    } catch {
+      return null;
+    }
+  }
+
+  function normalizeEntry(e: any): any {
+    if (!e || typeof e !== 'object') return e;
+    // If a text node contains embedded structured content, unwrap it
+    if (e.type === 'text' && typeof e.content === 'string') {
+      const inner = tryParseEmbeddedJson(e.content);
+      if (inner) return normalizeEntry(inner);
+    }
+    if (Array.isArray(e.entries)) {
+      e.entries = e.entries.map((x: any) => normalizeEntry(x));
+    }
+    if (Array.isArray(e.items)) {
+      e.items = e.items.map((x: any) =>
+        typeof x === 'object' && x ? normalizeEntry(x) : x
+      );
+    }
+    if (Array.isArray(e.rows)) {
+      e.rows = e.rows.map((row: any[]) =>
+        row.map((cell: any) => {
+          if (typeof cell === 'string') {
+            const inner = tryParseEmbeddedJson(cell);
+            return inner ? normalizeEntry(inner) : cell;
+          }
+          return normalizeEntry(cell);
+        })
+      );
+    }
+    return e;
+  }
+
+  let normEntries = $derived((entries || []).map((x: any) => normalizeEntry(x)));
 </script>
 
-{#each entries as entry}
+{#each normEntries as entry}
   {#if entry.type === 'text'}
     <p class="mb-2 text-sm leading-relaxed text-dnd-text">{@html entry.content}</p>
   {:else if entry.type === 'section'}
@@ -48,7 +90,7 @@
           {#each entry.rows as row}
             <tr class="border-b border-dnd-border/50">
               {#each row as cell}
-                <td class="px-2 py-1">{@html cell}</td>
+                <td class="px-2 py-1">{@html (typeof cell === 'string' ? cell : cell?.content ?? '')}</td>
               {/each}
             </tr>
           {/each}
