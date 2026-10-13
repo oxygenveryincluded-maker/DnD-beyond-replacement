@@ -584,7 +584,7 @@ const backgroundInfo = $derived(
         didInitialSync = true;
         cloudStatus = 'syncing';
         try {
-          characters = await syncNow(s.user);
+          characters = (await syncNow(s.user)).characters;
           cloudStatus = 'synced';
         } catch (e) {
           cloudStatus = 'error';

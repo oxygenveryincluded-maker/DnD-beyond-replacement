@@ -10,8 +10,10 @@
     signUpCloud,
     signOutCloud,
     syncNow,
+    pushCloudNow,
     getSupabase
   } from '$lib/cloud';
+  import { loadCharacters } from '$lib/utils/character-store';
   
   const quickLinks = [
     { href: '/spells', label: 'Spells', desc: 'Browse all spells', color: 'from-purple-900/50 to-indigo-900/50' },
@@ -74,8 +76,26 @@
     busy = true;
     msg = null;
     try {
-      await syncNow($authState.user);
-      msg = { ok: true, text: 'Characters synced to cloud.' };
+      const res = await syncNow($authState.user);
+      const bits: string[] = [];
+      if (res.updated) bits.push(`${res.updated} updated`);
+      if (res.added) bits.push(`${res.added} added`);
+      msg = { ok: true, text: bits.length ? `Synced to cloud (${bits.join(', ')}).` : 'Already up to date.' };
+    } catch (e) {
+      msg = { ok: false, text: (e as Error).message };
+    } finally {
+      busy = false;
+    }
+  }
+
+  async function doUpload() {
+    if (!$authState.user) return;
+    busy = true;
+    msg = null;
+    try {
+      const local = loadCharacters();
+      await pushCloudNow($authState.user, local);
+      msg = { ok: true, text: `Uploaded ${local.length} character${local.length === 1 ? '' : 's'} to cloud.` };
     } catch (e) {
       msg = { ok: false, text: (e as Error).message };
     } finally {
@@ -141,9 +161,12 @@
       <p class="text-xs text-dnd-text-muted">Checking sign-in…</p>
     {:else if $authState.user}
       <p class="text-xs text-dnd-text-muted mb-2">Signed in as <span class="text-dnd-text">{ $authState.email }</span>. Changes to characters save to the cloud automatically.</p>
-<div class="flex gap-2">
+<div class="flex gap-2 flex-wrap">
           <button class="filter-btn text-xs px-3 py-2" onclick={doSyncNow} disabled={busy}>
             {busy ? 'Syncing…' : 'Sync now'}
+          </button>
+          <button class="filter-btn text-xs px-3 py-2" onclick={doUpload} disabled={busy} title="Push this device's characters to the cloud">
+            {busy ? '…' : 'Upload'}
           </button>
           <button class="filter-btn text-xs px-3 py-2" onclick={() => { showChangePw = !showChangePw; newPw = ''; newPw2 = ''; msg = null; }}>
             {showChangePw ? 'Cancel' : 'Change password'}

@@ -106,33 +106,71 @@ export async function pushCloudNow(user: string, characters: Character[]): Promi
   await pushCloudData(user, characters);
 }
 
-export function mergeCharacters(cloud: unknown[] | null | undefined, local: Character[]): Character[] {
-  const out = [...local];
-  if (!Array.isArray(cloud) || cloud.length === 0) return out;
-  const byId = new Map(local.map((c) => [c.id, c]));
-  for (const raw of cloud) {
-    const cc = raw as any;
-    const id = cc?.id as string | undefined;
-    if (!id) continue;
-    const existing = byId.get(id);
-    const cu = Number(cc.updatedAt ?? 0);
-    const lu = Number(existing?.updatedAt ?? 0);
-    if (!existing) {
-      out.push(migrateCharacter(cc));
-    } else if (cu > lu) {
-      const idx = out.findIndex((m) => m.id === id);
-      if (idx >= 0) out[idx] = migrateCharacter(cc);
-    }
-  }
-  return out;
+export interface MergeResult {
+  characters: Character[];
+  added: number;
+  updated: number;
 }
 
-export async function syncNow(user: string | null): Promise<Character[]> {
+function normName(n: unknown): string {
+  return String(n ?? '').trim().toLowerCase();
+}
+
+export function mergeCharacters(
+  cloud: unknown[] | null | undefined,
+  local: Character[]
+): MergeResult {
+  const out = [...local];
+  const empty: MergeResult = { characters: out, added: 0, updated: 0 };
+  if (!Array.isArray(cloud) || cloud.length === 0) return empty;
+  const byId = new Map(out.map((c) => [c.id, c]));
+  const byName = new Map<string, Character>();
+  for (const c of out) {
+    const n = normName((c as any)?.name);
+    if (n && !byName.has(n)) byName.set(n, c);
+  }
+  for (const raw of cloud) {
+    const cc = raw as any;
+    if (!cc || typeof cc !== 'object') continue;
+    const cu = Number(cc.updatedAt ?? 0);
+    let target: Character | undefined;
+    if (cc.id) target = byId.get(cc.id);
+    // Same character recreated on another device gets a new id: fall back to
+    // matching by name so edits update in place instead of duplicating.
+    // Most recent version (by updatedAt) wins; ids converge on the winner.
+    if (!target) {
+      const n = normName(cc.name);
+      if (n) target = byName.get(n);
+    }
+    if (!target) {
+      if (!cc.id && !normName(cc.name)) continue;
+      const migrated = migrateCharacter(cc);
+      out.push(migrated);
+      if (migrated.id) byId.set(migrated.id, migrated);
+      const n = normName((migrated as any)?.name);
+      if (n && !byName.has(n)) byName.set(n, migrated);
+      empty.added++;
+    } else if (cu > Number((target as any)?.updatedAt ?? 0)) {
+      const idx = out.findIndex((m) => m === target);
+      const migrated = migrateCharacter(cc);
+      if (idx >= 0) out[idx] = migrated;
+      if ((target as Character).id) byId.delete((target as Character).id);
+      if (migrated.id) byId.set(migrated.id, migrated);
+      const n = normName((migrated as any)?.name);
+      if (n) byName.set(n, migrated);
+      empty.updated++;
+    }
+    // Older-or-equal cloud copies are ignored: never downgrade, never duplicate.
+  }
+  return empty;
+}
+
+export async function syncNow(user: string | null): Promise<MergeResult> {
   const local = loadCharacters();
-  if (!user) return local;
+  if (!user) return { characters: local, added: 0, updated: 0 };
   const cloud = await fetchCloudData(user);
   const merged = mergeCharacters(cloud?.characters ?? [], local);
-  saveCharacters(merged);
-  await pushCloudData(user, merged);
+  saveCharacters(merged.characters);
+  await pushCloudData(user, merged.characters);
   return merged;
 }
