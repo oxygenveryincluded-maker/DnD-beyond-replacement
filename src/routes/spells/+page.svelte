@@ -90,20 +90,26 @@
   
   <div class="space-y-2">
     {#each filtered as spell (spell.name + spell.source)}
-      <button class="w-full card text-left" onclick={() => expandedSpell = expandedSpell?.name === spell.name ? null : spell}>
-        <div class="flex items-start justify-between gap-2">
-          <div class="flex-1 min-w-0">
-            <div class="flex items-center gap-2 flex-wrap">
-              <span class="font-semibold text-dnd-text text-sm">{spell.name}</span>
-              <span class="tag text-[10px] {getSchoolColor(spell.school)}">{formatSchool(spell.school)}</span>
-              {#if spell.concentration}<span class="tag text-[10px] bg-yellow-900/50 text-yellow-300">C</span>{/if}
-              {#if spell.ritual}<span class="tag text-[10px] bg-blue-900/50 text-blue-300">R</span>{/if}
+      <div class="card text-left">
+        <button
+          class="w-full text-left"
+          onclick={() => expandedSpell = expandedSpell?.name === spell.name ? null : spell}
+          aria-expanded={expandedSpell?.name === spell.name}
+        >
+          <div class="flex items-start justify-between gap-2">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="font-semibold text-dnd-text text-sm">{spell.name}</span>
+                <span class="tag text-[10px] {getSchoolColor(spell.school)}">{formatSchool(spell.school)}</span>
+                {#if spell.concentration}<span class="tag text-[10px] bg-yellow-900/50 text-yellow-300">C</span>{/if}
+                {#if spell.ritual}<span class="tag text-[10px] bg-blue-900/50 text-blue-300">R</span>{/if}
+              </div>
+              <p class="text-xs text-dnd-text-muted mt-0.5">{levelText(spell.level)} &middot; {formatSource(spell.source)}</p>
             </div>
-            <p class="text-xs text-dnd-text-muted mt-0.5">{levelText(spell.level)} &middot; {formatSource(spell.source)}</p>
+            <span class="text-dnd-text-muted text-xs shrink-0">{formatTime(spell.time)}</span>
           </div>
-          <span class="text-dnd-text-muted text-xs shrink-0">{formatTime(spell.time)}</span>
-        </div>
-        
+        </button>
+
         {#if expandedSpell?.name === spell.name}
           <div class="mt-3 pt-3 border-t border-dnd-border fade-in">
             <div class="grid grid-cols-2 gap-2 text-xs mb-3">
@@ -134,7 +140,7 @@
             {/if}
           </div>
         {/if}
-      </button>
+      </div>
     {/each}
   </div>
 </div>

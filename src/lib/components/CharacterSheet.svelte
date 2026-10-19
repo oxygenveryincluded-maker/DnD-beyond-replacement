@@ -20,6 +20,7 @@
   import equipmentData from '$lib/data/equipment.json';
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import CollapsibleEntries from '$lib/components/CollapsibleEntries.svelte';
+  import PrintableSheet from '$lib/components/PrintableSheet.svelte';
 
   const BLOCK_IDS = [
     'abilities',
@@ -324,6 +325,26 @@
 
   function printSheet() {
     window.print();
+  }
+
+  // Export: render the standard 5e character sheet (PrintableSheet) and print
+  // it, so the exported PDF looks like an official D&D character sheet.
+  let exporting = $state(false);
+
+  async function exportSheet() {
+    exporting = true;
+    document.body.classList.add('dnd-exporting');
+    // Let the printable sheet render before opening the print dialog.
+    await new Promise((r) => setTimeout(r, 80));
+    const restore = () => {
+      exporting = false;
+      document.body.classList.remove('dnd-exporting');
+      window.removeEventListener('afterprint', restore);
+    };
+    window.addEventListener('afterprint', restore);
+    window.print();
+    // Safari may not fire afterprint reliably; make sure we restore.
+    setTimeout(restore, 2000);
   }
 </script>
 
@@ -702,10 +723,19 @@
     {/each}
   </div>
 
-  <button class="print-btn filter-btn w-full min-h-[44px] text-sm mt-3" onclick={printSheet}>
-    Print / Save as PDF
-  </button>
+  <div class="flex gap-2 mt-3">
+    <button class="print-btn filter-btn flex-1 min-h-[44px] text-sm" onclick={exportSheet}>
+      Export character sheet
+    </button>
+    <button class="print-btn filter-btn flex-1 min-h-[44px] text-sm" onclick={printSheet}>
+      Print this view
+    </button>
+  </div>
 </div>
+
+{#if exporting}
+  <PrintableSheet char={char} />
+{/if}
 
 <style>
   .sheet-canvas {

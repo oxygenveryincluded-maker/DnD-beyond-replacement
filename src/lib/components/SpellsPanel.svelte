@@ -6,10 +6,12 @@
     proficiencyBonus,
     levelText,
     derivedSpellcasting,
-    sanitizeProficiencyText
+    sanitizeProficiencyText,
+    formatSource
   } from '$lib/utils/dnd';
   import spellsData from '$lib/data/spells.json';
   import equipmentData from '$lib/data/equipment.json';
+  import invocationsData from '$lib/data/invocations.json';
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
 
   let { char, classData = null, edition = '2014' }: { char: Character; classData: any; edition?: string } = $props();
@@ -18,8 +20,17 @@
   const pb = $derived(proficiencyBonus(char.level));
   const spell = $derived(classData ? derivedSpellcasting(classData, char.level, char.abilityScores) : null);
 
-  const spellMeta = (name: string) =>
-    (spellsData as any[]).find((s) => s.name.toLowerCase() === (name || '').toLowerCase()) || null;
+  const spellMeta = (name: string) => {
+    const wanted = String(name || '').trim().toLowerCase();
+    if (!wanted) return null;
+    const list = spellsData as any[];
+    return (
+      list.find((s) => s.name.toLowerCase() === wanted) ||
+      list.find((s) => s.name.toLowerCase().replace(/\s+/g, ' ') === wanted.replace(/\s+/g, ' ')) ||
+      list.find((s) => s.name.toLowerCase().startsWith(wanted)) ||
+      null
+    );
+  };
   const equipMeta = (name: string) =>
     (equipmentData as any[]).find((x) => x.name.toLowerCase() === (name || '').toLowerCase()) || null;
 
@@ -137,6 +148,17 @@
     return map;
   });
 
+  // Eldritch Invocations (Warlock)
+  const isWarlock = $derived(String((char as any).class || '').toLowerCase() === 'warlock');
+  const chosenInvocations = $derived(
+    ((char as any).invocations || []).map((name: string) => {
+      const inv = (invocationsData as any[]).find(
+        (i) => i.name.toLowerCase() === String(name).toLowerCase()
+      );
+      return { name: inv?.name || name, meta: inv || null };
+    })
+  );
+
   function fmtTime(t: any): string {
     const n = t?.number ?? 1;
     const u = t?.unit || '';
@@ -246,6 +268,22 @@
         <p class="text-xl font-bold text-dnd-gold leading-none">{spell?.attackBonus != null ? formatMod(spell.attackBonus) : '—'}</p>
       </div>
     </div>
+    {#if spell?.slots?.some((n) => n > 0)}
+      <div class="mt-2 flex flex-wrap gap-1.5 justify-center">
+        {#each spell.slots as n, i}
+          {#if n > 0}
+            <span class="tag text-[10px] bg-dnd-dark text-dnd-text">
+              {levelText(i + 1)}: {n} slot{n > 1 ? 's' : ''}
+            </span>
+          {/if}
+        {/each}
+      </div>
+    {/if}
+    {#if spell?.invocationsKnown}
+      <p class="text-[10px] text-dnd-text-muted mt-2 text-center">
+        Eldritch Invocations: {chosenInvocations.length}/{spell.invocationsKnown} known
+      </p>
+    {/if}
   </div>
 
   {#if weapons.length || spell?.isCaster}
@@ -317,7 +355,7 @@
         <div class="mb-3">
           <h4 class="sheet-heading mb-1.5">Cantrips <span class="text-dnd-text-muted font-normal">(at will — no slots)</span></h4>
           <div class="grid sm:grid-cols-2 gap-2">
-            {#each cantrips as s}
+            {#each cantrips as s (s.name)}
               <details class="spell-card">
                 <summary class="spell-summary">
                   <span class="font-semibold text-dnd-text">{s.name}</span>
@@ -335,6 +373,10 @@
                   </div>
                   {#if s.meta?.entries?.length}
                     <div class="spell-body"><ContentRenderer entries={s.meta.entries} /></div>
+                  {:else}
+                    <p class="text-[11px] text-amber-300">
+                      No description in the spell data for “{s.name}”.
+                    </p>
                   {/if}
                 </div>
               </details>
@@ -343,7 +385,7 @@
         </div>
       {/if}
 
-      {#each [...spellsByLevel.entries()] as [lvl, spells]}
+      {#each [...spellsByLevel.entries()] as [lvl, spells] (lvl)}
         <div class="mb-3">
           <h4 class="sheet-heading mb-1.5">
             {levelText(lvl)}
@@ -352,7 +394,7 @@
             {/if}
           </h4>
           <div class="grid sm:grid-cols-2 gap-2">
-            {#each spells as s}
+            {#each spells as s (s.name)}
               <details class="spell-card">
                 <summary class="spell-summary">
                   <span class="font-semibold text-dnd-text">{s.name}</span>
@@ -373,6 +415,10 @@
                   </div>
                   {#if s.meta?.entries?.length}
                     <div class="spell-body"><ContentRenderer entries={s.meta.entries} /></div>
+                  {:else}
+                    <p class="text-[11px] text-amber-300">
+                      No description in the spell data for “{s.name}”.
+                    </p>
                   {/if}
                   {#if s.meta?.entriesHigherLevel?.length}
                     <div class="mt-2 pt-2 border-t border-dnd-border">
@@ -389,6 +435,42 @@
     {:else}
       <div class="card p-4 text-center text-sm text-dnd-text-muted">
         No spells yet — add some in the <span class="text-dnd-gold font-semibold">Builder → Spells</span> step.
+      </div>
+    {/if}
+
+    {#if isWarlock}
+      <div class="card p-3">
+        <div class="flex items-baseline gap-2 mb-2">
+          <h3 class="sheet-heading">Eldritch Invocations</h3>
+          {#if spell?.invocationsKnown}
+            <p class="text-[11px] text-dnd-text-muted">
+              {chosenInvocations.length}/{spell.invocationsKnown} known
+            </p>
+          {/if}
+        </div>
+        {#if chosenInvocations.length === 0}
+          <p class="text-[11px] text-dnd-text-muted">
+            No invocations chosen yet — pick them in <span class="text-dnd-gold">Builder → Spells</span>.
+          </p>
+        {:else}
+          <div class="space-y-1.5">
+            {#each chosenInvocations as inv (inv.name)}
+              <details class="spell-card">
+                <summary class="spell-summary">
+                  <span class="font-semibold text-dnd-text">{inv.name}</span>
+                  <span class="text-[10px] text-dnd-text-muted shrink-0">{formatSource(inv.meta?.source || '')}</span>
+                </summary>
+                <div class="spell-det">
+                  {#if inv.meta?.entries?.length}
+                    <div class="spell-body"><ContentRenderer entries={inv.meta.entries} /></div>
+                  {:else}
+                    <p class="text-[11px] text-amber-300">No description in the invocation data.</p>
+                  {/if}
+                </div>
+              </details>
+            {/each}
+          </div>
+        {/if}
       </div>
     {/if}
   </div>

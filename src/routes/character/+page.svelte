@@ -30,11 +30,14 @@
     raceBackgroundLanguages,
     equipmentNamesFromEntries,
     dedupeRecords,
-    formatEquipType
+    formatEquipType,
+    invocationInfo,
+    preparedFormulaText
   } from '$lib/utils/dnd';
   import CharacterSheet from '$lib/components/CharacterSheet.svelte';
   import SpellsPanel from '$lib/components/SpellsPanel.svelte';
   import SearchPicker from '$lib/components/SearchPicker.svelte';
+  import invocationsData from '$lib/data/invocations.json';
   import classesData from '$lib/data/classes.json';
   import subclassesData from '$lib/data/subclasses.json';
   import racesData from '$lib/data/races.json';
@@ -58,6 +61,8 @@
   let equipQty = $state(1);
   let newSpellCantrip = $state(false);
   let showAllSpells = $state(false);
+  let showAllInvocations = $state(false);
+  let invocationSearch = $state('');
   let pendingDeleteId = $state<string | null>(null);
   let openSpellLevels = $state<Record<number, boolean>>({});
 
@@ -134,16 +139,17 @@ const backgroundInfo = $derived(
   const spellDerived = $derived(
     classInfo
       ? derivedSpellcasting(classInfo, selectedChar?.level || 1, selectedChar?.abilityScores || {})
-      : { isCaster: false, ability: null, saveDC: null, attackBonus: null, preparedCount: null, preparedFormula: null, cantripsKnown: 0, spellsKnown: 0, slots: [] as number[] }
+      : { isCaster: false, ability: null, saveDC: null, attackBonus: null, preparedCount: null, preparedFormula: null, cantripsKnown: 0, spellsKnown: 0, invocationsKnown: 0, slots: [] as number[] }
   );
 
-  // Highest spell level with at least one slot (-1 = no casting). Used for the
-  // D&D Beyond-style "spells by level" picker: groups unlock as you level up.
+  // Highest spell level with at least one slot (0 = cantrips only, -1 = none).
+  // Used for the D&D Beyond-style "spells by level" picker: groups unlock as
+  // you level up.
   const maxSpellLevel = $derived.by(() => {
     const slots = spellDerived.slots || [];
     let max = -1;
     for (let i = 0; i < slots.length; i++) {
-      if ((slots[i] ?? 0) > 0) max = i;
+      if ((slots[i] ?? 0) > 0) max = i + 1; // slots index is 0-based, level is 1-based
     }
     if (max < 0 && spellDerived.cantripsKnown > 0) return 0;
     return max;
@@ -224,6 +230,21 @@ const backgroundInfo = $derived(
       if (lvl > 0) counts.set(lvl, (counts.get(lvl) ?? 0) + 1);
     }
     return counts;
+  });
+
+  // ---- Eldritch Invocations (Warlock) ------------------------------------
+  const isWarlock = $derived(String(selectedChar?.class || '').toLowerCase() === 'warlock');
+  const invocationLimit = $derived(spellDerived.invocationsKnown || 0);
+  const chosenInvocations = $derived(selectedChar?.invocations || []);
+  const availableInvocations = $derived.by(() => {
+    const lvl = selectedChar?.level || 1;
+    const q = invocationSearch.trim().toLowerCase();
+    return (invocationsData as any[])
+      .map((inv) => invocationInfo(inv))
+      .filter((inv) => inv.name)
+      .filter((inv) => inv.level <= lvl)
+      .filter((inv) => !q || inv.name.toLowerCase().includes(q) || inv.prereq.toLowerCase().includes(q))
+      .sort((a, b) => a.name.localeCompare(b.name));
   });
 
   const hpDerived = $derived(
@@ -526,6 +547,19 @@ const backgroundInfo = $derived(
     });
   }
 
+  function toggleInvocation(name: string) {
+    if (!selectedId) return;
+    updateChar(selectedId, (c) => {
+      const list = c.invocations || (c.invocations = []);
+      if (list.includes(name)) {
+        c.invocations = list.filter((n) => n !== name);
+      } else {
+        if (invocationLimit > 0 && list.length >= invocationLimit) return;
+        c.invocations = [...list, name];
+      }
+    });
+  }
+
   function addEquipmentCustom() {
     if (!selectedId || !equipInput.trim()) return;
     updateChar(selectedId, (c) => {
@@ -682,10 +716,10 @@ const backgroundInfo = $derived(
 
   {:else if selectedChar}
     <!-- Selected character view -->
-    <div class="mb-3 flex items-center gap-2">
+    <div class="mb-3 flex items-center gap-2 no-print">
       <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" onclick={() => { selectedId = null; pendingDeleteId = null; }}>← Back</button>
       <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" class:active={viewMode === 'builder'} onclick={() => viewMode = 'builder'}>Builder</button>
-      <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" class:active={viewMode === 'spells'} onclick={() => viewMode = 'spells'}>Spells</button>
+      <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" class:active={viewMode === 'spells'} onclick={() => viewMode = 'spells'}>Combat</button>
       <button class="filter-btn text-sm px-3 py-2 min-h-[44px]" class:active={viewMode === 'sheet'} onclick={() => viewMode = 'sheet'}>Sheet</button>
       <span class="ml-auto inline-flex items-center gap-1 text-[10px] font-medium px-2 py-1 rounded-lg shrink-0
         {cloudStatus === 'synced' ? 'bg-emerald-900/40 text-emerald-300'
@@ -1205,9 +1239,11 @@ const backgroundInfo = $derived(
                   <p class="text-sm font-bold text-dnd-text">{selectedChar.spellsCantrips.length}/{spellDerived.cantripsKnown}</p>
                 </div>
                 <div>
-                  <p class="text-[10px] text-dnd-text-muted uppercase">Known</p>
+                  <p class="text-[10px] text-dnd-text-muted uppercase">{spellDerived.preparedCount != null ? 'Prepared' : 'Known'}</p>
                   <p class="text-sm font-bold text-dnd-text">
-                    {selectedChar.spellsKnown.length}{spellDerived.spellsKnown ? `/${spellDerived.spellsKnown}` : ''}
+                    {spellDerived.preparedCount != null
+                      ? `${selectedChar.spellsKnown.length}/${spellDerived.preparedCount}`
+                      : `${selectedChar.spellsKnown.length}${spellDerived.spellsKnown ? `/${spellDerived.spellsKnown}` : ''}`}
                   </p>
                 </div>
               </div>
@@ -1221,7 +1257,9 @@ const backgroundInfo = $derived(
                 </div>
               {/if}
               {#if spellDerived.preparedCount != null}
-                <p class="text-[10px] text-dnd-text-muted mt-2 text-center">Prepared: {spellDerived.preparedCount} ({spellDerived.preparedFormula})</p>
+                <p class="text-[10px] text-dnd-text-muted mt-2 text-center">
+                  Prepared: {spellDerived.preparedCount}{#if spellDerived.preparedFormula} ({preparedFormulaText(spellDerived.preparedFormula)}){/if}
+                </p>
               {/if}
             </div>
           {/if}
@@ -1301,6 +1339,58 @@ const backgroundInfo = $derived(
               </div>
             {/if}
           </div>
+
+          {#if isWarlock}
+            <div class="stat-block mb-3">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <p class="text-[10px] uppercase tracking-wider text-dnd-text-muted font-semibold">Eldritch Invocations</p>
+                <span class="tag text-[10px] {chosenInvocations.length >= invocationLimit ? 'bg-dnd-gold/20 text-dnd-gold' : 'bg-dnd-dark text-dnd-text-muted'}">
+                  {chosenInvocations.length}/{invocationLimit || '—'} known
+                </span>
+              </div>
+              <p class="text-[11px] text-dnd-text-muted mb-2">
+                You know <span class="text-dnd-gold font-semibold">{invocationLimit}</span> invocation{invocationLimit === 1 ? '' : 's'} at level {selectedChar.level}. Options unlock as you level up.
+              </p>
+              {#if chosenInvocations.length}
+                <div class="space-y-1 mb-3">
+                  {#each chosenInvocations as inv (inv)}
+                    <div class="flex items-center gap-2 text-xs px-2 py-1.5 rounded-lg bg-dnd-dark/50 min-h-[36px]">
+                      <span class="flex-1 text-dnd-text">{inv}</span>
+                      <button class="text-dnd-text-muted hover:text-red-400 p-1" onclick={() => toggleInvocation(inv)} aria-label="Remove {inv}">✕</button>
+                    </div>
+                  {/each}
+                </div>
+              {/if}
+              <input
+                type="text"
+                value={invocationSearch}
+                oninput={(e) => invocationSearch = (e.target as HTMLInputElement).value}
+                placeholder="Search invocations..."
+                class="w-full mb-2 text-sm" />
+              <div class="max-h-64 overflow-y-auto space-y-1">
+                {#if availableInvocations.length === 0}
+                  <p class="text-[11px] text-dnd-text-muted px-2 py-2">No invocations available at this level yet.</p>
+                {/if}
+                {#each availableInvocations as inv (inv.name)}
+                  {@const chosen = chosenInvocations.includes(inv.name)}
+                  {@const atLimit = !chosen && invocationLimit > 0 && chosenInvocations.length >= invocationLimit}
+                  <div class="flex items-center gap-2 px-2 py-1.5 rounded-lg {chosen ? 'bg-dnd-gold/10' : 'bg-dnd-dark/40'} min-h-[40px]">
+                    <span class="flex-1 min-w-0">
+                      <span class="text-xs text-dnd-text truncate block">{inv.name}</span>
+                      <span class="text-[10px] text-dnd-text-muted">
+                        {inv.level > 0 ? `L${inv.level}+` : 'any level'}{inv.prereq ? ` · ${inv.prereq}` : ''}
+                      </span>
+                    </span>
+                    <button
+                      class="filter-btn text-[10px] px-2 py-1 min-h-[32px] shrink-0 {atLimit ? 'opacity-40' : ''}"
+                      disabled={atLimit}
+                      onclick={() => toggleInvocation(inv.name)}
+                    >{chosen ? 'Remove' : '+ Add'}</button>
+                  </div>
+                {/each}
+              </div>
+            </div>
+          {/if}
 
           <div class="flex gap-2 mb-3">
             <button class="filter-btn px-3 min-h-[44px] text-xs {newSpellCantrip ? 'active' : ''}"
@@ -1386,7 +1476,7 @@ const backgroundInfo = $derived(
       </div>
 
       <!-- Mini summary + quick switches for inspiration/death saves -->
-      <div class="card mb-4 stat-block">
+      <div class="card mb-4 stat-block no-print">
         <div class="flex items-center justify-between mb-2">
           <h3 class="font-display text-sm font-bold text-dnd-gold">{selectedChar.name || 'Unnamed'}</h3>
           <div class="flex gap-2 items-center">

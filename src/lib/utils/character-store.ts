@@ -79,6 +79,7 @@ export interface Character {
   notes: string;
   inspiration: boolean;
   deathSaves: { successes: number; failures: number };
+  invocations?: string[];
   layoutOrder?: string[];
   layoutPos?: Record<string, { x: number; y: number; w: string }>;
   maxHpAuto?: boolean;
@@ -157,6 +158,7 @@ function createDefaultCharacter(): Character {
     notes: '',
     inspiration: false,
     deathSaves: { successes: 0, failures: 0 },
+    invocations: [],
     layoutOrder: undefined,
     layoutPos: undefined,
     updatedAt: 0
@@ -182,7 +184,8 @@ function migrate(old: any): Character {
     weaponProficiencies: cleanTextList(old.weaponProficiencies),
     toolProficiencies: cleanTextList(old.toolProficiencies),
     languages: cleanLanguages(old.languages),
-    feats: cleanTextList(old.feats)
+    feats: cleanTextList(old.feats),
+    invocations: Array.isArray(old.invocations) ? old.invocations : base.invocations
   };
 }
 

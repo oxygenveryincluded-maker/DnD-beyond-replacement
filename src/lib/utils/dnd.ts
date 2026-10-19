@@ -188,81 +188,127 @@ export function saveModifier(
 export interface SpellSlots {
   cantripsKnown: number;
   spellsKnown: number;
+  preparedSpells: number | null;
+  invocationsKnown: number;
   slots: number[]; // one slot count per spell level, index 0 = level 1
 }
 
-export function spellSlotsAtLevel(
-  tables: {
-    title: string;
-    colLabels: string[];
-    rows: string[][];
-  }[],
-  characterLevel: number
-): SpellSlots {
-  const result: SpellSlots = { cantripsKnown: 0, spellsKnown: 0, slots: [] };
-  if (!tables?.length) return result;
+interface ProgressionTable {
+  labels: string[];
+  rows: (string | number)[][];
+}
+
+// 5etools labels look like "{@filter Cantrips|spells|level=0|class=Warlock}" or
+// "<i>Cantrips</i>". Reduce them to the human-readable part.
+function cleanColumnLabel(raw: unknown): string {
+  let l = String(raw ?? '');
+  const filter = l.match(/\{@filter ([^|}]+)/);
+  if (filter) return filter[1].trim();
+  l = l.replace(/<[^>]*>/g, ' ');
+  l = l.replace(/\{@[^}]*\}/g, ' ');
+  return l.trim();
+}
+
+// "{@filter 1st|spells|level=1|class=Warlock}" / "1st" / "1" -> 1
+function parseSpellLevelValue(raw: unknown): number | null {
+  const s = cleanColumnLabel(raw);
+  if (!s) return null;
+  const ordinal = s.match(/(\d+)\s*(?:st|nd|rd|th)/i);
+  if (ordinal) return Number(ordinal[1]);
+  const filter = String(raw ?? '').match(/level=(\d+)/);
+  if (filter) return Number(filter[1]);
+  const plain = s.match(/^(\d+)$/);
+  if (plain) return Number(plain[1]);
+  return null;
+}
+
+function toNumber(raw: unknown): number {
+  const n = parseInt(String(raw ?? '').replace(/[^0-9-]/g, ''), 10);
+  return Number.isFinite(n) ? n : 0;
+}
+
+// Class progression tables live in `classTableGroups` (rows have no leading
+// level cell) and `tables` (rows start with the level). Collect both, keeping
+// only tables whose row length lines up with the column labels.
+function collectProgressionTables(classData: any): ProgressionTable[] {
+  const out: ProgressionTable[] = [];
+  const push = (t: any) => {
+    if (!t) return;
+    const labels = (t.colLabels || []).map(cleanColumnLabel);
+    if (!labels.length) return;
+    const rawRows: any[] = t.rowsSpellProgression || t.rows || [];
+    if (!rawRows.length) return;
+    const rows: (string | number)[][] = [];
+    for (const raw of rawRows) {
+      if (!Array.isArray(raw) || !raw.length) continue;
+      const cells = raw.length === labels.length + 1 ? raw.slice(1) : raw;
+      if (cells.length !== labels.length) continue;
+      rows.push(cells);
+    }
+    if (rows.length) out.push({ labels, rows });
+  };
+  for (const g of classData?.classTableGroups || []) push(g);
+  for (const t of classData?.tables || []) push(t);
+  return out;
+}
+
+export function classSpellProgression(classData: any, characterLevel: number): SpellSlots {
+  const result: SpellSlots = {
+    cantripsKnown: 0,
+    spellsKnown: 0,
+    preparedSpells: null,
+    invocationsKnown: 0,
+    slots: []
+  };
+  if (!classData) return result;
+  const level = Math.max(1, Math.min(20, characterLevel || 1));
+  const tables = collectProgressionTables(classData);
+  if (!tables.length) return result;
+
+  let warlockSlotCount = 0;
+  let warlockSlotLevel: number | null = null;
+
   for (const table of tables) {
-    const title = (table.title || '').toLowerCase();
-    const labels = (table.colLabels || []).map((c) => c.replace(/<[^>]*>/g, '').toLowerCase());
-    const rowCells = table.rows[characterLevel - 1] || [];
-    if (!rowCells.length) continue;
-    if (title.includes('cantrip') || labels.some((l) => l.includes('cantrip'))) {
-      result.cantripsKnown = parseInt(rowCells[rowCells.length - 1], 10) || result.cantripsKnown;
+    const row = table.rows[level - 1];
+    if (!row) continue;
+    const labels = table.labels.map((l) => l.toLowerCase());
+
+    // Table of spell levels: "1st | 2nd | ... | 9th" -> slot matrix.
+    const numericCols = labels
+      .map((l, i) => ({ l, i, lvl: parseSpellLevelValue(table.labels[i]) }))
+      .filter((c) => c.lvl != null && c.lvl >= 1 && c.lvl <= 9);
+    if (numericCols.length >= 3 && numericCols.length === labels.length) {
+      const slots = Array(9).fill(0);
+      for (const c of numericCols) slots[c.lvl! - 1] = toNumber(row[c.i]);
+      if (slots.some((n) => n > 0)) result.slots = slots;
+      continue;
     }
-    if (title.includes('spells known') || labels.some((l) => l.includes('spells known'))) {
-      result.spellsKnown = parseInt(rowCells[rowCells.length - 1], 10) || result.spellsKnown;
-    }
-    if (title.includes('spell slots') || labels.includes('spell slots') || labels.some((l) => l.match(/^[1-9](st|nd|rd|th)?$/)) || (labels.includes('slot level') && rowCells.some(c=>String(c).match(/<i>.*level/i)))) {
-      const slotCountIdx = labels.findIndex(l=>l==='spell slots');
-      if (slotCountIdx !== -1 && rowCells[slotCountIdx] !== undefined) {
-        const lvl = characterLevel > 0 ? Math.min(characterLevel, 9) : 1;
-        result.slots = Array(9).fill(0);
-        const sc = parseInt(rowCells[slotCountIdx], 10) || 0;
-        const sl = parseInt(String(rowCells.find(c=>String(c).match(/d+st|d+nd|d+rd|d+th/))||'').replace(/[^d]/g,''), 10) || labels.findIndex(l=>l.match(/^[1-9]/));
-        if (!isNaN(Number(sl)) && Number(sl) >=1) {
-          const slev = Number(sl);
-          const slotsArr = Array(9).fill(0);
-          slotsArr[slev-1] = sc;
-          result.slots = slotsArr;
-        } else {
-          result.slots = [sc, sc>0?sc:0, 0,0,0,0,0,0,0].slice(0,9);
-        }
-      } else {
-        result.slots = rowCells.map((c) => parseInt(c, 10) || 0);
+
+    for (let i = 0; i < labels.length; i++) {
+      const label = labels[i];
+      const cell = row[i];
+      if (label.includes('cantrip')) {
+        result.cantripsKnown = toNumber(cell);
+      } else if (label.includes('spells known') || label === 'spells known') {
+        result.spellsKnown = toNumber(cell);
+      } else if (label.includes('prepared spells')) {
+        result.preparedSpells = toNumber(cell);
+      } else if (label.includes('invocation')) {
+        result.invocationsKnown = toNumber(cell);
+      } else if (label === 'spell slots') {
+        warlockSlotCount = toNumber(cell);
+      } else if (label.includes('slot level')) {
+        warlockSlotLevel = parseSpellLevelValue(cell);
       }
     }
-    if (labels.includes('prepared spells') && !result.spellsKnown) {
-      result.spellsKnown = parseInt(rowCells[rowCells.length - 1], 10) || result.spellsKnown;
-    }
-    if ((rowCells.length === 2 || rowCells.length === 3) && (labels.includes('spells known') || labels.includes('cantrips known') || labels.includes('prepared spells'))) {
-      const hasCantrip = labels.some(l=>l.includes('cantrip'));
-      const hasKnown = labels.some(l=>l.includes('known') || l.includes('prepared'));
-      if (hasCantrip && hasKnown) {
-        const canIdx = labels.findIndex(l=>l.includes('cantrip'));
-        const knIdx = labels.findIndex(l=>l.includes('known') || l.includes('prepared'));
-        if (canIdx >= 0) result.cantripsKnown = parseInt(rowCells[canIdx], 10) || result.cantripsKnown;
-        if (knIdx >= 0) result.spellsKnown = parseInt(rowCells[knIdx], 10) || result.spellsKnown;
-      } else if (hasKnown && !hasCantrip) {
-        const knIdx = labels.findIndex(l=>l.includes('known') || l.includes('prepared'));
-        if (knIdx >= 0) result.spellsKnown = parseInt(rowCells[knIdx], 10) || result.spellsKnown;
-      }
-    } {
-      const hasCantrip = labels.some(l=>l.includes('cantrip'));
-      const hasKnown = labels.some(l=>l.includes('known') || l.includes('prepared'));
-      if (hasCantrip && hasKnown) {
-        const canIdx = labels.findIndex(l=>l.includes('cantrip'));
-        const knIdx = labels.findIndex(l=>l.includes('known') || l.includes('prepared'));
-        if (canIdx >= 0) result.cantripsKnown = parseInt(rowCells[canIdx], 10) || result.cantripsKnown;
-        if (knIdx >= 0) result.spellsKnown = parseInt(rowCells[knIdx], 10) || result.spellsKnown;
-      } else if (hasKnown && !hasCantrip) {
-        const knIdx = labels.findIndex(l=>l.includes('known') || l.includes('prepared'));
-        if (knIdx >= 0) result.spellsKnown = parseInt(rowCells[knIdx], 10) || result.spellsKnown;
-      } else if (hasCantrip && !hasKnown && rowCells.length === 2) {
-        const canIdx = labels.findIndex(l=>l.includes('cantrip'));
-        if (canIdx >= 0) result.cantripsKnown = parseInt(rowCells[canIdx], 10) || result.cantripsKnown;
-        result.spellsKnown = parseInt(rowCells[rowCells.length - 1], 10) || result.spellsKnown;
-      }
-    }
+  }
+
+  // Pact Magic style: all slots sit at a single level (Warlock).
+  if (warlockSlotCount > 0 && !result.slots.some((n) => n > 0)) {
+    const slots = Array(9).fill(0);
+    const slotLevel = warlockSlotLevel && warlockSlotLevel >= 1 ? warlockSlotLevel : 1;
+    slots[Math.min(8, slotLevel - 1)] = warlockSlotCount;
+    result.slots = slots;
   }
   return result;
 }
@@ -327,6 +373,19 @@ function evaluateFormula(formula: string, level: number, abilities: Record<strin
   }
 }
 
+// Turn a 5etools prepared-spells formula into readable text.
+export function preparedFormulaText(formula: string | null): string {
+  if (!formula) return '';
+  return String(formula)
+    .replace(/<\$level\$>/g, 'level')
+    .replace(/<\$prof_bonus\$>/g, 'proficiency bonus')
+    .replace(/<\$proficiency_bonus\$>/g, 'proficiency bonus')
+    .replace(/<\$([a-z]+)_mod\$>/g, (_m, k: string) => `${k.toUpperCase()} modifier`)
+    .replace(/<\$([a-z]+)\$>/g, (_m, k: string) => k.toUpperCase())
+    .replace(/\s*\+\s*/g, ' + ')
+    .trim();
+}
+
 export interface DerivedSpellcasting {
   isCaster: boolean;
   ability: string | null;
@@ -336,6 +395,7 @@ export interface DerivedSpellcasting {
   preparedFormula: string | null;
   cantripsKnown: number;
   spellsKnown: number;
+  invocationsKnown: number;
   slots: number[];
 }
 
@@ -344,8 +404,12 @@ export function derivedSpellcasting(
   level: number,
   abilities: Record<string, number>
 ): DerivedSpellcasting {
-  const slotData = spellSlotsAtLevel(classData?.tables, level);
-  const hasCasting = !!(classData?.spellcastingAbility || slotData.slots.length || slotData.cantripsKnown);
+  const slotData = classSpellProgression(classData, level);
+  const hasCasting = !!(
+    classData?.spellcastingAbility ||
+    slotData.slots.some((n) => n > 0) ||
+    slotData.cantripsKnown
+  );
   const isCaster = hasCasting;
   const ability: string | null = classData?.spellcastingAbility || null;
   const pb = proficiencyBonus(level);
@@ -356,18 +420,26 @@ export function derivedSpellcasting(
     saveDC = 8 + pb + mod;
     attackBonus = pb + mod;
   }
+  const preparedFormula: string | null = classData?.preparedSpells || null;
+  // 2014 classes use a formula (level + ability mod); 2024 classes have a
+  // "Prepared Spells" column in the class progression table.
+  const preparedCount = preparedFormula
+    ? evaluateFormula(preparedFormula, level, abilities)
+    : slotData.preparedSpells;
+  const usesPrepared = preparedFormula != null || slotData.preparedSpells != null;
+
   let cantripsKnown = slotData.cantripsKnown;
   let spellsKnown = slotData.spellsKnown;
   if (!cantripsKnown && classData?.cantripProgression) {
     cantripsKnown = classData.cantripProgression[level - 1] ?? 0;
   }
-  if (!spellsKnown && classData?.spellsKnownProgression) {
+  // "Spells known" only applies to classes that keep a spell list; prepared
+  // casters (cleric/druid/wizard/...) track prepared spells instead.
+  if (!spellsKnown && !usesPrepared && classData?.spellsKnownProgression) {
     spellsKnown = classData.spellsKnownProgression
       .slice(0, level)
       .reduce((a: number, b: number) => a + (Number(b) || 0), 0);
   }
-  const preparedFormula: string | null = classData?.preparedSpells || null;
-  const preparedCount = preparedFormula ? evaluateFormula(preparedFormula, level, abilities) : null;
   return {
     isCaster,
     ability,
@@ -377,6 +449,7 @@ export function derivedSpellcasting(
     preparedFormula,
     cantripsKnown,
     spellsKnown,
+    invocationsKnown: slotData.invocationsKnown,
     slots: slotData.slots
   };
 }
@@ -516,4 +589,50 @@ export function equipmentNamesFromEntries(se: any): string[] {
   }
   while ((m = re.exec(raw)) !== null) out.add(m[1].trim());
   return [...out].map((s) => s.charAt(0).toUpperCase() + s.slice(1));
+}
+
+// ---------------------------------------------------------------------------
+// Eldritch Invocations (Warlock)
+// ---------------------------------------------------------------------------
+
+export interface InvocationInfo {
+  name: string;
+  level: number; // minimum warlock level required (0 = no level requirement)
+  prereq: string; // human readable prerequisite (spell/other)
+  entries: any[];
+  source: string;
+}
+
+// Minimum warlock level required to learn an invocation, plus any other
+// prerequisite text (e.g. "a Warlock cantrip that deals damage").
+export function invocationInfo(invocation: any): InvocationInfo {
+  const prereqs = Array.isArray(invocation?.prerequisite) ? invocation.prerequisite : [];
+  let level = 0;
+  const notes: string[] = [];
+  for (const p of prereqs) {
+    if (!p || typeof p !== 'object') continue;
+    const lv = p?.level?.level;
+    if (typeof lv === 'number' && lv > level) level = lv;
+    const spells = Array.isArray(p.spell) ? p.spell : p.spell ? [p.spell] : [];
+    for (const s of spells) {
+      if (typeof s === 'string') {
+        const label = s.split('#')[0].replace(/[-_]/g, ' ');
+        notes.push(label.charAt(0).toUpperCase() + label.slice(1));
+      } else if (s && typeof s === 'object') {
+        const entry = s.entrySummary || s.entry;
+        if (entry) notes.push(String(entry));
+      }
+    }
+  }
+  return {
+    name: String(invocation?.name ?? ''),
+    level,
+    prereq: notes.join('; '),
+    entries: Array.isArray(invocation?.entries) ? invocation.entries : [],
+    source: String(invocation?.source ?? '')
+  };
+}
+
+export function isInvocationAvailable(invocation: any, characterLevel: number): boolean {
+  return invocationInfo(invocation).level <= characterLevel;
 }

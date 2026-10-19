@@ -157,3 +157,20 @@ input:focus, select:focus, textarea:focus {
 .fade-in {
 	animation: fadeIn 0.2s ease-out;
 }
+
+/* ---------------------------------------------------------------------------
+   Character sheet export: prints a standard 5e character sheet instead of the
+   on-screen draggable canvas.
+   --------------------------------------------------------------------------- */
+@media print {
+	body.dnd-exporting #dnd-print-sheet {
+		display: block !important;
+	}
+	body.dnd-exporting .char-sheet,
+	body.dnd-exporting .no-print {
+		display: none !important;
+	}
+	body.dnd-exporting #dnd-print-sheet {
+		position: static !important;
+	}
+}
