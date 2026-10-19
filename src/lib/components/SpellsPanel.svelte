@@ -354,7 +354,7 @@
       {#if cantrips.length}
         <div class="mb-3">
           <h4 class="sheet-heading mb-1.5">Cantrips <span class="text-dnd-text-muted font-normal">(at will — no slots)</span></h4>
-          <div class="grid sm:grid-cols-2 gap-2">
+          <div class="grid sm:grid-cols-2 gap-2 items-start">
             {#each cantrips as s (s.name)}
               <details class="spell-card">
                 <summary class="spell-summary">
@@ -393,7 +393,7 @@
               <span class="text-dnd-text-muted font-normal">({spell.slots[lvl - 1]} slot{spell.slots[lvl - 1] > 1 ? 's' : ''})</span>
             {/if}
           </h4>
-          <div class="grid sm:grid-cols-2 gap-2">
+          <div class="grid sm:grid-cols-2 gap-2 items-start">
             {#each spells as s (s.name)}
               <details class="spell-card">
                 <summary class="spell-summary">
