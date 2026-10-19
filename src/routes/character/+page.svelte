@@ -47,6 +47,7 @@
   import spellClassesData from '$lib/data/spell-classes.json';
   import featsData from '$lib/data/feats.json';
   import equipmentData from '$lib/data/equipment.json';
+  import magicItemsData from '$lib/data/items.json';
 
   let characters = $state<Character[]>([]);
   let cloudStatus = $state<'off' | 'syncing' | 'synced' | 'error'>('off');
@@ -1194,10 +1195,23 @@ const backgroundInfo = $derived(
             </div>
             <SearchPicker
               label="Browse equipment list"
-              items={dedupeRecords(equipmentData as any[]).map((e) => ({
+              items={dedupeRecords([
+                ...(equipmentData as any[]).map((e) => ({
+                  name: e.name,
+                  source: e.source,
+                  sub: e.armorCategory || formatEquipType(e.type) || e.weaponCategory || 'Gear'
+                })),
+                ...(magicItemsData as any[])
+                  .filter((i: any) => i.rarity && i.rarity !== 'none')
+                  .map((i: any) => ({
+                    name: i.name,
+                    source: i.source,
+                    sub: i.rarity === 'none' ? 'Magic item' : `${i.rarity} magic item`
+                  }))
+              ]).map((e) => ({
                 name: e.name,
                 source: e.source,
-                sub: e.armorCategory || formatEquipType(e.type) || e.weaponCategory || 'Gear'
+                sub: e.sub
               }))}
               onAdd={addEquipmentFromList}
             />
