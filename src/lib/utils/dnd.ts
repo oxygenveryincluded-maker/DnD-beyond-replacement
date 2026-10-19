@@ -636,3 +636,16 @@ export function invocationInfo(invocation: any): InvocationInfo {
 export function isInvocationAvailable(invocation: any, characterLevel: number): boolean {
   return invocationInfo(invocation).level <= characterLevel;
 }
+
+// How long a custom invocation takes to recharge.
+export const INVOCATION_REST_OPTIONS = [
+  'Instant',
+  '1 round',
+  '1 minute',
+  '10 minutes',
+  '1 hour',
+  'Short rest',
+  'Long rest',
+  'Until dismissed',
+  'Until the next dawn'
+] as const;

@@ -32,7 +32,8 @@
     dedupeRecords,
     formatEquipType,
     invocationInfo,
-    preparedFormulaText
+    preparedFormulaText,
+    INVOCATION_REST_OPTIONS
   } from '$lib/utils/dnd';
   import CharacterSheet from '$lib/components/CharacterSheet.svelte';
   import SpellsPanel from '$lib/components/SpellsPanel.svelte';
@@ -63,6 +64,12 @@
   let showAllSpells = $state(false);
   let showAllInvocations = $state(false);
   let invocationSearch = $state('');
+  let showCustomInvocation = $state(false);
+  let customInvName = $state('');
+  let customInvSpell = $state('');
+  let customInvRest = $state('Short rest');
+  let customInvUsesSlot = $state(true);
+  let customInvSpellSearch = $state('');
   let pendingDeleteId = $state<string | null>(null);
   let openSpellLevels = $state<Record<number, boolean>>({});
 
@@ -246,6 +253,48 @@ const backgroundInfo = $derived(
       .filter((inv) => !q || inv.name.toLowerCase().includes(q) || inv.prereq.toLowerCase().includes(q))
       .sort((a, b) => a.name.localeCompare(b.name));
   });
+
+  // Spells offered when creating a custom invocation.
+  const customInvocationSpellResults = $derived.by(() => {
+    const q = customInvSpellSearch.trim().toLowerCase();
+    const list = (spellsData as any[]).filter((s: any) => !s.homebrew || showHomebrew);
+    const filtered = q
+      ? list.filter((s: any) => s.name.toLowerCase().includes(q))
+      : list.filter((s: any) => s.level > 0);
+    return filtered.sort((a: any, b: any) => String(a.name).localeCompare(String(b.name))).slice(0, 40);
+  });
+
+  const customInvocations = $derived(selectedChar?.customInvocations || []);
+
+  function addCustomInvocation() {
+    if (!selectedId) return;
+    const spell = customInvSpell.trim();
+    if (!spell) return;
+    const name = customInvName.trim() || spell;
+    const entry = {
+      id: `ci-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+      name,
+      spell,
+      rest: customInvRest,
+      usesSlot: customInvUsesSlot
+    };
+    updateChar(selectedId, (c) => {
+      c.customInvocations = [...(c.customInvocations || []), entry];
+    });
+    customInvName = '';
+    customInvSpell = '';
+    customInvRest = 'Short rest';
+    customInvUsesSlot = true;
+    customInvSpellSearch = '';
+    showCustomInvocation = false;
+  }
+
+  function removeCustomInvocation(id: string) {
+    if (!selectedId) return;
+    updateChar(selectedId, (c) => {
+      c.customInvocations = (c.customInvocations || []).filter((i) => i.id !== id);
+    });
+  }
 
   const hpDerived = $derived(
     selectedChar?.hitDice
@@ -1346,6 +1395,7 @@ const backgroundInfo = $derived(
                 <p class="text-[10px] uppercase tracking-wider text-dnd-text-muted font-semibold">Eldritch Invocations</p>
                 <span class="tag text-[10px] {chosenInvocations.length >= invocationLimit ? 'bg-dnd-gold/20 text-dnd-gold' : 'bg-dnd-dark text-dnd-text-muted'}">
                   {chosenInvocations.length}/{invocationLimit || '—'} known
+                  {#if customInvocations.length}· {customInvocations.length} custom{/if}
                 </span>
               </div>
               <p class="text-[11px] text-dnd-text-muted mb-2">
@@ -1388,6 +1438,86 @@ const backgroundInfo = $derived(
                     >{chosen ? 'Remove' : '+ Add'}</button>
                   </div>
                 {/each}
+              </div>
+
+              {#if customInvocations.length}
+                <div class="mt-3">
+                  <p class="text-[10px] uppercase tracking-wider text-dnd-text-muted font-semibold mb-1">Custom invocations</p>
+                  <div class="space-y-1">
+                    {#each customInvocations as inv (inv.id)}
+                      <div class="flex items-center gap-2 text-xs px-2 py-1.5 rounded-lg bg-dnd-gold/10 min-h-[36px]">
+                        <span class="flex-1 min-w-0">
+                          <span class="text-dnd-text block truncate">{inv.name}</span>
+                          <span class="text-[10px] text-dnd-text-muted">
+                            {inv.spell} · {inv.rest} · {inv.usesSlot ? 'uses pact slot' : 'no slot'}
+                          </span>
+                        </span>
+                        <button class="text-dnd-text-muted hover:text-red-400 p-1" onclick={() => removeCustomInvocation(inv.id)} aria-label="Remove {inv.name}">✕</button>
+                      </div>
+                    {/each}
+                  </div>
+                </div>
+              {/if}
+
+              <div class="mt-3">
+                {#if !showCustomInvocation}
+                  <button
+                    class="filter-btn w-full min-h-[44px] text-sm"
+                    onclick={() => { showCustomInvocation = true; customInvSpellSearch = ''; }}
+                  >+ Custom invocation</button>
+                {:else}
+                  <div class="rounded-lg border border-dnd-border p-2 space-y-2">
+                    <p class="text-[10px] uppercase tracking-wider text-dnd-text-muted font-semibold">New custom invocation</p>
+                    <div>
+                      <label class="text-[10px] text-dnd-text-muted mb-1 block" for="ci-name">Name (optional)</label>
+                      <input id="ci-name" type="text" value={customInvName}
+                        oninput={(e) => customInvName = (e.target as HTMLInputElement).value}
+                        placeholder="e.g. Empowered Hex" class="w-full text-sm" />
+                    </div>
+                    <div>
+                      <label class="text-[10px] text-dnd-text-muted mb-1 block" for="ci-spell">Spell</label>
+                      {#if customInvSpell}
+                        <div class="flex items-center gap-2 text-xs px-2 py-1.5 rounded-lg bg-dnd-dark/50 min-h-[36px]">
+                          <span class="flex-1 text-dnd-text truncate">{customInvSpell}</span>
+                          <button class="text-dnd-text-muted hover:text-red-400 p-1" onclick={() => customInvSpell = ''} aria-label="Clear spell">✕</button>
+                        </div>
+                      {:else}
+                        <input id="ci-spell" type="text" value={customInvSpellSearch}
+                          oninput={(e) => customInvSpellSearch = (e.target as HTMLInputElement).value}
+                          placeholder="Search for a spell…" class="w-full text-sm" />
+                        <div class="mt-1 max-h-40 overflow-y-auto space-y-0.5">
+                          {#each customInvocationSpellResults as sp (sp.name + sp.source)}
+                            <button
+                              class="w-full text-left text-xs px-2 py-1.5 rounded hover:bg-dnd-card min-h-[32px]"
+                              onclick={() => { customInvSpell = sp.name; customInvSpellSearch = ''; }}
+                            >
+                              <span class="text-dnd-text">{sp.name}</span>
+                              <span class="text-[10px] text-dnd-text-muted"> · {levelText(sp.level)}</span>
+                            </button>
+                          {/each}
+                        </div>
+                      {/if}
+                    </div>
+                    <div>
+                      <label class="text-[10px] text-dnd-text-muted mb-1 block" for="ci-rest">Recharge after</label>
+                      <select id="ci-rest" value={customInvRest}
+                        onchange={(e) => customInvRest = (e.target as HTMLSelectElement).value} class="w-full text-sm">
+                        {#each INVOCATION_REST_OPTIONS as opt}
+                          <option value={opt}>{opt}</option>
+                        {/each}
+                      </select>
+                    </div>
+                    <label class="flex items-center gap-2 text-xs text-dnd-text cursor-pointer select-none" for="ci-slot">
+                      <input id="ci-slot" type="checkbox" bind:checked={customInvUsesSlot} class="w-4 h-4 accent-amber-500" />
+                      <span>Uses a warlock pact magic slot</span>
+                    </label>
+                    <div class="flex gap-2">
+                      <button class="filter-btn flex-1 min-h-[44px] text-sm font-semibold" disabled={!customInvSpell.trim()}
+                        onclick={addCustomInvocation}>Add invocation</button>
+                      <button class="filter-btn min-h-[44px] text-sm" onclick={() => showCustomInvocation = false}>Cancel</button>
+                    </div>
+                  </div>
+                {/if}
               </div>
             </div>
           {/if}

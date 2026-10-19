@@ -61,6 +61,9 @@ input:focus, select:focus, textarea:focus {
 .tag {
 	display: inline-flex;
 	align-items: center;
+	/* Flex items drop the whitespace between them, which ran labels and
+	   values together ("RangeSelf"). A small gap keeps them readable. */
+	gap: 0.25rem;
 	padding: 0.125rem 0.5rem;
 	border-radius: 9999px;
 	font-size: 0.75rem;

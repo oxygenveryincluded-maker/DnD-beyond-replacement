@@ -159,6 +159,15 @@
     })
   );
 
+  const customInvocations = $derived(
+    ((char as any).customInvocations || []).map((inv: any) => {
+      const meta = (spellsData as any[]).find(
+        (s) => s.name.toLowerCase() === String(inv?.spell || '').toLowerCase()
+      );
+      return { ...inv, meta: meta || null };
+    })
+  );
+
   function fmtTime(t: any): string {
     const n = t?.number ?? 1;
     const u = t?.unit || '';
@@ -282,6 +291,9 @@
     {#if spell?.invocationsKnown}
       <p class="text-[10px] text-dnd-text-muted mt-2 text-center">
         Eldritch Invocations: {chosenInvocations.length}/{spell.invocationsKnown} known
+        {#if customInvocations.length}
+          <span class="text-dnd-gold">· {customInvocations.length} custom</span>
+        {/if}
       </p>
     {/if}
   </div>
@@ -448,7 +460,7 @@
             </p>
           {/if}
         </div>
-        {#if chosenInvocations.length === 0}
+        {#if chosenInvocations.length === 0 && customInvocations.length === 0}
           <p class="text-[11px] text-dnd-text-muted">
             No invocations chosen yet — pick them in <span class="text-dnd-gold">Builder → Spells</span>.
           </p>
@@ -465,6 +477,32 @@
                     <div class="spell-body"><ContentRenderer entries={inv.meta.entries} /></div>
                   {:else}
                     <p class="text-[11px] text-amber-300">No description in the invocation data.</p>
+                  {/if}
+                </div>
+              </details>
+            {/each}
+            {#each customInvocations as inv (inv.id)}
+              <details class="spell-card">
+                <summary class="spell-summary">
+                  <span class="font-semibold text-dnd-text">{inv.name}</span>
+                  <span class="text-[10px] text-dnd-text-muted shrink-0">
+                    {inv.spell} · {inv.rest} · {inv.usesSlot ? 'pact slot' : 'no slot'}
+                  </span>
+                </summary>
+                <div class="spell-det">
+                  <div class="flex flex-wrap gap-1.5 mb-2">
+                    <span class="tag text-[10px]"><b>Spell</b> {inv.spell}</span>
+                    <span class="tag text-[10px]"><b>Recharge</b> {inv.rest}</span>
+                    <span class="tag text-[10px]"><b>Slot</b> {inv.usesSlot ? 'Warlock pact slot' : 'no slot'}</span>
+                    {#if inv.meta?.time?.[0]}<span class="tag text-[10px]"><b>Time</b> {fmtTime(inv.meta.time[0])}</span>{/if}
+                    {#if inv.meta?.range}<span class="tag text-[10px]"><b>Range</b> {fmtRange(inv.meta.range)}</span>{/if}
+                    {#if inv.meta?.components}<span class="tag text-[10px]"><b>Comp.</b> {fmtComponents(inv.meta.components)}</span>{/if}
+                    {#if inv.meta?.duration}<span class="tag text-[10px]"><b>Duration</b> {fmtDuration(inv.meta.duration[0])}</span>{/if}
+                  </div>
+                  {#if inv.meta?.entries?.length}
+                    <div class="spell-body"><ContentRenderer entries={inv.meta.entries} /></div>
+                  {:else}
+                    <p class="text-[11px] text-amber-300">No spell description found for “{inv.spell}”.</p>
                   {/if}
                 </div>
               </details>

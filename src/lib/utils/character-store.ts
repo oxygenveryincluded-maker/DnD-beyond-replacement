@@ -13,6 +13,17 @@ export interface SkillConfig {
   bonus?: number;
 }
 
+// A home-made Eldritch Invocation: uses a normal spell, with a rest
+// requirement and a choice of whether it draws on the Warlock's pact magic
+// slot (or is cast with a normal spell slot).
+export interface CustomInvocation {
+  id: string;
+  name: string;
+  spell: string;
+  rest: string;
+  usesSlot: boolean;
+}
+
 export interface EquipmentItem {
   name: string;
   quantity: number;
@@ -80,6 +91,7 @@ export interface Character {
   inspiration: boolean;
   deathSaves: { successes: number; failures: number };
   invocations?: string[];
+  customInvocations?: CustomInvocation[];
   layoutOrder?: string[];
   layoutPos?: Record<string, { x: number; y: number; w: string }>;
   maxHpAuto?: boolean;
@@ -159,6 +171,7 @@ function createDefaultCharacter(): Character {
     inspiration: false,
     deathSaves: { successes: 0, failures: 0 },
     invocations: [],
+    customInvocations: [],
     layoutOrder: undefined,
     layoutPos: undefined,
     updatedAt: 0
@@ -185,7 +198,8 @@ function migrate(old: any): Character {
     toolProficiencies: cleanTextList(old.toolProficiencies),
     languages: cleanLanguages(old.languages),
     feats: cleanTextList(old.feats),
-    invocations: Array.isArray(old.invocations) ? old.invocations : base.invocations
+    invocations: Array.isArray(old.invocations) ? old.invocations : base.invocations,
+    customInvocations: Array.isArray(old.customInvocations) ? old.customInvocations : base.customInvocations
   };
 }
 

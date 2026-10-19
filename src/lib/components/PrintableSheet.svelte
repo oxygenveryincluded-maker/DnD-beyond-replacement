@@ -111,6 +111,14 @@
       name: (invocationsData as any[]).find((i) => i.name.toLowerCase() === n.toLowerCase())?.name || n
     }))
   );
+  const customInvocations = $derived(
+    (char.customInvocations || []).map((inv: any) => ({
+      name: inv.name,
+      spell: inv.spell,
+      rest: inv.rest,
+      usesSlot: inv.usesSlot
+    }))
+  );
 
   const passivePerception = $derived(
     10 + skillModifier(char.abilityScores.wis || 10, char.skillProficiencies?.perception || {}, char.level)
@@ -253,12 +261,15 @@
         {/each}
       </div>
 
-      {#if invocations.length}
+      {#if invocations.length || customInvocations.length}
         <div class="box">
           <h2>Eldritch Invocations</h2>
           <p class="small">
             {#each invocations as inv, i}{inv.name}{i < invocations.length - 1 ? ', ' : ''}{/each}
           </p>
+          {#each customInvocations as inv}
+            <p class="small"><b>{inv.name}</b> — {inv.spell} · {inv.rest} · {inv.usesSlot ? 'pact slot' : 'no slot'}</p>
+          {/each}
         </div>
       {/if}
     </section>
