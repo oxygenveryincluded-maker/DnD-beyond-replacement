@@ -13,7 +13,7 @@
     pushCloudNow,
     getSupabase
   } from '$lib/cloud';
-  import { loadCharacters } from '$lib/utils/character-store';
+  import { loadCharacters, saveCharacters, migrateCharacter } from '$lib/utils/character-store';
   
   const quickLinks = [
     { href: '/spells', label: 'Spells', desc: 'Browse all spells', color: 'from-purple-900/50 to-indigo-900/50' },
@@ -35,6 +35,7 @@
   let showChangePw = $state(false);
   let newPw = $state('');
   let newPw2 = $state('');
+  let backupMsg = $state<{ ok: boolean; text: string } | null>(null);
 
   onMount(() => initCloudAuth());
 
@@ -127,6 +128,63 @@
   async function doSignOut() {
     await signOutCloud();
     msg = null;
+  }
+
+  // --- Local backup / restore -------------------------------------------------
+  // The cloud can be paused or unreachable, so keep a plain-JSON copy of every
+  // character on the device. Restoring merges by id (existing ids are replaced).
+  function doDownloadBackup() {
+    const chars = loadCharacters();
+    const payload = {
+      app: 'dnd-companion',
+      format: 1,
+      exportedAt: new Date().toISOString(),
+      characters: chars
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const stamp = new Date().toISOString().slice(0, 10);
+    a.href = url;
+    a.download = `dnd-companion-backup-${stamp}.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    backupMsg = { ok: true, text: `Downloaded backup of ${chars.length} character${chars.length === 1 ? '' : 's'}.` };
+  }
+
+  async function doRestoreBackup(event: Event) {
+    const input = event.target as HTMLInputElement;
+    const file = input.files?.[0];
+    input.value = '';
+    if (!file) return;
+    busy = true;
+    msg = null;
+    try {
+      const text = await file.text();
+      const parsed = JSON.parse(text);
+      const incomingRaw = Array.isArray(parsed) ? parsed : parsed?.characters;
+      if (!Array.isArray(incomingRaw)) throw new Error('That file does not look like a D&D Companion backup.');
+      const incoming = incomingRaw.map(migrateCharacter);
+      const byId = new Map(loadCharacters().map((c) => [c.id, c]));
+      let added = 0;
+      let replaced = 0;
+      for (const c of incoming) {
+        if (byId.has(c.id)) replaced++;
+        else added++;
+        byId.set(c.id, c);
+      }
+      saveCharacters(Array.from(byId.values()));
+      backupMsg = {
+        ok: true,
+        text: `Restored ${incoming.length} character${incoming.length === 1 ? '' : 's'} (${added} added, ${replaced} replaced).`
+      };
+    } catch (e) {
+      backupMsg = { ok: false, text: `Restore failed: ${(e as Error).message}` };
+    } finally {
+      busy = false;
+    }
   }
 </script>
 
@@ -221,6 +279,27 @@
     {/if}
   </div>
   
+  <div class="card mb-5">
+    <div class="flex items-center justify-between mb-3">
+      <h2 class="font-display text-sm font-semibold text-dnd-gold">💾 Backup</h2>
+      <span class="tag text-[10px] bg-dnd-dark text-dnd-text-muted">local copy</span>
+    </div>
+    <p class="text-xs text-dnd-text-muted mb-2">
+      Keep a copy of every character on this device as a plain JSON file. Restoring merges the file into this device
+      (characters with the same id are replaced). Works without the cloud.
+    </p>
+    <div class="flex gap-2 flex-wrap">
+      <button class="filter-btn text-xs px-3 py-2" onclick={doDownloadBackup}>Download backup</button>
+      <label class="filter-btn text-xs px-3 py-2 cursor-pointer">
+        Restore backup
+        <input type="file" accept="application/json,.json" class="hidden" onchange={doRestoreBackup} />
+      </label>
+    </div>
+    {#if backupMsg}
+      <p class="text-xs mt-3 {backupMsg.ok ? 'text-emerald-300' : 'text-red-400'}">{backupMsg.text}</p>
+    {/if}
+  </div>
+
   <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
     {#each quickLinks as link}
       <a href={base + link.href} class="card group bg-gradient-to-br {link.color} hover:border-dnd-gold transition-all">
