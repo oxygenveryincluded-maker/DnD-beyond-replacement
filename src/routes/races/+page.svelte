@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from '$app/state';
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
   import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
@@ -7,6 +8,8 @@
   import racesData from '$lib/data/races.json';
 
   let search = $state('');
+  const urlSearch = $derived(page.url.searchParams.get('search') || '');
+  $effect(() => { search = urlSearch; });
   let selectedEdition = $state<'classic' | 'one'>('classic');
   let showHomebrew = $state(false);
   let expanded = $state<string | null>(null);

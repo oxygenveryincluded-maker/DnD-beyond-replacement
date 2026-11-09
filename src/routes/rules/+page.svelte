@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from '$app/state';
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import SourceLegend from '$lib/components/SourceLegend.svelte';
   import conditionsData from '$lib/data/conditions.json';
@@ -75,6 +76,8 @@
   ];
 
   let conditionSearch = $state('');
+  const urlSearch = $derived(page.url.searchParams.get('search') || '');
+  $effect(() => { conditionSearch = urlSearch; });
   let selectedSource = $state<string | null>(null);
   let expandedRule = $state<string | null>(null);
   let expandedCondition = $state<string | null>(null);

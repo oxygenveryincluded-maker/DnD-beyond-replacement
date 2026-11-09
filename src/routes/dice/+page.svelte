@@ -112,7 +112,7 @@
         {currentRoll.total}
       </div>
       <div class="flex flex-wrap justify-center gap-1.5 mt-3">
-        {#each currentRoll.rolls as r, i}
+        {#each currentRoll.rolls as r}
           <span class="inline-flex h-10 min-w-10 items-center justify-center rounded-lg border border-dnd-border bg-dnd-darker px-2 text-sm font-semibold text-dnd-text tabular-nums fade-in">{r}</span>
         {/each}
         {#if currentRoll.advantage && currentRoll.rolls.length === 1 && currentRoll.advantageResult != null}

@@ -56,6 +56,18 @@ export function formatEquipType(type: string): string {
   return EQUIP_TYPE[type] || type;
 }
 
+// Magic-item rarities, low to high, with the badge colours used everywhere.
+export const RARITIES = ['common', 'uncommon', 'rare', 'very rare', 'legendary', 'artifact'] as const;
+
+export const RARITY_COLORS: Record<string, string> = {
+  common: 'bg-gray-700 text-gray-300',
+  uncommon: 'bg-green-900/50 text-green-300',
+  rare: 'bg-blue-900/50 text-blue-300',
+  'very rare': 'bg-purple-900/50 text-purple-300',
+  legendary: 'bg-orange-900/50 text-orange-300',
+  artifact: 'bg-red-900/50 text-red-300'
+};
+
 export function editionOf(entry: any): 'classic' | 'one' {
   if (entry.edition === 'one' || entry.edition === 'classic') return entry.edition;
   if (entry.source === 'XPHB' || entry.source === 'XDMG') return 'one';
@@ -631,10 +643,6 @@ export function invocationInfo(invocation: any): InvocationInfo {
     entries: Array.isArray(invocation?.entries) ? invocation.entries : [],
     source: String(invocation?.source ?? '')
   };
-}
-
-export function isInvocationAvailable(invocation: any, characterLevel: number): boolean {
-  return invocationInfo(invocation).level <= characterLevel;
 }
 
 // How long a custom invocation takes to recharge.

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from '$app/state';
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import SourceLegend from '$lib/components/SourceLegend.svelte';
   import { formatSource } from '$lib/utils/dnd';
@@ -6,6 +7,8 @@
   import allOptionalData from '$lib/data/optional-features.json';
 
   let search = $state('');
+  const urlSearch = $derived(page.url.searchParams.get('search') || '');
+  $effect(() => { search = urlSearch; });
   let selectedCategory = $state<string | null>(null);
   let expanded = $state<string | null>(null);
   let showAll = $state(false);

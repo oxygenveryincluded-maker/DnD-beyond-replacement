@@ -1,14 +1,16 @@
 <script lang="ts">
+  import { page } from '$app/state';
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
   import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
   import SourceLegend from '$lib/components/SourceLegend.svelte';
-  import { formatSource, editionOf, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
+  import { formatSource, editionOf, dedupeRecords, isHomebrew, RARITIES, RARITY_COLORS } from '$lib/utils/dnd';
   import itemsData from '$lib/data/items.json';
   
   let search = $state('');
+  const urlSearch = $derived(page.url.searchParams.get('search') || '');
+  $effect(() => { search = urlSearch; });
   let selectedRarity = $state<string | null>(null);
-  let selectedSource = $state<string | null>(null);
   let showAttunement = $state<boolean | null>(null);
   let selectedEdition = $state<'classic' | 'one'>('classic');
   let showHomebrew = $state(false);
@@ -16,28 +18,12 @@
   
   const magicItems = $derived((itemsData as any[]).filter((i: any) => i.rarity && i.rarity !== 'none'));
   
-  const rarities = ['common', 'uncommon', 'rare', 'very rare', 'legendary', 'artifact'];
-  const sources = $derived.by(() => {
-    const s = new Set<string>();
-    magicItems.forEach((i: any) => s.add(i.source));
-    return [null, ...Array.from(s).sort()];
-  });
-  
-  const rarityColors: Record<string, string> = {
-    'common': 'bg-gray-700 text-gray-300',
-    'uncommon': 'bg-green-900/50 text-green-300',
-    'rare': 'bg-blue-900/50 text-blue-300',
-    'very rare': 'bg-purple-900/50 text-purple-300',
-    'legendary': 'bg-orange-900/50 text-orange-300',
-    'artifact': 'bg-red-900/50 text-red-300'
-  };
   
   const filtered = $derived.by(() => {
     let result = magicItems;
     if (!showHomebrew) result = result.filter((i: any) => !isHomebrew(i));
     if (search) result = result.filter((i: any) => i.name.toLowerCase().includes(search.toLowerCase()));
     if (selectedRarity) result = result.filter((i: any) => i.rarity === selectedRarity);
-    if (selectedSource) result = result.filter((i: any) => i.source === selectedSource);
     if (showAttunement !== null) {
       result = showAttunement 
         ? result.filter((i: any) => i.reqAttune)
@@ -63,7 +49,7 @@
   
   <div class="flex flex-wrap gap-1.5 mb-2">
     <button class="filter-btn text-xs" class:active={selectedRarity === null} onclick={() => selectedRarity = null}>All</button>
-    {#each rarities as r}
+    {#each RARITIES as r}
       <button class="filter-btn text-xs" class:active={selectedRarity === r} onclick={() => selectedRarity = r}>{r}</button>
     {/each}
   </div>
@@ -85,7 +71,7 @@
           <div class="min-w-0">
             <span class="font-semibold text-sm text-dnd-text">{item.name}</span>
             <div class="flex items-center gap-1 mt-0.5 flex-wrap">
-              <span class="tag text-[10px] {rarityColors[item.rarity] || ''}">{item.rarity}</span>
+              <span class="tag text-[10px] {RARITY_COLORS[item.rarity] || ''}">{item.rarity}</span>
               {#if item.reqAttune}
                 <span class="tag text-[10px] bg-yellow-900/50 text-yellow-300">Attunement</span>
               {/if}

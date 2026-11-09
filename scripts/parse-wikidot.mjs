@@ -142,7 +142,6 @@ const DIR_EXCLUDE = {
     const txt = readTxt(join(SRC, 'lineage', f));
     // Skip stub pages (only include links to other pages)
     const meaningful = txt.replace(/\[\[include[^\]]*\]\]/g, '').replace(/\+.*\n/g, '').trim();
-    // console.log(f, 'meaningful', meaningful.length);
     const { name } = parseTitleSource(txt);
     // Normalize (MMotM)→(MPMM) and similar
     const cleanName = name.replace(/\s*\(MMotM\)/, ' (MPMM)').replace(/\s*\(MM\s*\)/, ' (MPMM)');

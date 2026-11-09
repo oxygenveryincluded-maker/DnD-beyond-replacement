@@ -97,7 +97,3 @@ export const SOURCE_NAMES: Record<string, string> = {
   "XMtS": "X Marks the Spot",
   "XPHB": "Player's Handbook (2024)",
 };
-
-export function sourceName(code: string): string {
-  return SOURCE_NAMES[code] || code;
-}

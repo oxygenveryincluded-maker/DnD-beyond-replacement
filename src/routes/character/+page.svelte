@@ -63,7 +63,6 @@
   let equipQty = $state(1);
   let newSpellCantrip = $state(false);
   let showAllSpells = $state(false);
-  let showAllInvocations = $state(false);
   let invocationSearch = $state('');
   let showCustomInvocation = $state(false);
   let customInvName = $state('');

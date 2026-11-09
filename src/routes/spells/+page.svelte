@@ -11,13 +11,11 @@
   let showHomebrew = $state(false);
   let selectedLevel = $state<number | null>(null);
   let selectedSchool = $state<string | null>(null);
-  let selectedClass = $state<string | null>(null);
   let selectedSource = $state<string | null>(null);
   let expandedSpell = $state<any | null>(null);
   
   const urlSearch = $derived(page.url.searchParams.get('search') || '');
   
-  const classes = ['Barbarian','Bard','Cleric','Druid','Fighter','Monk','Paladin','Ranger','Rogue','Sorcerer','Warlock','Wizard','Artificer'];
   const levels = [null,0,1,2,3,4,5,6,7,8,9];
   const schools = [null,'A','C','D','E','V','I','N','T'];
   const sources = [null,'PHB','XPHB','TCE','XGE','BGG'];

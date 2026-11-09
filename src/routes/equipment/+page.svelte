@@ -1,15 +1,18 @@
 <script lang="ts">
+  import { page } from '$app/state';
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
   import EditionToggle from '$lib/components/EditionToggle.svelte';
   import HomebrewToggle from '$lib/components/HomebrewToggle.svelte';
   import SourceLegend from '$lib/components/SourceLegend.svelte';
-  import { formatSource, formatEquipType, editionOf, dedupeRecords, isHomebrew } from '$lib/utils/dnd';
+  import { formatSource, formatEquipType, editionOf, dedupeRecords, isHomebrew, RARITIES, RARITY_COLORS } from '$lib/utils/dnd';
   import equipmentData from '$lib/data/equipment.json';
   import itemsData from '$lib/data/items.json';
 
   type Kind = 'all' | 'gear' | 'magic';
 
   let search = $state('');
+  const urlSearch = $derived(page.url.searchParams.get('search') || '');
+  $effect(() => { search = urlSearch; });
   let selectedType = $state<string | null>(null);
   let selectedRarity = $state<string | null>(null);
   let selectedEdition = $state<'classic' | 'one'>('classic');
@@ -35,16 +38,6 @@
     return [null, ...Array.from(t).sort()];
   });
 
-  const rarities = ['common', 'uncommon', 'rare', 'very rare', 'legendary', 'artifact'];
-
-  const rarityColors: Record<string, string> = {
-    'common': 'bg-gray-700 text-gray-300',
-    'uncommon': 'bg-green-900/50 text-green-300',
-    'rare': 'bg-blue-900/50 text-blue-300',
-    'very rare': 'bg-purple-900/50 text-purple-300',
-    'legendary': 'bg-orange-900/50 text-orange-300',
-    'artifact': 'bg-red-900/50 text-red-300'
-  };
 
   const filtered = $derived.by(() => {
     let result = all;
@@ -100,7 +93,7 @@
     <div class="mb-3">
       <p class="text-xs text-dnd-text-muted mb-1">Rarity</p>
       <div class="flex flex-wrap gap-1.5">
-        {#each rarities as r}
+        {#each RARITIES as r}
           <button class="filter-btn text-xs {selectedRarity === r ? 'active' : ''}" onclick={() => { selectedRarity = selectedRarity === r ? null : r; kind = 'magic'; }}>
             {r}
           </button>
@@ -120,7 +113,7 @@
           <div class="min-w-0">
             <span class="font-semibold text-sm text-dnd-text">{item.name}</span>
             {#if item.kind === 'magic'}
-              <span class="tag text-[10px] ml-2 {rarityColors[item.rarity] || 'bg-dnd-dark text-dnd-text-muted'}">{item.rarity}</span>
+              <span class="tag text-[10px] ml-2 {RARITY_COLORS[item.rarity] || 'bg-dnd-dark text-dnd-text-muted'}">{item.rarity}</span>
               {#if item.reqAttune}
                 <span class="tag text-[10px] bg-purple-900/50 text-purple-300 ml-1">attunement</span>
               {/if}
