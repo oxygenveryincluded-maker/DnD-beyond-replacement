@@ -368,21 +368,100 @@ export function derivedMaxHp(hitDice: string, level: number, conMod: number): nu
   return faces + conMod + (level - 1) * (avg + conMod);
 }
 
+const MATH_FNS: Record<string, (...args: number[]) => number> = {
+  ceil: Math.ceil,
+  floor: Math.floor,
+  round: Math.round,
+  max: Math.max,
+  min: Math.min
+};
+
+// Tiny recursive-descent arithmetic evaluator. 5etools class formulas are
+// simple arithmetic (plus Math.ceil/floor/round/max/min); parsing them
+// ourselves avoids `new Function` (and therefore eval) entirely.
+function evalArithmetic(input: string): number | null {
+  const tokens = input.match(/\d+(?:\.\d+)?|Math\.(?:ceil|floor|round|max|min)|[()+\-*/,]/g);
+  if (!tokens || tokens.join('') !== input.replace(/\s+/g, '')) return null;
+  let i = 0;
+  const peek = () => tokens[i];
+  const next = () => tokens[i++];
+
+  function parseExpr(): number {
+    let value = parseTerm();
+    while (peek() === '+' || peek() === '-') {
+      const op = next();
+      const right = parseTerm();
+      value = op === '+' ? value + right : value - right;
+    }
+    return value;
+  }
+
+  function parseTerm(): number {
+    let value = parseFactor();
+    while (peek() === '*' || peek() === '/') {
+      const op = next();
+      const right = parseFactor();
+      value = op === '*' ? value * right : value / right;
+    }
+    return value;
+  }
+
+  function parseFactor(): number {
+    if (peek() === '+') {
+      next();
+      return parseFactor();
+    }
+    if (peek() === '-') {
+      next();
+      return -parseFactor();
+    }
+    return parsePrimary();
+  }
+
+  function parsePrimary(): number {
+    const token = next();
+    if (token === undefined) throw new Error('unexpected end');
+    if (token === '(') {
+      const value = parseExpr();
+      if (next() !== ')') throw new Error('missing )');
+      return value;
+    }
+    if (/^\d/.test(token)) return Number(token);
+    if (token.startsWith('Math.')) {
+      const fn = MATH_FNS[token.slice(5)];
+      if (!fn || next() !== '(') throw new Error('bad function');
+      const args: number[] = [];
+      if (peek() !== ')') {
+        args.push(parseExpr());
+        while (peek() === ',') {
+          next();
+          args.push(parseExpr());
+        }
+      }
+      if (next() !== ')') throw new Error('missing )');
+      return fn(...args);
+    }
+    throw new Error('unexpected token');
+  }
+
+  try {
+    const value = parseExpr();
+    if (i !== tokens.length) return null;
+    return typeof value === 'number' && isFinite(value) ? Math.floor(value) : null;
+  } catch {
+    return null;
+  }
+}
+
 function evaluateFormula(formula: string, level: number, abilities: Record<string, number>): number | null {
   const pb = proficiencyBonus(level);
-  let expr = String(formula || '')
+  const expr = String(formula || '')
     .replace(/<\$level\$>/g, String(level))
     .replace(/<\$prof_bonus\$>/g, String(pb))
     .replace(/<\$proficiency_bonus\$>/g, String(pb))
     .replace(/<\$([a-z]+)_mod\$>/g, (_m, key: string) => String(abilityMod(abilities[key] ?? 10)))
     .replace(/<\$([a-z]+)\$>/g, (_m, key: string) => String(abilities[key] ?? 10));
-  if (!/^[0-9 .+\-*/(),Mathceilfloorroundmaxmin]+$/.test(expr)) return null;
-  try {
-    const val = new Function('Math', `return (${expr})`)(Math);
-    return typeof val === 'number' && isFinite(val) ? Math.floor(val) : null;
-  } catch {
-    return null;
-  }
+  return evalArithmetic(expr);
 }
 
 // Turn a 5etools prepared-spells formula into readable text.

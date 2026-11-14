@@ -4,6 +4,7 @@
     loadCharacters,
     saveCharacters,
     createDefaultCharacter,
+    newId,
     SKILLS,
     type Character
   } from '$lib/utils/character-store';
@@ -272,7 +273,7 @@ const backgroundInfo = $derived(
     if (!spell) return;
     const name = customInvName.trim() || spell;
     const entry = {
-      id: `ci-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+      id: newId(),
       name,
       spell,
       rest: customInvRest,
@@ -661,7 +662,7 @@ const backgroundInfo = $derived(
     characters = loadCharacters();
     mounted = true;
     initCloudAuth();
-    authState.subscribe(async (s) => {
+    const unsubscribe = authState.subscribe(async (s) => {
       if (s.loading) return;
       if (s.user && !didInitialSync) {
         didInitialSync = true;
@@ -677,6 +678,7 @@ const backgroundInfo = $derived(
         cloudStatus = 'off';
       }
     });
+    return unsubscribe;
   });
 
   $effect(() => {

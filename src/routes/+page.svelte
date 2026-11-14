@@ -33,6 +33,7 @@
   let busy = $state(false);
   let msg = $state<{ ok: boolean; text: string } | null>(null);
   let showChangePw = $state(false);
+  let currentPw = $state('');
   let newPw = $state('');
   let newPw2 = $state('');
   let backupMsg = $state<{ ok: boolean; text: string } | null>(null);
@@ -59,6 +60,7 @@
 
   async function doSignUp() {
     if (!$authState.loading && $authState.user) return;
+    if (password.length < 8) { msg = { ok: false, text: 'Password must be at least 8 characters.' }; return; }
     busy = true;
     msg = null;
     try {
@@ -106,16 +108,25 @@
 
   async function doChangePw() {
     const sb = getSupabase();
-    if (!sb || !$authState.user) return;
-    if (newPw.length < 6) { msg = { ok: false, text: 'Password must be at least 6 characters.' }; return; }
+    if (!sb || !$authState.user || !$authState.email) return;
+    if (!currentPw) { msg = { ok: false, text: 'Enter your current password to confirm the change.' }; return; }
+    if (newPw.length < 8) { msg = { ok: false, text: 'Password must be at least 8 characters.' }; return; }
     if (newPw !== newPw2) { msg = { ok: false, text: 'Passwords do not match.' }; return; }
     busy = true;
     msg = null;
     try {
+      // Re-authenticate first so a hijacked/left-open session can't silently
+      // change the account password.
+      const { error: reauthError } = await sb.auth.signInWithPassword({
+        email: $authState.email,
+        password: currentPw
+      });
+      if (reauthError) throw new Error('Current password is incorrect.');
       const { error } = await sb.auth.updateUser({ password: newPw });
       if (error) throw new Error(error.message);
       msg = { ok: true, text: 'Password changed successfully.' };
       showChangePw = false;
+      currentPw = '';
       newPw = '';
       newPw2 = '';
     } catch (e) {
@@ -162,10 +173,12 @@
     busy = true;
     msg = null;
     try {
+      if (file.size > 10 * 1024 * 1024) throw new Error('Backup file is too large (maximum 10 MB).');
       const text = await file.text();
       const parsed = JSON.parse(text);
       const incomingRaw = Array.isArray(parsed) ? parsed : parsed?.characters;
       if (!Array.isArray(incomingRaw)) throw new Error('That file does not look like a D&D Companion backup.');
+      if (incomingRaw.length > 2000) throw new Error('Backup contains too many characters (maximum 2000).');
       const incoming = incomingRaw.map(migrateCharacter);
       const byId = new Map(loadCharacters().map((c) => [c.id, c]));
       let added = 0;
@@ -226,7 +239,7 @@
           <button class="filter-btn text-xs px-3 py-2" onclick={doUpload} disabled={busy} title="Push this device's characters to the cloud">
             {busy ? '…' : 'Upload'}
           </button>
-          <button class="filter-btn text-xs px-3 py-2" onclick={() => { showChangePw = !showChangePw; newPw = ''; newPw2 = ''; msg = null; }}>
+          <button class="filter-btn text-xs px-3 py-2" onclick={() => { showChangePw = !showChangePw; currentPw = ''; newPw = ''; newPw2 = ''; msg = null; }}>
             {showChangePw ? 'Cancel' : 'Change password'}
           </button>
           <button class="filter-btn text-xs px-3 py-2" onclick={doSignOut}>Sign out</button>
@@ -235,8 +248,13 @@
         {#if showChangePw}
           <div class="mt-3 pt-3 border-t border-dnd-border space-y-2">
             <div>
+              <label class="text-xs text-dnd-text-muted mb-1 block" for="current-pw">Current password</label>
+              <input id="current-pw" type="password" value={currentPw}
+                oninput={(e) => currentPw = (e.target as HTMLInputElement).value} class="w-full" autocomplete="current-password" />
+            </div>
+            <div>
               <label class="text-xs text-dnd-text-muted mb-1 block" for="new-pw">New password</label>
-              <input id="new-pw" type="password" value={newPw}
+              <input id="new-pw" type="password" value={newPw} minlength="8"
                 oninput={(e) => newPw = (e.target as HTMLInputElement).value} class="w-full" autocomplete="new-password" />
             </div>
             <div>

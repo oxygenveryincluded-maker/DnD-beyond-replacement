@@ -7,6 +7,7 @@
     "dev": "vite dev",
     "dev:lan": "vite dev --host",
     "build": "vite build",
+    "prebuild": "node scripts/check-data-safety.mjs",
     "preview": "vite preview --host",
     "fetch-data": "node scripts/fetch-data.mjs",
     "prepare": "svelte-kit sync || echo ''",

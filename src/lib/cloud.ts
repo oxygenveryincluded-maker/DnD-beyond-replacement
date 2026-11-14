@@ -7,7 +7,17 @@ let client: SupabaseClient | null = null;
 
 export function getSupabase(): SupabaseClient | null {
   if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return null;
-  if (!client) client = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  if (!client) {
+    client = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+      auth: {
+        // Email/password only. Ignoring session tokens in the URL avoids
+        // login-CSRF via crafted #access_token= links; confirmation links still
+        // verify server-side, and the user signs in normally afterwards.
+        detectSessionInUrl: false,
+        flowType: 'pkce'
+      }
+    });
+  }
   return client;
 }
 
@@ -77,10 +87,16 @@ export async function fetchCloudData(userId: string | null): Promise<CloudData |
 export async function pushCloudData(userId: string | null, characters: Character[]): Promise<void> {
   const sb = getSupabase();
   if (!sb || !userId) return;
+  const data = { characters, updatedAt: Date.now() };
+  // Keep in sync with the user_data_size_limit check in supabase/schema.sql.
+  const size = new TextEncoder().encode(JSON.stringify(data)).length;
+  if (size > 4 * 1024 * 1024) {
+    throw new Error('Cloud save is too large (maximum 4 MB). Download a local backup and remove some characters.');
+  }
   const { error } = await sb.from('user_data').upsert(
     {
       owner: userId,
-      data: { characters, updatedAt: Date.now() },
+      data,
       updated_at: new Date().toISOString()
     },
     { onConflict: 'owner' }

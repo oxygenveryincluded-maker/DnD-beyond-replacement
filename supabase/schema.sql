@@ -18,4 +18,16 @@ create policy "insert own" on public.user_data
 
 drop policy if exists "update own" on public.user_data;
 create policy "update own" on public.user_data
-  for update using (auth.uid() = owner);
+  for update using (auth.uid() = owner) with check (auth.uid() = owner);
+
+-- Limit each account's saved payload so one account cannot exhaust the free
+-- tier (or accidentally push a multi-megabyte blob). Safe to re-run.
+do $$
+begin
+  if not exists (
+    select 1 from pg_constraint where conname = 'user_data_size_limit'
+  ) then
+    alter table public.user_data
+      add constraint user_data_size_limit check (pg_column_size(data) <= 4194304);
+  end if;
+end $$;
