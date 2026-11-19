@@ -592,9 +592,31 @@ const backgroundInfo = $derived(
   function removeSpell(type: 'cantrips' | 'known', i: number) {
     if (!selectedId) return;
     updateChar(selectedId, (c) => {
+      const removed = type === 'cantrips' ? c.spellsCantrips[i] : c.spellsKnown[i];
       if (type === 'cantrips') c.spellsCantrips = c.spellsCantrips.filter((_, idx) => idx !== i);
       else c.spellsKnown = c.spellsKnown.filter((_, idx) => idx !== i);
+      if (removed) {
+        c.spellsUsed = (c.spellsUsed || []).filter(
+          (name) => name.toLowerCase() !== removed.toLowerCase()
+        );
+      }
     });
+  }
+
+  function toggleSpellUsed(name: string) {
+    if (!selectedId || !name) return;
+    updateChar(selectedId, (c) => {
+      const used = c.spellsUsed || [];
+      const isUsed = used.some((n) => n.toLowerCase() === name.toLowerCase());
+      c.spellsUsed = isUsed
+        ? used.filter((n) => n.toLowerCase() !== name.toLowerCase())
+        : [...used, name];
+    });
+  }
+
+  function resetSpellsUsed() {
+    if (!selectedId) return;
+    updateChar(selectedId, (c) => { c.spellsUsed = []; });
   }
 
   function toggleInvocation(name: string) {
@@ -786,7 +808,14 @@ const backgroundInfo = $derived(
         onLayoutChange={(pos) => updateChar(selectedChar.id, (c) => { c.layoutPos = pos; })}
       />
     {:else if viewMode === 'spells'}
-      <SpellsPanel char={selectedChar} classData={classInfo} edition={classInfo?.edition} />
+      <SpellsPanel
+        char={selectedChar}
+        classData={classInfo}
+        edition={classInfo?.edition}
+        onToggleSpellUsed={toggleSpellUsed}
+        onResetSpellsUsed={resetSpellsUsed}
+        onGameNotesChange={(value) => set('gameNotes', value)}
+      />
     {:else}
       <!-- Builder mode -->
       <div class="flex gap-1.5 mb-4 overflow-x-auto pb-1 -mx-1 px-1">
@@ -1611,10 +1640,19 @@ const backgroundInfo = $derived(
                 rows="2" class="w-full resize-y text-sm" placeholder="Flaws..."></textarea>
             </div>
             <div>
-              <label class="text-xs text-dnd-text-muted mb-1 block" for="trait-notes">General Notes</label>
+              <label class="text-xs text-dnd-text-muted mb-1 block" for="trait-notes">Character &amp; Background Notes</label>
               <textarea id="trait-notes" value={selectedChar.notes}
                 oninput={(e) => set('notes', (e.target as HTMLTextAreaElement).value)}
-                rows="5" class="w-full resize-y text-sm" placeholder="Additional notes..."></textarea>
+                rows="5" class="w-full resize-y text-sm" placeholder="Character history, background details, reminders..."></textarea>
+            </div>
+            <div class="border-t border-dnd-border pt-3">
+              <label class="text-xs text-dnd-text-muted mb-1 block" for="trait-game-notes">In-Game Notes</label>
+              <p class="text-[11px] text-dnd-text-muted mb-2">
+                Session log, quests, NPCs, loot, and reminders — separate from the character and background notes above.
+              </p>
+              <textarea id="trait-game-notes" value={selectedChar.gameNotes || ''}
+                oninput={(e) => set('gameNotes', (e.target as HTMLTextAreaElement).value)}
+                rows="6" class="w-full resize-y text-sm" placeholder="What happened in the session..."></textarea>
             </div>
           </div>
         {/if}

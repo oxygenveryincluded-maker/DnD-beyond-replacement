@@ -715,6 +715,7 @@
                 <p><span class="text-dnd-text-muted">Bonds:</span> <span class="text-dnd-text whitespace-pre-wrap">{char.traits.bonds || '—'}</span></p>
                 <p><span class="text-dnd-text-muted">Flaws:</span> <span class="text-dnd-text whitespace-pre-wrap">{char.traits.flaws || '—'}</span></p>
                 {#if char.notes}<p><span class="text-dnd-text-muted">Notes:</span> <span class="text-dnd-text whitespace-pre-wrap">{char.notes}</span></p>{/if}
+                {#if char.gameNotes}<p><span class="text-dnd-text-muted">In-Game Notes:</span> <span class="text-dnd-text whitespace-pre-wrap">{char.gameNotes}</span></p>{/if}
               </div>
             </div>
           {/if}

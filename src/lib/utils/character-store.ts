@@ -84,10 +84,12 @@ export interface Character {
   spellsCantrips: string[];
   spellsKnown: string[];
   spellsPrepared: string[];
+  spellsUsed: string[];
   spellSaveDC: number;
   spellAttackBonus: number;
   traits: Traits;
   notes: string;
+  gameNotes: string;
   inspiration: boolean;
   deathSaves: { successes: number; failures: number };
   invocations?: string[];
@@ -200,10 +202,12 @@ function createDefaultCharacter(): Character {
     spellsCantrips: [],
     spellsKnown: [],
     spellsPrepared: [],
+    spellsUsed: [],
     spellSaveDC: 0,
     spellAttackBonus: 0,
     traits: { personality: '', ideals: '', bonds: '', flaws: '' },
     notes: '',
+    gameNotes: '',
     inspiration: false,
     deathSaves: { successes: 0, failures: 0 },
     invocations: [],
@@ -322,6 +326,7 @@ function migrate(old: any): Character {
     spellsCantrips: asStringList(src.spellsCantrips),
     spellsKnown: asStringList(src.spellsKnown),
     spellsPrepared: asStringList(src.spellsPrepared),
+    spellsUsed: asStringList(src.spellsUsed),
     spellSaveDC: asNumber(src.spellSaveDC, base.spellSaveDC),
     spellAttackBonus: asNumber(src.spellAttackBonus, base.spellAttackBonus),
     traits: {
@@ -331,6 +336,7 @@ function migrate(old: any): Character {
       flaws: asString(traits.flaws)
     },
     notes: asString(src.notes),
+    gameNotes: asString(src.gameNotes),
     inspiration: asBoolean(src.inspiration, base.inspiration),
     deathSaves: {
       successes: asNumber(deathSaves.successes, base.deathSaves.successes),

@@ -322,6 +322,8 @@
     <div class="box">
       <h2>Notes</h2>
       <p class="small pre">{char.notes || '—'}</p>
+      <h2 class="mt">In-Game Notes</h2>
+      <p class="small pre">{char.gameNotes || '—'}</p>
     </div>
   </section>
 </div>

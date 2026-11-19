@@ -12,9 +12,10 @@ sync. Non-commercial, personal use only.
   homebrew toggle.
 - **Character builder** with class/race/background/feat selection, ability
   scores, skills, equipment, and spells grouped by level and filtered by class.
-- **Combat tab** with attacks, actions, spell slots, spell cards, eldritch
-  invocations (including user-defined custom invocations), and a standard 5e
-  printable character sheet.
+- **Combat tab** with attacks, actions, spell slots, spell cards, per-spell
+  used tracking with a reset button, eldritch invocations (including
+  user-defined custom invocations), a separate in-game/session notes field, and
+  a standard 5e printable character sheet.
 - **Cloud sync** (optional): email/password accounts backed by Supabase, with
   merge-by-name and most-recent-wins conflict handling.
 - **Local backups**: download/restore every character as plain JSON from the

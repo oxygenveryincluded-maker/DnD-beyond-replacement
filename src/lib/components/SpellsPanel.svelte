@@ -14,11 +14,34 @@
   import invocationsData from '$lib/data/invocations.json';
   import ContentRenderer from '$lib/components/ContentRenderer.svelte';
 
-  let { char, classData = null, edition = '2014' }: { char: Character; classData: any; edition?: string } = $props();
+  let {
+    char,
+    classData = null,
+    edition = '2014',
+    onToggleSpellUsed = (_name: string) => {},
+    onResetSpellsUsed = () => {},
+    onGameNotesChange = (_value: string) => {}
+  }: {
+    char: Character;
+    classData: any;
+    edition?: string;
+    onToggleSpellUsed?: (name: string) => void;
+    onResetSpellsUsed?: () => void;
+    onGameNotesChange?: (value: string) => void;
+  } = $props();
 
   const is2024 = $derived(edition === 'one');
   const pb = $derived(proficiencyBonus(char.level));
   const spell = $derived(classData ? derivedSpellcasting(classData, char.level, char.abilityScores) : null);
+
+  const usedSet = $derived(
+    new Set((char.spellsUsed || []).map((name) => String(name).toLowerCase()))
+  );
+  const usedCount = $derived(
+    [...char.spellsCantrips, ...char.spellsKnown]
+      .filter((name) => usedSet.has(String(name).toLowerCase())).length
+  );
+  const isUsed = (name: string) => usedSet.has(String(name || '').toLowerCase());
 
   const spellMeta = (name: string) => {
     const wanted = String(name || '').trim().toLowerCase();
@@ -133,17 +156,17 @@
   const cantrips = $derived(
     char.spellsCantrips.map((name) => {
       const meta = spellMeta(name);
-      return { name: meta?.name || name, meta };
+      return { name: meta?.name || name, key: name, meta };
     })
   );
 
   const spellsByLevel = $derived.by(() => {
-    const map = new Map<number, { name: string; meta: any }[]>();
+    const map = new Map<number, { name: string; key: string; meta: any }[]>();
     for (const name of char.spellsKnown) {
       const meta = spellMeta(name);
       const lvl = meta?.level ?? 1;
       if (!map.has(lvl)) map.set(lvl, []);
-      map.get(lvl)!.push({ name: meta?.name || name, meta });
+      map.get(lvl)!.push({ name: meta?.name || name, key: name, meta });
     }
     return map;
   });
@@ -298,6 +321,20 @@
     {/if}
   </div>
 
+  <div class="card p-3">
+    <div class="flex items-baseline justify-between gap-2 mb-1">
+      <h3 class="sheet-heading">In-Game Notes</h3>
+      <span class="text-[10px] text-dnd-text-muted">separate from character notes</span>
+    </div>
+    <textarea
+      class="w-full resize-y text-sm"
+      rows="5"
+      value={char.gameNotes || ''}
+      oninput={(e) => onGameNotesChange((e.target as HTMLTextAreaElement).value)}
+      placeholder="Session log, quests, NPCs, loot, reminders…"
+    ></textarea>
+  </div>
+
   {#if weapons.length || spell?.isCaster}
     <div class="card p-3">
       <h3 class="sheet-heading">What can I hit with?</h3>
@@ -354,23 +391,43 @@
 
   <div>
     {#if char.spellsCantrips.length || char.spellsKnown.length}
-      <div class="flex items-baseline gap-2 mb-2">
+      <div class="flex items-baseline gap-2 mb-2 flex-wrap">
         <h3 class="font-display text-lg font-semibold text-dnd-gold">Your Spells</h3>
         {#if spell?.ability}
           <p class="text-[11px] text-dnd-text-muted">
             {spell.ability.toUpperCase()} caster · DC {spell.saveDC} · +{spell.attackBonus ?? 0} to hit
           </p>
         {/if}
+        {#if usedCount}
+          <span class="tag text-[10px] bg-dnd-gold/20 text-dnd-gold">{usedCount} used</span>
+          <button class="filter-btn text-[10px] px-2 py-1 min-h-[32px] ml-auto" onclick={onResetSpellsUsed}>
+            Reset used
+          </button>
+        {/if}
       </div>
+      <p class="text-[10px] text-dnd-text-muted mb-2">
+        Tap <span class="text-dnd-gold font-semibold">Use</span> to track a spell, then reset after a rest.
+      </p>
 
       {#if cantrips.length}
         <div class="mb-3">
           <h4 class="sheet-heading mb-1.5">Cantrips <span class="text-dnd-text-muted font-normal">(at will — no slots)</span></h4>
           <div class="grid sm:grid-cols-2 gap-2 items-start">
             {#each cantrips as s (s.name)}
+              {@const used = isUsed(s.key)}
               <details class="spell-card">
                 <summary class="spell-summary">
-                  <span class="font-semibold text-dnd-text">{s.name}</span>
+                  <span class="flex items-center gap-2 min-w-0">
+                    <span class="font-semibold text-dnd-text truncate" class:line-through={used} class:opacity-60={used}>{s.name}</span>
+                    <button
+                      type="button"
+                      class="shrink-0 text-[9px] uppercase tracking-wider px-2 py-1 rounded-full border min-h-[28px] {used ? 'bg-dnd-gold/20 border-dnd-gold text-dnd-gold' : 'border-dnd-border text-dnd-text-muted hover:text-dnd-gold hover:border-dnd-gold'}"
+                      aria-pressed={used}
+                      aria-label={used ? `Mark ${s.name} unused` : `Mark ${s.name} used`}
+                      title={used ? 'Mark unused' : 'Mark used'}
+                      onclick={(e) => { e.preventDefault(); e.stopPropagation(); onToggleSpellUsed(s.key); }}
+                    >{used ? '✓ Used' : 'Use'}</button>
+                  </span>
                   <span class="text-[10px] text-dnd-text-muted shrink-0">
                     {fmtSchool(s.meta?.school)}{s.meta?.school ? ' · ' : ''}{fmtTime(s.meta?.time?.[0])}
                   </span>
@@ -407,9 +464,20 @@
           </h4>
           <div class="grid sm:grid-cols-2 gap-2 items-start">
             {#each spells as s (s.name)}
+              {@const used = isUsed(s.key)}
               <details class="spell-card">
                 <summary class="spell-summary">
-                  <span class="font-semibold text-dnd-text">{s.name}</span>
+                  <span class="flex items-center gap-2 min-w-0">
+                    <span class="font-semibold text-dnd-text truncate" class:line-through={used} class:opacity-60={used}>{s.name}</span>
+                    <button
+                      type="button"
+                      class="shrink-0 text-[9px] uppercase tracking-wider px-2 py-1 rounded-full border min-h-[28px] {used ? 'bg-dnd-gold/20 border-dnd-gold text-dnd-gold' : 'border-dnd-border text-dnd-text-muted hover:text-dnd-gold hover:border-dnd-gold'}"
+                      aria-pressed={used}
+                      aria-label={used ? `Mark ${s.name} unused` : `Mark ${s.name} used`}
+                      title={used ? 'Mark unused' : 'Mark used'}
+                      onclick={(e) => { e.preventDefault(); e.stopPropagation(); onToggleSpellUsed(s.key); }}
+                    >{used ? '✓ Used' : 'Use'}</button>
+                  </span>
                   <span class="text-[10px] text-dnd-text-muted shrink-0">
                     {fmtSchool(s.meta?.school)}{s.meta?.school ? ' · ' : ''}{fmtTime(s.meta?.time?.[0])}
                   </span>
